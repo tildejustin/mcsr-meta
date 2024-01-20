@@ -5,6 +5,7 @@ import io.github.z4kn4fein.semver.Version
 import kotlinx.serialization.*
 import kotlinx.serialization.json.Json
 import org.eclipse.jgit.api.Git
+import java.net.URI
 import java.nio.file.*
 import java.security.MessageDigest
 import kotlin.io.path.*
@@ -20,13 +21,17 @@ lateinit var unrecommendedMods: List<String>
 // modid -> list of conditions
 val conditions = readConditions()
 
+// good for testing out quick changes
+const val noReload = false
 
 fun main() {
     readAdditionalData()
     // place to store downloaded mods
     if (!Files.exists(tempDir)) Files.createDirectory(tempDir)
     // TODO: progress logging
-    // deleteAndRecloneLegalMods()
+    if (!noReload) {
+        deleteAndRecloneLegalMods()
+    }
     val mods = ArrayList<Meta.Mod>()
     Files.list(legalModsPath).forEach { modid ->
         val modVersions = ArrayList<Meta.ModVersion>()
@@ -120,13 +125,15 @@ data class RealizedExternalMod(val path: Path, val url: String)
 fun handleExternalMod(jsonPath: Path): RealizedExternalMod {
     val externalMod = json.decodeFromString<ExternalModJson>(jsonPath.readText())
     val downloadedJar = tempFileName(jsonPath.parent, jsonPath)
-    // Files.deleteIfExists(downloadedJar)
-    // Files.createDirectories(downloadedJar.parent)
-    // Files.createFile(downloadedJar)
-    // val jarBytes = URI.create(externalMod.link).toURL().readBytes()
-    // // check the downloaded file
-    // check(hashBytes(jarBytes) == externalMod.hash)
-    // downloadedJar.writeBytes(jarBytes)
+    if (!noReload) {
+        Files.deleteIfExists(downloadedJar)
+        Files.createDirectories(downloadedJar.parent)
+        Files.createFile(downloadedJar)
+        val jarBytes = URI.create(externalMod.link).toURL().readBytes()
+        // check the downloaded file
+        check(hashBytes(jarBytes) == externalMod.hash)
+        downloadedJar.writeBytes(jarBytes)
+    }
     return RealizedExternalMod(downloadedJar, externalMod.link)
 }
 

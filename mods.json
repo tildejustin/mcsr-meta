@@ -1383,6 +1383,7 @@
       ],
       "recommended": true,
       "traits": [
+        "ssg-only"
       ],
       "incompatibilities": [
         "worldpreview"
