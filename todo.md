@@ -1,0 +1,1 @@
+- use minecraft api instead of hardcoding maximums
