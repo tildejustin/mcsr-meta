@@ -10,6 +10,7 @@ import java.nio.file.*
 import java.security.MessageDigest
 import kotlin.io.path.*
 
+// val legalModsPath: Path = Path.of("/home/justin/PycharmProjects/legal-mods/legal-mods")
 val legalModsPath: Path = Path.of("legal-mods/legal-mods")
 val tempDir: Path = Path.of("temp")
 lateinit var replacementDescriptions: HashMap<String, String>
@@ -99,7 +100,7 @@ fun generateModVersion(folder: Path): Meta.ModVersion {
         modUrl = url
     } else {
         // remove first legal-mods git folder
-        modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/${modFile.subpath(1, modFile.count())}"
+        modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/${modFile.subpath(modFile.count() - 4, modFile.count())}"
     }
     val range = createSemverRangeFromFolderName(folder.name)
     val info = readFabricModJson(modFile)
