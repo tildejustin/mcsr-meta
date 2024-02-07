@@ -13,6 +13,7 @@ import kotlin.io.path.*
 // val legalModsPath: Path = Path.of("/home/justin/PycharmProjects/legal-mods/legal-mods")
 val legalModsPath: Path = Path.of("legal-mods/legal-mods")
 val tempDir: Path = Path.of("temp")
+lateinit var nameReplacements: HashMap<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
 lateinit var minecraftVersions: List<String>
 lateinit var modIncompatibilities: List<List<String>>
@@ -46,6 +47,7 @@ fun main() {
 
 @Serializable
 data class AdditionalData(
+    val names: HashMap<String, String>,
     val descriptions: HashMap<String, String>,
     val max_versions: List<String>,
     val not_recommended: List<String>,
@@ -62,6 +64,7 @@ fun readAdditionalData() {
         intermediateVersions.addFirst(minor)
         return@map intermediateVersions
     }.flatten()
+    nameReplacements = additionalMetadata.names
     replacementDescriptions = additionalMetadata.descriptions
     minecraftVersions = versions
     unrecommendedMods = additionalMetadata.not_recommended
@@ -82,6 +85,7 @@ fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
     val newestModInfo = readFabricModJson(getExternalJarIfNecessary(chosenFolder))
     // override description if an override exists
     newestModInfo.description = replacementDescriptions.getOrDefault(modFolder.name, newestModInfo.description)
+    newestModInfo.name = nameReplacements.getOrDefault(modFolder.name, newestModInfo.name)
     return Meta.Mod(modFolder.name,
         newestModInfo.name,
         newestModInfo.description,

@@ -10,6 +10,10 @@
     "antigone": "Fixes a rare server deadlock in Minecraft 1.16.1",
     "phosphor": "No-compromises lighting engine optimization mod"
   },
+  "names": {
+    "optifabric": "Optifabric",
+    "setspawnmod": "Set Spawn"
+  },
   "max_versions": [
     "1.3.2",
     "1.4.7",

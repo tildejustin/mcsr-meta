@@ -1135,7 +1135,7 @@
     },
     {
       "modid": "optifabric",
-      "name": "OptiFabric Origins",
+      "name": "Optifabric",
       "description": "Optifabric is a mod that loads optifine into fabric",
       "versions": [
         {
@@ -1291,7 +1291,7 @@
     },
     {
       "modid": "setspawnmod",
-      "name": "Set Spawn 1.17.1",
+      "name": "Set Spawn",
       "description": "Sets the player's spawnpoint in SSG to specified coordinates.",
       "versions": [
         {
