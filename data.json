@@ -70,5 +70,10 @@
       "motiono",
       "extra-options"
     ]
-  ]
+  ],
+  "extra_traits": {
+    "worldpreview": [
+      "rsg-only"
+    ]
+  }
 }

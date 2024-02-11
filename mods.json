@@ -2762,6 +2762,7 @@
       ],
       "recommended": true,
       "traits": [
+        "rsg-only"
       ],
       "incompatibilities": [
         "setspawnmod",

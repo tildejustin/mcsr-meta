@@ -52,7 +52,8 @@ data class AdditionalData(
     val max_versions: List<String>,
     val not_recommended: List<String>,
     val incompatibilities: List<List<String>>,
-    val recommendation_overrides: HashMap<String, List<String>>
+    val recommendation_overrides: HashMap<String, List<String>>,
+    val extra_traits: HashMap<String, Set<String>>
 )
 
 fun readAdditionalData() {
@@ -74,6 +75,7 @@ fun readAdditionalData() {
     // }
     modIncompatibilities = additionalMetadata.incompatibilities
     // recommendationOverrides = additionalMetadata.recommendation_overrides
+    additionalMetadata.extra_traits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
 }
 
 fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
