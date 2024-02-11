@@ -111,49 +111,49 @@
           "target_version": [
             "1.16.5"
           ],
-          "version": "1.1.3+1.16.5",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.16.5/atum-1.1.3+1.16.5.jar",
-          "hash": "57ba7e06665305ab31cf467c5ad9011053aef9d10c348c4b2d2716a202b9c615ccbf581c1dfdf5d8b96b52b062706f3a58794098ac5869011ac51d87373a8226"
+          "version": "1.2.1+1.16.5",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.16.5/atum-1.2.1+1.16.5.jar",
+          "hash": "fe20786bf930b11270412732fa3a8343cbb85b075711a672d79ee676f824cf1c2b1d887200593eed35a5d679c96133aa6d5df9186ccf57822be61b1c50d21b37"
         },
         {
           "target_version": [
             "1.17.1"
           ],
-          "version": "1.1.3+1.17.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.17.1/atum-1.1.3+1.17.1.jar",
-          "hash": "7fab662939fa14b876aa84d01f613d421d35a5ea71af849749e99dec2e0304df291af6b8f0f1fed31940ba10c155216ff18d7b4c236cd4d53e975261ebecf6b9"
+          "version": "1.2.1+1.17.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.17.1/atum-1.2.1+1.17.1.jar",
+          "hash": "8cd6dd93569c2d8d4a1168fad0c2077cc6a8a4f58f52f7579e23fa65452a5bbca530ea9244acd14691f155fc46332e27564d94d7c87d45b4e55e119c8be1c217"
         },
         {
           "target_version": [
             "1.15.2"
           ],
-          "version": "1.1.3+1.15.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.15.2/atum-1.1.3+1.15.2.jar",
-          "hash": "4973c423bdcbe74df56ab921b7ba309666fa95f9f0accc3d5eb9d875545ef2905d20179e9db9334872d9eb9ad9d90ef86fec0549b52af51cb32ada8d2ab80e8b"
+          "version": "1.2.1+1.15.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.15.2/atum-1.2.1+1.15.2.jar",
+          "hash": "d6ca3e7f8aed80126c53d3a54023021bdba97de3556cd5a096936156b3c2faccf436b0a3d78f23029a7f6d99ffbde065552e34cce88c2ecc623cecc06bf889ab"
+        },
+        {
+          "target_version": [
+            "1.18.1"
+          ],
+          "version": "1.2.1+1.18.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.18.1/atum-1.2.1+1.18.1.jar",
+          "hash": "ab59de4871afbd77f8b9489290b76efd42a199579d2eb9a7237097e73c495a175d93969cc8edbcc1fa04c0ffda218df5388a9d5a15868bf94072b592c937409b"
         },
         {
           "target_version": [
             "1.9.4"
           ],
-          "version": "1.1.3+1.9.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.9.4/atum-1.1.3+1.9.4.jar",
-          "hash": "2d36bf9a4f074ef71333073e92bbc1446335edecabe2cd1a75327207055c608d26af6af448826543654a7e75c7e5fdf213375b61b484837d91354080e30ea390"
-        },
-        {
-          "target_version": [
-            "1.10.2"
-          ],
-          "version": "1.1.3+1.10.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.10.2/atum-1.1.3+1.10.2.jar",
-          "hash": "3fd85e02173b65c77b63ffbfcdd9674d7e2c9f2f066e537bf03390e1a04f788334a767886ff98d9a243073c4fbb19573fac5c48ed641bc37cbcbb68aba7922e7"
+          "version": "1.2.1+1.9.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.9.4/atum-1.2.1+1.9.4.jar",
+          "hash": "baf53846613f5d109e89acf0b8c5a9bc365be26288e1b495ea824848afbdffe227b4951086cb595be7f61a0c93fbe8e5c6f6f07878fabab4aaf67fcc5faabf18"
         },
         {
           "target_version": [
             "1.12.2"
           ],
-          "version": "1.1.3+1.12.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.12.2/atum-1.1.3+1.12.2.jar",
-          "hash": "fc25fc893742a595a103988eaf33bc03338785b6ca1434e86f94c21c38797e3a5f1b23eef581228cad1ed8068ade094cbfe003faef42d2bc60370aea5754f8a2"
+          "version": "1.2.1+1.12.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.12.2/atum-1.2.1+1.12.2.jar",
+          "hash": "5ab16b4044405e7b27ec3ecd2e080e06e435ac1fcbb55b08d65032752525dfc6d43ff315159bc9f43fca2643433d406f54466203b3d9db71513c1ef626351b84"
         },
         {
           "target_version": [
@@ -165,27 +165,46 @@
         },
         {
           "target_version": [
+            "1.20.4"
+          ],
+          "version": "1.2.1+1.20.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.20.4/atum-1.2.1+1.20.4.jar",
+          "hash": "0c2e5243bc359a4cf7dda012fca899b221e48ed94d1b274f97a1dd5f45124e1bd7421555da6e4fceff7a944d9ef1ef1cdafedeb5af298fe0f1b68cea5c634bd1"
+        },
+        {
+          "target_version": [
             "1.14.4"
           ],
-          "version": "1.1.3+1.14.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.14.4/atum-1.1.3+1.14.4.jar",
-          "hash": "c4623bcf98d5bf4931ac075d9c81fc3da639668f12d9a15d406e972e0a067a9ab2417eca09ed712a63bae7181db452e9ad4683007aef56ad9915fbdececff5fd"
+          "version": "1.2.1+1.14.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.14.4/atum-1.2.1+1.14.4.jar",
+          "hash": "c9faeae06a600484ba11606d052f9b523c4e939d09b38dd52e86fc7fbc2060e07d9ed54c0e7c5d5b2f1f7f3c9fdd7f524617e5c767900c352337cd4e6a2bb847"
+        },
+        {
+          "target_version": [
+            "1.10.2",
+            "1.11",
+            "1.11.1",
+            "1.11.2"
+          ],
+          "version": "1.2.1+1.10.2-1.11.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.10.2-1.11.2/atum-1.2.1+1.10.2-1.11.2.jar",
+          "hash": "30ccd9a50b3ba3bd84784cd7578141892b8af58ca71b93364fe95b2bda3c79b1a587b7c8353b5007dc5931fe2811aab6ed21ca1c945a305b406819668fab2a09"
         },
         {
           "target_version": [
             "1.19.2"
           ],
-          "version": "1.1.3+1.19.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.19.2/atum-1.1.3+1.19.2.jar",
-          "hash": "891ce5b6d027005ee0ad2b4d66b0b7ea3c4d8e93a8d86c167239f36d1e2aa2436ae9ab7e4ede2fc4b1a79198ede63b7922309b19a70bef8fe36c89a96dc16cf5"
+          "version": "1.2.1+1.19.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.19.2/atum-1.2.1+1.19.2.jar",
+          "hash": "d0ea900ce60b0eab1c30fade8cfa2d5fdd37631b051c3d44339389203a4a9d0ba02dc320372014cb3ed8f3462cf2a7760d643a5a7b795625b72e6d7f896cc0e5"
         },
         {
           "target_version": [
             "1.18.2"
           ],
-          "version": "1.1.3+1.18.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.18.2/atum-1.1.3+1.18.2.jar",
-          "hash": "34b53a00ef6eba83fb1bf17993be3f45c84caaac07f17825876130dc5ab894edae6a99e121b7640b65040743ef001ebed352c15aabd662745e442a22768a374a"
+          "version": "1.2.1+1.18.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.18.2/atum-1.2.1+1.18.2.jar",
+          "hash": "02c88d507101da4299405781c9cab09d41536037427466a3e48141f3bde2a806512eb4b227acdca076847030b3e31449c6066f19b3d5fbfb2d8a0b76907e357c"
         },
         {
           "target_version": [
@@ -199,9 +218,9 @@
           "target_version": [
             "1.13.2"
           ],
-          "version": "1.1.3+1.13.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.13.2/atum-1.1.3+1.13.2.jar",
-          "hash": "54504f859850908bf2f2f1ad79b4dd17ae25aa679af69b63a95272921bc645f8af5352600ab698a30c106259937895a5752d8c306d28380ac564422f5ab324d0"
+          "version": "1.2.1+1.13.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.13.2/atum-1.2.1+1.13.2.jar",
+          "hash": "01067a18e8f4fe8d478b7bc5514128eca76d05e24bbe94687cadde4d996b611defb81fa786b9c9fe235050ac91add079c5ce10293c6e9274b614951b3cebf481"
         },
         {
           "target_version": [
@@ -213,19 +232,37 @@
         },
         {
           "target_version": [
-            "1.11.2"
+            "1.19.4"
           ],
-          "version": "1.1.3+1.11.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.11.2/atum-1.1.3+1.11.2.jar",
-          "hash": "ed58c30b3d64537ff73a12641b21a3b054e6258ce161a6bd312970af4352c96cdb02da7679bf751bea4450e314a459e2c608e856d5483de674cd779070a8f560"
+          "version": "1.2.1+1.19.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.19.4/atum-1.2.1+1.19.4.jar",
+          "hash": "047c143343098eb80bd011f78ee656f13d1d47ee029e03ac3b1404c9dc7f8a81932bc54eb787dcf8ce23bb17706468c3e8a3dee169ae913a74f6f3a224e5fa1f"
         },
         {
           "target_version": [
             "1.16.1"
           ],
-          "version": "1.1.3+1.16.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.16.1/atum-1.1.3+1.16.1.jar",
-          "hash": "5ea1bdda198973816c286a4a3355609a0b029e1f1ac5f95a0c719f4107b0f9b53bad1adb96a853325a56f162593fde82dabc808f76f48ae0271f970714cbcd4c"
+          "version": "1.2.1+1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.16.1/atum-1.2.1+1.16.1.jar",
+          "hash": "b553f63d9f6f0fbd07842e5f8ae17624e29f168724bbe8e907afa56716dd3f8f7e1a71e0b8741e899cabc9b46e947383faa516b4bafa8807e12139e8f3aca667"
+        },
+        {
+          "target_version": [
+            "1.7.2",
+            "1.7.3",
+            "1.7.4"
+          ],
+          "version": "1.2.1+1.7.2-1.7.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.7.2-1.7.4/atum-1.2.1+1.7.2-1.7.4.jar",
+          "hash": "cda01c6cefa134457006fed3eb3a6dfc6456f81d358a3549fae76d0547c9e95c208a162d25d2569d8f5d18e902de1d20149f538676c56cf06efc775eae7796e8"
+        },
+        {
+          "target_version": [
+            "1.6.4"
+          ],
+          "version": "1.2.1+1.6.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/atum/1.6.4/atum-1.2.1+1.6.4.jar",
+          "hash": "51e9ac1fb3cadbb5e901c4e3665b930bf3e1d27b8d024b017d1c1bd0dc536723960e5a55278eb8450c3cfacb7791daef27ccbb1c6155a0afd8227db525ea406b"
         }
       ],
       "recommended": true,
@@ -281,11 +318,35 @@
         {
           "target_version": [
             "1.18",
-            "1.18.1",
+            "1.18.1"
+          ],
+          "version": "1.3.1+1.18-1.18.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/chunkcacher/1.18-1.18.1/chunkcacher-1.3.1+1.18-1.18.1.jar",
+          "hash": "2e796a7876fbc9c099466d542191aff26f2b9bb42d076bbd34bc6c4e3a74b605172a63003ff89bd2bc19e61725dcb60d2d3ff5b9d9958f6b0d1d486927d4cb5c"
+        },
+        {
+          "target_version": [
+            "1.19",
+            "1.19.1",
+            "1.19.2",
+            "1.19.3",
+            "1.19.4",
+            "1.20",
+            "1.20.1",
+            "1.20.2",
+            "1.20.3",
+            "1.20.4"
+          ],
+          "version": "1.3.2+1.19-1.20.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/chunkcacher/1.19-1.20.4/chunkcacher-1.3.2+1.19-1.20.4.jar",
+          "hash": "671e09dbdabfe71fc7ef82c395913eefa3531c2fcdef042a24088f5bdf19ca2c5a0a8575855f594bfebd142dc78556c0c6b1cfcd301941826c098dae03acc581"
+        },
+        {
+          "target_version": [
             "1.18.2"
           ],
           "version": "3.0.0",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/chunkcacher/1.18-1.18.2/chunkcacher-1.18-1.18.2-3.0.0.jar",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/chunkcacher/1.18.2/chunkcacher-1.18-1.18.2-3.0.0.jar",
           "hash": "c60161a32aad5b63190feab51476cb450bbf1cc2a03a90c3f0e7a62e8de57f15057c461f3773fd576b761bdf46b87c25fe96668639a77b315a9af98bd2120e95"
         },
         {
@@ -418,35 +479,72 @@
         },
         {
           "target_version": [
-            "1.8.9"
-          ],
-          "version": "0.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/dynamicfps/1.8.9/mangodfps-1.0.1-SNAPSHOT+1.8.9.jar",
-          "hash": "fdebf804405678d6b239e40a0d57fca0a7171ae7ae1a1ccd921fd3dec229fe13a1dd4d59049d37b13885cc1b222da6b9b9602ff34420a7868220064b1778e708"
-        },
-        {
-          "target_version": [
-            "1.7.10"
-          ],
-          "version": "0.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/dynamicfps/1.7.10/mangodfps-1.0.1-SNAPSHOT+1.7.x.jar",
-          "hash": "bf1a4127408c38c54fc60fb4ac148bec8c3485815278b4b6cebd5a958fdce39e3c219e8f37d30e5da53fddb92909f411848d1368b4d19547a970682a53031012"
-        },
-        {
-          "target_version": [
-            "1.8"
-          ],
-          "version": "0.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/dynamicfps/1.8/mangodfps-1.0.2-SNAPSHOT+1.8.jar",
-          "hash": "8df8c66a0759e2203277752fc04d6cecf5a0e1062606b059712b90a75a446c2343563bad373c49cc7ca4a47fc15919829d1735320f200cbfaf9781bb9b129e72"
-        },
-        {
-          "target_version": [
             "1.16.1"
           ],
           "version": "0.1",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/dynamicfps/1.16.1/dynamic-menu-fps-0.1.jar",
           "hash": "edf2a84d55eabb8ed62f8fa6d3fddbd2784c38eb4bae52bea605c82230aa41d7839ba82c2a4978a514c8cf996cf1414e66b15ea7336cf667c30f7f092c44ad5d"
+        },
+        {
+          "target_version": [
+            "1.3",
+            "1.3.1",
+            "1.3.2",
+            "1.4",
+            "1.4.1",
+            "1.4.2",
+            "1.4.3",
+            "1.4.4",
+            "1.4.5",
+            "1.4.6",
+            "1.4.7",
+            "1.5",
+            "1.5.1",
+            "1.5.2",
+            "1.6",
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4",
+            "1.7",
+            "1.7.1",
+            "1.7.2",
+            "1.7.3",
+            "1.7.4",
+            "1.7.5",
+            "1.7.6",
+            "1.7.7",
+            "1.7.8",
+            "1.7.9",
+            "1.7.10",
+            "1.8",
+            "1.8.1",
+            "1.8.2",
+            "1.8.3",
+            "1.8.4",
+            "1.8.5",
+            "1.8.6",
+            "1.8.7",
+            "1.8.8",
+            "1.8.9",
+            "1.9",
+            "1.9.1",
+            "1.9.2",
+            "1.9.3",
+            "1.9.4",
+            "1.10",
+            "1.10.1",
+            "1.10.2",
+            "1.11",
+            "1.11.1",
+            "1.11.2",
+            "1.12",
+            "1.12.1",
+            "1.12.2"
+          ],
+          "version": "1.1.0-1.3-1.12",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/dynamicfps/1.3-1.12.2/mangodfps-1.1.0-1.3-1.12.jar",
+          "hash": "30205c81acacd785a29afa6211a968b05f3d4c468566f5dc49635b83141bfbf423320727e1ba1b1c489d5581bce9799e33979d7c2ded6324b6b65dfc8567044c"
         }
       ],
       "recommended": false,
@@ -603,26 +701,9 @@
           "target_version": [
             "1.16.5"
           ],
-          "version": "1.0.0",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.16.5/fast-reset-1.16.5-v1.0.0.jar",
-          "hash": "d03f33669bf3aa55a3c0811cd8318105012b331cd6df5f9c6de79fe396ebcc11bbdaeb786a601ec41c82a4917487e0cafb17200ce0098770c16e5e6497540456"
-        },
-        {
-          "target_version": [
-            "1.16",
-            "1.16.1"
-          ],
-          "version": "1.4.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.16-1.16.1/fast-reset-1.16.1-v1.4.1.jar",
-          "hash": "b7e6d72bcb985df2a6008bdff527b07657ae235610226946e3ce0ce83d8727488cc5ea1b2bc6f5a6f2ec5910d801c600eda81bcde807c153c00b7c7cfc1da701"
-        },
-        {
-          "target_version": [
-            "1.17.1"
-          ],
-          "version": "1.0.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.17.1/fast-reset-1.17.1-v1.0.1.jar",
-          "hash": "4e03cb42c18a712917c4026ec65681c7f666da39f188cba15dccd0ffe3daa332a721f0fc028321b1ed3f28a582ed03b2dbca46ec60833a56eaa480430e363334"
+          "version": "1.4.2+1.16.5",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.16.5/fast-reset-1.4.2+1.16.5.jar",
+          "hash": "54bfaf4a2be4c164bda32d3a6f276753a3d01558270e99b89292a333bec3b1206264d7580ab3143b03e1dff992511de80272d928c22d986871a02ef375a3d228"
         },
         {
           "target_version": [
@@ -634,11 +715,61 @@
         },
         {
           "target_version": [
+            "1.19.4",
+            "1.20",
+            "1.20.1",
+            "1.20.2",
+            "1.20.3",
+            "1.20.4"
+          ],
+          "version": "1.4.2+1.19.4-1.20.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.19.4-1.20.4/fast-reset-1.4.2+1.19.4-1.20.4.jar",
+          "hash": "d7bd0160960a7bc33c795f726cd5ba52fd5e4887189f5757be0560a58e654e142b2d0ea1491af105f818770d74995424872ce102d7c34a4ab9a50c9f34822a63"
+        },
+        {
+          "target_version": [
+            "1.17",
+            "1.17.1",
+            "1.18",
+            "1.18.1"
+          ],
+          "version": "1.4.2+1.17-1.18.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.17-1.18.1/fast-reset-1.4.2+1.17-1.18.1.jar",
+          "hash": "fb578922df648efda902315b879c3d44f2ae1577c09f30945dba822e4a165f03f470035a2c9a0b87f5458969c2621aa4097e18ba4c6ef4b41e77223bcdc0cffd"
+        },
+        {
+          "target_version": [
             "1.14.4"
           ],
           "version": "1.0.0",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.14.4/fast_reset-1.14.4-1.0.0.jar",
           "hash": "28a583532438b9440471f914c9fb530a675ae006219191811ca50ad06087405d72210d1da0e135ed6c35a75264d1b5db436b37fe0c1bb49729a13122fcdb3567"
+        },
+        {
+          "target_version": [
+            "1.18.2"
+          ],
+          "version": "1.4.2+1.18.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.18.2/fast-reset-1.4.2+1.18.2.jar",
+          "hash": "a05f2e75e9fef5f445718c5d286ea2a08459e93abbdbf0d570baf0f515057b50b60fc12b825673b83df718765faeb4044a2a661ef1aeff60e410a7f3000a7764"
+        },
+        {
+          "target_version": [
+            "1.19",
+            "1.19.1",
+            "1.19.2"
+          ],
+          "version": "1.4.2+1.19-1.19.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.19-1.19.2/fast-reset-1.4.2+1.19-1.19.2.jar",
+          "hash": "f625ef3a3f65dc705d339dc0c2fbb38020d66ba3089ded62d5dd1eb4d7dad71698079def7e75f1ee04cf5756a5d007c5de15fd48e0dc734f46c4c919414c602a"
+        },
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "1.4.2+1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/fastreset/1.16.1/fast-reset-1.4.2+1.16.1.jar",
+          "hash": "f8bfdc63033746d6edc4963c2a39720a4608880d930101049c511e922abce03624b6d048650df77059f18b06202abc3763193fe85a54deca0e7a081b596a2ed2"
         }
       ],
       "recommended": true,
@@ -650,7 +781,7 @@
     {
       "modid": "forceport",
       "name": "Force Port Mod",
-      "description": "Forces the port of open to lan to be 25565 and increases the player limit of open to lan to 20.",
+      "description": "Forces the port of open to lan to be 25565 and increases the player limit of open to lan to as large as it can be.",
       "versions": [
         {
           "target_version": [
@@ -712,9 +843,9 @@
             "1.13.1",
             "1.13.2"
           ],
-          "version": "1.0.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/forceport/1.3-1.13.2/forceport-mod-1.0.1.jar",
-          "hash": "b7d999b207f0ed0117921f34f79bebec1f83c727e0a7b78d9863c30411a79c72ad98cadc1ccfea382e87964164e00119a5f5e791edd9426926fbc3aabb06b3bc"
+          "version": "1.2.0",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/forceport/1.3-1.13.2/forceport-1.2.0.jar",
+          "hash": "d11041f88e7226db37a29ea8d042e0313c656dc1337ebcbbe806bc769e7eb55f26a6450238b12e34243365340b84d551e997830dd669d8f5d1344ab2143165b1"
         },
         {
           "target_version": [
@@ -739,19 +870,11 @@
             "1.18.2",
             "1.19",
             "1.19.1",
-            "1.19.2",
-            "1.19.3",
-            "1.19.4",
-            "1.20",
-            "1.20.1",
-            "1.20.2",
-            "1.20.3",
-            "1.20.4",
-            "1.20.5"
+            "1.19.2"
           ],
-          "version": "1.1.0",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/forceport/1.14+/forceport-1.1.0.jar",
-          "hash": "30b1aa6abfb9c26c169515c9f735a73879653a94d2a32c0a225c0f507376216adb33db5824f2346917ae074e9e1cd665f2c9b634521e1df7ae359d2d25076177"
+          "version": "1.2.0",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/forceport/1.14-1.19.2/forceport-1.2.0.jar",
+          "hash": "5d5de89cce78fc34b8e9bc74a65fc8c5097583393285e90a937cffe05c6e0aabd74d2d4b3f19d0628d4f767c1bb284cca355bad258135e9fb597efb8328c26bc"
         }
       ],
       "recommended": true,
@@ -1107,22 +1230,91 @@
       "versions": [
         {
           "target_version": [
-            "1.16",
-            "1.16.1"
+            "1.3",
+            "1.3.1",
+            "1.3.2",
+            "1.4",
+            "1.4.1",
+            "1.4.2",
+            "1.4.3",
+            "1.4.4",
+            "1.4.5",
+            "1.4.6",
+            "1.4.7",
+            "1.5",
+            "1.5.1",
+            "1.5.2",
+            "1.6",
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4",
+            "1.7",
+            "1.7.1",
+            "1.7.2",
+            "1.7.3",
+            "1.7.4",
+            "1.7.5",
+            "1.7.6",
+            "1.7.7",
+            "1.7.8",
+            "1.7.9",
+            "1.7.10"
           ],
-          "version": "1.0.1+1.16",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/motiono/1.16-1.16.1/motioNO-1.0.1+1.16.jar",
-          "hash": "1ac6dee3b41d478a35f854a75da01cad386658ebd6ba16a50403b1a52cd17440eaf3e5957ed6c371f67c9793e9e44a7eb6ded2f6225500a97264895d638c41ac"
+          "version": "1.0.0+1.3-1.7",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/motiono/1.3-1.7.10/legacy-motioNO-1.0.0+1.3-1.7.jar",
+          "hash": "ace5c3c9425c75aeb9fee895145fc053bbf6e086aff68b290ca00de33ce7dec72cadd301bd2c9773ee21a3a4187b1191600d54c6489e3d641a8feb5c1083a362"
         },
         {
           "target_version": [
+            "1.14",
+            "1.14.1",
+            "1.14.2",
+            "1.14.3",
+            "1.14.4",
             "1.15",
             "1.15.1",
-            "1.15.2"
+            "1.15.2",
+            "1.16",
+            "1.16.1"
           ],
-          "version": "1.0.0+1.15",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/motiono/1.15-1.15.2/motioNO-1.0.0+1.15.jar",
-          "hash": "ff6d67115b3539ba09529fdb8d7a52e7c32738cb33691eb9abeb77d497a9fcc8c24369ba14a4eb15b66bdfdac0c4e43ae23c1f0065fe5cbe2bfacf0c9f964a14"
+          "version": "1.0.2+1.14-1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/motiono/1.14-1.16.1/motioNO-1.0.2+1.14-1.16.1.jar",
+          "hash": "8abbff61fcea50a083f7cf9ebff685686290d01fd58cf35b80e97a666957fcdf04e9494392d6c8924360140a29f2688a5e1a3fd41a99e85e05049096d024f61c"
+        },
+        {
+          "target_version": [
+            "1.8",
+            "1.8.1",
+            "1.8.2",
+            "1.8.3",
+            "1.8.4",
+            "1.8.5",
+            "1.8.6",
+            "1.8.7",
+            "1.8.8",
+            "1.8.9",
+            "1.9",
+            "1.9.1",
+            "1.9.2",
+            "1.9.3",
+            "1.9.4",
+            "1.10",
+            "1.10.1",
+            "1.10.2",
+            "1.11",
+            "1.11.1",
+            "1.11.2",
+            "1.12",
+            "1.12.1",
+            "1.12.2",
+            "1.13",
+            "1.13.1",
+            "1.13.2"
+          ],
+          "version": "1.0.0+1.8-1.13",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/motiono/1.8-1.13.2/legacy-motioNO-1.0.0+1.8-1.13.jar",
+          "hash": "c5658113cf71fa61f144842915db065c4c2b27c6bf458fdbe1c936c8bfbd2bb3ffb9cf3930e543e59fe731a8b09b1b4eaae70f28aafc3d0e9a43b509321cbfa2"
         }
       ],
       "recommended": true,
@@ -1134,89 +1326,106 @@
       ]
     },
     {
+      "modid": "no-paus",
+      "name": "No Paus",
+      "description": "Backports pause on lost focus disabling functionality from 12w34a to earlier versions",
+      "versions": [
+        {
+          "target_version": [
+            "1.3.1",
+            "1.3.2"
+          ],
+          "version": "1.0.1+1.3.1-1.4-alpha.12.32.a",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/no-paus/1.3.1-1.3.2/no-paus-1.0.1+1.3.1-1.4-alpha.12.32.a.jar",
+          "hash": "2a28792ef79f7298d6ba13c99b349f0df12bf65422144cd2d9dab97250646d6761775ca8c855e53261cd5279f8735ad89769f98c4cc5006cbb72dad4bb358f76"
+        }
+      ],
+      "recommended": true,
+      "traits": [
+      ],
+      "incompatibilities": [
+      ]
+    },
+    {
       "modid": "optifabric",
       "name": "Optifabric",
       "description": "Optifabric is a mod that loads optifine into fabric",
       "versions": [
         {
           "target_version": [
-            "1.9.4"
+            "1.3",
+            "1.3.1",
+            "1.3.2",
+            "1.4",
+            "1.4.1",
+            "1.4.2",
+            "1.4.3",
+            "1.4.4",
+            "1.4.5",
+            "1.4.6",
+            "1.4.7",
+            "1.5",
+            "1.5.1",
+            "1.5.2",
+            "1.6",
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4",
+            "1.7",
+            "1.7.1",
+            "1.7.2",
+            "1.7.3",
+            "1.7.4",
+            "1.7.5",
+            "1.7.6",
+            "1.7.7",
+            "1.7.8",
+            "1.7.9",
+            "1.7.10",
+            "1.8",
+            "1.8.1",
+            "1.8.2",
+            "1.8.3",
+            "1.8.4",
+            "1.8.5",
+            "1.8.6",
+            "1.8.7",
+            "1.8.8",
+            "1.8.9",
+            "1.9",
+            "1.9.1",
+            "1.9.2",
+            "1.9.3",
+            "1.9.4",
+            "1.10",
+            "1.10.1",
+            "1.10.2",
+            "1.11",
+            "1.11.1",
+            "1.11.2",
+            "1.12",
+            "1.12.1",
+            "1.12.2",
+            "1.13",
+            "1.13.1",
+            "1.13.2"
           ],
-          "version": "1.0.4+1.9.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.9.4/optifabric-1.0.4+1.9.4.jar",
-          "hash": "5b6aa19e353594a01b08c02d62370f61b3944e4b7c4426ce36ce249cf71d81898e4d01b626adb126350816251b74c0ca59aa3f9feaaf343d689d7726e503a617"
+          "version": "2.3.2+1.3-1.13.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.3-1.13.2/optifabric-2.3.2+1.3-1.13.2.jar",
+          "hash": "629ddfedc7d1afe6f1af5e3925ffa4065d770ab42d3706a272507bcb77b5d7eb3f63ca07887fff82be4ef2af3454fff3d33730478efbe212162efc0189a337e3"
         },
         {
           "target_version": [
-            "1.10.2"
-          ],
-          "version": "1.0.4+1.10.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.10.2/optifabric-1.0.4+1.10.2.jar",
-          "hash": "0419e2f1e85cd68b9fb1affafaa17aded7ef567d69e2e7a87f8bc505af9a32681c0ae29eacf4c3c90d4dec52057555c8ca6e4954230a0e0ab96860948078dc3a"
-        },
-        {
-          "target_version": [
-            "1.12.2"
-          ],
-          "version": "1.0.4+1.12.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.12.2/optifabric-1.0.4+1.12.2.jar",
-          "hash": "75a97dc3e257766e03d4ab5213a67b9a2b6646533f7220b9d9e9ae9a32342d98150947b9c703d9a33d12351213b7fc5bd53201581b43d57340a9cdb75d801a92"
-        },
-        {
-          "target_version": [
-            "1.8.9"
-          ],
-          "version": "1.0.5+1.8.9",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.8.9/optifabric-1.0.5+1.8.9.jar",
-          "hash": "d788ea894dd543c91214d8e08f21e52ea56c6253c80dcf3d3085fd4284bc690c4246de082091044c9120e6d77e97fa35cd3b79f06387c95866959a6ebe3ffd1b"
-        },
-        {
-          "target_version": [
-            "1.7.4"
-          ],
-          "version": "1.0.5+1.7.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.7.4/optifabric-1.0.5+1.7.4.jar",
-          "hash": "c44aa238785f96359c9916ef4fc5f52bbdeb82b21aa3da864e52feb95249fc7eafd6b5640bd3426d6ff3dd4aa003e24a07caea1a3e67d55e6882905eb92bdb35"
-        },
-        {
-          "target_version": [
+            "1.14",
+            "1.14.1",
+            "1.14.2",
+            "1.14.3",
             "1.14.4"
           ],
-          "version": "1.0.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.14.4/optifabric-origins-1.0.1-mc1.14.4.jar",
-          "hash": "643c5ac563bd5c027e03389051984ddfa7056e99551f1ec34814fc811a4c9ab920bae61914963e491de6699d898d52fde7311ae561855bf8cf25e85b061d2420"
-        },
-        {
-          "target_version": [
-            "1.7.2"
-          ],
-          "version": "1.0.5+1.7.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.7.2/optifabric-1.0.5+1.7.2.jar",
-          "hash": "22b9ac58e88755303cb365b160814b950433393a09fbf79a2c31bad5ebecd4c43542ef6f94fc828d36988665c8ea84b474ce66b1302ee14bde9b89f274ea3115"
-        },
-        {
-          "target_version": [
-            "1.7.10"
-          ],
-          "version": "1.0.5+1.7.10",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.7.10/optifabric-1.0.5+1.7.10.jar",
-          "hash": "91e838275f32d3627e0a11b527f35fe8679ca2fe2c09e97a0e896ccf2c39cc077b09a50d3cf218436b8824123ed6ea1b28e48bd6fef2b253f93851c280cb0e61"
-        },
-        {
-          "target_version": [
-            "1.8"
-          ],
-          "version": "1.0.5+1.8.0",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.8/optifabric-1.0.5+1.8.0.jar",
-          "hash": "7874e9f58f16a072e03d5f0cdc7a14b7408fdf8374d7e5df1c91c76ccd656efdce1c192c3bb9e191cea39787452098124ce2b5b22734acf0ca33fa79f83ae3f9"
-        },
-        {
-          "target_version": [
-            "1.11.2"
-          ],
-          "version": "1.0.4+1.11.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.11.2/optifabric-1.0.4+1.11.2.jar",
-          "hash": "dc6b474985a0a3ce02d4091a68acec59986a25a1fc522c0c804d4d64021ef4f224b8ba9e64d1cf4095a7d9e43a2846f8a49eedda2dea7d071d12c946a72887ba"
+          "version": "2.0.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/optifabric/1.14-1.14.4/optifabric-origins-2.0.1-mc1.14.4.jar",
+          "hash": "87ebe8993b46508467f7905a127e3013c26a69fb77d605eb01956f5e69c8794c6a1c69e74e2d1b8f55541d6e313e9159b0ad01bb427564d7bd693678ce321b69"
         }
       ],
       "recommended": true,
@@ -1312,34 +1521,16 @@
         },
         {
           "target_version": [
-            "1.15.2"
+            "1.18",
+            "1.18.1",
+            "1.18.2"
           ],
-          "version": "v2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.15.2/setspawnmod-1.15.2-v2.jar",
-          "hash": "96030c1f287387b00b08469b85f95b0482bc097b03ccc693fca5e4aeed960830aeeb902e7ddb0c36a757891f4c12556940006cf677d6b9a3d17c64cd557655e7"
+          "version": "1.0.0+1.18.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.18-1.18.2/set-spawn-1.0.0+1.18.x.jar",
+          "hash": "82b52ff99a297d33b8b7b8d71b9c4282b5c036a6db983b0da3a718bc3af185e64af412b9f8c1039dc7f3f8d348c6d99b20b49ac5ca7e5a372e16baa5dea5e52f"
         },
         {
           "target_version": [
-            "1.7.10"
-          ],
-          "version": "4.0.0",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.7.10/setspawn-1.7.10-4.0.0.jar",
-          "hash": "da61ca975d00141b34cdc3e948d2d3966f85ac6f24d630e9c3110c0efd834e468c85823ce18e698cbfa3005a47f0a9426ef09e7d775fe15278415027e4fb2c66"
-        },
-        {
-          "target_version": [
-            "1.16.1"
-          ],
-          "version": "v3",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.16.1/setspawnmod-1.16.1-v3.jar",
-          "hash": "ef86b49933725bd1e7d6fcca0c9306d6414edd03364a54c7c4fbba20fee5daaed27b4a5b2f6417051695a903ae86e09487b844f6486323922d7da374985375c7"
-        },
-        {
-          "target_version": [
-            "1.9",
-            "1.9.1",
-            "1.9.2",
-            "1.9.3",
             "1.9.4",
             "1.10",
             "1.10.1",
@@ -1352,8 +1543,85 @@
             "1.12.2"
           ],
           "version": "2.0.0",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.9-1.12.2/setspawnmod-1.9-1.12.2-2.0.0.jar",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.9.4-1.12.2/setspawnmod-1.9-1.12.2-2.0.0.jar",
           "hash": "119e325a38a4dfe56216bd6c23dc8bf25e7914622690e184e02163691294bb2a078602c4bbdb648d6ff2224ae4b3f9b56b20fdec95f3ebc6b7df774cb3e284d9"
+        },
+        {
+          "target_version": [
+            "1.3",
+            "1.3.1",
+            "1.3.2",
+            "1.4",
+            "1.4.1",
+            "1.4.2",
+            "1.4.3",
+            "1.4.4",
+            "1.4.5",
+            "1.4.6",
+            "1.4.7",
+            "1.5",
+            "1.5.1",
+            "1.5.2"
+          ],
+          "version": "1.0.0+1.3-1.5.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.3-1.5.2/setspawnmod-1.0.0+1.3-1.5.2.jar",
+          "hash": "ea3e78e8e9a1ed2d75e35055b6e11c927fbdece466b6b72ef0535057e62d7846b3aa2db5449b8e3f88f259c22179a15ba90570bcbdc497176a04ce10dde3fd98"
+        },
+        {
+          "target_version": [
+            "1.19",
+            "1.19.1",
+            "1.19.2",
+            "1.19.3",
+            "1.19.4",
+            "1.20",
+            "1.20.1",
+            "1.20.2",
+            "1.20.3",
+            "1.20.4"
+          ],
+          "version": "1.0.0+1.19-1.20.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.19-1.20.4/setspawnmod-1.0.0+1.19-1.20.4.jar",
+          "hash": "6d539063158aea091c7827c18e150cc2faa517b7767cce28558bd14a4f6f79f26409a6521ade96fd2e0020ae676d0859617544e37a7408352092eaf7d6ddb7b4"
+        },
+        {
+          "target_version": [
+            "1.7.10"
+          ],
+          "version": "4.0.0",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.7.10/setspawn-1.7.10-4.0.0.jar",
+          "hash": "da61ca975d00141b34cdc3e948d2d3966f85ac6f24d630e9c3110c0efd834e468c85823ce18e698cbfa3005a47f0a9426ef09e7d775fe15278415027e4fb2c66"
+        },
+        {
+          "target_version": [
+            "1.13.2"
+          ],
+          "version": "1.0.0+1.13.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.13.2/setspawnmod-1.0.0+1.13.x.jar",
+          "hash": "cabcd5175ddcde9df8a0990b8c7e7ba327de8b281c8d4281548448c6875890e4e7811713d96cdde14ebd6e3bfc547ec5cdbcefb1f745d2e9c00a6abe97fb89de"
+        },
+        {
+          "target_version": [
+            "1.14",
+            "1.14.1",
+            "1.14.2",
+            "1.14.3",
+            "1.14.4",
+            "1.15",
+            "1.15.1",
+            "1.15.2"
+          ],
+          "version": "3.0.0+1.14-1.15.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.14-1.15.2/setspawnmod-3.0.0+1.14-1.15.2.jar",
+          "hash": "62f731f7a2ed6931cb214387bbccc87c6a9e6939e482df46d999d86a43944f1dc7b58872a96a0dfd022b2ee6e889f2fecd27196b26073478b5b6cb034fbd79f7"
+        },
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "v3",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/setspawnmod/1.16.1/setspawnmod-1.16.1-v3.jar",
+          "hash": "ef86b49933725bd1e7d6fcca0c9306d6414edd03364a54c7c4fbba20fee5daaed27b4a5b2f6417051695a903ae86e09487b844f6486323922d7da374985375c7"
         },
         {
           "target_version": [
@@ -1396,18 +1664,6 @@
       "versions": [
         {
           "target_version": [
-            "1.19",
-            "1.19.1",
-            "1.19.2",
-            "1.19.3",
-            "1.19.4"
-          ],
-          "version": "3.8-1.19.x",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.19-1.19.4/sleepbackground-3.8-1.19.x.jar",
-          "hash": "1677569d340a60b5f76be9fe16fcdea6530c8945f348f6801db4841cca9eff1a957a51ccc3ebbc2aee3040e24029aefc94fbaa7f0fa3add0cd253805ff32f9e0"
-        },
-        {
-          "target_version": [
             "1.7",
             "1.7.1",
             "1.7.2",
@@ -1423,6 +1679,19 @@
           "version": "3.8-1.7.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.7-1.7.10/sleepbackground-3.8-1.7.x.jar",
           "hash": "8775d5f78d850195e3ce6014b135efae941a14b824b26996fbd3a125fa4ff845900b1c17ebb0b412fd04fb0b97aaab8ec0569276af4b0d063750ba29a005d9f7"
+        },
+        {
+          "target_version": [
+            "1.18.2",
+            "1.19",
+            "1.19.1",
+            "1.19.2",
+            "1.19.3",
+            "1.19.4"
+          ],
+          "version": "3.9-1.18.2-1.19.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.18.2-1.19.4/sleepbackground-3.9-1.18.2-1.19.x.jar",
+          "hash": "ebe0c638eabc0b7ca378f478ea63d4a768df4bf65f027ec2d0013f226a8388b43b467dd83241424cee6c51ccd1f875beaf7d0ed61c3bdf834a91b45ca7b34972"
         },
         {
           "target_version": [
@@ -1457,35 +1726,15 @@
         },
         {
           "target_version": [
-            "1.14",
-            "1.14.1",
-            "1.14.2",
-            "1.14.3",
-            "1.14.4"
+            "1.20",
+            "1.20.1",
+            "1.20.2",
+            "1.20.3",
+            "1.20.4"
           ],
-          "version": "3.8-1.14.x",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.14-1.14.4/sleepbackground-3.8-1.14.x.jar",
-          "hash": "4ced80364c24b5fddea927d6887a106f4f18857d7531cbab7769aa06217c0aba1391823f72559d49290cffaabec048b0494cb1f1a1c3715279dde77d1977362b"
-        },
-        {
-          "target_version": [
-            "1.13",
-            "1.13.1",
-            "1.13.2"
-          ],
-          "version": "3.8-1.13.x",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.13-1.13.2/sleepbackground-3.8-1.13.x.jar",
-          "hash": "e61bda6e024fbbff3bdeeba20a33e0caf6384e42cbbe4c010835033f0ec1f84c1f948a0816258a2702ca21572598d9dfba7edf3aea6c9c3e7a30978ab92039d0"
-        },
-        {
-          "target_version": [
-            "1.15",
-            "1.15.1",
-            "1.15.2"
-          ],
-          "version": "3.8-1.15.x",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.15-1.15.2/sleepbackground-3.8-1.15.x.jar",
-          "hash": "481bf29e3704231bd3142f4b25a28d981324355f16ec89c75366b959e4e668be352e819bf82b1f6670c4f78f77cb2bd2c28836ddd7e331474ecb57f427f05b6f"
+          "version": "3.9-1.20.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.20-1.20.4/sleepbackground-3.9-1.20.x.jar",
+          "hash": "e9221455083b9b25b797449c2580f7e172572eba8d8982b45446f4a25f27743e2042baca99367c7fd1ff5e1fbc0d1e4f45313bf4fc90309c87c63773bf6e73f2"
         },
         {
           "target_version": [
@@ -1498,12 +1747,41 @@
             "1.17",
             "1.17.1",
             "1.18",
-            "1.18.1",
-            "1.18.2"
+            "1.18.1"
           ],
-          "version": "3.8-1.16.x-1.18.x",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.16-1.18.2/sleepbackground-3.8-1.16.x-1.18.x.jar",
-          "hash": "47a1e03c14ecd0938ef61568b1a3ef95859aa092c43ef3c90f30e27c72bf46907365ea4278589dce4ea808ffcacf4bca0284d7dff17b6591246a0b1d73a2eb02"
+          "version": "3.9-1.16.x-1.18.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.16-1.18.1/sleepbackground-3.9-1.16.x-1.18.1.jar",
+          "hash": "870a471fd325e0b8cdb1bfa8e9b247c2ea5e91b85010b3baa2aa13243cd0e8e74569058eb6ebe891597792f98c44c2cf1bb5d51d0f6c8eaf5335fabaa3ec1211"
+        },
+        {
+          "target_version": [
+            "1.14",
+            "1.14.1",
+            "1.14.2",
+            "1.14.3",
+            "1.14.4"
+          ],
+          "version": "3.9-1.14.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.14-1.14.4/sleepbackground-3.9-1.14.x.jar",
+          "hash": "e4b731aa988261d47a178ddccac2733db6dd38e1480ae5e908f7e076b10c457d8a781a7abaf1a840523fe9564e54b00f9861e17319bfa149351879482a97b4a1"
+        },
+        {
+          "target_version": [
+            "1.13.2"
+          ],
+          "version": "3.8-1.13.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.13.2/sleepbackground-3.8-1.13.x.jar",
+          "hash": "e61bda6e024fbbff3bdeeba20a33e0caf6384e42cbbe4c010835033f0ec1f84c1f948a0816258a2702ca21572598d9dfba7edf3aea6c9c3e7a30978ab92039d0"
+        },
+        {
+          "target_version": [
+            "1.15",
+            "1.15.1",
+            "1.15.2"
+          ],
+          "version": "3.9-1.15.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sleepbackground/1.15-1.15.2/sleepbackground-3.9-1.15.x.jar",
+          "hash": "ee9e86f9036d18fcfbaef3db62e7bdfad0d0fcfa12dff6ff53360ef814445ab084dfcde7320eee208f35f382eafbab5782c8798aeffdb8adda9191db8852e747"
         }
       ],
       "recommended": true,
@@ -1538,9 +1816,9 @@
           "target_version": [
             "1.15.2"
           ],
-          "version": "v1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sodium/1.15.2/sodium-1.15.2-v1.jar",
-          "hash": "c8a2544666e0a5e26b02c9ac1cfde3589bd71dfdba5d9b96e8c545ba52657e26b75792e4e6dda24bd21221de6ae74347c00a1581199b19b86a1a5acbac3bbb5d"
+          "version": "1.1.1+1.15.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sodium/1.15.2/sodium-1.1.1+1.15.2.jar",
+          "hash": "2217a07573f22ba0c7821d2e706072c55e48ab5000ac4110f95e2ec272d9ea17231cb4ecc063e6711f12c9fc3040f6d2cad4d980fe5032005a26352a6c2a3b74"
         },
         {
           "target_version": [
@@ -1628,9 +1906,9 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "v2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sodium/1.16.1/sodium-1.16.1-v2.jar",
-          "hash": "2e7ea82484b4012636278539bfb97620c74973c664e005376d3def3d875794ab23b4e3b67e86005633e1c22ac03f17859cbd39129ff2d025432950891944fbca"
+          "version": "2.0.2+1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sodium/1.16.1/sodium-2.0.2+1.16.1.jar",
+          "hash": "27a4a47273097a826510a64d669343abb78eb3ad753e67cb0d8fd97eec206fa5f1d8c2beb05aa3f2aaa8dc9dd2375746afb961d2d59351485de24dcedbaea5dc"
         }
       ],
       "recommended": true,
@@ -1641,16 +1919,16 @@
     },
     {
       "modid": "sodiummac",
-      "name": "Sodium 1.16.1",
+      "name": "Sodium Mac 1.16.1",
       "description": "Sodium is a free and open-source optimization mod for Minecraft which improves frame rates and reduces lag spikes. \nThis is an unofficial backport of JellySquid's original mod.",
       "versions": [
         {
           "target_version": [
             "1.16.1"
           ],
-          "version": "v3",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sodiummac/1.16.1/sodiummac-1.16.1-v3.jar",
-          "hash": "527d6ec3717221399ae50827387dc2cbc5bc42306c6a7a76d32ee959310206ae977802e1cd61af2050543ce961b567e91ab801001a7a5374690a654f58182573"
+          "version": "3.0.1+1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/sodiummac/1.16.1/sodiummac-3.0.1+1.16.1.jar",
+          "hash": "4fcda3ef2575e89239ec9ce144c71b6eac3075ef2ffff84b63f6041dcfd5185080a318304af2db0a7966cb7976e4c1926cc289de3c4c8496871aeea400955412"
         }
       ],
       "recommended": true,
@@ -2084,9 +2362,19 @@
             "1.17",
             "1.17.1"
           ],
-          "version": "1.0.0+fabric.73f6d37",
-          "url": "https://cdn.modrinth.com/data/H8CaAYZC/versions/Starlight%201.0.0%201.17.x/starlight-1.0.0%2Bfabric.73f6d37.jar",
-          "hash": "e2308963e019f030b804e787f9996044e12a63436754def273b79063b1ba3c99dc7311acbe99edab9dab290da97a75ac67e99715f485bc04d9e13e75a6a6644e"
+          "version": "1.0.1+1.17.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/starlight/1.17-1.17.1/starlight-1.0.1+1.17.1.jar",
+          "hash": "949d444a2d97412849adc7736fb057299262a28b2151b255f060e670a190def160613a57bec1b8a4c8b254a2df12da32fdeb1d4cce5fd28d957e9360d52800de"
+        },
+        {
+          "target_version": [
+            "1.14.2",
+            "1.14.3",
+            "1.14.4"
+          ],
+          "version": "1.0.0",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/starlight/1.14.2-1.14.4/starlight-1.14.4-1.0.0.jar",
+          "hash": "2a420099641e01c211f170dbad9cb869c35002d4cd23e6ea257c2225c2b0f231e4d70b772216b1a74a9cb16e6c25af4c5e8dbf92cb94ed591b6e4884f36b3685"
         }
       ],
       "recommended": true,
@@ -2094,6 +2382,151 @@
       ],
       "incompatibilities": [
         "phosphor"
+      ]
+    },
+    {
+      "modid": "state-output",
+      "name": "State Output",
+      "description": "World Preview state file functionality but without World Preview",
+      "versions": [
+        {
+          "target_version": [
+            "1.18",
+            "1.18.1",
+            "1.18.2",
+            "1.19",
+            "1.19.1",
+            "1.19.2",
+            "1.19.3",
+            "1.19.4",
+            "1.20",
+            "1.20.1",
+            "1.20.2",
+            "1.20.3",
+            "1.20.4"
+          ],
+          "version": "1.1.5+1.18-1.20.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/state-output/1.18-1.20.4/state-output-1.1.5+1.18-1.20.4.jar",
+          "hash": "ea791d6051213d44177f6a99f1c86b8cd27dba9f6ee28774b287d1f5d07dba9d7db029b0ed9b45f847990ce452a6ccd3d1dfe6e8aa13c12fb1b7746f25af2de7"
+        },
+        {
+          "target_version": [
+            "1.3",
+            "1.3.1",
+            "1.3.2",
+            "1.4",
+            "1.4.1",
+            "1.4.2",
+            "1.4.3",
+            "1.4.4",
+            "1.4.5",
+            "1.4.6",
+            "1.4.7",
+            "1.5",
+            "1.5.1",
+            "1.5.2"
+          ],
+          "version": "1.1.5+1.3-1.5.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/state-output/1.3-1.5.2/state-output-1.1.5+1.3-1.5.2.jar",
+          "hash": "3dc6831c68d0a87b5a578beb28132b51d1fadbfbb52d0a715bc1659a39a89522a66b442ba722fee00a0296b7d1a55a1db816b5f8979b4ae379fdd6695eead80f"
+        },
+        {
+          "target_version": [
+            "1.8",
+            "1.8.1",
+            "1.8.2",
+            "1.8.3",
+            "1.8.4",
+            "1.8.5",
+            "1.8.6",
+            "1.8.7",
+            "1.8.8",
+            "1.8.9",
+            "1.9",
+            "1.9.1",
+            "1.9.2",
+            "1.9.3",
+            "1.9.4",
+            "1.10",
+            "1.10.1",
+            "1.10.2",
+            "1.11",
+            "1.11.1",
+            "1.11.2",
+            "1.12",
+            "1.12.1",
+            "1.12.2"
+          ],
+          "version": "1.1.5+1.8-1.12.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/state-output/1.8-1.12.2/state-output-1.1.5+1.8-1.12.2.jar",
+          "hash": "54c564c0e93c6322e5fdac7c6b2074231435727ccd785342ec99e2f895a169000f7158697f8d43a4d6231bd0de4a88dcbd3296c05633c6374d1d3bb6a5d41f86"
+        },
+        {
+          "target_version": [
+            "1.6",
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4",
+            "1.7",
+            "1.7.1",
+            "1.7.2",
+            "1.7.3",
+            "1.7.4",
+            "1.7.5",
+            "1.7.6",
+            "1.7.7",
+            "1.7.8",
+            "1.7.9",
+            "1.7.10"
+          ],
+          "version": "1.1.5+1.6-1.7.10",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/state-output/1.6-1.7.10/state-output-1.1.5+1.6-1.7.10.jar",
+          "hash": "eb81776cc7c23ad88c4fee82a3f2bc1e94093545538e6aa1ba2b8c472bf13a7f691f159a10c31c5f560a2c8dc44e5d6e0023fd88af80b65fefacb79d7470fd96"
+        },
+        {
+          "target_version": [
+            "1.13.2"
+          ],
+          "version": "1.1.5+1.13.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/state-output/1.13.2/state-output-1.1.5+1.13.2.jar",
+          "hash": "3135fa789a533111d10216b388ef88af2566efe54e9e234ce1ac3bc784c9337c7f8f772fd3df4176b854d8480f33c7b6bd1b5e9cbfa920118309b46f20aca049"
+        },
+        {
+          "target_version": [
+            "1.16",
+            "1.16.1",
+            "1.16.2",
+            "1.16.3",
+            "1.16.4",
+            "1.16.5",
+            "1.17",
+            "1.17.1"
+          ],
+          "version": "1.1.5+1.16-1.17.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/state-output/1.16-1.17.1/state-output-1.1.5+1.16-1.17.1.jar",
+          "hash": "5aeb14c865db2a92cf0dca2b8070a7d23b65fcbca8373f7950255d88d855d3e65272be684a5a9bc8b6136ce4d35d406d4897e30ea2308edac9d17144ef33fed4"
+        },
+        {
+          "target_version": [
+            "1.14",
+            "1.14.1",
+            "1.14.2",
+            "1.14.3",
+            "1.14.4",
+            "1.15",
+            "1.15.1",
+            "1.15.2"
+          ],
+          "version": "1.1.5+1.14-1.15.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/state-output/1.14-1.15.2/state-output-1.1.5+1.14-1.15.2.jar",
+          "hash": "eaca4cf5412b697e7f88361bcf4bd5db0676d21f4e3e3b62a2b25a9bcb0b25fc9743375322f3ec763f31a78d0be5338a96ac44b3ea6d73816579945dd32d2ad9"
+        }
+      ],
+      "recommended": true,
+      "traits": [
+      ],
+      "incompatibilities": [
       ]
     },
     {
@@ -2130,9 +2563,9 @@
             "1.5.1",
             "1.5.2"
           ],
-          "version": "1.1+1.3.x-1.5.x",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/statsperworld/1.3-1.5.2/StatsPerWorld-1.1+1.3.x-1.5.x.jar",
-          "hash": "302b56caa636e3b444dd856d6c3b00d396a40b522cdb72218542f339db9b05fe69123d0b1f32be3f31c1714625a9e559ea4856e0a5219bc51dd08fcfa9161cf5"
+          "version": "1.2+1.3.x-1.5.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/statsperworld/1.3-1.5.2/StatsPerReset-1.2+1.3.x-1.5.x.jar",
+          "hash": "f9324c60239cbed2c4d71222e844cb076e794ddf4072a5f1165dbc1cc5919a8d6a9604e08b126ed0950b1d62739706e750e6a3a3ad3628f02ec618cb47f8f76c"
         }
       ],
       "recommended": true,
@@ -2243,7 +2676,7 @@
     {
       "modid": "voyager",
       "name": "Voyager",
-      "description": "Take a voyage into modern java versions. (Fixes a rare CME in StructureManager when using java 11+)",
+      "description": "Take a voyage into modern java versions. (Fixes (MC-149777), a rare ConcurrentModificationException in StructureManager, when using a Java Runtime Environment of 11 or above)",
       "versions": [
         {
           "target_version": [
@@ -2262,9 +2695,9 @@
             "1.16.4",
             "1.16.5"
           ],
-          "version": "1.0.0",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/voyager/1.14-1.16.5/voyager-1.0.0.jar",
-          "hash": "e1bc52229944d8cd608d27d9f1e77aa4be968bf9fb61838e048d8202887a1e1d692e77fe72e978d3ecc6095ac76f91b46a9e9b77756ab96f470dcc9767df6480"
+          "version": "1.0.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/voyager/1.14-1.16.5/voyager-1.0.1.jar",
+          "hash": "7af0abc76408cf67dbc3d59a153dad16904cc93a9078aaa8b68e8ee2baf49ea40587e6ec0af0152b0b5195254d28445368e7ec2f9344676a5b3b8e85db3b75f0"
         }
       ],
       "recommended": true,
@@ -2298,9 +2731,9 @@
           "target_version": [
             "1.15.2"
           ],
-          "version": "4.0.1+1.15.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/worldpreview/1.15.2/worldpreview-4.0.1+1.15.2.jar",
-          "hash": "cfd7b18d929a7e7d868d20670c98f0450d2b00e1593817b665c09f7fb414e56b3aef169a5b6e5a0176b2a5ec27c3232bd672759179279b0790b94c159d41a3d8"
+          "version": "5.0.0+1.15.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/worldpreview/1.15.2/worldpreview-5.0.0+1.15.2.jar",
+          "hash": "6faedb60fa8f9155fb468eec03d002d36b8461ff1cde66febfd727d3e94318ceeb3a97c12956c48941fe999d5f29855dc1472ed3b59698f0f473afc6f575346e"
         },
         {
           "target_version": [
@@ -2322,9 +2755,9 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "4.0.2+1.16.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/worldpreview/1.16.1/worldpreview-4.0.2+1.16.1.jar",
-          "hash": "b7dadc5ca5fb0e1e66b1121552b234a95dda3ca76ae6a407f20e3a92c9c9ffae4f0d684d2ec251cbc9e5e69f845333e9d7c00b025c5c6ba77cf26dd019cb3215"
+          "version": "5.0.0+1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/legal-mods/worldpreview/1.16.1/worldpreview-5.0.0+1.16.1.jar",
+          "hash": "2b718f2a12f5a22bc9eca1918a7ba689409c67461c213fc35e5e864592d820edd9cc25d39e1f35bfadffd584fbede283220ac978fe1dad8aa7fd10791b62b03b"
         }
       ],
       "recommended": true,
