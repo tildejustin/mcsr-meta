@@ -10,8 +10,8 @@ import java.nio.file.*
 import java.security.MessageDigest
 import kotlin.io.path.*
 
-// val legalModsPath: Path = Path.of("/home/justin/PycharmProjects/legal-mods/legal-mods")
-val legalModsPath: Path = Path.of("legal-mods/legal-mods")
+val legalModsPath: Path = Path.of("/home/justin/PycharmProjects/legal-mods/legal-mods")
+// val legalModsPath: Path = Path.of("legal-mods/legal-mods")
 val tempDir: Path = Path.of("temp")
 lateinit var nameReplacements: HashMap<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
@@ -19,12 +19,13 @@ lateinit var minecraftVersions: List<String>
 lateinit var modIncompatibilities: List<List<String>>
 lateinit var unrecommendedMods: List<String>
 // lateinit var recommendationOverrides: Map<String, List<String>>
+val gitId = Git.open(legalModsPath.parent.toFile()).log().setMaxCount(1).call().first().name
 
 // modid -> list of conditions
 val conditions = readConditions()
 
 // good for testing out quick changes
-const val noReload = false
+const val noReload = true
 
 fun main() {
     readAdditionalData()
@@ -40,7 +41,11 @@ fun main() {
         Files.list(modid).forEach {
             modVersions.add(generateModVersion(it))
         }
-        mods.add(generateMod(modid, modVersions))
+        mods.add(generateMod(modid, modVersions.stream().sorted { s1, s2 ->
+            if (s2.target_version.last().contains("+")) return@sorted 1
+            else if (s1.target_version.last().contains("+")) return@sorted -1
+            return@sorted Version.parse(s2.target_version.last().split("-")[0], false).compareTo(Version.parse(s1.target_version.last().split("-")[0], false))
+        }.toList()))
     }
     Path.of("mods.json").writeText(json.encodeToString(Meta(5, mods.sortedBy { it.modid })))
 }
@@ -57,7 +62,7 @@ data class AdditionalData(
 )
 
 fun readAdditionalData() {
-    val additionalMetadata = Json.decodeFromString<AdditionalData>(Path.of("data.json").readText())
+    val additionalMetadata = json.decodeFromString<AdditionalData>(Path.of("data.json").readText())
     val versions = additionalMetadata.max_versions.map { maxVersion ->
         val minor = maxVersion.substring(0, maxVersion.lastIndexOf("."))
         val maxPatch = maxVersion.split(".").last().toInt()
@@ -106,7 +111,7 @@ fun generateModVersion(folder: Path): Meta.ModVersion {
         modUrl = url
     } else {
         // remove first legal-mods git folder
-        modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/main/${modFile.subpath(modFile.count() - 4, modFile.count())}"
+        modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/${gitId}/${modFile.subpath(modFile.count() - 4, modFile.count())}"
     }
     val range = createSemverRangeFromFolderName(folder.name)
     val info = readFabricModJson(modFile)

@@ -10,6 +10,13 @@
     "antigone": "Fixes a rare server deadlock in Minecraft 1.16.1",
     "phosphor": "No-compromises lighting engine optimization mod"
   },
+  "sources": {
+    "anchiale": "",
+    "antigone": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-antigone-1.16.1",
+    "antiresourcereload": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
+    "atum": "https://github.com/tildejustin/atum",
+    "biomethreadlocalfix": "https://github.com/RedLime/BiomeThreadLocalFix"
+  },
   "names": {
     "optifabric": "Optifabric",
     "setspawnmod": "Set Spawn"
