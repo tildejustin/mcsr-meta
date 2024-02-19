@@ -10,6 +10,7 @@ import java.nio.file.*
 import java.security.MessageDigest
 import kotlin.io.path.*
 
+// checkout staging locally
 val legalModsPath: Path = Path.of("/home/justin/PycharmProjects/legal-mods/legal-mods")
 // val legalModsPath: Path = Path.of("legal-mods/legal-mods")
 val tempDir: Path = Path.of("temp")
