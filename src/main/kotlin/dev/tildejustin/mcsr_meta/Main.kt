@@ -19,7 +19,6 @@ lateinit var minecraftVersions: List<String>
 lateinit var modIncompatibilities: List<List<String>>
 lateinit var unrecommendedMods: List<String>
 // lateinit var recommendationOverrides: Map<String, List<String>>
-val gitId: String = Git.open(legalModsPath.parent.toFile()).log().setMaxCount(1).call().first().name
 
 // modid -> list of conditions
 val conditions = readConditions()
@@ -35,11 +34,12 @@ fun main() {
     if (!noReload) {
         deleteAndRecloneLegalMods()
     }
+    val gitId = Git.open(legalModsPath.parent.toFile()).log().setMaxCount(1).call().first().name
     val mods = ArrayList<Meta.Mod>()
     Files.list(legalModsPath).forEach { modid ->
         val modVersions = ArrayList<Meta.ModVersion>()
         Files.list(modid).forEach {
-            modVersions.add(generateModVersion(it))
+            modVersions.add(generateModVersion(it, gitId))
         }
         mods.add(generateMod(modid, modVersions.stream().sorted { s1, s2 ->
             if (s2.target_version.last().contains("+")) return@sorted 1
@@ -102,7 +102,7 @@ fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
         modIncompatibilities.filter { it.contains(modFolder.name) }.flatten().filter { it != modFolder.name })
 }
 
-fun generateModVersion(folder: Path): Meta.ModVersion {
+fun generateModVersion(folder: Path, gitId: String): Meta.ModVersion {
     var modFile = Files.list(folder).findFirst().get()
     val modUrl: String
     if (modFile.extension == "json") {
