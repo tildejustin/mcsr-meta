@@ -21,19 +21,20 @@ lateinit var unrecommendedMods: List<String>
 // lateinit var recommendationOverrides: Map<String, List<String>>
 
 // modid -> list of conditions
-val conditions = readConditions()
+lateinit var conditions: HashMap<String, MutableList<String>>
 
 // good for testing out quick changes
 const val noReload = false
 
 fun main() {
-    readAdditionalData()
     // place to store downloaded mods
     if (!Files.exists(tempDir)) Files.createDirectory(tempDir)
     // TODO: progress logging
     if (!noReload) {
         deleteAndRecloneLegalMods()
     }
+    conditions = readConditions()
+    readAdditionalData()
     val gitId = Git.open(legalModsPath.parent.toFile()).log().setMaxCount(1).call().first().name
     val mods = ArrayList<Meta.Mod>()
     Files.list(legalModsPath).forEach { modid ->
@@ -42,9 +43,9 @@ fun main() {
             modVersions.add(generateModVersion(it, gitId))
         }
         mods.add(generateMod(modid, modVersions.stream().sorted { s1, s2 ->
-            if (s2.target_version.last().contains("+")) return@sorted 1
-            else if (s1.target_version.last().contains("+")) return@sorted -1
-            return@sorted Version.parse(s2.target_version.last().split("-")[0], false).compareTo(Version.parse(s1.target_version.last().split("-")[0], false))
+            if (s2.target_version.first().contains("+")) return@sorted 1
+            else if (s1.target_version.first().contains("+")) return@sorted -1
+            return@sorted Version.parse(s2.target_version.first().split("-")[0], false).compareTo(Version.parse(s1.target_version.first().split("-")[0], false))
         }.toList()))
     }
     Path.of("mods.json").writeText(json.encodeToString(Meta(5, mods.sortedBy { it.modid })))
@@ -65,6 +66,8 @@ fun readAdditionalData() {
     val additionalMetadata = json.decodeFromString<AdditionalData>(Path.of("data.json").readText())
     val versions = additionalMetadata.max_versions.map { maxVersion ->
         val minor = maxVersion.substring(0, maxVersion.lastIndexOf("."))
+        // legacy fabric only has 1.19.4, 1.10.2, 1.11.2, 1.12.2, and 1.13.2 for production intermediaries rn
+        if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion);
         val maxPatch = maxVersion.split(".").last().toInt()
         val intermediateVersions = (1..maxPatch).map { "$minor.$it" }
         intermediateVersions.addFirst(minor)
@@ -111,7 +114,7 @@ fun generateModVersion(folder: Path, gitId: String): Meta.ModVersion {
         modUrl = url
     } else {
         // remove first legal-mods git folder
-        modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/${gitId}/${modFile.subpath(modFile.count() - 4, modFile.count())}"
+        modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/${gitId}/${modFile.subpath(modFile.count() - 4, modFile.count()).toString().replace("\\", "/")}"
     }
     val range = createSemverRangeFromFolderName(folder.name)
     val info = readFabricModJson(modFile)
