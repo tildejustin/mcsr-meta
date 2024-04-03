@@ -9,6 +9,7 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
         val modid: String,
         val name: String,
         val description: String,
+        val sources: String,
         val versions: List<ModVersion>,
         val recommended: Boolean,
         val traits: List<String>,

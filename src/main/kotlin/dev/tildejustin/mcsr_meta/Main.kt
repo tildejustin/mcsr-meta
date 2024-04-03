@@ -19,6 +19,7 @@ lateinit var replacementDescriptions: HashMap<String, String>
 lateinit var minecraftVersions: List<String>
 lateinit var modIncompatibilities: List<List<String>>
 lateinit var unrecommendedMods: List<String>
+lateinit var sources: HashMap<String, String>
 // lateinit var recommendationOverrides: Map<String, List<String>>
 
 // modid -> list of conditions
@@ -56,6 +57,7 @@ fun main() {
 data class AdditionalData(
     val names: HashMap<String, String>,
     val descriptions: HashMap<String, String>,
+    val sources: HashMap<String, String>,
     val max_versions: List<String>,
     val not_recommended: List<String>,
     val incompatibilities: List<List<String>>,
@@ -83,6 +85,7 @@ fun readAdditionalData() {
     //     additionalMetadata.recommendation_overrides[entry.key] = entry.value.map { createSemverRangeFromFolderName(it) }.flatten()
     // }
     modIncompatibilities = additionalMetadata.incompatibilities
+    sources = additionalMetadata.sources
     // recommendationOverrides = additionalMetadata.recommendation_overrides
     additionalMetadata.extra_traits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
 }
@@ -100,6 +103,7 @@ fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
     return Meta.Mod(modFolder.name,
         newestModInfo.name,
         newestModInfo.description,
+        sources[modFolder.name]!!,
         versions,
         modFolder.name !in unrecommendedMods,
         conditions.getOrDefault(modFolder.name, emptyList()),
