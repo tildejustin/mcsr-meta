@@ -11,14 +11,12 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
-    implementation("org.eclipse.jgit:org.eclipse.jgit:6.8.0.202311291450-r")
+    // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-json
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
+    implementation("org.eclipse.jgit:org.eclipse.jgit:6.9.0.202403050737-r")
+    // https://mvnrepository.com/artifact/io.github.z4kn4fein/semver
     implementation("io.github.z4kn4fein:semver:1.4.2")
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-}
-
-tasks.test {
-    useJUnitPlatform()
 }
 
 kotlin {
