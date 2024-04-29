@@ -5,6 +5,7 @@ import io.github.z4kn4fein.semver.Version
 import kotlinx.serialization.*
 import kotlinx.serialization.json.Json
 import org.eclipse.jgit.api.Git
+import org.eclipse.jgit.lib.TextProgressMonitor
 import java.net.URI
 import java.nio.file.*
 import java.security.MessageDigest
@@ -69,7 +70,7 @@ fun readAdditionalData() {
         // legacy fabric only has 1.19.4, 1.10.2, 1.11.2, 1.12.2, and 1.13.2 for production intermediaries rn
         if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion);
         val maxPatch = maxVersion.split(".").last().toInt()
-        val intermediateVersions = (1..maxPatch).map { "$minor.$it" }
+        val intermediateVersions = (1..maxPatch).map { "$minor.$it" } as ArrayList
         intermediateVersions.addFirst(minor)
         return@map intermediateVersions
     }.flatten()
@@ -197,7 +198,7 @@ fun createSemverRangeFromFolderName(folder: String): List<String> {
 // clear old repo and re-clone it
 fun deleteAndRecloneLegalMods() {
     Path.of("legal-mods").toFile().deleteRecursively()
-    Git.cloneRepository().setURI("https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods").setDepth(1).call()
+    Git.cloneRepository().setURI("https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods").setDepth(1).setProgressMonitor(TextProgressMonitor()).call()
 }
 
 fun ByteArray.toHex() = joinToString("") { byte -> "%02x".format(byte) }
