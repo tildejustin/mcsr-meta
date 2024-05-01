@@ -165,7 +165,7 @@ fun readFabricModJson(mod: Path): FabricModJson {
 }
 
 fun readConditions(): HashMap<String, MutableList<String>> {
-    val fileData = Json.decodeFromString<HashMap<String, List<String>>>(Path.of("legal-mods/conditional-mods.json").readText())
+    val fileData = Json.decodeFromString<HashMap<String, List<String>>>(legalModsPath.parent.resolve("conditional-mods.json").readText())
     val map = HashMap<String, MutableList<String>>()
     fileData.forEach { entry ->
         entry.value.forEach {
