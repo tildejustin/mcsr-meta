@@ -522,7 +522,7 @@
           "hash": "5140ce6bbdac233d7b19c4645b77c1f6d51ebb8ba7789f74c41187c34a587423cfd34ad063d9a6fc53654db2b716e708a076167cb01cb41e57941ebef78ee208"
         }
       ],
-      "recommended": false,
+      "recommended": true,
       "traits": [],
       "incompatibilities": [
         "sleepbackground"
@@ -593,7 +593,7 @@
           "hash": "30205c81acacd785a29afa6211a968b05f3d4c468566f5dc49635b83141bfbf423320727e1ba1b1c489d5581bce9799e33979d7c2ded6324b6b65dfc8567044c"
         }
       ],
-      "recommended": true,
+      "recommended": false,
       "traits": [],
       "incompatibilities": []
     },

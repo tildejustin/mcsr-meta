@@ -38,7 +38,7 @@
     "phosphor",
     "standardsettings",
     "extra-options",
-    "dynamicfps"
+    "dynamicmenufps"
   ],
   "recommendation_overrides": {
     "dynamicfps": [
