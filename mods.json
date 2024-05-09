@@ -583,7 +583,9 @@
       ],
       "recommended": false,
       "traits": [],
-      "incompatibilities": []
+      "incompatibilities": [
+        "sleepbackground"
+      ]
     },
     {
       "modid": "extra-options",
@@ -1963,7 +1965,7 @@
       "recommended": true,
       "traits": [],
       "incompatibilities": [
-        "dynamicfps"
+        "dynamicmenufps"
       ]
     },
     {
