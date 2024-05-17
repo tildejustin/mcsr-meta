@@ -5,6 +5,7 @@
       "modid": "anchiale",
       "name": "Anchiale",
       "description": "Adds a faster way to exit worlds in 1.8. Use the menu.quitWorld button to exit the current world without waiting for the server tasks queue to complete.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-anchiale-1.8-1.8.9",
       "versions": [
         {
           "target_version": [
@@ -23,15 +24,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/anchiale/1.8-1.8.9/anchiale-1.8.9-3.0.0.jar",
           "hash": "0e7c8ea53afde43089bc0ee1c9f97bf39df7a88812a8d396956b76d727eb8403e45db6ba49735f02fc4e317e9f9af1e2baa5e327ada74c596de14d6e495cb711"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "antigone",
       "name": "antigone",
       "description": "Fixes a rare server deadlock in Minecraft 1.16.1",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-antigone-1.16.1",
       "versions": [
         {
           "target_version": [
@@ -41,15 +40,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/antigone/1.16.1/antigone-1.16.1-2.0.0.jar",
           "hash": "b385e7615c644c0f354b85409f95c137413483796057a0755b4f2677b8acf3eb0dda8c55d7fb4358dd5e3c44f28c63816c787336b54ac3759ca8424bfc108493"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "antiresourcereload",
       "name": "AntiResourceReload",
       "description": "Disables the monitored reload upon world creation.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
       "versions": [
         {
           "target_version": [
@@ -104,15 +101,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/antiresourcereload/1.14-1.14.4/antiresourcereload-4.0.2+1.14.4.jar",
           "hash": "523cb2ebcf4cb384477458e4b44a276ff8fb767f891d46f2100a82499eb284f704184ba6fcc42be5fef890d972de02274814bc6370f76a04530e6015f91f66f9"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "atum",
       "name": "Atum",
       "description": "Mod to automatically reset RSG and SSG",
+      "sources": "https://github.com/tildejustin/atum",
       "versions": [
         {
           "target_version": [
@@ -285,15 +280,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/atum/1.6.4/atum-1.2.2+1.6.4.jar",
           "hash": "bb6f48ebbb1afb3b5b0d6350eba77a53ae0ac0fcc3626ac9d5c2162d187fbb73e1aaec3066858dd683612ebfd61cb8d167efdf70b5bde150d3b62804c4d17f1a"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "biomethreadlocalfix",
       "name": "BiomeThreadLocalFix",
       "description": "Fix Minecraft Biome ThreadLocal Memory leak issue",
+      "sources": "https://github.com/RedLime/BiomeThreadLocalFix",
       "versions": [
         {
           "target_version": [
@@ -323,15 +316,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/biomethreadlocalfix/1.16.2+/BiomeThreadLocalFix-1.4.jar",
           "hash": "c52ad6529deeee87cb0d85dff0384055a251d7b35067de6f6a14ce33ca8730a5496fa491d7e9978d5139a3c8cb0d2e9b6f88404c182b352e337c204edc3c121a"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "chunkcacher",
       "name": "Chunkcacher",
       "description": "A Minecraft Fabric mod that caches chunk information to speed up world generation.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/chunkcacher",
       "versions": [
         {
           "target_version": [
@@ -398,7 +389,6 @@
           "hash": "06331203fad67066dfd9d91d58989da51cdb96f3541c27ae1a5afb67b476f0a0d4d2d34ac29f515e3492695d9712091de066afcad50eeab6c947a50d82f7f9f1"
         }
       ],
-      "recommended": true,
       "traits": [
         "ssg-only"
       ],
@@ -410,6 +400,7 @@
       "modid": "chunkumulator",
       "name": "Chunkumulator",
       "description": "This mod accumulates a list of chunks it needs to send to each player and sends them in chunks of chunks!",
+      "sources": "https://github.com/DuncanRuns/Chunkumulator",
       "versions": [
         {
           "target_version": [
@@ -475,15 +466,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/chunkumulator/1.15.2/chunkumulator-1.0.3+MC1.15.2.jar",
           "hash": "2e0ad3dd3bbe87a5fa0c53c6662a9c1c1495330b5c84a65721a504fb70bd9d7bfd7c35794f3c7e4625b6d38f17760a1174f2d7af73ec672a17047052ed28e0fc"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "costar",
       "name": "COSTAR",
       "description": "piechart blockentity reflection fix for fabric 1.9-1.12 ",
+      "sources": "https://github.com/tildejustin/costar",
       "versions": [
         {
           "target_version": [
@@ -503,15 +492,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/costar/1.9-1.12/costar-1.0.0+1.9-1.12.jar",
           "hash": "8f3d7c75c280e85f7d292548f2cf16e5467cc8dc44866f52bcc55b18db4c86612165bd535b7ace0d861fc652c289ad06a7567d7c31a90eba0bcd25ba76a7f879"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "dynamicmenufps",
       "name": "Dynamic Menu FPS",
       "description": "Dynamically adjusts FPS on pause screen so minecraft doesn't hog resources in background.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
       "versions": [
         {
           "target_version": [
@@ -519,7 +506,8 @@
           ],
           "version": "0.1",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/dynamicmenufps/1.16.1/dynamic-menu-fps-0.1.jar",
-          "hash": "edf2a84d55eabb8ed62f8fa6d3fddbd2784c38eb4bae52bea605c82230aa41d7839ba82c2a4978a514c8cf996cf1414e66b15ea7336cf667c30f7f092c44ad5d"
+          "hash": "edf2a84d55eabb8ed62f8fa6d3fddbd2784c38eb4bae52bea605c82230aa41d7839ba82c2a4978a514c8cf996cf1414e66b15ea7336cf667c30f7f092c44ad5d",
+          "obsolete": true
         },
         {
           "target_version": [
@@ -581,8 +569,6 @@
           "hash": "30205c81acacd785a29afa6211a968b05f3d4c468566f5dc49635b83141bfbf423320727e1ba1b1c489d5581bce9799e33979d7c2ded6324b6b65dfc8567044c"
         }
       ],
-      "recommended": false,
-      "traits": [],
       "incompatibilities": [
         "sleepbackground"
       ]
@@ -591,6 +577,7 @@
       "modid": "extra-options",
       "name": "ExtraOptions",
       "description": "Adds the 1.17 options of a monochrome logo, reduced distortion effects and reduced fov effects",
+      "sources": "https://github.com/tildejustin/extra-options",
       "versions": [
         {
           "target_version": [
@@ -624,18 +611,19 @@
           "hash": "50811efa37f1f26c0ffce3b3bee45608e438d72a8bf226075e5d8c0aa6d9e8d1163e46da3232990df65155f417a71b39e68020c31a846c7b58a566b4203cc22a"
         }
       ],
-      "recommended": false,
       "traits": [
         "accessibility"
       ],
       "incompatibilities": [
         "motiono"
-      ]
+      ],
+      "recommended": false
     },
     {
       "modid": "fabricproxy-lite",
       "name": "FabricProxy Lite",
       "description": "Support forward player data from proxy",
+      "sources": "https://github.com/OKTW-Network/FabricProxy-Lite",
       "versions": [
         {
           "target_version": [
@@ -730,14 +718,13 @@
           "hash": "93445cc2df0c26898ebfbe28d5828b5e630762e46d397c56b2f4482ddbc61786b8790e3b1d6fc1cf6745fd5a67083cfdd190a3b3fb928217174fe84bb177caa7"
         }
       ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      "recommended": false
     },
     {
       "modid": "fastreset",
       "name": "FastReset",
       "description": "Skips saving worlds to reset faster.",
+      "sources": "https://github.com/minecraft-Java-Edition-Speedrunning/fastreset",
       "versions": [
         {
           "target_version": [
@@ -815,15 +802,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/fastreset/1.14.4/fast_reset-1.14.4-1.0.0.jar",
           "hash": "28a583532438b9440471f914c9fb530a675ae006219191811ca50ad06087405d72210d1da0e135ed6c35a75264d1b5db436b37fe0c1bb49729a13122fcdb3567"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "forceport",
       "name": "Force Port Mod",
       "description": "Forces the port of open to lan to be 25565 and increases the player limit of open to lan to as large as it can be.",
+      "sources": "https://github.com/DuncanRuns/Force-Port-Mod",
       "versions": [
         {
           "target_version": [
@@ -923,15 +908,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/forceport/1.3-1.13.2/forceport-1.2.0.jar",
           "hash": "d11041f88e7226db37a29ea8d042e0313c656dc1337ebcbbe806bc769e7eb55f26a6450238b12e34243365340b84d551e997830dd669d8f5d1344ab2143165b1"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "krypton",
       "name": "Krypton",
       "description": "A Fabric mod that optimizes the Minecraft networking stack and entity tracker.",
+      "sources": "https://github.com/astei/krypton",
       "versions": [
         {
           "target_version": [
@@ -1035,15 +1018,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/krypton/1.15-1.16.1/krypton-1.16.1-backport-0.1.3-SNAPSHOT+2021-02-20.jar",
           "hash": "b9e6ff4daaa6fc68357535a937b5950f1e8f5a5bc4ade56df71cc95feb5ef91fee687d90b4904b49bf0af260d46e6c2f89cc78c2271fec59f4c68819ba0c6de7"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "lazydfu",
       "name": "LazyDFU",
       "description": "Makes DataFixerUpper more lazy",
+      "sources": "https://github.com/astei/lazydfu",
       "versions": [
         {
           "target_version": [
@@ -1090,15 +1071,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/lazydfu/1.13.2/lazydfu-0.1.2-1.13.2.jar",
           "hash": "2fdc3c255ad9467731b69334d7a58ab9722104c681ec52504de44fce93d0b7cb31d24f3ddf0974d1769905ccace80149f1a525fa0fd1fcfc5f4252766a1daec1"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "lazystronghold",
       "name": "Lazystronghold",
       "description": "Speeds up stronghold generation through lazy evaluation of strongholds combined with multithreading",
+      "sources": "https://github.com/Gregor0410/LazyStronghold",
       "versions": [
         {
           "target_version": [
@@ -1141,16 +1120,15 @@
           "hash": "3294666ef02b9f01c7ae39ec6101100b42d34e6859971f93e56c2e506105df9631239c94393f2ecb60085433ccfb89178916a6e4ee0baef4e0aa27f16c02b293"
         }
       ],
-      "recommended": true,
       "traits": [
         "rsg-only"
-      ],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "lithium",
       "name": "Lithium",
       "description": "Lithium is a free and open-source optimization mod for Minecraft which makes a wide range of performance improvements to the game.",
+      "sources": "https://github.com/CaffeineMC/lithium-fabric",
       "versions": [
         {
           "target_version": [
@@ -1308,15 +1286,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/lithium/1.15.2/lithium-mc1.15.2-fabric-0.4.6-mod.jar",
           "hash": "e264c8cea35e924dc3c28981f4cf579da7244fc3ca40b4dec97a894cacd2c92cc87659260adbf36c25188717fa205f26fad0cbad253b293d632bd4d34b388825"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "motiono",
       "name": "motioNO",
       "description": "Stops Minecraft from changing the FoV when running, using potions and bows, etc.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/motiono",
       "versions": [
         {
           "target_version": [
@@ -1403,7 +1379,6 @@
           "hash": "5f986802c20c2eb2040905449733a334310395e0944f5718f50c2b68785f492694958415136b8c6b1319db6e692371ec32c504b44c2c9ec683f0c5c766c6fce6"
         }
       ],
-      "recommended": true,
       "traits": [
         "accessibility"
       ],
@@ -1415,6 +1390,7 @@
       "modid": "no-paus",
       "name": "No Paus",
       "description": "Backports pause on lost focus disabling functionality from 12w34a to earlier versions",
+      "sources": "https://github.com/tildejustin/no-paus",
       "versions": [
         {
           "target_version": [
@@ -1425,15 +1401,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/no-paus/1.3.1-1.3.2/no-paus-1.0.1+1.3.1-1.4-alpha.12.32.a.jar",
           "hash": "2a28792ef79f7298d6ba13c99b349f0df12bf65422144cd2d9dab97250646d6761775ca8c855e53261cd5279f8735ad89769f98c4cc5006cbb72dad4bb358f76"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "optifabric",
       "name": "Optifabric",
       "description": "Optifabric is a mod that loads optifine into fabric",
+      "sources": "https://github.com/tildejustin/optifabric",
       "versions": [
         {
           "target_version": [
@@ -1500,8 +1474,6 @@
           "hash": "629ddfedc7d1afe6f1af5e3925ffa4065d770ab42d3706a272507bcb77b5d7eb3f63ca07887fff82be4ef2af3454fff3d33730478efbe212162efc0189a337e3"
         }
       ],
-      "recommended": true,
-      "traits": [],
       "incompatibilities": [
         "worldpreview"
       ]
@@ -1510,6 +1482,7 @@
       "modid": "phosphor",
       "name": "Phosphor",
       "description": "No-compromises lighting engine optimization mod",
+      "sources": "https://github.com/CaffeineMC/phosphor-fabric",
       "versions": [
         {
           "target_version": [
@@ -1562,16 +1535,16 @@
           "hash": "b9998fcd9c2e2cd59dc669893bd73b8fc268a076065a6eb6b281fd5db433769fa77ceacec85593b7454edfe105a272efb25abc181b65fffa40f5b936f1457e95"
         }
       ],
-      "recommended": false,
-      "traits": [],
       "incompatibilities": [
         "starlight"
-      ]
+      ],
+      "obsolete": true
     },
     {
       "modid": "planifolia",
       "name": "planifolia",
       "description": "vanilla VideoOptionsScreen for sodium",
+      "sources": "https://github.com/tildejustin/planifolia",
       "versions": [
         {
           "target_version": [
@@ -1611,15 +1584,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/planifolia/1.17-1.17.1/planifolia-1.0.0+1.17.x.jar",
           "hash": "27a15766c54f2faf3e372f76c17bee3437a15e3dc07a97b539ad4eff4ea8a5f4ef78d3d6779a5d4e1c4a1bcd71cf2e99fb22ab8371914253a3dba3a8a4421509"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "retino",
       "name": "retiNO",
       "description": "Makes Minecraft render at half-resolution on Retina displays for improved performance.",
+      "sources": "https://github.com/juliand665/retiNO",
       "versions": [
         {
           "target_version": [
@@ -1660,16 +1631,15 @@
           "hash": "466737531cbf5636d4b75e30b63d0b972119747e346550e83493f90628bbfb62b05bbd36239de0b995e4eecd53d6d55774472e2f299cf9e3af94d57df437b365"
         }
       ],
-      "recommended": true,
       "traits": [
         "mac-only"
-      ],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "setspawnmod",
       "name": "Set Spawn",
       "description": "Sets the player's spawnpoint in SSG to specified coordinates.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/set-spawn",
       "versions": [
         {
           "target_version": [
@@ -1835,7 +1805,6 @@
           "hash": "ea3e78e8e9a1ed2d75e35055b6e11c927fbdece466b6b72ef0535057e62d7846b3aa2db5449b8e3f88f259c22179a15ba90570bcbdc497176a04ce10dde3fd98"
         }
       ],
-      "recommended": true,
       "traits": [
         "ssg-only"
       ],
@@ -1847,6 +1816,7 @@
       "modid": "sleepbackground",
       "name": "SleepBackground",
       "description": "My instances are looks want to sleep",
+      "sources": "https://github.com/RedLime/SleepBackground",
       "versions": [
         {
           "target_version": [
@@ -1941,7 +1911,8 @@
           ],
           "version": "3.8-1.8.x-1.12.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/sleepbackground/1.8-1.12.2/sleepbackground-3.8-1.8.x-1.12.x.jar",
-          "hash": "fb07c39b98ed50aeda669b0a011c37f4c07bb3996dc4b10a687802eebe97433a93733dc5da6bf9fcb02e6e6c611f07c00962f9c2dca75f41abb8d4e572f0715d"
+          "hash": "fb07c39b98ed50aeda669b0a011c37f4c07bb3996dc4b10a687802eebe97433a93733dc5da6bf9fcb02e6e6c611f07c00962f9c2dca75f41abb8d4e572f0715d",
+          "recommended": false
         },
         {
           "target_version": [
@@ -1959,11 +1930,10 @@
           ],
           "version": "3.8-1.7.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/sleepbackground/1.7-1.7.10/sleepbackground-3.8-1.7.x.jar",
-          "hash": "8775d5f78d850195e3ce6014b135efae941a14b824b26996fbd3a125fa4ff845900b1c17ebb0b412fd04fb0b97aaab8ec0569276af4b0d063750ba29a005d9f7"
+          "hash": "8775d5f78d850195e3ce6014b135efae941a14b824b26996fbd3a125fa4ff845900b1c17ebb0b412fd04fb0b97aaab8ec0569276af4b0d063750ba29a005d9f7",
+          "recommended": false
         }
       ],
-      "recommended": true,
-      "traits": [],
       "incompatibilities": [
         "dynamicmenufps"
       ]
@@ -1972,6 +1942,7 @@
       "modid": "sodium",
       "name": "Sodium",
       "description": "Sodium is a free and open-source optimization mod for Minecraft which improves frame rates and reduces lag spikes.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
       "versions": [
         {
           "target_version": [
@@ -2104,15 +2075,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/sodium/1.15.2/sodium-1.2.0+1.15.2.jar",
           "hash": "e9e73e7d7f424afb88261d587defdeaa2d059f7ac52c201e5a53bc518c4cdb12dc38bc86253dd6df028e1519ec19ef1223ba998958ad95087e35c005b6a2b055"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "sodiummac",
       "name": "Sodium Mac",
       "description": "Sodium is a free and open-source optimization mod for Minecraft which improves frame rates and reduces lag spikes. \nThis is an unofficial backport of JellySquid's original mod.",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
       "versions": [
         {
           "target_version": [
@@ -2123,16 +2092,15 @@
           "hash": "47cd3bbfeb4f69be0815c2f047c37f0f1ca8a5ecb1c4cccce05ab57370e8b9f3622120e10140f5991bb32ff70736e4a09814fb65a30d6608e3eca220b8671665"
         }
       ],
-      "recommended": true,
       "traits": [
         "mac-only"
-      ],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "speedrunigt",
       "name": "SpeedRunIGT",
       "description": "Displays the timer with RTA, IGT in Minecraft",
+      "sources": "https://github.com/RedLime/SpeedRunIGT",
       "versions": [
         {
           "target_version": [
@@ -2358,15 +2326,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/speedrunigt/1.7.2/SpeedRunIGT-13.6+1.7.2.jar",
           "hash": "c7edfc3bcfd1e06b05044e496511e245f0c3040f966848271fe88d0fac9c399195f315da4a28d512edeb5fa0663fb8e9a9a1a045112dd34b6c2b2bfaae0709dd"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "standardsettings",
       "name": "StandardSettings",
       "description": "Resetting Mod for Minecraft Speedrunning",
+      "sources": "https://github.com/KingContaria/StandardSettings",
       "versions": [
         {
           "target_version": [
@@ -2528,14 +2494,13 @@
           "hash": "8de478744f41adc8383b88a8f39bc340f0b4ab87c9a5c203735d74c9adf4a8c1678b97d220a0e0f0f3b0e71867cc071b32bf5cc4e8f3411130d1f73d0a28694e"
         }
       ],
-      "recommended": false,
-      "traits": [],
-      "incompatibilities": []
+      "recommended": false
     },
     {
       "modid": "starlight",
       "name": "Starlight",
       "description": "Rewrites the light engine to fix lighting performance and lighting errors",
+      "sources": "https://github.com/PaperMC/Starlight",
       "versions": [
         {
           "target_version": [
@@ -2640,8 +2605,6 @@
           "hash": "2a420099641e01c211f170dbad9cb869c35002d4cd23e6ea257c2225c2b0f231e4d70b772216b1a74a9cb16e6c25af4c5e8dbf92cb94ed591b6e4884f36b3685"
         }
       ],
-      "recommended": true,
-      "traits": [],
       "incompatibilities": [
         "phosphor"
       ]
@@ -2650,6 +2613,7 @@
       "modid": "state-output",
       "name": "State Output",
       "description": "World Preview state file functionality but without World Preview",
+      "sources": "https://github.com/tildejustin/state-output",
       "versions": [
         {
           "target_version": [
@@ -2784,15 +2748,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/state-output/1.3-1.5.2/state-output-1.1.6+1.3-1.5.2.jar",
           "hash": "372c6f4bc7bcbd01810a32bd0f5bd6d7a8e4782365df464c253f8f9613ef2473bfb66a8a36a0f4c3bdd19b6e7365fab518b9f8c53d7fccce7e7d642ce29b3946"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "statsperworld",
       "name": "StatsPerWorld",
       "description": "Separation of achievements and statistics per world in Minecraft Pre-1.7",
+      "sources": "https://github.com/RedLime/StatsPerWorld",
       "versions": [
         {
           "target_version": [
@@ -2827,15 +2789,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/statsperworld/1.3-1.5.2/StatsPerReset-1.2+1.3.x-1.5.x.jar",
           "hash": "f9324c60239cbed2c4d71222e844cb076e794ddf4072a5f1165dbc1cc5919a8d6a9604e08b126ed0950b1d62739706e750e6a3a3ad3628f02ec618cb47f8f76c"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "tabfocus",
       "name": "TabFocus",
       "description": "Implement button focus by press tab feature in pre-1.9",
+      "sources": "https://github.com/RedLime/TabFocus",
       "versions": [
         {
           "target_version": [
@@ -2924,15 +2884,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/tabfocus/1.3-1.5.2/tab-focus-2.0.4+1.3_to_1.5.2.jar",
           "hash": "9a13615bffa47902a0c4414b7912f5e413eaece02a5e82ee760911af858c112202ddce003c600d1363b056911979a333ad4fb50f69735c19326b746b95a3725f"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "voyager",
       "name": "Voyager",
       "description": "Take a voyage into modern java versions. (Fixes (MC-149777), a rare ConcurrentModificationException in StructureManager, when using a Java Runtime Environment of 11 or above)",
+      "sources": "https://github.com/tildejustin/voyager",
       "versions": [
         {
           "target_version": [
@@ -2955,15 +2913,13 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/voyager/1.14-1.16.5/voyager-1.0.1.jar",
           "hash": "7af0abc76408cf67dbc3d59a153dad16904cc93a9078aaa8b68e8ee2baf49ea40587e6ec0af0152b0b5195254d28445368e7ec2f9344676a5b3b8e85db3b75f0"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     },
     {
       "modid": "worldpreview",
       "name": "WorldPreview",
       "description": "Makes you reset block game fast",
+      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/worldpreview",
       "versions": [
         {
           "target_version": [
@@ -3014,7 +2970,6 @@
           "hash": "0f01f37db5d04cf69be1f26b6902d870f0004075bb8a02a76a9f6c23a77e185f2103dc320085c6371eb1b242e4b991c106550882d80d97e84df1cf6888c60ff4"
         }
       ],
-      "recommended": true,
       "traits": [
         "rsg-only"
       ],
@@ -3028,6 +2983,7 @@
       "modid": "z-buffer-fog",
       "name": "ZBufferFog",
       "description": "Legacy Fabric mod that make terrain fog rendering to planar",
+      "sources": "https://github.com/RedLime/LegacyPlanarFog",
       "versions": [
         {
           "target_version": [
@@ -3094,10 +3050,7 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/e0949d53bf81ca34b0d9ebd4ee522888dffb6dc7/legal-mods/z-buffer-fog/1.3-1.14.4/z-buffer-fog-1.3.jar",
           "hash": "33f9a727863a95419431de6fd756daf5445fa1ec61b22996126e523d3e88f96d07aac512cbc9bcdf80d2de3df8fdc900e05909e82dd78cad55faf57b50d0064b"
         }
-      ],
-      "recommended": true,
-      "traits": [],
-      "incompatibilities": []
+      ]
     }
   ]
 }

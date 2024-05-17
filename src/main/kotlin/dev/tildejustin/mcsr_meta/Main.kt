@@ -18,10 +18,9 @@ lateinit var nameReplacements: HashMap<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
 lateinit var minecraftVersions: List<String>
 lateinit var modIncompatibilities: List<List<String>>
-lateinit var unrecommendedMods: List<String>
+lateinit var unrecommendedMods: HashMap<String, List<String>>
+lateinit var obsoleteMods: HashMap<String, List<String>>
 lateinit var codeSources: HashMap<String, String>
-// lateinit var recommendationOverrides: Map<String, List<String>>
-
 // modid -> list of conditions
 lateinit var conditions: HashMap<String, MutableList<String>>
 
@@ -42,7 +41,7 @@ fun main() {
     Files.list(legalModsPath).forEach { modid ->
         val modVersions = ArrayList<Meta.ModVersion>()
         Files.list(modid).forEach {
-            modVersions.add(generateModVersion(it, gitId))
+            modVersions.add(generateModVersion(modid.name, it, gitId))
         }
         mods.add(generateMod(modid, modVersions.stream().sorted { s1, s2 ->
             if (s2.target_version.first().contains("+")) return@sorted 1
@@ -50,7 +49,7 @@ fun main() {
             return@sorted Version.parse(s2.target_version.first().split("-")[0], false).compareTo(Version.parse(s1.target_version.first().split("-")[0], false))
         }.toList()))
     }
-    Path.of("mods.json").writeText(json.encodeToString(Meta(5, mods.sortedBy { it.modid })))
+    Path.of("mods.json").writeText(json.encodeToString(Meta(6, mods.sortedBy { it.modid })))
 }
 
 @Serializable
@@ -58,16 +57,16 @@ data class AdditionalData(
     val names: HashMap<String, String>,
     val descriptions: HashMap<String, String>,
     val sources: HashMap<String, String>,
-    val max_versions: List<String>,
-    val not_recommended: List<String>,
+    @SerialName("max-versions") val maxVersions: List<String>,
+    @SerialName("not-recommended") val notRecommended: HashMap<String, List<String>>,
+    val obsolete: HashMap<String, List<String>>,
     val incompatibilities: List<List<String>>,
-    val recommendation_overrides: HashMap<String, List<String>>,
-    val extra_traits: HashMap<String, Set<String>>
+    @SerialName("extra-traits") val extraTraits: HashMap<String, Set<String>>
 )
 
 fun readAdditionalData() {
     val additionalMetadata = json.decodeFromString<AdditionalData>(Path.of("data.json").readText())
-    val versions = additionalMetadata.max_versions.map { maxVersion ->
+    val versions = additionalMetadata.maxVersions.map { maxVersion ->
         val minor = maxVersion.substring(0, maxVersion.lastIndexOf("."))
         // legacy fabric only has 1.19.4, 1.10.2, 1.11.2, 1.12.2, and 1.13.2 for production intermediaries rn
         if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion);
@@ -79,15 +78,11 @@ fun readAdditionalData() {
     nameReplacements = additionalMetadata.names
     replacementDescriptions = additionalMetadata.descriptions
     minecraftVersions = versions
-    unrecommendedMods = additionalMetadata.not_recommended
-    // for (entry in additionalMetadata.recommendation_overrides.entries) {
-    //     // remap ranges in array to single versions
-    //     additionalMetadata.recommendation_overrides[entry.key] = entry.value.map { createSemverRangeFromFolderName(it) }.flatten()
-    // }
+    unrecommendedMods = additionalMetadata.notRecommended
+    obsoleteMods = additionalMetadata.obsolete
     modIncompatibilities = additionalMetadata.incompatibilities
     codeSources = additionalMetadata.sources
-    // recommendationOverrides = additionalMetadata.recommendation_overrides
-    additionalMetadata.extra_traits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
+    additionalMetadata.extraTraits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
 }
 
 fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
@@ -100,17 +95,22 @@ fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
     // override description if an override exists
     newestModInfo.description = replacementDescriptions.getOrDefault(modFolder.name, newestModInfo.description)
     newestModInfo.name = nameReplacements.getOrDefault(modFolder.name, newestModInfo.name)
+    if (codeSources[modFolder.name] == null) {
+        throw RuntimeException("missing source repo for ${modFolder.name}")
+    }
     return Meta.Mod(modFolder.name,
         newestModInfo.name,
         newestModInfo.description,
         codeSources[modFolder.name]!!,
         versions,
-        modFolder.name !in unrecommendedMods,
         conditions.getOrDefault(modFolder.name, emptyList()),
-        modIncompatibilities.filter { it.contains(modFolder.name) }.flatten().filter { it != modFolder.name })
+        modIncompatibilities.filter { it.contains(modFolder.name) }.flatten().filter { it != modFolder.name },
+        unrecommendedMods[modFolder.name]?.isNotEmpty() ?: true,
+        obsoleteMods[modFolder.name]?.isEmpty() ?: false,
+    )
 }
 
-fun generateModVersion(folder: Path, gitId: String): Meta.ModVersion {
+fun generateModVersion(modid: String, folder: Path, gitId: String): Meta.ModVersion {
     var modFile = Files.list(folder).findFirst().get()
     val modUrl: String
     if (modFile.extension == "json") {
@@ -123,10 +123,9 @@ fun generateModVersion(folder: Path, gitId: String): Meta.ModVersion {
     }
     val range = createSemverRangeFromFolderName(folder.name)
     val info = readFabricModJson(modFile)
-    // TODO: figure out how to do recommendation overrides (needs to be either true or false, only when contradicting the default recommendation, and has to be qualified to a version range)
-    // for example, dynamic-fps 1.3-1.12.2 is not recommended, but since there's no sleepbackground for pre 1.7 it needs to be something like
-    // recommended: { "value": true, "versions": ["1.3.1",..."1.6.4"] }, but this feels to be very difficult to implement concisely in modcheck
-    return Meta.ModVersion(range, info.version, modUrl, hashPath(modFile))
+    val unrecommendedIntersection = unrecommendedMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
+    val obsoleteIntersection = obsoleteMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
+    return Meta.ModVersion(range, info.version, modUrl, hashPath(modFile), unrecommendedIntersection?.isEmpty() ?: true, obsoleteIntersection?.isNotEmpty() ?: false)
 }
 
 fun getExternalJarIfNecessary(folder: Path): Path {
