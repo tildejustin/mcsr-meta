@@ -10,6 +10,7 @@ import java.net.URI
 import java.nio.file.*
 import java.security.MessageDigest
 import kotlin.io.path.*
+import kotlin.time.*
 
 // val legalModsPath: Path = Path.of("/home/justin/PycharmProjects/legal-mods/legal-mods")
 val legalModsPath: Path = Path.of("legal-mods/legal-mods")
@@ -28,6 +29,7 @@ lateinit var conditions: HashMap<String, MutableList<String>>
 const val noReload = false
 
 fun main() {
+    val mark = TimeSource.Monotonic.markNow()
     // place to store downloaded mods
     if (!Files.exists(tempDir)) Files.createDirectory(tempDir)
     // TODO: progress logging
@@ -49,7 +51,8 @@ fun main() {
             return@sorted Version.parse(s2.target_version.first().split("-")[0], false).compareTo(Version.parse(s1.target_version.first().split("-")[0], false))
         }.toList()))
     }
-    Path.of("mods.json").writeText(json.encodeToString(Meta(6, mods.sortedBy { it.modid })))
+    Path.of("mods.json").writeText(json.encodeToString(Meta(6, mods.sortedBy { it.modid })) + "\n")
+    println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
 }
 
 @Serializable

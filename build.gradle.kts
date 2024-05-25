@@ -16,7 +16,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
     implementation("org.eclipse.jgit:org.eclipse.jgit:6.9.0.202403050737-r")
     // https://mvnrepository.com/artifact/io.github.z4kn4fein/semver
-    implementation("io.github.z4kn4fein:semver:1.4.2")
+    implementation("io.github.z4kn4fein:semver:2.0.0")
 }
 
 kotlin {
