@@ -1475,7 +1475,8 @@
         }
       ],
       "incompatibilities": [
-        "worldpreview"
+        "worldpreview",
+        "starlight"
       ]
     },
     {
@@ -2606,7 +2607,8 @@
         }
       ],
       "incompatibilities": [
-        "phosphor"
+        "phosphor",
+        "optifabric"
       ]
     },
     {
