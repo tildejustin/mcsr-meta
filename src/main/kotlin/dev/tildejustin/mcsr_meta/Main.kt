@@ -70,6 +70,7 @@ data class AdditionalData(
 fun readAdditionalData() {
     val additionalMetadata = json.decodeFromString<AdditionalData>(Path.of("data.json").readText())
     val versions = additionalMetadata.maxVersions.map { maxVersion ->
+        if (maxVersion.count { it == '.' } == 1) return@map listOf(maxVersion)
         val minor = maxVersion.substring(0, maxVersion.lastIndexOf("."))
         // legacy fabric only has 1.19.4, 1.10.2, 1.11.2, 1.12.2, and 1.13.2 for production intermediaries rn
         if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion);
