@@ -722,9 +722,6 @@
           "hash": "8edb873e25a439568670d6faf27bcc36018ba60aecb2f18c21fc7c30b090a152943d97fdce3330d1017fe5b85a23d46e5599749fa7ca6411a995aa4b13f6fc06"
         }
       ],
-      "incompatibilities": [
-        "motiono"
-      ],
       "recommended": false
     },
     {
