@@ -116,6 +116,9 @@
     ],
     "lazystronghold": [
       "rsg-only"
+    ],
+    "extra-options": [
+      "accessibility"
     ]
   }
 }
