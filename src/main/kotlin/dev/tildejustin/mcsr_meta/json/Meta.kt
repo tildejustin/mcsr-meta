@@ -19,7 +19,7 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
 
     @Serializable
     data class ModVersion @OptIn(ExperimentalSerializationApi::class) constructor(
-        val target_version: List<String>,
+        val target_version: Collection<String>,
         val version: String,
         val url: String,
         val hash: String,

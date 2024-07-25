@@ -9,30 +9,33 @@ import org.eclipse.jgit.lib.TextProgressMonitor
 import java.net.URI
 import java.nio.file.*
 import java.security.MessageDigest
+import java.util.*
 import kotlin.io.path.*
 import kotlin.time.*
 
-// val legalModsPath: Path = Path.of("/home/justin/PycharmProjects/legal-mods/legal-mods")
+// val legalModsPath: Path = Path.of("C:\\Users\\justi\\IdeaProjects\\legal-mods\\legal-mods")
 val legalModsPath: Path = Path.of("legal-mods/legal-mods")
 val tempDir: Path = Path.of("temp")
 lateinit var nameReplacements: HashMap<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
-lateinit var minecraftVersions: List<String>
+lateinit var minecraftVersions: SortedSet<String>
 lateinit var modIncompatibilities: List<List<String>>
 lateinit var unrecommendedMods: HashMap<String, List<String>>
 lateinit var obsoleteMods: HashMap<String, List<String>>
 lateinit var codeSources: HashMap<String, String>
+lateinit var v2Override: List<String>
+
 // modid -> list of conditions
 lateinit var conditions: HashMap<String, MutableList<String>>
 
 // good for testing out quick changes
 const val noReload = false
+val comparer = { o1: String, o2: String -> Version.parse(o1, false).compareTo(Version.parse(o2, false)) }
 
 fun main() {
     val mark = TimeSource.Monotonic.markNow()
     // place to store downloaded mods
     if (!Files.exists(tempDir)) Files.createDirectory(tempDir)
-    // TODO: progress logging
     if (!noReload) {
         deleteAndRecloneLegalMods()
     }
@@ -64,7 +67,8 @@ data class AdditionalData(
     @SerialName("not-recommended") val notRecommended: HashMap<String, List<String>>,
     val obsolete: HashMap<String, List<String>>,
     val incompatibilities: List<List<String>>,
-    @SerialName("extra-traits") val extraTraits: HashMap<String, Set<String>>
+    @SerialName("extra-traits") val extraTraits: HashMap<String, Set<String>>,
+    @SerialName("v2-override") val v2Override: List<String>
 )
 
 fun readAdditionalData() {
@@ -73,7 +77,7 @@ fun readAdditionalData() {
         if (maxVersion.count { it == '.' } == 1) return@map listOf(maxVersion)
         val minor = maxVersion.substring(0, maxVersion.lastIndexOf("."))
         // legacy fabric only has 1.19.4, 1.10.2, 1.11.2, 1.12.2, and 1.13.2 for production intermediaries rn
-        if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion);
+        if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion)
         val maxPatch = maxVersion.split(".").last().toInt()
         val intermediateVersions = (1..maxPatch).map { "$minor.$it" } as ArrayList
         intermediateVersions.addFirst(minor)
@@ -81,11 +85,12 @@ fun readAdditionalData() {
     }.flatten()
     nameReplacements = additionalMetadata.names
     replacementDescriptions = additionalMetadata.descriptions
-    minecraftVersions = versions
+    minecraftVersions = versions.toSortedSet(comparer)
     unrecommendedMods = additionalMetadata.notRecommended
     obsoleteMods = additionalMetadata.obsolete
     modIncompatibilities = additionalMetadata.incompatibilities
     codeSources = additionalMetadata.sources
+    v2Override = additionalMetadata.v2Override
     additionalMetadata.extraTraits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
 }
 
@@ -102,7 +107,8 @@ fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
     if (codeSources[modFolder.name] == null) {
         throw RuntimeException("missing source repo for ${modFolder.name}")
     }
-    return Meta.Mod(modFolder.name,
+    return Meta.Mod(
+        modFolder.name,
         newestModInfo.name,
         newestModInfo.description,
         codeSources[modFolder.name]!!,
@@ -126,6 +132,9 @@ fun generateModVersion(modid: String, folder: Path, gitId: String): Meta.ModVers
         modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/${gitId}/${modFile.subpath(modFile.count() - 4, modFile.count()).toString().replace("\\", "/")}"
     }
     val range = createSemverRangeFromFolderName(folder.name)
+    if (v2Override.contains(modid)) {
+        range.add("1.12")
+    }
     val info = readFabricModJson(modFile)
     val unrecommendedIntersection = unrecommendedMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
     val obsoleteIntersection = obsoleteMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
@@ -182,24 +191,26 @@ fun readConditions(): HashMap<String, MutableList<String>> {
     return map
 }
 
-fun createSemverRangeFromFolderName(folder: String): List<String> {
+fun createSemverRangeFromFolderName(folder: String): MutableSet<String> {
     val parts = folder.split("-")
     assert(parts.count() in 1..2)
     if ("+" in folder) {
         val minVersion = Version.parse(parts[0].replace("+", ""), false)
         return minecraftVersions.filter {
             Version.parse(it, false) >= minVersion
-        }
+        }.toSortedSet(comparer)
     }
     if (parts.count() == 1) {
-        return listOf(parts[0])
+        val set = TreeSet(comparer)
+        set.add(parts[0])
+        return set
     }
     val minVersion = Version.parse(parts[0], false)
     val maxVersion = Version.parse(parts[1], false)
     return minecraftVersions.filter {
         val currentVersion = Version.parse(it, false)
         return@filter currentVersion in minVersion..maxVersion
-    }
+    }.toSortedSet(comparer)
 }
 
 // clear old repo and re-clone it

@@ -15,18 +15,19 @@
     "antigone": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-antigone-1.16.1",
     "antiresourcereload": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
     "atum": "https://github.com/tildejustin/atum",
-    "biomethreadlocalfix": "https://github.com/RedLime/BiomeThreadLocalFix",
+    "biome_threadlocal_fix": "https://github.com/RedLime/BiomeThreadLocalFix",
     "chunkcacher": "https://github.com/Minecraft-Java-Edition-Speedrunning/chunkcacher",
     "chunkumulator": "https://github.com/DuncanRuns/Chunkumulator",
     "costar": "https://github.com/tildejustin/costar",
     "dynamicmenufps": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
     "extra-options": "https://github.com/tildejustin/extra-options",
     "fabricproxy-lite": "https://github.com/OKTW-Network/FabricProxy-Lite",
-    "fastreset": "https://github.com/minecraft-Java-Edition-Speedrunning/fastreset",
+    "fast_reset": "https://github.com/minecraft-Java-Edition-Speedrunning/fastreset",
     "forceport": "https://github.com/DuncanRuns/Force-Port-Mod",
     "krypton": "https://github.com/astei/krypton",
     "lazydfu": "https://github.com/astei/lazydfu",
     "lazystronghold": "https://github.com/Gregor0410/LazyStronghold",
+    "legacy-crash-fix": "https://github.com/tildejustin/legacy-crash-fix",
     "lithium": "https://github.com/CaffeineMC/lithium-fabric",
     "no-paus": "https://github.com/tildejustin/no-paus",
     "optifabric": "https://github.com/tildejustin/optifabric",
@@ -41,7 +42,7 @@
     "standardsettings": "https://github.com/KingContaria/StandardSettings",
     "starlight": "https://github.com/PaperMC/Starlight",
     "state-output": "https://github.com/tildejustin/state-output",
-    "statsperworld": "https://github.com/RedLime/StatsPerWorld",
+    "stats-per-world": "https://github.com/RedLime/StatsPerWorld",
     "tabfocus": "https://github.com/RedLime/TabFocus",
     "voyager": "https://github.com/tildejustin/voyager",
     "worldpreview": "https://github.com/Minecraft-Java-Edition-Speedrunning/worldpreview",
@@ -74,7 +75,6 @@
   ],
   "not-recommended": {
     "standardsettings": [],
-    "extra-options": [],
     "fabricproxy-lite": [],
     "sleepbackground": [
       "1.7-1.12.2"
@@ -120,5 +120,8 @@
     "extra-options": [
       "accessibility"
     ]
-  }
+  },
+  "v2-override": [
+    "z-buffer-fog"
+  ]
 }
