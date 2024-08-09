@@ -14,7 +14,7 @@
     "anchiale": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-anchiale-1.8-1.8.9",
     "antigone": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-antigone-1.16.1",
     "antiresourcereload": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
-    "atum": "https://github.com/tildejustin/atum",
+    "atum": "https://github.com/KingContaria/atum-rewrite",
     "biome_threadlocal_fix": "https://github.com/RedLime/BiomeThreadLocalFix",
     "chunkcacher": "https://github.com/Minecraft-Java-Edition-Speedrunning/chunkcacher",
     "chunkumulator": "https://github.com/DuncanRuns/Chunkumulator",
@@ -22,7 +22,7 @@
     "dynamicmenufps": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
     "extra-options": "https://github.com/tildejustin/extra-options",
     "fabricproxy-lite": "https://github.com/OKTW-Network/FabricProxy-Lite",
-    "fast_reset": "https://github.com/minecraft-Java-Edition-Speedrunning/fastreset",
+    "fast_reset": "https://github.com/KingContaria/FastReset",
     "forceport": "https://github.com/DuncanRuns/Force-Port-Mod",
     "krypton": "https://github.com/astei/krypton",
     "lazydfu": "https://github.com/astei/lazydfu",
@@ -34,10 +34,12 @@
     "phosphor": "https://github.com/CaffeineMC/phosphor-fabric",
     "planifolia": "https://github.com/tildejustin/planifolia",
     "retino": "https://github.com/juliand665/retiNO",
+    "seedqueue": "https://github.com/KingContaria/seedqueue",
     "setspawnmod": "https://github.com/Minecraft-Java-Edition-Speedrunning/set-spawn",
     "sleepbackground": "https://github.com/RedLime/SleepBackground",
     "sodium": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
     "sodiummac": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
+    "speedrunapi": "https://github.com/KingContaria/SpeedrunAPI",
     "speedrunigt": "https://github.com/RedLime/SpeedRunIGT",
     "standardsettings": "https://github.com/KingContaria/StandardSettings",
     "starlight": "https://github.com/PaperMC/Starlight",
@@ -45,7 +47,7 @@
     "stats-per-world": "https://github.com/RedLime/StatsPerWorld",
     "tabfocus": "https://github.com/RedLime/TabFocus",
     "voyager": "https://github.com/tildejustin/voyager",
-    "worldpreview": "https://github.com/Minecraft-Java-Edition-Speedrunning/worldpreview",
+    "worldpreview": "https://github.com/KingContaria/mcsr-worldpreview-1.16.1",
     "z-buffer-fog": "https://github.com/RedLime/LegacyPlanarFog"
   },
   "names": {
@@ -74,7 +76,10 @@
     "1.21"
   ],
   "not-recommended": {
-    "standardsettings": [],
+    "standardsettings": [
+      "1.3-1.15.2",
+      "1.16.2-1.21"
+    ],
     "fabricproxy-lite": [],
     "sleepbackground": [
       "1.7-1.12.2"
