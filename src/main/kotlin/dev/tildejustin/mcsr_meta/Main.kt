@@ -13,8 +13,8 @@ import java.util.*
 import kotlin.io.path.*
 import kotlin.time.*
 
-// val legalModsPath: Path = Path.of("C:\\Users\\justi\\IdeaProjects\\legal-mods\\legal-mods")
-val legalModsPath: Path = Path.of("legal-mods/legal-mods")
+val legalModsPath: Path = Path.of("C:\\Users\\justi\\IdeaProjects\\legal-mods\\legal-mods")
+// val legalModsPath: Path = Path.of("legal-mods/legal-mods")
 val tempDir: Path = Path.of("temp")
 lateinit var nameReplacements: HashMap<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
