@@ -83,6 +83,9 @@
     "fabricproxy-lite": [],
     "sleepbackground": [
       "1.7-1.12.2"
+    ],
+    "worldpreview": [
+      "1.8.9"
     ]
   },
   "obsolete": {

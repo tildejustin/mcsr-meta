@@ -3205,7 +3205,8 @@
           ],
           "version": "5.0.0+1.8.9",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/bb6bd0f2fd91584c5599379197c8d6b7daae678c/legal-mods/worldpreview/1.8.9/worldpreview-5.0.0+1.8.9.jar",
-          "hash": "f15981f2ef56b238da75f05183649366ab06e930b6425c807aa9cf66f3930db91b86b6e40d93d763e83d51eb56041fa4b81fd47c6cff2bbd3a165677fb45eed0"
+          "hash": "f15981f2ef56b238da75f05183649366ab06e930b6425c807aa9cf66f3930db91b86b6e40d93d763e83d51eb56041fa4b81fd47c6cff2bbd3a165677fb45eed0",
+          "recommended": false
         }
       ],
       "traits": [
