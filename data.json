@@ -50,8 +50,7 @@
     "z-buffer-fog": "https://github.com/RedLime/LegacyPlanarFog"
   },
   "names": {
-    "optifabric": "OptiFabric",
-    "setspawnmod": "Set Spawn"
+    "optifabric": "OptiFabric"
   },
   "max-versions": [
     "1.3.2",
