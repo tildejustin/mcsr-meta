@@ -292,7 +292,7 @@
     {
       "modid": "biome_threadlocal_fix",
       "name": "BiomeThreadLocalFix",
-      "description": "",
+      "description": "Fix Minecraft Biome ThreadLocal Memory leak issue",
       "sources": "https://github.com/RedLime/BiomeThreadLocalFix",
       "versions": [
         {
@@ -2991,7 +2991,7 @@
     {
       "modid": "stats-per-world",
       "name": "StatsPerWorld",
-      "description": "",
+      "description": "Separation of achievements and statistics per world in Minecraft Pre-1.7",
       "sources": "https://github.com/RedLime/StatsPerWorld",
       "versions": [
         {

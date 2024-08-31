@@ -3,10 +3,9 @@
     "chunkcacher": "A Minecraft Fabric mod that caches chunk information to speed up world generation.",
     "tabfocus": "Implement button focus by press tab feature in pre-1.9",
     "anchiale": "Adds a faster way to exit worlds in 1.8. Use the menu.quitWorld button to exit the current world without waiting for the server tasks queue to complete.",
-    "fastreset": "Skips saving worlds to reset faster.",
-    "statsperworld": "Separation of achievements and statistics per world in Minecraft Pre-1.7",
+    "stats-per-world": "Separation of achievements and statistics per world in Minecraft Pre-1.7",
     "z-buffer-fog": "Legacy Fabric mod that make terrain fog rendering to planar",
-    "biomethreadlocalfix": "Fix Minecraft Biome ThreadLocal Memory leak issue",
+    "biome_threadlocal_fix": "Fix Minecraft Biome ThreadLocal Memory leak issue",
     "antigone": "Fixes a rare server deadlock in Minecraft 1.16.1",
     "phosphor": "No-compromises lighting engine optimization mod"
   },
