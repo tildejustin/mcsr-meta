@@ -1367,7 +1367,7 @@
       "modid": "lithium",
       "name": "Lithium",
       "description": "Lithium is a free and open-source optimization mod for Minecraft which makes a wide range of performance improvements to the game.",
-      "sources": "https://github.com/CaffeineMC/lithium-fabric",
+      "sources": "https://github.com/KingContaria/lithium-mcsr",
       "versions": [
         {
           "target_version": [
