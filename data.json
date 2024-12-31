@@ -128,6 +128,12 @@
     ],
     "extra-options": [
       "accessibility"
+    ],
+    "retino": [
+      "mac-only"
+    ],
+    "sodiummac": [
+      "mac-only"
     ]
   },
   "v2-override": [
