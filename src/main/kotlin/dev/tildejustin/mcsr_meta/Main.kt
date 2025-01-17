@@ -238,7 +238,8 @@ fun readConditions(): HashMap<String, MutableList<String>> {
 }
 
 fun createSemverRangeFromFolderName(folder: String): MutableSet<String> {
-    val parts = folder.split("-")
+    var parts = folder.split("-")
+    if (folder == "1.RV-Pre1") parts = listOf(folder)
     assert(parts.count() in 1..2)
     if ("+" in folder) {
         val minVersion = Version.parse(parts[0].replace("+", ""), false)
@@ -246,7 +247,7 @@ fun createSemverRangeFromFolderName(folder: String): MutableSet<String> {
             Version.parse(it, false) >= minVersion
         }.toMutableSet()
     }
-    if (parts.count() == 1 || folder == "1.RV-Pre1") {
+    if (parts.count() == 1) {
         // return sortedSetOf<String>(comparer, parts[0])
         return mutableSetOf(parts[0])
     }
