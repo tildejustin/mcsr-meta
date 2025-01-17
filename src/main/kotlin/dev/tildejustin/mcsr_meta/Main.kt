@@ -1,7 +1,7 @@
 package dev.tildejustin.mcsr_meta
 
 import dev.tildejustin.mcsr_meta.json.*
-import io.github.z4kn4fein.semver.Version
+import io.github.z4kn4fein.semver.*
 import kotlinx.serialization.*
 import kotlinx.serialization.json.Json
 import org.eclipse.jgit.api.Git
@@ -15,6 +15,7 @@ import kotlin.time.*
 
 // val legalModsPath: Path = Path.of("C:\\Users\\justi\\IdeaProjects\\legal-mods\\legal-mods")
 val legalModsPath: Path = Path.of("legal-mods/legal-mods")
+val aprilFoolsModsPath: Path = Path.of("mc_af-legal-mods")
 val tempDir: Path = Path.of("temp")
 lateinit var nameReplacements: HashMap<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
@@ -30,10 +31,31 @@ lateinit var conditions: HashMap<String, MutableList<String>>
 
 // good for testing out quick changes
 const val noReload = false
-val comparer = { o1: String, o2: String -> Version.parse(o1, false).compareTo(Version.parse(o2, false)) }
+val comparer: (String, String) -> Int = { o1, o2 ->
+    var one: Version? = null
+    var two: Version? = null
+    try {
+        one = Version.parse(o1, false)
+    } catch (_: VersionFormatException) {
+    }
+    try {
+        two = Version.parse(o2, false)
+    } catch (_: VersionFormatException) {
+    }
+    if (one != null && two != null) {
+        one.compareTo(two)
+    } else if (one != null) {
+        1
+    } else if (two != null) {
+        -1
+    } else {
+        // april fools snapshots
+        o1.compareTo(o2)
+    }
+}
 
 fun main() {
-    val mark = TimeSource.Monotonic.markNow()
+    var mark = TimeSource.Monotonic.markNow()
     // place to store downloaded mods
     if (!Files.exists(tempDir)) Files.createDirectory(tempDir)
     if (!noReload) {
@@ -42,20 +64,41 @@ fun main() {
     conditions = readConditions()
     readAdditionalData()
     val gitId = Git.open(legalModsPath.parent.toFile()).log().setMaxCount(1).call().first().name
+    val aprilFoolsGitId = Git.open(aprilFoolsModsPath.toFile()).log().setMaxCount(1).call().first().name
+    println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
+    mark = TimeSource.Monotonic.markNow()
     val mods = ArrayList<Meta.Mod>()
     Files.list(legalModsPath).forEach { modid ->
         val modVersions = ArrayList<Meta.ModVersion>()
         Files.list(modid).forEach {
-            modVersions.add(generateModVersion(modid.name, it, gitId))
+            modVersions.add(generateModVersion(modid.name, Files.list(it).findFirst().get(), it.name, gitId))
         }
         mods.add(generateMod(modid, modVersions.stream().sorted { s1, s2 ->
             if (s2.target_version.first().contains("+")) return@sorted 1
             else if (s1.target_version.first().contains("+")) return@sorted -1
             return@sorted Version.parse(s2.target_version.first().split("-")[0], false).compareTo(Version.parse(s1.target_version.first().split("-")[0], false))
-        }.toList()))
+        }.toList().toMutableList()))
     }
+    Files.list(aprilFoolsModsPath).forEach { folder ->
+        if (folder.isHidden() || folder.isRegularFile()) return@forEach
+        Files.list(folder).forEach { modFile ->
+            val fmj = readFabricModJson(modFile)
+            mods.find { it.modid == fmj.id }?.versions?.add(generateModVersion(fmj.id, modFile, folder.name, aprilFoolsGitId, true)) ?: throw NoSuchFileException(fmj.id)
+        }
+    }
+    json.decodeFromString<HashMap<String, List<String>>>(aprilFoolsModsPath.resolve("external.json").readText()).forEach { (version, extras) ->
+        val id = version.split("/")[0]
+        mods.find { it.modid == id }?.versions?.find { it.url.endsWith(evaluateLinks(version)) }?.target_version?.addAll(extras) ?: throw NoSuchElementException(version)
+    }
+
     Path.of("mods.json").writeText(json.encodeToString(Meta(6, mods.sortedBy { it.modid })) + "\n")
     println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
+}
+
+fun evaluateLinks(partialPath: String): String {
+    if (!partialPath.endsWith(".json")) return partialPath
+    val parts = partialPath.split("/")
+    return json.decodeFromString<ExternalModJson>(legalModsPath.resolve(parts[0]).resolve(parts[1]).resolve(parts[2]).readText()).link
 }
 
 @Serializable
@@ -94,7 +137,7 @@ fun readAdditionalData() {
     additionalMetadata.extraTraits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
 }
 
-fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
+fun generateMod(modFolder: Path, versions: MutableList<Meta.ModVersion>): Meta.Mod {
     val chosenFolder = Files.list(modFolder).sorted { s1, s2 ->
         if (s2.name.contains("+")) return@sorted 1
         else if (s1.name.contains("+")) return@sorted -1
@@ -120,18 +163,21 @@ fun generateMod(modFolder: Path, versions: List<Meta.ModVersion>): Meta.Mod {
     )
 }
 
-fun generateModVersion(modid: String, folder: Path, gitId: String): Meta.ModVersion {
-    var modFile = Files.list(folder).findFirst().get()
+fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: String, af: Boolean = false): Meta.ModVersion {
+    @Suppress("NAME_SHADOWING") var modFile = modFile
     val modUrl: String
     if (modFile.extension == "json") {
         val (path, url) = handleExternalMod(modFile)
         modFile = path
         modUrl = url
-    } else {
+    } else if (!af) {
         // remove first legal-mods git folder
-        modUrl = "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/${gitId}/${modFile.subpath(modFile.count() - 4, modFile.count()).toString().replace("\\", "/")}"
+        modUrl =
+            "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/${gitId}/${modFile.subpath(modFile.count() - 4, modFile.count()).toString().replace("\\", "/")}"
+    } else {
+        modUrl = "https://github.com/tildejustin/mc_af-legal-mods/raw/${gitId}/${modFile.subpath(modFile.count() - 2, modFile.count()).toString().replace("\\", "/")}"
     }
-    val range = createSemverRangeFromFolderName(folder.name)
+    val range = createSemverRangeFromFolderName(rangeName)
     if (v2Override.contains(modid)) {
         range.add("1.12")
     }
@@ -198,25 +244,26 @@ fun createSemverRangeFromFolderName(folder: String): MutableSet<String> {
         val minVersion = Version.parse(parts[0].replace("+", ""), false)
         return minecraftVersions.filter {
             Version.parse(it, false) >= minVersion
-        }.toSortedSet(comparer)
+        }.toMutableSet()
     }
-    if (parts.count() == 1) {
-        val set = TreeSet(comparer)
-        set.add(parts[0])
-        return set
+    if (parts.count() == 1 || folder == "1.RV-Pre1") {
+        // return sortedSetOf<String>(comparer, parts[0])
+        return mutableSetOf(parts[0])
     }
     val minVersion = Version.parse(parts[0], false)
     val maxVersion = Version.parse(parts[1], false)
     return minecraftVersions.filter {
         val currentVersion = Version.parse(it, false)
         return@filter currentVersion in minVersion..maxVersion
-    }.toSortedSet(comparer)
+    }.toMutableSet()
 }
 
 // clear old repo and re-clone it
 fun deleteAndRecloneLegalMods() {
     Path.of("legal-mods").toFile().deleteRecursively()
+    Path.of("mc_af-legal-mods").toFile().deleteRecursively()
     Git.cloneRepository().setURI("https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods").setDepth(1).setProgressMonitor(TextProgressMonitor()).call()
+    Git.cloneRepository().setURI("https://github.com/tildejustin/mc_af-legal-mods").setDepth(1).setProgressMonitor(TextProgressMonitor()).call()
 }
 
 fun ByteArray.toHex() = joinToString("") { byte -> "%02x".format(byte) }

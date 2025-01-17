@@ -10,7 +10,7 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
         val name: String,
         val description: String,
         val sources: String,
-        val versions: List<ModVersion>,
+        val versions: MutableList<ModVersion>,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val traits: List<String> = listOf(),
         @EncodeDefault(EncodeDefault.Mode.NEVER) val incompatibilities: List<String> = listOf(),
         @EncodeDefault(EncodeDefault.Mode.NEVER) val recommended: Boolean = true,
@@ -19,7 +19,7 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
 
     @Serializable
     data class ModVersion @OptIn(ExperimentalSerializationApi::class) constructor(
-        val target_version: Collection<String>,
+        val target_version: MutableSet<String>,
         val version: String,
         val url: String,
         val hash: String,

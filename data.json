@@ -92,7 +92,9 @@
   },
   "obsolete": {
     "phosphor": [],
-    "dynamicmenufps": ["1.16.1"]
+    "dynamicmenufps": [
+      "1.16.1"
+    ]
   },
   "incompatibilities": [
     [
@@ -118,6 +120,10 @@
     [
       "optifabric",
       "starlight"
+    ],
+    [
+      "shareware-mod",
+      "atum"
     ]
   ],
   "extra-traits": {

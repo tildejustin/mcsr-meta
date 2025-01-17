@@ -33,5 +33,6 @@ replay_*.log
 *.jfr
 
 legal-mods
+mc_af-legal-mods
 temp
 .kotlin
