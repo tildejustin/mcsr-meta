@@ -2701,7 +2701,8 @@
           ],
           "version": "1.2.4+1.21.3",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/0150b198bba5d7d56e5460e940a3dd0f99fdef82/legal-mods/standardsettings/1.21.2-1.21.4/standardsettings-1.2.4+1.21.3.jar",
-          "hash": "d36f089ed11ac9c0cb3eb95bc326dd136b750898d458fd1e03cab68d2f4bcc0ed676a46865081ad10e9cc089ae624e8b3beda54a1ff47ddfa73ba9142bcdf3bd"
+          "hash": "d36f089ed11ac9c0cb3eb95bc326dd136b750898d458fd1e03cab68d2f4bcc0ed676a46865081ad10e9cc089ae624e8b3beda54a1ff47ddfa73ba9142bcdf3bd",
+          "recommended": false
         },
         {
           "target_version": [
