@@ -106,7 +106,7 @@
             "20w14infinite"
           ],
           "version": "5.1.0+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/antiresourcereload-5.1.0+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/antiresourcereload-5.1.0+20w14infinite.jar",
           "hash": "3990687c4215c29ba1ebeccb457be719420f4d9de1263d27de022473f97085f5517baba80632cf54c06f575057b2fef6f114de0f562b6c2a22f86b3456b19f28"
         }
       ]
@@ -338,7 +338,7 @@
             "1.RV-Pre1"
           ],
           "version": "1.3.1+1.RV-Pre1",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/1.RV-Pre1/atum-1.3.1+1.RV-Pre1.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/1.RV-Pre1/atum-1.3.1+1.RV-Pre1.jar",
           "hash": "2ae534472d897f4a5724c1cec7485375ba17985f8cac255fa5812f8d576fb18106b7e42c00ed355205f8382abc5e209c5549b344818dbcae709dd49d402d7cf1"
         },
         {
@@ -346,7 +346,7 @@
             "15w14a"
           ],
           "version": "1.3.1+15w14a",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/15w14a/atum-1.3.1+15w14a.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/15w14a/atum-1.3.1+15w14a.jar",
           "hash": "4eedc8fe3a408c9230b0e473dd1198061878b269437fcc4572f920021e5bd1bdd773ff24bc56d653fe84d4c2240123ad27488ef1e08d58631b9b6589fab2a2dd"
         },
         {
@@ -354,7 +354,7 @@
             "20w14infinite"
           ],
           "version": "2.4+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/atum-2.4+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/atum-2.4+20w14infinite.jar",
           "hash": "7427eb7ffec6dfac5692b62189cdcb61de3e5c51415a9fe0a4d8b51cf9b57c28de3deae04d72156201d4e7dba5ac019801da87b81c14a68549b7968fae59bef2"
         },
         {
@@ -362,7 +362,7 @@
             "24w14potato"
           ],
           "version": "1.3.1+24w14potato",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/24w14potato/atum-1.3.1+24w14potato.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/24w14potato/atum-1.3.1+24w14potato.jar",
           "hash": "ef6e3e45b91c5eac0de202407e872ae92010cf1e79651ca27164c5ae7335eb3e1a0a594ec235a187942a6e0d6b51c15cd7635b18edd576d03a63e1dc258c47f4"
         },
         {
@@ -370,7 +370,7 @@
             "3D Shareware v1.34"
           ],
           "version": "1.3.1+3D-Shareware-v1.34",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/3D Shareware v1.34/atum-1.3.1+3D-Shareware-v1.34.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/3D Shareware v1.34/atum-1.3.1+3D-Shareware-v1.34.jar",
           "hash": "c43cb3e59b8c49c94f8fd212e3fb5697e64d4908a9dbc3af2d354b40fdbb93ed99b80c7f39148635970c80b452131a8515ee5cb43185abb04a0bce904b9e1d85"
         }
       ]
@@ -436,7 +436,8 @@
             "1.20.1",
             "1.20.2",
             "1.20.3",
-            "1.20.4"
+            "1.20.4",
+            "23w13a_or_b"
           ],
           "version": "1.3.2+1.19-1.20.4",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/0150b198bba5d7d56e5460e940a3dd0f99fdef82/legal-mods/chunkcacher/1.19-1.20.4/chunkcacher-1.3.2+1.19-1.20.4.jar",
@@ -500,7 +501,7 @@
             "20w14infinite"
           ],
           "version": "rev.632f7c9-dirty",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/chunkcacher-20w14infinite-rev.632f7c9-dirty.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/chunkcacher-20w14infinite-rev.632f7c9-dirty.jar",
           "hash": "452b4d99ee1ab3decc1f3a7f749fd5b2ba465aa2c0d615f9fda0f625bc3f15b0cc0fc05f5fffdb83208159d702cfc5fe1bdc39d179efaf95e4546efa3176df8e"
         }
       ],
@@ -834,7 +835,7 @@
             "20w14infinite"
           ],
           "version": "2.1.0+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/extra-options-2.1.0+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/extra-options-2.1.0+20w14infinite.jar",
           "hash": "920eb6f6275e845087bcd11a5b182863e4c1bd1fed17c8c60f79302fc813a7901a6a7197e9aed2c766931d435409e4dddf481b3d17abb8ac13c63d740ad13400"
         }
       ],
@@ -1048,7 +1049,7 @@
             "20w14infinite"
           ],
           "version": "2.2+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/fast-reset-2.2+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/fast-reset-2.2+20w14infinite.jar",
           "hash": "aa302743a3c14914b0712553f9beed4df0cb8ae5646c727dd214a5545df44c0261b4ddc05ce75aeb373355a31b1bfef1aec0cb145fa0ca0db29b15c21b2a94a7"
         }
       ]
@@ -1401,7 +1402,7 @@
             "20w14infinite"
           ],
           "version": "1.1.3",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/lazystronghold-1.1.3.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/lazystronghold-1.1.3.jar",
           "hash": "83b204db2b3bec1f7d06d5a913f0d88c8fa3bd30833869bd744b21080d3ba8c9d3eb017277c5b962a95ba0fdfbe49907386e829cd2255df1127a8309bea542e0"
         }
       ],
@@ -1850,7 +1851,7 @@
             "20w14infinite"
           ],
           "version": "0.8.1",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/phosphor-fabric-mc1.19.x-0.8.1.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/phosphor-fabric-mc1.19.x-0.8.1.jar",
           "hash": "13a0707b7a92726aa3154bc40978f36bb340d643c1d60e9fa2cbf8f7b0c7d3ea03c2a079f46a487df05e944eec9f5779afae9e99be7f70373e8a31d59948d487"
         }
       ],
@@ -2296,7 +2297,7 @@
             "20w14infinite"
           ],
           "version": "4.0+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/sleepbackground-4.0+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/sleepbackground-4.0+20w14infinite.jar",
           "hash": "d09f8cb6efd6a530f42aeebad2d87c1a1c5b62f7548bc3171c59a5ff37566c7156ed6a64e996c826cb2ba2a7ff3cef3a8184bb2b5982df31a0d479743986cf6d"
         }
       ],
@@ -2473,7 +2474,7 @@
             "20w14infinite"
           ],
           "version": "1.3.1+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/sodium-1.3.1+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/sodium-1.3.1+20w14infinite.jar",
           "hash": "538d7fb43b9d777f81d6b8718836b978845e831a970b4145a37d1c171830912084f9056c7e7675065c337f6b86ca9c416abca62c6362bfb67452835f18b8ef05"
         },
         {
@@ -2481,16 +2482,16 @@
             "23w13a_or_b"
           ],
           "version": "0.4.10+rev.b5afc10-dirty",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/23w13a_or_b/sodium-fabric-mc23w13a_or_b-0.4.10rev.b5afc10-dirty.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/23w13a_or_b/sodium-fabric-mc23w13a_or_b-0.4.10rev.b5afc10-dirty.jar",
           "hash": "a0a2ef77656b3e0516677fb511c68006cfb4f06bc38c91b8f68673227fa1530ca414bf110c27a0b37b9c8e17262a00f0d8c000440a17dda3b8995da5a45188f5"
         },
         {
           "target_version": [
             "24w14potato"
           ],
-          "version": "0.5.8-snapshot+mc24w14potato-local",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/24w14potato/sodium-fabric-0.5.8-snapshotmc24w14potato-local.jar",
-          "hash": "c51b680b252fd1face70a1d19620a37b0215dd6ed734c3c8b532009bde7ec7519006fbdd57accd4cbf470eae550a9fe0bcf60c7d39fec13a109d539af477fad7"
+          "version": "0.5.8+mc24w14potato",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/24w14potato/sodium-fabric-0.5.8+mc24w14potato.jar",
+          "hash": "52f6ca3a07e3276ff71353630f1cbc310f67bf4aa12c3ca0646d74c5350d515ec2b027a264e1a166ff73dc59b33e5e1d76087c7a25d2e0f1cc7520c4a1352472"
         }
       ]
     },
@@ -2532,7 +2533,7 @@
             "20w14infinite"
           ],
           "version": "1.2.1+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/speedrunapi-1.2.1+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/speedrunapi-1.2.1+20w14infinite.jar",
           "hash": "9675dc64be8e746b4b32c060bb3c4034947a090474ef970eb5a993859ac354dd6b1dfcbd5a29a10ae5465323ccc92e032260f2aa730692256d13bce74ab8f650"
         }
       ]
@@ -2854,7 +2855,7 @@
             "15w14a"
           ],
           "version": "14.2+15w14a",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/15w14a/SpeedRunIGT-14.2+15w14a.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/15w14a/SpeedRunIGT-14.2+15w14a.jar",
           "hash": "4d5130d45dcad9a3301634623f24c6d7da1a88fbadbd62b2b829ca23a26c052fb710e95b06f196769fb5a87f38fa11413d5c1c055ee4e19900060b52bd535af1"
         },
         {
@@ -2862,7 +2863,7 @@
             "20w14infinite"
           ],
           "version": "15.1+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/SpeedRunIGT-15.1+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/SpeedRunIGT-15.1+20w14infinite.jar",
           "hash": "bee53e0d05f0f2dcfd5a7cbf09ede7f915ae99ae87bfd793248f61174199ad4e76d2d09013581520da13297da9ed3607ad7c5e79f903da0331b8a37e9d195af0"
         },
         {
@@ -2870,7 +2871,7 @@
             "22w13oneblockatatime"
           ],
           "version": "14.2+22w13oneblockatatime",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/22w13oneblockatatime/SpeedRunIGT-14.2+22w13oneblockatatime.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/22w13oneblockatatime/SpeedRunIGT-14.2+22w13oneblockatatime.jar",
           "hash": "01dc9016abedde9ce3b6d0b2d8ebb0f6dcedffa55f96006b3149bb9bd6994408f88cb24137cabfe7925125ea19a1f380d99f3636b523213f6bf39b943f14ab0e"
         },
         {
@@ -2878,7 +2879,7 @@
             "23w13a_or_b"
           ],
           "version": "14.2+23w13a_or_b",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/23w13a_or_b/SpeedRunIGT-14.2+23w13a_or_b.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/23w13a_or_b/SpeedRunIGT-14.2+23w13a_or_b.jar",
           "hash": "d71b6ed6489bd1caadbb8f0d0d946bc5577eea4d69f80d9ddc85312611f52f721e40eaeb76becc1e00c2436ce435d944820db824237882b6613e9d89d5675086"
         },
         {
@@ -2886,7 +2887,7 @@
             "24w14potato"
           ],
           "version": "14.2+24w14potato",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/24w14potato/SpeedRunIGT-14.2+24w14potato.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/24w14potato/SpeedRunIGT-14.2+24w14potato.jar",
           "hash": "d4c19f29c5d14d5e7f6198c6f4ce3152cc7800c1a959351d156e91d92f8db824da859ba1ea3f3acfb5bb106ecece7a7a32f9c25426109a039da2a01fb35d9ec5"
         }
       ]
@@ -3141,7 +3142,7 @@
             "20w14infinite"
           ],
           "version": "2.2+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/standardsettings-2.2+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/standardsettings-2.2+20w14infinite.jar",
           "hash": "253467734eefdb5ac8d71fdf63d191b81e7a8a27980ca0cd1466cb46aab83248589dfbb6c26e1de0847a6cea679b30cca0559b2c42513e3b036409bb5288434e"
         }
       ]
@@ -3260,7 +3261,7 @@
             "20w14infinite"
           ],
           "version": "1.0.0-alpha",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/starlight+20w14infinite-1.0.0-alpha.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/starlight+20w14infinite-1.0.0-alpha.jar",
           "hash": "391f2e41ac984843f309d8b64e13aee69269208814aab74663b39b7ed3049c8bbe858dfe866276deb18236e5a2600768357081506e1872f3ada0ed666b403c92"
         }
       ],
@@ -3422,7 +3423,7 @@
             "20w14infinite"
           ],
           "version": "1.2.0+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/state-output-1.2.0+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/state-output-1.2.0+20w14infinite.jar",
           "hash": "94ab20f99cc6aec9db3f76195e9a4224236feac1c05402bc1288f8f0fcbae8b0895f2516d889126782748320af0feffce6909075b5d6b69ac66560ce85abaea2"
         }
       ]
@@ -3654,7 +3655,7 @@
             "20w14infinite"
           ],
           "version": "6.2.1+20w14infinite",
-          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/746524ce4cc12d3a93a1880ec52d59eb7cebf7f3/20w14infinite/worldpreview-6.2.1+20w14infinite.jar",
+          "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/8d14ccdace0b751b8a783aa8b0d0e405cfa8e566/20w14infinite/worldpreview-6.2.1+20w14infinite.jar",
           "hash": "a993ebe5885e9992eaacd18753f2c53512c10f7a02ac279a951897a7953acc2e14c5ec5d824f0aa064230bc6965a9392660bff6004c9108d87ef8f2fcd67440e"
         }
       ],
