@@ -509,7 +509,8 @@
         "ssg-only"
       ],
       "incompatibilities": [
-        "worldpreview"
+        "worldpreview",
+        "lazystronghold"
       ]
     },
     {
@@ -1408,6 +1409,9 @@
       ],
       "traits": [
         "rsg-only"
+      ],
+      "incompatibilities": [
+        "chunkcacher"
       ]
     },
     {
