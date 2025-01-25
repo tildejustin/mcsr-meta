@@ -45,9 +45,9 @@ val comparer: (String, String) -> Int = { o1, o2 ->
     if (one != null && two != null) {
         one.compareTo(two)
     } else if (one != null) {
-        1
-    } else if (two != null) {
         -1
+    } else if (two != null) {
+        1
     } else {
         // april fools snapshots
         o1.compareTo(o2)
@@ -79,7 +79,7 @@ fun main() {
             return@sorted Version.parse(s2.target_version.first().split("-")[0], false).compareTo(Version.parse(s1.target_version.first().split("-")[0], false))
         }.toList().toMutableList()))
     }
-    Files.list(aprilFoolsModsPath).forEach { folder ->
+    Files.list(aprilFoolsModsPath).sorted().forEach { folder ->
         if (folder.isHidden() || folder.isRegularFile()) return@forEach
         Files.list(folder).forEach { modFile ->
             val fmj = readFabricModJson(modFile)
@@ -245,18 +245,18 @@ fun createSemverRangeFromFolderName(folder: String): MutableSet<String> {
         val minVersion = Version.parse(parts[0].replace("+", ""), false)
         return minecraftVersions.filter {
             Version.parse(it, false) >= minVersion
-        }.toMutableSet()
+        }.toSortedSet(comparer)
     }
     if (parts.count() == 1) {
-        // return sortedSetOf<String>(comparer, parts[0])
-        return mutableSetOf(parts[0])
+        // return sortedSetOf<String>(comparer, parts[0]) fails on type at runtime
+        return listOf(parts[0]).toSortedSet(comparer)
     }
     val minVersion = Version.parse(parts[0], false)
     val maxVersion = Version.parse(parts[1], false)
     return minecraftVersions.filter {
         val currentVersion = Version.parse(it, false)
         return@filter currentVersion in minVersion..maxVersion
-    }.toMutableSet()
+    }.toSortedSet(comparer)
 }
 
 // clear old repo and re-clone it
