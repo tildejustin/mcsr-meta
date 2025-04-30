@@ -47,7 +47,8 @@
     "tabfocus": "https://github.com/RedLime/TabFocus",
     "voyager": "https://github.com/tildejustin/voyager",
     "worldpreview": "https://github.com/KingContaria/mcsr-worldpreview-1.16.1",
-    "z-buffer-fog": "https://github.com/RedLime/LegacyPlanarFog"
+    "z-buffer-fog": "https://github.com/RedLime/LegacyPlanarFog",
+    "boundlesswindow": "https://github.com/Slackow/BoundlessWindow"
   },
   "names": {
     "optifabric": "OptiFabric"
@@ -140,6 +141,9 @@
       "mac-only"
     ],
     "sodiummac": [
+      "mac-only"
+    ],
+    "boundlesswindow": [
       "mac-only"
     ]
   },
