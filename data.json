@@ -51,7 +51,9 @@
     "boundlesswindow": "https://github.com/Slackow/BoundlessWindow"
   },
   "names": {
-    "optifabric": "OptiFabric"
+    "antigone": "Antigone",
+    "optifabric": "OptiFabric",
+    "retino": "RetiNO"
   },
   "max-versions": [
     "1.0",
