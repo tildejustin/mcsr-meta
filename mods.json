@@ -420,6 +420,7 @@
             "1.21.3",
             "1.21.4",
             "1.21.5",
+            "1.21.6",
             "22w13oneblockatatime",
             "23w13a_or_b",
             "24w14potato"
@@ -474,7 +475,8 @@
             "1.21.2",
             "1.21.3",
             "1.21.4",
-            "1.21.5"
+            "1.21.5",
+            "1.21.6"
           ],
           "version": "1.0.0+1.14-1.21.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/c62c6973fa973e20c72f19624dfebbbb0e1c2895/legal-mods/boundlesswindow/1.14+/boundlesswindow-1.0.0+1.14-1.21.x.jar",
@@ -1211,6 +1213,7 @@
             "1.21.3",
             "1.21.4",
             "1.21.5",
+            "1.21.6",
             "20w14infinite",
             "22w13oneblockatatime",
             "23w13a_or_b",
@@ -2116,7 +2119,8 @@
             "1.21.2",
             "1.21.3",
             "1.21.4",
-            "1.21.5"
+            "1.21.5",
+            "1.21.6"
           ],
           "version": "1.0.1",
           "url": "https://cdn.modrinth.com/data/z7dmZ4nL/versions/1.0.1/retino-1.0.1.jar",
@@ -2169,6 +2173,7 @@
             "1.21.3",
             "1.21.4",
             "1.21.5",
+            "1.21.6",
             "23w13a_or_b",
             "24w14potato"
           ],
@@ -3097,7 +3102,8 @@
           ],
           "version": "1.2.4+1.21.6",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/c62c6973fa973e20c72f19624dfebbbb0e1c2895/legal-mods/standardsettings/1.21.6/standardsettings-1.2.4+1.21.6.jar",
-          "hash": "f42ba56e08d0421553955099805a4f010d4171aa4cdd896b1c339ac7dbce1efa16212e677d705e5769241ec5b9ae0ce94fd0f0ef14e6ba69b8faf7b598bcb1f9"
+          "hash": "f42ba56e08d0421553955099805a4f010d4171aa4cdd896b1c339ac7dbce1efa16212e677d705e5769241ec5b9ae0ce94fd0f0ef14e6ba69b8faf7b598bcb1f9",
+          "recommended": false
         },
         {
           "target_version": [
@@ -3510,6 +3516,7 @@
             "1.21.3",
             "1.21.4",
             "1.21.5",
+            "1.21.6",
             "22w13oneblockatatime",
             "23w13a_or_b",
             "24w14potato"
