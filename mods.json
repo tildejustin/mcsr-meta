@@ -4,7 +4,7 @@
     {
       "modid": "anchiale",
       "name": "Anchiale",
-      "description": "Adds a faster way to exit worlds in 1.8. Use the menu.quitWorld button to exit the current world without waiting for the server tasks queue to complete.",
+      "description": "Adds a faster way to exit worlds in 1.8. Use the Quit to Title button to exit the current world without waiting for the server tasks queue to complete.",
       "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-anchiale-1.8-1.8.9",
       "versions": [
         {
