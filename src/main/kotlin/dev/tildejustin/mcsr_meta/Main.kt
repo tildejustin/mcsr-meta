@@ -87,12 +87,20 @@ fun main() {
         }
     }
     json.decodeFromString<HashMap<String, List<String>>>(aprilFoolsModsPath.resolve("external.json").readText()).forEach { (version, extras) ->
-        val id = version.split("/")[0]
-        mods.find { it.modid == id }?.versions?.find { it.url.endsWith(evaluateLinks(version)) }?.target_version?.addAll(extras) ?: throw NoSuchElementException(version)
+        val id = version.split("/", ";")[0]
+        mods.find { it.modid == id }?.versions?.find { afVersionMatches(it, version) }?.target_version?.addAll(extras) ?: throw NoSuchElementException(version)
     }
 
     Path.of("mods.json").writeText(json.encodeToString(Meta(6, mods.sortedBy { it.modid })) + "\n")
     println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
+}
+
+fun afVersionMatches(modVersion: Meta.ModVersion, version: String): Boolean {
+    // Formats:
+    // Exact target: "fast_reset/1.19.4-1.21.5/fast-reset-1.4.3+1.19.4-1.20.6.jar"
+    // Loose target: "fast_reset;1.19.4"
+    if (version.contains(";")) return modVersion.target_version.contains(version.split(";")[1])
+    return modVersion.url.endsWith(evaluateLinks(version))
 }
 
 fun evaluateLinks(partialPath: String): String {
