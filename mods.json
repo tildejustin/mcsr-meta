@@ -119,7 +119,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "1.3.2+1.21.6",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/44ccb821e67370b513fac43e2fffbc3b149dff3e/legal-mods/atum/1.21.6-1.21.7/atum-1.3.2+1.21.6.jar",
@@ -421,6 +422,7 @@
             "1.21.4",
             "1.21.5",
             "1.21.6",
+            "1.21.7",
             "22w13oneblockatatime",
             "23w13a_or_b",
             "24w14potato"
@@ -476,7 +478,8 @@
             "1.21.3",
             "1.21.4",
             "1.21.5",
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "1.0.0+1.14-1.21.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/44ccb821e67370b513fac43e2fffbc3b149dff3e/legal-mods/boundlesswindow/1.14+/boundlesswindow-1.0.0+1.14-1.21.x.jar",
@@ -1068,7 +1071,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "1.4.3+1.21.6",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/44ccb821e67370b513fac43e2fffbc3b149dff3e/legal-mods/fast_reset/1.21.6-1.21.7/fast-reset-1.4.3+1.21.6.jar",
@@ -1214,6 +1218,7 @@
             "1.21.4",
             "1.21.5",
             "1.21.6",
+            "1.21.7",
             "20w14infinite",
             "22w13oneblockatatime",
             "23w13a_or_b",
@@ -1297,7 +1302,8 @@
         {
           "target_version": [
             "1.21.5",
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "0.2.9",
           "url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/neW85eWt/krypton-0.2.9.jar",
@@ -2021,7 +2027,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "1.2.1+1.21.6",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/44ccb821e67370b513fac43e2fffbc3b149dff3e/legal-mods/planifolia/1.21.6-1.21.7/planifolia-1.2.1+1.21.6.jar",
@@ -2129,7 +2136,8 @@
             "1.21.3",
             "1.21.4",
             "1.21.5",
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "1.0.1",
           "url": "https://cdn.modrinth.com/data/z7dmZ4nL/versions/1.0.1/retino-1.0.1.jar",
@@ -2183,6 +2191,7 @@
             "1.21.4",
             "1.21.5",
             "1.21.6",
+            "1.21.7",
             "23w13a_or_b",
             "24w14potato"
           ],
@@ -2480,7 +2489,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "0.6.13+mc1.21.6",
           "url": "https://cdn.modrinth.com/data/AANobbMI/versions/ND4ROcMQ/sodium-fabric-0.6.13%2Bmc1.21.6.jar",
@@ -3107,7 +3117,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.6"
+            "1.21.6",
+            "1.21.7"
           ],
           "version": "1.2.5+1.21.6",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/44ccb821e67370b513fac43e2fffbc3b149dff3e/legal-mods/standardsettings/1.21.6-1.21.7/standardsettings-1.2.5+1.21.6.jar",
@@ -3526,6 +3537,7 @@
             "1.21.4",
             "1.21.5",
             "1.21.6",
+            "1.21.7",
             "22w13oneblockatatime",
             "23w13a_or_b",
             "24w14potato"
