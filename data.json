@@ -9,8 +9,8 @@
     "phosphor": "No-compromises lighting engine optimization mod"
   },
   "sources": {
-    "anchiale": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-anchiale-1.8-1.8.9",
-    "antigone": "https://github.com/Minecraft-Java-Edition-Speedrunning/mcsr-antigone-1.16.1",
+    "anchiale": "https://github.com/Minecraft-Java-Edition-Speedrunning/anchiale",
+    "antigone": "https://github.com/Minecraft-Java-Edition-Speedrunning/antigone",
     "antiresourcereload": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
     "atum": "https://github.com/KingContaria/atum-rewrite",
     "biome_threadlocal_fix": "https://github.com/RedLime/BiomeThreadLocalFix",
@@ -47,7 +47,7 @@
     "stats-per-world": "https://github.com/RedLime/StatsPerWorld",
     "tabfocus": "https://github.com/RedLime/TabFocus",
     "voyager": "https://github.com/tildejustin/voyager",
-    "worldpreview": "https://github.com/KingContaria/mcsr-worldpreview-1.16.1",
+    "worldpreview": "https://github.com/KingContaria/worldpreview",
     "z-buffer-fog": "https://github.com/RedLime/LegacyPlanarFog",
     "boundlesswindow": "https://github.com/Slackow/BoundlessWindow"
   },
