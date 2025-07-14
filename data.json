@@ -30,6 +30,7 @@
     "lithium": "https://github.com/KingContaria/lithium-mcsr",
     "no-paus": "https://github.com/tildejustin/no-paus",
     "optifabric": "https://github.com/tildejustin/optifabric",
+    "optifabric-origins": "https://github.com/Sjouwer/OptiFabric-Origins",
     "phosphor": "https://github.com/CaffeineMC/phosphor-fabric",
     "planifolia": "https://github.com/tildejustin/planifolia",
     "retino": "https://github.com/juliand665/retiNO",
@@ -125,7 +126,15 @@
       "worldpreview"
     ],
     [
+      "optifabric-origins",
+      "worldpreview"
+    ],
+    [
       "optifabric",
+      "starlight"
+    ],
+    [
+      "optifabric-origins",
       "starlight"
     ]
   ],
