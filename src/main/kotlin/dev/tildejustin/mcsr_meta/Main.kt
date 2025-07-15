@@ -25,6 +25,7 @@ lateinit var unrecommendedMods: HashMap<String, List<String>>
 lateinit var obsoleteMods: HashMap<String, List<String>>
 lateinit var codeSources: HashMap<String, String>
 lateinit var v2Override: List<String>
+lateinit var additionalIntermediary: HashMap<String, List<Intermediary>>
 
 // modid -> list of conditions
 lateinit var conditions: HashMap<String, MutableList<String>>
@@ -74,9 +75,9 @@ fun main() {
             modVersions.add(generateModVersion(modid.name, Files.list(it).findFirst().get(), it.name, gitId))
         }
         mods.add(generateMod(modid, modVersions.stream().sorted { s1, s2 ->
-            if (s2.target_version.first().contains("+")) return@sorted 1
-            else if (s1.target_version.first().contains("+")) return@sorted -1
-            return@sorted Version.parse(s2.target_version.first().split("-")[0], false).compareTo(Version.parse(s1.target_version.first().split("-")[0], false))
+            if (s2.targetVersion.first().contains("+")) return@sorted 1
+            else if (s1.targetVersion.first().contains("+")) return@sorted -1
+            return@sorted Version.parse(s2.targetVersion.first().split("-")[0], false).compareTo(Version.parse(s1.targetVersion.first().split("-")[0], false))
         }.toList().toMutableList()))
     }
     Files.list(aprilFoolsModsPath).sorted().forEach { folder ->
@@ -88,7 +89,7 @@ fun main() {
     }
     json.decodeFromString<HashMap<String, List<String>>>(aprilFoolsModsPath.resolve("external.json").readText()).forEach { (version, extras) ->
         val id = version.split("/", ";")[0]
-        mods.find { it.modid == id }?.versions?.find { afVersionMatches(it, version) }?.target_version?.addAll(extras) ?: throw NoSuchElementException(version)
+        mods.find { it.modid == id }?.versions?.find { afVersionMatches(it, version) }?.targetVersion?.addAll(extras) ?: throw NoSuchElementException(version)
     }
 
     Path.of("mods.json").writeText(json.encodeToString(Meta(6, mods.sortedBy { it.modid })) + "\n")
@@ -99,7 +100,7 @@ fun afVersionMatches(modVersion: Meta.ModVersion, version: String): Boolean {
     // Formats:
     // Exact target: "fast_reset/1.19.4-1.21.5/fast-reset-1.4.3+1.19.4-1.20.6.jar"
     // Loose target: "fast_reset;1.19.4"
-    if (version.contains(";")) return modVersion.target_version.contains(version.split(";")[1])
+    if (version.contains(";")) return modVersion.targetVersion.contains(version.split(";")[1])
     return modVersion.url.endsWith(evaluateLinks(version))
 }
 
@@ -119,7 +120,8 @@ data class AdditionalData(
     val obsolete: HashMap<String, List<String>>,
     val incompatibilities: List<List<String>>,
     @SerialName("extra-traits") val extraTraits: HashMap<String, Set<String>>,
-    @SerialName("v2-override") val v2Override: List<String>
+    @SerialName("v2-override") val v2Override: List<String>,
+    @SerialName("additional-intermediary") val additionalIntermediary: HashMap<String, List<Intermediary>>
 )
 
 fun readAdditionalData() {
@@ -142,6 +144,7 @@ fun readAdditionalData() {
     modIncompatibilities = additionalMetadata.incompatibilities
     codeSources = additionalMetadata.sources
     v2Override = additionalMetadata.v2Override
+    additionalIntermediary = additionalMetadata.additionalIntermediary
     additionalMetadata.extraTraits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
 }
 
@@ -192,7 +195,65 @@ fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: S
     val info = readFabricModJson(modFile)
     val unrecommendedIntersection = unrecommendedMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
     val obsoleteIntersection = obsoleteMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
-    return Meta.ModVersion(range, info.version, modUrl, hashPath(modFile), unrecommendedIntersection?.isEmpty() ?: true, obsoleteIntersection?.isNotEmpty() ?: false)
+    return Meta.ModVersion(
+        range,
+        info.version,
+        modUrl,
+        hashPath(modFile),
+        unrecommendedIntersection?.isEmpty() ?: true,
+        obsoleteIntersection?.isNotEmpty() ?: false,
+        getIntermediary(modid, modFile, range).sorted()
+    )
+}
+
+fun getIntermediary(modid: String, modFile: Path, range: Set<String>): Set<Intermediary> {
+    // for better detection I should take code from this https://github.com/thecatcore/WFVAIO
+    val intermediaryTypes = mutableSetOf<Intermediary>()
+    FileSystems.newFileSystem(modFile).use { jar ->
+        jar.getPath("META-INF/MANIFEST.MF").readLines().forEach { line ->
+            val parts = line.trim().split(":")
+            when (parts[0]) {
+                "Calamus-Generation" -> intermediaryTypes.add(
+                    when (parts[1].trim().toInt()) {
+                        1 -> Intermediary.ORNITHE
+                        2 -> Intermediary.ORNITHE_GEN2
+                        else -> throw RuntimeException()
+                    }
+                )
+
+                "Legacy-Fabric-Intermediary-Version" -> intermediaryTypes.add(
+                    when (parts[1].trim().toInt()) {
+                        1 -> Intermediary.LEGACY_FABRIC
+                        2 -> Intermediary.LEGACY_FABRIC_V2
+                        else -> throw RuntimeException()
+                    }
+                )
+            }
+        }
+    }
+    if (modid in v2Override) {
+        intermediaryTypes.add(Intermediary.LEGACY_FABRIC_V2)
+    }
+    if (modid in additionalIntermediary) {
+        intermediaryTypes.addAll(additionalIntermediary[modid] as List<Intermediary>)
+    }
+    if (intermediaryTypes.isNotEmpty()) return intermediaryTypes
+    // fallback for fabric / old legacy fabric
+    val topVersion = range.last()
+    println(topVersion)
+    try {
+        val version = Version.parse(topVersion, false)
+        intermediaryTypes.add(if (version.minor in 3..13) Intermediary.LEGACY_FABRIC else Intermediary.FABRIC)
+    } catch (_: VersionFormatException) {
+        intermediaryTypes.add(
+            when (topVersion) {
+                "1.RV-pre1" -> Intermediary.LEGACY_FABRIC_V2
+                "15w14a" -> Intermediary.LEGACY_FABRIC
+                else -> Intermediary.FABRIC
+            }
+        )
+    }
+    return intermediaryTypes
 }
 
 fun getExternalJarIfNecessary(folder: Path): Path {

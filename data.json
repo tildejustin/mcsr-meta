@@ -160,5 +160,10 @@
   },
   "v2-override": [
     "z-buffer-fog"
-  ]
+  ],
+  "additional-intermediary": {
+    "z-buffer-fog": [
+      "net.fabricmc:intermediary"
+    ]
+  }
 }

@@ -3,9 +3,10 @@ package dev.tildejustin.mcsr_meta.json
 import kotlinx.serialization.*
 
 @Serializable
+@OptIn(ExperimentalSerializationApi::class)
 data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
     @Serializable
-    data class Mod @OptIn(ExperimentalSerializationApi::class) constructor(
+    data class Mod(
         val modid: String,
         val name: String,
         val description: String,
@@ -18,12 +19,13 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
     )
 
     @Serializable
-    data class ModVersion @OptIn(ExperimentalSerializationApi::class) constructor(
-        val target_version: MutableSet<String>,
+    data class ModVersion(
+        @SerialName("target_version") val targetVersion: MutableSet<String>,
         val version: String,
         val url: String,
         val hash: String,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val recommended: Boolean = true,
-        @EncodeDefault(EncodeDefault.Mode.NEVER) val obsolete: Boolean = false
+        @EncodeDefault(EncodeDefault.Mode.NEVER) val obsolete: Boolean = false,
+        val intermediary: List<Intermediary>
     )
 }
