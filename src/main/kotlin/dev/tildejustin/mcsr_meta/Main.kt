@@ -240,7 +240,6 @@ fun getIntermediary(modid: String, modFile: Path, range: Set<String>): Set<Inter
     if (intermediaryTypes.isNotEmpty()) return intermediaryTypes
     // fallback for fabric / old legacy fabric
     val topVersion = range.last()
-    println(topVersion)
     try {
         val version = Version.parse(topVersion, false)
         intermediaryTypes.add(if (version.minor in 3..13) Intermediary.LEGACY_FABRIC else Intermediary.FABRIC)
