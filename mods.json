@@ -4165,7 +4165,6 @@
           "version": "2.3+1.15.2",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/fb71ebe5f932c485b89e0e382127c62f5a8e83cb/legal-mods/standardsettings/1.15.2/standardsettings-2.3+1.15.2.jar",
           "hash": "22e8de031e7de68b06eede61e253711d333b12384b77feb3a8f2f38683a7a49455004e6cedae73b6eae253103917c67225c4718de2ba0e863235fe0d35e08c36",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
