@@ -30,6 +30,8 @@ lateinit var additionalIntermediary: HashMap<String, List<Intermediary>>
 // modid -> list of conditions
 lateinit var conditions: HashMap<String, MutableList<String>>
 
+var secretPreReleases = setOf("1.2", "1.3", "1.4", "1.4.1", "1.4.3", "1.5", "1.6", "1.6.3", "1.7", "1.7.1", "1.7.3")
+
 // good for testing out quick changes
 const val noReload = false
 val comparer: (String, String) -> Int = { o1, o2 ->
@@ -134,6 +136,7 @@ fun readAdditionalData() {
         val maxPatch = maxVersion.split(".").last().toInt()
         val intermediateVersions = (1..maxPatch).map { "$minor.$it" } as ArrayList
         intermediateVersions.addFirst(minor)
+        intermediateVersions.removeAll(secretPreReleases)
         return@map intermediateVersions
     }.flatten()
     nameReplacements = additionalMetadata.names
