@@ -672,6 +672,7 @@
           "version": "1.4.2+1.16.1",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/ec16a95ad703c89afc96da2d398be156b133a7e8/legal-mods/chunkcacher/1.16.1/chunkcacher-1.4.2+1.16.1.jar",
           "hash": "1c6d5a42e6f0aaaf0cafab28100d0bdb89bf4eab2aa78ad381486441941024ed93532ae57681457b7d35428e49f39559690dd6cbf6e6a1719c7d3fd02e75e76b",
+          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -690,6 +691,7 @@
           "version": "2.0.0",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/ec16a95ad703c89afc96da2d398be156b133a7e8/legal-mods/chunkcacher/1.14-1.15.2/chunkcacher-1.14-1.15.2-2.0.0.jar",
           "hash": "06331203fad67066dfd9d91d58989da51cdb96f3541c27ae1a5afb67b476f0a0d4d2d34ac29f515e3492695d9712091de066afcad50eeab6c947a50d82f7f9f1",
+          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]

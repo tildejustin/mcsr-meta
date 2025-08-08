@@ -91,6 +91,10 @@
     ],
     "worldpreview": [
       "1.8.9"
+    ],
+    "chunkcacher": [
+      "1.15.2",
+      "1.16.1"
     ]
   },
   "obsolete": {
