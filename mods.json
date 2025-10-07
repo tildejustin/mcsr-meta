@@ -133,7 +133,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "1.3.4+1.21.9-1.21.10",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/6f1a9f276d4567fcc31f0351111a9fb851cb87aa/legal-mods/atum/1.21.9-1.21.10/atum-1.3.4+1.21.9-1.21.10.jar",
@@ -537,6 +538,7 @@
             "1.21.7",
             "1.21.8",
             "1.21.9",
+            "1.21.10",
             "22w13oneblockatatime",
             "23w13a_or_b",
             "24w14potato"
@@ -598,7 +600,8 @@
             "1.21.6",
             "1.21.7",
             "1.21.8",
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "1.1.1+1.14-1.21.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/6f1a9f276d4567fcc31f0351111a9fb851cb87aa/legal-mods/boundlesswindow/1.14+/boundlesswindow-1.1.1+1.14-1.21.x.jar",
@@ -1296,7 +1299,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "1.5.1+1.21.9-1.21.10",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/6f1a9f276d4567fcc31f0351111a9fb851cb87aa/legal-mods/fast_reset/1.21.9-1.21.10/fast-reset-1.5.1+1.21.9-1.21.10.jar",
@@ -1447,7 +1451,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "1.3.0+MC1.21.9",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/6f1a9f276d4567fcc31f0351111a9fb851cb87aa/legal-mods/forceport/1.21.9+/forceport-1.3.0+MC1.21.9.jar",
@@ -2556,7 +2561,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "1.2.1+1.21.9-1.21.10",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/6f1a9f276d4567fcc31f0351111a9fb851cb87aa/legal-mods/planifolia/1.21.9-1.21.10/planifolia-1.2.1+1.21.9-1.21.10.jar",
@@ -2695,7 +2701,8 @@
             "1.21.6",
             "1.21.7",
             "1.21.8",
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "1.0.1",
           "url": "https://cdn.modrinth.com/data/z7dmZ4nL/versions/1.0.1/retino-1.0.1.jar",
@@ -3120,7 +3127,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "0.7.0+mc1.21.9",
           "url": "https://cdn.modrinth.com/data/AANobbMI/versions/AQpu5aS1/sodium-fabric-0.7.0%2Bmc1.21.9.jar",
@@ -4550,7 +4558,8 @@
       "versions": [
         {
           "target_version": [
-            "1.21.9"
+            "1.21.9",
+            "1.21.10"
           ],
           "version": "1.2.3+1.21.9-1.21.10",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/6f1a9f276d4567fcc31f0351111a9fb851cb87aa/legal-mods/state-output/1.21.9-1.21.10/state-output-1.2.3+1.21.9-1.21.10.jar",
