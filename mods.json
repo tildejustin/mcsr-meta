@@ -1,11 +1,11 @@
 {
-  "schemaVersion": 6,
+  "schemaVersion": 7,
   "mods": [
     {
       "modid": "anchiale",
       "name": "Anchiale",
       "description": "Adds a faster way to exit worlds in 1.8. Use the Quit to Title button to exit the current world without waiting for the server tasks queue to complete.",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/anchiale",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/anchiale",
       "versions": [
         {
           "target_version": [
@@ -34,7 +34,7 @@
       "modid": "antigone",
       "name": "Antigone",
       "description": "Fixes a rare server deadlock in Minecraft 1.16.1",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/antigone",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/antigone",
       "versions": [
         {
           "target_version": [
@@ -53,7 +53,7 @@
       "modid": "antiresourcereload",
       "name": "AntiResourceReload",
       "description": "Disables the monitored reload upon world creation.",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
       "versions": [
         {
           "target_version": [
@@ -129,7 +129,7 @@
       "modid": "atum",
       "name": "Atum",
       "description": "Mod to automatically reset RSG and SSG",
-      "sources": "https://github.com/KingContaria/atum",
+      "homepage": "https://github.com/KingContaria/atum",
       "versions": [
         {
           "target_version": [
@@ -503,7 +503,7 @@
       "modid": "biome_threadlocal_fix",
       "name": "BiomeThreadLocalFix",
       "description": "Fix Minecraft Biome ThreadLocal Memory leak issue",
-      "sources": "https://github.com/RedLime/BiomeThreadLocalFix",
+      "homepage": "https://github.com/RedLime/BiomeThreadLocalFix",
       "versions": [
         {
           "target_version": [
@@ -556,7 +556,7 @@
       "modid": "boundlesswindow",
       "name": "BoundlessWindow",
       "description": "Removes the titlebar on macOS, enabling the window height to be resized without bound.",
-      "sources": "https://github.com/Slackow/BoundlessWindow",
+      "homepage": "https://github.com/Slackow/BoundlessWindow",
       "versions": [
         {
           "target_version": [
@@ -619,7 +619,7 @@
       "modid": "chunkcacher",
       "name": "Chunkcacher",
       "description": "A Minecraft Fabric mod that caches chunk information to speed up world generation.",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/chunkcacher",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/chunkcacher",
       "versions": [
         {
           "target_version": [
@@ -725,7 +725,7 @@
       "modid": "chunkumulator",
       "name": "Chunkumulator",
       "description": "This mod accumulates a list of chunks it needs to send to each player and sends them in chunks of chunks!",
-      "sources": "https://github.com/DuncanRuns/Chunkumulator",
+      "homepage": "https://github.com/DuncanRuns/Chunkumulator",
       "versions": [
         {
           "target_version": [
@@ -825,7 +825,7 @@
       "modid": "costar",
       "name": "COSTAR",
       "description": "piechart blockentity reflection fix for fabric 1.9-1.12 ",
-      "sources": "https://github.com/tildejustin/costar",
+      "homepage": "https://frontcage.com/t/costar-mod-wiki-page/41",
       "versions": [
         {
           "target_version": [
@@ -857,7 +857,7 @@
       "modid": "dynamicmenufps",
       "name": "Dynamic Menu FPS",
       "description": "Dynamically adjusts FPS on pause screen so minecraft doesn't hog resources in background.",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
       "versions": [
         {
           "target_version": [
@@ -936,7 +936,7 @@
       "modid": "extra-options",
       "name": "Extra Options",
       "description": "Backports the 1.16.2+ options of reduced distortion effects and reduced fov effects, along with options fine-tuning what those sliders affect",
-      "sources": "https://github.com/tildejustin/extra-options",
+      "homepage": "https://github.com/tildejustin/extra-options",
       "versions": [
         {
           "target_version": [
@@ -1143,7 +1143,7 @@
       "modid": "fabricproxy-lite",
       "name": "FabricProxy Lite",
       "description": "Support forward player data from proxy",
-      "sources": "https://github.com/OKTW-Network/FabricProxy-Lite",
+      "homepage": "https://github.com/OKTW-Network/FabricProxy-Lite",
       "versions": [
         {
           "target_version": [
@@ -1295,7 +1295,7 @@
       "modid": "fast_reset",
       "name": "FastReset",
       "description": "Skips saving worlds to reset faster.",
-      "sources": "https://github.com/KingContaria/FastReset",
+      "homepage": "https://github.com/KingContaria/FastReset",
       "versions": [
         {
           "target_version": [
@@ -1447,7 +1447,7 @@
       "modid": "forceport",
       "name": "Force Port Mod",
       "description": "Forces the port of open to lan to a set number and increases the player limit of open to lan to as large as it can be.",
-      "sources": "https://github.com/DuncanRuns/Force-Port-Mod",
+      "homepage": "https://github.com/DuncanRuns/Force-Port-Mod",
       "versions": [
         {
           "target_version": [
@@ -1580,7 +1580,7 @@
       "modid": "krypton",
       "name": "Krypton",
       "description": "A Fabric mod that optimizes the Minecraft networking stack and entity tracker.",
-      "sources": "https://github.com/astei/krypton",
+      "homepage": "https://github.com/astei/krypton",
       "versions": [
         {
           "target_version": [
@@ -1755,7 +1755,7 @@
       "modid": "lazydfu",
       "name": "LazyDFU",
       "description": "Makes DataFixerUpper more lazy",
-      "sources": "https://github.com/astei/lazydfu",
+      "homepage": "https://github.com/astei/lazydfu",
       "versions": [
         {
           "target_version": [
@@ -1819,7 +1819,7 @@
       "modid": "lazystronghold",
       "name": "Lazystronghold",
       "description": "Speeds up stronghold generation through lazy evaluation of strongholds combined with multithreading",
-      "sources": "https://github.com/Gregor0410/LazyStronghold",
+      "homepage": "https://github.com/Gregor0410/LazyStronghold",
       "versions": [
         {
           "target_version": [
@@ -1900,7 +1900,7 @@
       "modid": "legacy-crash-fix",
       "name": "Legacy Crash Fix",
       "description": "fixes assorted crashes in legacy versions of the game",
-      "sources": "https://github.com/tildejustin/legacy-crash-fix",
+      "homepage": "https://github.com/tildejustin/legacy-crash-fix",
       "versions": [
         {
           "target_version": [
@@ -1974,7 +1974,7 @@
       "modid": "legacy-planifolia",
       "name": "Legacy Planifolia",
       "description": "Remove non-vanilla nonsense from OptiFine",
-      "sources": "https://github.com/tildejustin/legacy-planifolia",
+      "homepage": "https://github.com/tildejustin/legacy-planifolia",
       "versions": [
         {
           "target_version": [
@@ -2027,7 +2027,7 @@
       "modid": "lithium",
       "name": "Lithium",
       "description": "Lithium is a free and open-source optimization mod for Minecraft which makes a wide range of performance improvements to the game.",
-      "sources": "https://github.com/KingContaria/lithium-mcsr",
+      "homepage": "https://github.com/KingContaria/lithium-mcsr",
       "versions": [
         {
           "target_version": [
@@ -2348,7 +2348,7 @@
       "modid": "no-paus",
       "name": "No Paus",
       "description": "Backports pause on lost focus disabling functionality from 12w34a to earlier versions",
-      "sources": "https://github.com/tildejustin/no-paus",
+      "homepage": "https://github.com/tildejustin/no-paus",
       "versions": [
         {
           "target_version": [
@@ -2368,7 +2368,7 @@
       "modid": "optifabric",
       "name": "OptiFabric",
       "description": "OptiFabric is a mod that loads OptiFine into Fabric",
-      "sources": "https://github.com/tildejustin/optifabric",
+      "homepage": "https://github.com/tildejustin/optifabric",
       "versions": [
         {
           "target_version": [
@@ -2442,7 +2442,7 @@
       "modid": "optifabric-origins",
       "name": "OptiFabric Origins",
       "description": "Optifabric is a mod that loads optifine into fabric",
-      "sources": "https://github.com/Sjouwer/OptiFabric-Origins",
+      "homepage": "https://github.com/Sjouwer/OptiFabric-Origins",
       "versions": [
         {
           "target_version": [
@@ -2466,10 +2466,859 @@
       ]
     },
     {
+      "modid": "optifine",
+      "name": "OptiFine",
+      "description": "OptiFine is a Minecraft optimization mod. It allows Minecraft to run faster and look better with full support for shaders, HD textures and many configuration options.",
+      "homepage": "https://optifine.net/home",
+      "versions": [
+        {
+          "target_version": [
+            "1.14.4"
+          ],
+          "version": "HD_U_G5",
+          "url": "https://optifine.net/download?f=OptiFine_1.14.4_HD_U_G5.jar",
+          "hash": "580ea34d0d67bc7372b3ad3655a237d23c4ff49f6ea3b29103cac96742d19471ece7351a939ee3694cdcc3615dfbfc868372e048d7d33c24961d11cde44fd483",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.14.3"
+          ],
+          "version": "HD_U_F2",
+          "url": "https://optifine.net/download?f=OptiFine_1.14.3_HD_U_F2.jar",
+          "hash": "09b3fde37f1d45300f4acbeccfe32dc3c43100ab79e6071be96bfa7fa776d75cf111634cec5720636965549c4abe8bbdf813bc260d1768b164b32a8cc51afc41",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.14.2"
+          ],
+          "version": "HD_U_F1",
+          "url": "https://optifine.net/download?f=OptiFine_1.14.2_HD_U_F1.jar",
+          "hash": "9a11e18668c557c105dfb68eeda6bbb4eae3d21ad8fec7f9919022d5c97eb4fb9f1f814e6f8818c72ec9b6b63f652ff3ea97e0e165703f51d03973825279ed89",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.13.2"
+          ],
+          "version": "HD_U_G5",
+          "url": "https://optifine.net/download?f=OptiFine_1.13.2_HD_U_G5.jar",
+          "hash": "35595306b44beafddddfa359520888a9651f76a4c06e321a1c21813af618cdbf913a2ec178c83cfee419fbf22be5137f38efbae6222f2294596f2ea70e12b15c",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.13.1"
+          ],
+          "version": "HD_U_E4",
+          "url": "https://optifine.net/download?f=OptiFine_1.13.1_HD_U_E4.jar",
+          "hash": "e45da986d0ca2abb3c1af6cccf81bd59d62ebe7bfc9e903fe7b22233471a5e6965b20282566e83d4aa94540cf949814adc293f96cda87084f5691598b7ad6248",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.13"
+          ],
+          "version": "HD_U_E4",
+          "url": "https://optifine.net/download?f=OptiFine_1.13_HD_U_E4.jar",
+          "hash": "691bb5a68760ac91c4c52c93e614e06119ce73022a1bfc043284b80a7fa37a62d88ba9ea246a69729386202ba728297dfb7e93d832f83cd6c1f8d7c7739b5221",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.12.2"
+          ],
+          "version": "HD_U_G5",
+          "url": "https://optifine.net/download?f=OptiFine_1.12.2_HD_U_G5.jar",
+          "hash": "74dc59c52b1d7b7f7b5b813f0037d36d1269237f1acc2e7665c0dc45b1a55ee400c28112edff2489bf753fd1a5d649623493db0c2298ba5d52907dfc1f7aef38",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.12.1"
+          ],
+          "version": "HD_U_G5",
+          "url": "https://optifine.net/download?f=OptiFine_1.12.1_HD_U_G5.jar",
+          "hash": "b4b19bba0fd3da9befd877205ed52034c5a225b8c335f15e7497ff1e81b88b1af7abc379d1eb3575fe1a7aa9e7663566e5677ed910154eccb63fb299ae6ceddf",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.12"
+          ],
+          "version": "HD_U_G5",
+          "url": "https://optifine.net/download?f=OptiFine_1.12_HD_U_G5.jar",
+          "hash": "be2ffe7d3b11635004d5440dc05c84e7f0ceb003a86f7a71d92276a0e3cb376dd2f3852603926efd00857f5011f614a555da943f5d15df0c2a8172b3a115403f",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.11.2"
+          ],
+          "version": "HD_U_G5",
+          "url": "https://optifine.net/download?f=OptiFine_1.11.2_HD_U_G5.jar",
+          "hash": "b29315859a00eff1995fd2e0e05b698d4da54b7a8e217b8cfe8dfbcd1a56c2c53a56cbfb41fb1b1aa7a328a9ba5063cc814433e4329f4ea0660d01b7ab262a27",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.11"
+          ],
+          "version": "HD_U_G5",
+          "url": "https://optifine.net/download?f=OptiFine_1.11_HD_U_G5.jar",
+          "hash": "eae6378a3eea1bbd91ceb0646e1881dc57630c1de41bdadb6c1a642a6c1a202aafef771300aa46c94e5f44e7db9254f7d78156b34b1e79d70fde46cf9ca75a2f",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.10.2"
+          ],
+          "version": "HD_U_I5",
+          "url": "https://optifine.net/download?f=OptiFine_1.10.2_HD_U_I5.jar",
+          "hash": "4625d50359f17ea9bd3d9a783cc9808d1e26c7d90359da9f8849dbff96cb4e7b3db8af3b3aeea7294549fe860145395b9d5336670e5c7e1727d7dcf04a104126",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.10"
+          ],
+          "version": "HD_U_I5",
+          "url": "https://optifine.net/download?f=OptiFine_1.10_HD_U_I5.jar",
+          "hash": "0a5c6a3a73cd927e433de98cdf678ece20f40948e7189e6f169553d5d17e41ae4249683e3303ab99f45de6dd01a7926e162a82e47ab0a57021eaf4e3c0da7938",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.9.4"
+          ],
+          "version": "HD_U_I5",
+          "url": "https://optifine.net/download?f=OptiFine_1.9.4_HD_U_I5.jar",
+          "hash": "daabea38c6015a73695002581cea7e14433c44fcfd6721c760f6a58ec793966f886c0e2f173a7113740302a406d362494c469a1d3ee5886e2c40acac7175ba1c",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.9.2"
+          ],
+          "version": "HD_U_E3",
+          "url": "https://optifine.net/download?f=OptiFine_1.9.2_HD_U_E3.jar",
+          "hash": "26d94b755a6a0cea7bb296e0e2a4c084d68ad7be3bcfed13fdab10576aae4fae7970a2a00de2dd4adec76c2e19a2c3fb7b68c31f70feeda58afed23bddc144ba",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.9"
+          ],
+          "version": "HD_U_I5",
+          "url": "https://optifine.net/download?f=OptiFine_1.9.0_HD_U_I5.jar",
+          "hash": "7e01731cf9d1f62394be76cd39132c0e2a6631062ecda3814332db1c0dd3c81952e9747688a35d43eb2d58f054825bc1c8d703d2068863e7ed45cf7b42c16ea2",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.8.9"
+          ],
+          "version": "HD_U_M5",
+          "url": "https://optifine.net/download?f=OptiFine_1.8.9_HD_U_M5.jar",
+          "hash": "459dd48fd88cbf3e91e7b02790e272279465978a5bde8e85409afa28cd1b0c9022195588afcc2f63acdec5688ac3e93adf7e9870da28548c3b1c292a598426de",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.8.8"
+          ],
+          "version": "HD_U_I7",
+          "url": "https://optifine.net/download?f=OptiFine_1.8.8_HD_U_I7.jar",
+          "hash": "69cb228f78bad0f13455fd59cf0d54aa48beb065aa90832e060b4b7ab545bb99d8d58e089e4a37b47ff391fb488a1d305159a1c8fa028c4af5e007cc44d36dc5",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.8.7"
+          ],
+          "version": "HD_U_D6",
+          "url": "https://optifine.net/download?f=OptiFine_1.8.7_HD_U_D6.jar",
+          "hash": "5fbed35dd7f6aeeea68d2de9559ba86eea24381fd585f607e0ccf8d745923903dfa1ec1561c1f924884d123553b0d7ad55fc685ee1dbb721335b25ac475d1f76",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.8.4"
+          ],
+          "version": "HD_U_D6",
+          "url": "https://optifine.net/download?f=OptiFine_1.8.4_HD_U_D6.jar",
+          "hash": "1c5f709f50c0a607dd278d1226e5bbcfbd677c952a1682938bd2273f1cd0dbd1d4cd51dca1b16475ccdb2ccbfe669ab5c8cc0a10234b87e26f452b05a550765f",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.8.3"
+          ],
+          "version": "HD_U_D3",
+          "url": "https://optifine.net/download?f=OptiFine_1.8.3_HD_U_D3.jar",
+          "hash": "70c4597fd9f8cbf1d4edfa4265f50652e46bf9986b0633442d4c01d0536d7d6fa5dba9c83c728b4f4337bd7b4e2ef3db31631bce35efacd61fff096643b68cdc",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.8.1"
+          ],
+          "version": "HD_U_C7",
+          "url": "https://optifine.net/download?f=OptiFine_1.8.1_HD_U_C7.jar",
+          "hash": "d0b8805bc0a679e3ff9b74fe8970eec14c745cb019dcdbc07910005bdaf3fd6952b71dc5eaf348698a3cd93dbef0e165a692cada04cf6fbea6cb7fa45ad6aeb4",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.8"
+          ],
+          "version": "HD_U_I7",
+          "url": "https://optifine.net/download?f=OptiFine_1.8.0_HD_U_I7.jar",
+          "hash": "9eb6733c8a25f6c7059b05b43e1477ca17f9f98659384c9e72133acec4f7624781e6568319ac2f4acd4bc2abc9e5aca429611da22004c6502f9d89ed9ce75cb2",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.7.10"
+          ],
+          "version": "HD_U_E7",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.10_HD_U_E7.jar",
+          "hash": "faea0ff6c4ec9e2924c91ec4f88483c1a4fc03afc284cb4669310cb238e3c0d1a824e1c46104c09652b00f65e7d1a0bac0836833dfd71aa4d3194f16b9d0cf87",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.7.9"
+          ],
+          "version": "HD_U_D2",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.9_HD_U_D2.jar",
+          "hash": "25e3a11bc94c7259401fc33e2088a1b39776ce8878941cf3537d1e7c880dd05069cbfd79da7fedecc668781e117fc1f8290f5716d6b6568943b916c00df6a226",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.7.5"
+          ],
+          "version": "HD_U_D1",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.5_HD_U_D1.jar",
+          "hash": "415b7c8ead5b8343c5264b27f1d551344e86602726ef3ea3fbda33524f48306897fd75a227e868482dc9419605ae6a25ccc42c59e3cff4a9667f918b88f352b3",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.7.4"
+          ],
+          "version": "HD_U_D1",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.4_HD_U_D1.jar",
+          "hash": "d72214287417c0f94086a42eb6154f0f4be02d03748e16f38024930e6a4b0cdacd2d9fe92287ce6010950626e8f10012fee7e00364b2511415c168b4186ad24f",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.7.2"
+          ],
+          "version": "HD_U_E1",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.2_HD_U_E1.jar",
+          "hash": "6b1e08e1fd63987de1ecd5fbd359c0f4e052c005668e5b2ded8561567411b415d120e4bfdfa665edfd4699aaab3bd5423e319a755435ce2bc115f3ae49cc9858",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.7.2"
+          ],
+          "version": "HD_U_F7",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.2_HD_U_F7.jar",
+          "hash": "f48990e2342afcc5a89a20e29f4239d9189a56d4c70fd79d8f22e20a85c25a7aed145c9424f243ee195db5e818425b05ffd8776de11a9e322bae5dae52123ac4",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.6.4"
+          ],
+          "version": "HD_U_D1",
+          "url": "https://optifine.net/download?f=OptiFine_1.6.4_HD_U_D1.jar",
+          "hash": "e702fafce0835776ad6b60423d5cdeb1ab7441614b82948a4927a05d08860cc277e277d5287d0f68fd61547b9254cdcbd6b205945632ce0e80089235e701cd1c",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.6.2"
+          ],
+          "version": "HD_U_C4",
+          "url": "https://optifine.net/download?f=OptiFine_1.6.2_HD_U_C4.jar",
+          "hash": "c67f69de61713c3b90b75d75ff48a330aafa0471254ad801cd0068d0737c31007d86e769b0f4ab8a9ceed48e1cc77a1bc16f54e75994238993803aae0bcbbfd0",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.5.2"
+          ],
+          "version": "HD_U_D5",
+          "url": "https://optifine.net/download?f=OptiFine_1.5.2_HD_U_D5.zip",
+          "hash": "d94b12d80f0c426aacb19afdec3033da4b589097c1023c5610ed3f9e8e5dc4a93fbc240471e1715c1e14c874a48ac914bc8acd3f1962c6557eb3429a825afebe",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.5.1"
+          ],
+          "version": "HD_U_D1",
+          "url": "https://optifine.net/download?f=OptiFine_1.5.1_HD_U_D1.zip",
+          "hash": "112321c7b43639ee7eb39a89a33ea3bdc7328f8659a078e1ac8f28fdd0dec4d6eef9e798d1ed0cf2c9b86d02799f40a713e5445658faa8ad7c82cc851ed0d7c7",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.5"
+          ],
+          "version": "HD_U_A7",
+          "url": "https://optifine.net/download?f=OptiFine_1.5.0_HD_U_A7.zip",
+          "hash": "145e5001a86c9521fa4da72486b1af22318879ce471bd33441e2a8afbb631e87363a3248e0fb117e530f05b00c238e30a59d7ae9e28c296801563cb97f321308",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.6",
+            "1.4.7"
+          ],
+          "version": "HD_U_D5",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.6_HD_U_D5.zip",
+          "hash": "afc478b8bccb9f09ef8d62093ff7924b428bd5eabe443cb86ad92fe13dade89f7a44652315731fc54b1f30b5020c30adf3a49ab92c783e59b31a44c57b9710d9",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.5"
+          ],
+          "version": "HD_U_D8",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.5_HD_U_D8.zip",
+          "hash": "605870c6f9d366f405e91b9af2f4cbbb745200f1dbbad313d332c3772a1623da5dc3fc31a747d3f9ea49dd5ced4d6ae40bed23b4f139022f2a2511f02f41bf63",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.4"
+          ],
+          "version": "HD_U_D2",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.4_HD_U_D2.zip",
+          "hash": "2b9be5d7951a7797527aadf895f781baef64cfc4e79ba98fc9c35355b6769a8e01641f6b62b782b0056a9d614bec2f24c6388060411ab37cb50c93c6d6c9e4e4",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.3"
+          ],
+          "version": "HD_U_C1",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.3_HD_U_C1.zip",
+          "hash": "a20c7fb5f395b55cc207a0d107b3c55c29363584721fe07dd225fe0b033696f135ef292d290407506f1ff2bbac59893f8c0d74f8ebf06ebedb9fab75cf190bfb",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.2"
+          ],
+          "version": "HD_U_B5",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.2_HD_U_B5.zip",
+          "hash": "47c92e2e0a1ebd12e516852a0670a330b8ad764ac0b16ae77d1034fd805e566ce700b29159f11e4d4683d80388e7a1548903775e0096a0f00e7a6756b2c6063c",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.1"
+          ],
+          "version": "HD_U_A5",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.1_HD_U_A5.zip",
+          "hash": "c907fad67e32781c61e7335933cdbf47f4bd68bc4f82d12fa177594b56d410be0c5d272f7d4d4c3795192617c616c1ff58ccde29eb0c722291a7536bbeb5ed8b",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4"
+          ],
+          "version": "HD_U_A3",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.0_HD_U_A3.zip",
+          "hash": "f5ca4f42b53747552f7dd18ce598de656d62521267d8f7c506117dd3ed21e9d068435398acfb3b6369debb184ef127b78a8006ffe127f693614115428d9ef1ee",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.3.2"
+          ],
+          "version": "HD_U_B4",
+          "url": "https://optifine.net/download?f=OptiFine_1.3.2_HD_U_B4.zip",
+          "hash": "f65ba887e23e2ec20dfb226b93c2a770110d3a5496153db7bc2d2d4d65473bca4fd797f52f392fc3ee11a9f2f72c0211cac3019d58459fff48bec939a656fac6",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.3.1"
+          ],
+          "version": "HD_U_B1",
+          "url": "https://optifine.net/download?f=OptiFine_1.3.1_HD_U_B1.zip",
+          "hash": "c6703846bac9f04b5812b61fc9c88babf347d7aeb1271bfcfc39834938c7dbb3d3ecd9cea341458e938560556f8ee1158a872ab190deaa03c311e5edb46a9647",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.2.5"
+          ],
+          "version": "HD_U_C7",
+          "url": "https://optifine.net/download?f=OptiFine_1.2.5_HD_U_C7.zip",
+          "hash": "9ead1a0aecb11e71ad9949083d19714fce9389295636bfb1e6c1c2a8d2785f4fcaa3a1feef6a168a9097426da96045cf396a74d999388eca5b8128bd00aace28",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.2.3"
+          ],
+          "version": "HD_B",
+          "url": "https://optifine.net/download?f=OptiFine_1.2.3_HD_B.zip",
+          "hash": "cd9ebaa504573636c2f28c7f6679ef20ca27bbe9299d6282ccb84786c7f5f07f5a6cd26554b90a180e63e705bebcdb5f9144dfced6ca73fcebf5d8561b40f911",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.1"
+          ],
+          "version": "HD_D6",
+          "url": "https://optifine.net/download?f=OptiFine_1.1_HD_D6.zip",
+          "hash": "74d8a07ad840590384935efff3df380fe21f58c431a05b779443233eb297d0b4327943062cd95b8cb4780bd2fa6637eff319ffb9bc580b8575a91a3aaebc4594",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.0"
+          ],
+          "version": "HD_D3",
+          "url": "https://optifine.net/download?f=OptiFine_1.0.0_HD_D3.zip",
+          "hash": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        }
+      ],
+      "traits": [
+        "worldpreview",
+        "starlight",
+        "optifine-light"
+      ]
+    },
+    {
+      "modid": "optifine-light",
+      "name": "OptiFine Light",
+      "description": "A version of OptiFine that makes significantly less invasive changes to the game.",
+      "homepage": "https://optifine.net/home",
+      "versions": [
+        {
+          "target_version": [
+            "1.7.10"
+          ],
+          "version": "L_B6",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.10_L_B6.jar",
+          "hash": "320cf7c98b4e71e06cbd4415f87676658ba40dedeaf4ce316cef482268450ac517c2db888de03aa51558f9071d875d3931b530179e95e0dc33986ae46c83cee1",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.7.4"
+          ],
+          "version": "L_C7",
+          "url": "https://optifine.net/download?f=OptiFine_1.7.4_L_C7.jar",
+          "hash": "cf22cdbf651472704b9c36620e5694abc6634d7478e52c0e529db8c742ea3bfaa1a11867494fe8e5912ee8bbd1597531f0e3129c5da52265fb3203a3c95fcb60",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.6.4"
+          ],
+          "version": "L_C9",
+          "url": "https://optifine.net/download?f=OptiFine_1.6.4_L_C9.jar",
+          "hash": "cfad7d35bebe0c5e3005204dfdc1fd52eace293e671919f7a66c78a0041187af84d74aef3ba7dc85412edde16f040d5435f284b400ce98a2eef349622135f058",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.6.2"
+          ],
+          "version": "L_C4",
+          "url": "https://optifine.net/download?f=OptiFine_1.6.2_L_C4.jar",
+          "hash": "7aaf360f4d294bab320097794f0d8032939bd762b472115c9fa5bc915df7ff1145fcf6ad1d6214bcd682bf66fe3ac54b6b1a7372968e480e8e218feb0f695c7e",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.5.2"
+          ],
+          "version": "L_D2",
+          "url": "https://optifine.net/download?f=OptiFine_1.5.2_L_D2.zip",
+          "hash": "1c9011b99ef109b1d3574cf2db84c89ea5fe7e074670aeb496793dc86dc4bfd7cf3722398ff0967c2407982a6a9a7a8416320cefe564d21c220b045a55cba75a",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.5.1"
+          ],
+          "version": "L_B1",
+          "url": "https://optifine.net/download?f=OptiFine_1.5.1_L_B1.zip",
+          "hash": "adb48e83dd7da94123e25fff2720d31251a43b90a6e4eda3662c783f6f4346092418dd790fe4f52ad9f52a50c984fc3e0d97d743cbb23ba063de7cdebc092974",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.6",
+            "1.4.7"
+          ],
+          "version": "L_B5",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.6_L_B5.zip",
+          "hash": "c963118d4f11123e2802da66caad74273bc9aa7deeb057140394c42ca09b742f1fe4ce6d692dab9a824e64bddb0aedf37bed93743a9707b1de2e26d1f3af7a05",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.5"
+          ],
+          "version": "L_D7",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.5_L_D7.zip",
+          "hash": "867065108961aac2bd7fe02131030ac062763cfd84c120082f3de160495bad5b27294e92c2f01ea23a6444ce77ebe244b3966d47e72bcbaa03484ef1219a8825",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.4.2"
+          ],
+          "version": "L_B2",
+          "url": "https://optifine.net/download?f=OptiFine_1.4.2_L_B2.zip",
+          "hash": "a22fa54986769e5f3c5e7273ba3e666b1fa418d7b2f1907097679b2656c4bd74d39d3734a19cea867f9827e3ea8acd8a11cfc99f324782021c52125d3aefe80f",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.3.2"
+          ],
+          "version": "L_B2",
+          "url": "https://optifine.net/download?f=OptiFine_1.3.2_L_B2.zip",
+          "hash": "02bf93018832d6875f6273b3fe317a995db93e456a259e35cc05ffe6cbdadba921c2fac3fc8294f4501ff1bb4a84146bd98609a536094b5d1e08ed89bb30e2c8",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        },
+        {
+          "target_version": [
+            "1.1"
+          ],
+          "version": "L_C",
+          "url": "https://optifine.net/download?f=OptiFine_1.1_L_C.zip",
+          "hash": "d08c3ef9c34b9c2ec5b04a9a55e492507045c87b38e1fff046d5a681c6afb1c0b11b152e24111793d759891779e1ed5e6d6996df6e059e21d18373315e093d91",
+          "recommended": false,
+          "intermediary": [
+            "net.legacyfabric:intermediary",
+            "net.legacyfabric.v2:intermediary",
+            "net.ornithemc:calamus-intermediary",
+            "net.ornithemc:calamus-intermediary-gen2"
+          ]
+        }
+      ],
+      "traits": [
+        "optifine"
+      ]
+    },
+    {
       "modid": "phosphor",
       "name": "Phosphor",
       "description": "No-compromises lighting engine optimization mod",
-      "sources": "https://github.com/CaffeineMC/phosphor-fabric",
+      "homepage": "https://github.com/CaffeineMC/phosphor-fabric",
       "versions": [
         {
           "target_version": [
@@ -2557,7 +3406,7 @@
       "modid": "planifolia",
       "name": "Planifolia",
       "description": "Vanilla VideoOptionsScreen for Sodium and gamma 5 for 1.19+",
-      "sources": "https://github.com/tildejustin/planifolia",
+      "homepage": "https://github.com/tildejustin/planifolia",
       "versions": [
         {
           "target_version": [
@@ -2657,7 +3506,7 @@
       "modid": "retino",
       "name": "RetiNO",
       "description": "Makes Minecraft render at half-resolution on Retina displays for improved performance.",
-      "sources": "https://github.com/juliand665/retiNO",
+      "homepage": "https://github.com/juliand665/retiNO",
       "versions": [
         {
           "target_version": [
@@ -2720,7 +3569,7 @@
       "modid": "seedqueue",
       "name": "SeedQueue",
       "description": "Generates worlds in the background for faster resetting.",
-      "sources": "https://github.com/KingContaria/seedqueue",
+      "homepage": "https://github.com/KingContaria/seedqueue",
       "versions": [
         {
           "target_version": [
@@ -2761,7 +3610,7 @@
       "modid": "setspawnmod",
       "name": "Set Spawn",
       "description": "Sets the player's spawnpoint in SSG to specified coordinates.",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/set-spawn",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/set-spawn",
       "versions": [
         {
           "target_version": [
@@ -2937,7 +3786,7 @@
       "modid": "sleepbackground",
       "name": "SleepBackground",
       "description": "My instances are looks want to sleep",
-      "sources": "https://github.com/RedLime/SleepBackground",
+      "homepage": "https://github.com/RedLime/SleepBackground",
       "versions": [
         {
           "target_version": [
@@ -3123,7 +3972,7 @@
       "modid": "sodium",
       "name": "Sodium",
       "description": "Sodium is a powerful rendering engine for Minecraft which greatly improves frame rates and micro-stutter, while fixing many graphical issues",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
       "versions": [
         {
           "target_version": [
@@ -3427,7 +4276,7 @@
       "modid": "sodiummac",
       "name": "Sodium Mac",
       "description": "Sodium is a free and open-source optimization mod for Minecraft which improves frame rates and reduces lag spikes. \nThis is an unofficial backport of JellySquid's original mod.",
-      "sources": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
+      "homepage": "https://github.com/Minecraft-Java-Edition-Speedrunning/sodium",
       "versions": [
         {
           "target_version": [
@@ -3449,7 +4298,7 @@
       "modid": "speedrunapi",
       "name": "Speedrun API",
       "description": "API for MCSR mods, providing a Config API, selected Fabric API modules and MixinExtras.",
-      "sources": "https://github.com/KingContaria/SpeedrunAPI",
+      "homepage": "https://github.com/KingContaria/SpeedrunAPI",
       "versions": [
         {
           "target_version": [
@@ -3490,7 +4339,7 @@
       "modid": "speedrunigt",
       "name": "SpeedRunIGT",
       "description": "Displays the timer with RTA, IGT in Minecraft",
-      "sources": "https://github.com/RedLime/SpeedRunIGT",
+      "homepage": "https://github.com/RedLime/SpeedRunIGT",
       "versions": [
         {
           "target_version": [
@@ -4039,7 +4888,7 @@
       "modid": "standardsettings",
       "name": "StandardSettings",
       "description": "Resetting Mod for Minecraft Speedrunning",
-      "sources": "https://github.com/KingContaria/StandardSettings",
+      "homepage": "https://github.com/KingContaria/StandardSettings",
       "versions": [
         {
           "target_version": [
@@ -4393,7 +5242,7 @@
       "modid": "starlight",
       "name": "Starlight",
       "description": "Rewrites the light engine to fix lighting performance and lighting errors",
-      "sources": "https://github.com/PaperMC/Starlight",
+      "homepage": "https://github.com/PaperMC/Starlight",
       "versions": [
         {
           "target_version": [
@@ -4546,6 +5395,7 @@
       ],
       "incompatibilities": [
         "phosphor",
+        "optifine",
         "optifabric",
         "optifabric-origins"
       ]
@@ -4554,7 +5404,7 @@
       "modid": "state-output",
       "name": "State Output",
       "description": "World Preview state file functionality but without World Preview",
-      "sources": "https://github.com/tildejustin/state-output",
+      "homepage": "https://github.com/tildejustin/state-output",
       "versions": [
         {
           "target_version": [
@@ -4745,7 +5595,7 @@
       "modid": "stats-per-world",
       "name": "StatsPerWorld",
       "description": "Separation of achievements and statistics per world in Minecraft Pre-1.7",
-      "sources": "https://github.com/RedLime/StatsPerWorld",
+      "homepage": "https://github.com/RedLime/StatsPerWorld",
       "versions": [
         {
           "target_version": [
@@ -4802,7 +5652,7 @@
       "modid": "tabfocus",
       "name": "TabFocus",
       "description": "Implement button focus by press tab feature in pre-1.9",
-      "sources": "https://github.com/RedLime/TabFocus",
+      "homepage": "https://github.com/RedLime/TabFocus",
       "versions": [
         {
           "target_version": [
@@ -4921,7 +5771,7 @@
       "modid": "voyager",
       "name": "Voyager",
       "description": "Take a voyage into modern java versions. (Fixes (MC-149777), a rare ConcurrentModificationException in StructureManager, when using a Java Runtime Environment of 11 or above)",
-      "sources": "https://github.com/tildejustin/voyager",
+      "homepage": "https://github.com/tildejustin/voyager",
       "versions": [
         {
           "target_version": [
@@ -4955,7 +5805,7 @@
       "modid": "worldpreview",
       "name": "WorldPreview",
       "description": "Makes you reset block game fast",
-      "sources": "https://github.com/KingContaria/worldpreview",
+      "homepage": "https://github.com/KingContaria/worldpreview",
       "versions": [
         {
           "target_version": [
@@ -5044,6 +5894,7 @@
         "setspawnmod",
         "chunkcacher",
         "optifabric",
+        "optifine",
         "optifabric-origins"
       ]
     },
@@ -5051,7 +5902,7 @@
       "modid": "z-buffer-fog",
       "name": "ZBufferFog",
       "description": "Legacy Fabric mod that make terrain fog rendering to planar",
-      "sources": "https://github.com/RedLime/LegacyPlanarFog",
+      "homepage": "https://github.com/RedLime/LegacyPlanarFog",
       "versions": [
         {
           "target_version": [

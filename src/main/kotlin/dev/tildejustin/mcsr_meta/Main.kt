@@ -23,7 +23,7 @@ lateinit var minecraftVersions: SortedSet<String>
 lateinit var modIncompatibilities: List<List<String>>
 lateinit var unrecommendedMods: HashMap<String, List<String>>
 lateinit var obsoleteMods: HashMap<String, List<String>>
-lateinit var codeSources: HashMap<String, String>
+lateinit var homepages: HashMap<String, String>
 lateinit var v2Override: List<String>
 lateinit var additionalIntermediary: HashMap<String, List<Intermediary>>
 
@@ -31,6 +31,7 @@ lateinit var additionalIntermediary: HashMap<String, List<Intermediary>>
 lateinit var conditions: HashMap<String, MutableList<String>>
 
 var secretPreReleases = setOf("1.2", "1.3", "1.4", "1.4.1", "1.4.3", "1.5", "1.6", "1.6.3", "1.7", "1.7.1", "1.7.3")
+val legacyIntermediary = listOf(Intermediary.LEGACY_FABRIC, Intermediary.LEGACY_FABRIC_V2, Intermediary.ORNITHE, Intermediary.ORNITHE_GEN2)
 
 // good for testing out quick changes
 const val noReload = false
@@ -57,6 +58,12 @@ val comparer: (String, String) -> Int = { o1, o2 ->
     }
 }
 
+val modVersionComparer: (Meta.ModVersion, Meta.ModVersion) -> Int = { s1, s2 ->
+    if (s2.targetVersion.first().contains("+")) 1
+    else if (s1.targetVersion.first().contains("+")) -1
+    else Version.parse(s2.targetVersion.first().split("-")[0], false).compareTo(Version.parse(s1.targetVersion.first().split("-")[0], false))
+}
+
 fun main() {
     var mark = TimeSource.Monotonic.markNow()
     // place to store downloaded mods
@@ -76,11 +83,7 @@ fun main() {
         Files.list(modid).forEach {
             modVersions.add(generateModVersion(modid.name, Files.list(it).findFirst().get(), it.name, gitId))
         }
-        mods.add(generateMod(modid, modVersions.stream().sorted { s1, s2 ->
-            if (s2.targetVersion.first().contains("+")) return@sorted 1
-            else if (s1.targetVersion.first().contains("+")) return@sorted -1
-            return@sorted Version.parse(s2.targetVersion.first().split("-")[0], false).compareTo(Version.parse(s1.targetVersion.first().split("-")[0], false))
-        }.toList().toMutableList()))
+        mods.add(generateMod(modid, modVersions.stream().sorted(modVersionComparer).toList().toMutableList()))
     }
     Files.list(aprilFoolsModsPath).sorted().forEach { folder ->
         if (folder.isHidden() || folder.isRegularFile()) return@forEach
@@ -89,13 +92,73 @@ fun main() {
             mods.find { it.modid == fmj.id }?.versions?.add(generateModVersion(fmj.id, modFile, folder.name, aprilFoolsGitId, true)) ?: throw NoSuchFileException(fmj.id)
         }
     }
+    handleOptiFine(mods)
     json.decodeFromString<HashMap<String, List<String>>>(aprilFoolsModsPath.resolve("external.json").readText()).forEach { (version, extras) ->
         val id = version.split("/", ";")[0]
         mods.find { it.modid == id }?.versions?.find { afVersionMatches(it, version) }?.targetVersion?.addAll(extras) ?: throw NoSuchElementException(version)
     }
 
-    Path.of("mods.json").writeText(json.encodeToString(Meta(6, mods.sortedBy { it.modid })) + "\n")
+    Path.of("mods.json").writeText(json.encodeToString(Meta(7, mods.sortedBy { it.modid })) + "\n")
     println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
+}
+
+fun handleOptiFine(mods: MutableList<Meta.Mod>) {
+    val optifine = Meta.Mod(
+        "optifine",
+        "OptiFine",
+        "OptiFine is a Minecraft optimization mod. It allows Minecraft to run faster and look better with full support for shaders, HD textures and many configuration options.",
+        "https://optifine.net/home",
+        mutableListOf(),
+        modIncompatibilities.filter { it.contains("optifine") }.flatten().filter { it != "optifine" },
+    )
+    val optifineLight = Meta.Mod(
+        "optifine-light",
+        "OptiFine Light",
+        "A version of OptiFine that makes significantly less invasive changes to the game.",
+        "https://optifine.net/home",
+        mutableListOf(),
+        modIncompatibilities.filter { it.contains("optifine-light") }.flatten().filter { it != "optifine-light" },
+    )
+    mods.add(optifine)
+    mods.add(optifineLight)
+
+    class OptiFineEntry(val target: String, val edition: String, val patch: String, val filename: String)
+
+    @Serializable
+    class OptiFineData(
+        val versions: List<String>,
+        @SerialName("light_versions") val lightVersions: List<String>,
+        @SerialName("additional_compatibility") val additionalCompatibility: Map<String, List<String>>
+    )
+
+    val normalList = mutableListOf<OptiFineEntry>()
+    val lightList = mutableListOf<OptiFineEntry>()
+    val optiFineData: OptiFineData = Json.decodeFromString<OptiFineData>(Path.of("optifine.json").readText())
+    (optiFineData.versions + optiFineData.lightVersions).forEach { filename ->
+        val groups = "OptiFine_(.*?)_(L|HD|HD_U)_(.*?)\\.(?:jar|zip)".toRegex().matchEntire(filename)?.groupValues ?: return@forEach
+        // get canonical version representation
+        val versionParts = groups[1].split(".")
+        val version = versionParts[0] + "." + versionParts[1] + if (versionParts.size > 2 && versionParts[2] != "0") "." + versionParts[2] else ""
+        val edition = groups[2]
+        val patch = groups[3]
+        (if (filename in optiFineData.lightVersions) lightList else normalList).add(OptiFineEntry(version, edition, patch, filename))
+    }
+    (normalList + lightList).forEach { data ->
+        val url = "https://optifine.net/download?f=${data.filename}"
+        (if (data.edition == "L") optifineLight else optifine).versions.add(
+            Meta.ModVersion(
+                mutableSetOf(data.target, *optiFineData.additionalCompatibility.getOrDefault(data.filename, emptyList()).toTypedArray()),
+                "${data.edition}_${data.patch}",
+                url,
+                hashPath(handleOptiFineDownload(data.filename, url).path),
+                (data.edition != "L" || optifine.versions.none { data.target in it.targetVersion }),
+                false,
+                legacyIntermediary
+            )
+        )
+    }
+    optifine.versions.sortWith(modVersionComparer)
+    optifineLight.versions.sortWith(modVersionComparer)
 }
 
 fun afVersionMatches(modVersion: Meta.ModVersion, version: String): Boolean {
@@ -116,7 +179,7 @@ fun evaluateLinks(partialPath: String): String {
 data class AdditionalData(
     val names: HashMap<String, String>,
     val descriptions: HashMap<String, String>,
-    val sources: HashMap<String, String>,
+    val homepages: HashMap<String, String>,
     @SerialName("max-versions") val maxVersions: List<String>,
     @SerialName("not-recommended") val notRecommended: HashMap<String, List<String>>,
     val obsolete: HashMap<String, List<String>>,
@@ -130,7 +193,7 @@ fun readAdditionalData() {
     val additionalMetadata = json.decodeFromString<AdditionalData>(Path.of("data.json").readText())
     val versions = additionalMetadata.maxVersions.map { maxVersion ->
         if (maxVersion.count { it == '.' } == 1) return@map listOf(maxVersion)
-        val minor = maxVersion.substring(0, maxVersion.lastIndexOf("."))
+        val minor = maxVersion.take(maxVersion.lastIndexOf("."))
         // legacy fabric only has 1.19.4, 1.10.2, 1.11.2, 1.12.2, and 1.13.2 for production intermediaries rn
         if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion)
         val maxPatch = maxVersion.split(".").last().toInt()
@@ -145,7 +208,7 @@ fun readAdditionalData() {
     unrecommendedMods = additionalMetadata.notRecommended
     obsoleteMods = additionalMetadata.obsolete
     modIncompatibilities = additionalMetadata.incompatibilities
-    codeSources = additionalMetadata.sources
+    homepages = additionalMetadata.homepages
     v2Override = additionalMetadata.v2Override
     additionalIntermediary = additionalMetadata.additionalIntermediary
     additionalMetadata.extraTraits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
@@ -161,14 +224,14 @@ fun generateMod(modFolder: Path, versions: MutableList<Meta.ModVersion>): Meta.M
     // override description if an override exists
     newestModInfo.description = replacementDescriptions.getOrDefault(modFolder.name, newestModInfo.description)
     newestModInfo.name = nameReplacements.getOrDefault(modFolder.name, newestModInfo.name)
-    if (codeSources[modFolder.name] == null) {
-        throw RuntimeException("missing source repo for ${modFolder.name}")
+    if (homepages[modFolder.name] == null) {
+        throw RuntimeException("missing homepage for ${modFolder.name}")
     }
     return Meta.Mod(
         modFolder.name,
         newestModInfo.name,
         newestModInfo.description,
-        codeSources[modFolder.name]!!,
+        homepages[modFolder.name]!!,
         versions,
         conditions.getOrDefault(modFolder.name, emptyList()),
         modIncompatibilities.filter { it.contains(modFolder.name) }.flatten().filter { it != modFolder.name },
@@ -271,19 +334,31 @@ private fun tempFileName(folder: Path, modFile: Path): Path =
 
 data class RealizedExternalMod(val path: Path, val url: String)
 
+fun handleOptiFineDownload(filename: String, url: String): RealizedExternalMod {
+    val downloadedJar = tempDir.resolve("optifine").resolve(filename)
+    // TODO: remove once tested
+    if (!downloadedJar.exists())
+        downloadExternalMod(downloadedJar, url, null)
+    return RealizedExternalMod(downloadedJar, url)
+}
+
 fun handleExternalMod(jsonPath: Path): RealizedExternalMod {
     val externalMod = json.decodeFromString<ExternalModJson>(jsonPath.readText())
     val downloadedJar = tempFileName(jsonPath.parent, jsonPath)
     if (!noReload) {
-        Files.deleteIfExists(downloadedJar)
-        Files.createDirectories(downloadedJar.parent)
-        Files.createFile(downloadedJar)
-        val jarBytes = URI.create(externalMod.link).toURL().readBytes()
-        // check the downloaded file
-        check(hashBytes(jarBytes) == externalMod.hash)
-        downloadedJar.writeBytes(jarBytes)
+        downloadExternalMod(downloadedJar, externalMod.link, externalMod.hash)
     }
     return RealizedExternalMod(downloadedJar, externalMod.link)
+}
+
+fun downloadExternalMod(tempPath: Path, url: String, hash: String?) {
+    Files.deleteIfExists(tempPath)
+    Files.createDirectories(tempPath.parent)
+    Files.createFile(tempPath)
+    val jarBytes = URI.create(url).toURL().readBytes()
+    // check the downloaded file
+    if (hash != null) check(hashBytes(jarBytes) == hash)
+    tempPath.writeBytes(jarBytes)
 }
 
 @OptIn(ExperimentalSerializationApi::class)

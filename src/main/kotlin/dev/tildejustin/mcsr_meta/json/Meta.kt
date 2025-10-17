@@ -10,7 +10,7 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
         val modid: String,
         val name: String,
         val description: String,
-        val sources: String,
+        val homepage: String,
         val versions: MutableList<ModVersion>,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val traits: List<String> = listOf(),
         @EncodeDefault(EncodeDefault.Mode.NEVER) val incompatibilities: List<String> = listOf(),

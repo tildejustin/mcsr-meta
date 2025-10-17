@@ -1,0 +1,72 @@
+{
+  "versions": [
+    "OptiFine_1.0.0_HD_D3.zip",
+    "OptiFine_1.1_HD_D6.zip",
+    "OptiFine_1.2.3_HD_B.zip",
+    "OptiFine_1.2.5_HD_U_C7.zip",
+    "OptiFine_1.3.1_HD_U_B1.zip",
+    "OptiFine_1.3.2_HD_U_B4.zip",
+    "OptiFine_1.4.0_HD_U_A3.zip",
+    "OptiFine_1.4.1_HD_U_A5.zip",
+    "OptiFine_1.4.2_HD_U_B5.zip",
+    "OptiFine_1.4.3_HD_U_C1.zip",
+    "OptiFine_1.4.4_HD_U_D2.zip",
+    "OptiFine_1.4.5_HD_U_D8.zip",
+    "OptiFine_1.4.6_HD_U_D5.zip",
+    "OptiFine_1.5.0_HD_U_A7.zip",
+    "OptiFine_1.5.1_HD_U_D1.zip",
+    "OptiFine_1.5.2_HD_U_D5.zip",
+    "OptiFine_1.6.2_HD_U_C4.jar",
+    "OptiFine_1.6.4_HD_U_D1.jar",
+    "OptiFine_1.7.2_HD_U_E1.jar",
+    "OptiFine_1.7.2_HD_U_F7.jar",
+    "OptiFine_1.7.4_HD_U_D1.jar",
+    "OptiFine_1.7.5_HD_U_D1.jar",
+    "OptiFine_1.7.9_HD_U_D2.jar",
+    "OptiFine_1.7.10_HD_U_E7.jar",
+    "OptiFine_1.8.0_HD_U_I7.jar",
+    "OptiFine_1.8.1_HD_U_C7.jar",
+    "OptiFine_1.8.3_HD_U_D3.jar",
+    "OptiFine_1.8.4_HD_U_D6.jar",
+    "OptiFine_1.8.7_HD_U_D6.jar",
+    "OptiFine_1.8.8_HD_U_I7.jar",
+    "OptiFine_1.8.9_HD_U_M5.jar",
+    "OptiFine_1.9.0_HD_U_I5.jar",
+    "OptiFine_1.9.2_HD_U_E3.jar",
+    "OptiFine_1.9.4_HD_U_I5.jar",
+    "OptiFine_1.10_HD_U_I5.jar",
+    "OptiFine_1.10.2_HD_U_I5.jar",
+    "OptiFine_1.11_HD_U_G5.jar",
+    "OptiFine_1.11.2_HD_U_G5.jar",
+    "OptiFine_1.12_HD_U_G5.jar",
+    "OptiFine_1.12.1_HD_U_G5.jar",
+    "OptiFine_1.12.2_HD_U_G5.jar",
+    "OptiFine_1.13_HD_U_E4.jar",
+    "OptiFine_1.13.1_HD_U_E4.jar",
+    "OptiFine_1.13.2_HD_U_G5.jar",
+    "OptiFine_1.14.2_HD_U_F1.jar",
+    "OptiFine_1.14.3_HD_U_F2.jar",
+    "OptiFine_1.14.4_HD_U_G5.jar"
+  ],
+  "light_versions": [
+    "OptiFine_1.1_L_C.zip",
+    "OptiFine_1.3.2_L_B2.zip",
+    "OptiFine_1.4.2_L_B2.zip",
+    "OptiFine_1.4.5_L_D7.zip",
+    "OptiFine_1.4.6_L_B5.zip",
+    "OptiFine_1.5.1_L_B1.zip",
+    "OptiFine_1.5.2_L_D2.zip",
+    "OptiFine_1.6.2_L_C4.jar",
+    "OptiFine_1.6.4_L_C9.jar",
+    "OptiFine_1.7.10_L_B6.jar",
+    "OptiFine_1.7.4_L_C7.jar"
+  ],
+  "additional_compatibility": {
+    "OptiFine_1.4.6_HD_U_D5.zip": [
+      "1.4.7"
+    ],
+    "OptiFine_1.4.6_L_B5.zip": [
+      "1.4.7"
+    ]
+  }
+}

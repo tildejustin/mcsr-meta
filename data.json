@@ -8,7 +8,7 @@
     "antigone": "Fixes a rare server deadlock in Minecraft 1.16.1",
     "phosphor": "No-compromises lighting engine optimization mod"
   },
-  "sources": {
+  "homepages": {
     "anchiale": "https://github.com/Minecraft-Java-Edition-Speedrunning/anchiale",
     "antigone": "https://github.com/Minecraft-Java-Edition-Speedrunning/antigone",
     "antiresourcereload": "https://github.com/Minecraft-Java-Edition-Speedrunning/antiresourcereload",
@@ -16,7 +16,7 @@
     "biome_threadlocal_fix": "https://github.com/RedLime/BiomeThreadLocalFix",
     "chunkcacher": "https://github.com/Minecraft-Java-Edition-Speedrunning/chunkcacher",
     "chunkumulator": "https://github.com/DuncanRuns/Chunkumulator",
-    "costar": "https://github.com/tildejustin/costar",
+    "costar": "https://frontcage.com/t/costar-mod-wiki-page/41",
     "dynamicmenufps": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
     "extra-options": "https://github.com/tildejustin/extra-options",
     "fabricproxy-lite": "https://github.com/OKTW-Network/FabricProxy-Lite",
@@ -129,8 +129,16 @@
       "worldpreview"
     ],
     [
+      "optifine",
+      "worldpreview"
+    ],
+    [
       "optifabric-origins",
       "worldpreview"
+    ],
+    [
+        "optifine",
+        "starlight"
     ],
     [
       "optifabric",
@@ -139,6 +147,10 @@
     [
       "optifabric-origins",
       "starlight"
+    ],
+    [
+      "optifine",
+      "optifine-light"
     ]
   ],
   "extra-traits": {
