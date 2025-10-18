@@ -5241,9 +5241,6 @@
             "net.fabricmc:intermediary"
           ]
         }
-      ],
-      "incompatibilities": [
-        "stronghold-trainer"
       ]
     },
     {

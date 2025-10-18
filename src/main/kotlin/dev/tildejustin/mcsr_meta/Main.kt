@@ -21,6 +21,7 @@ lateinit var nameReplacements: HashMap<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
 lateinit var minecraftVersions: SortedSet<String>
 lateinit var modIncompatibilities: List<List<String>>
+lateinit var extraModIncompatibilities: List<List<String>>
 lateinit var unrecommendedMods: HashMap<String, List<String>>
 lateinit var obsoleteMods: HashMap<String, List<String>>
 lateinit var homepages: HashMap<String, String>
@@ -108,7 +109,6 @@ fun main() {
     println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
 }
 
-// TODO: don't give legal mods incompat warnings for non legal mods
 fun handleExtraMods() {
     val extraMods = arrayListOf<Meta.Mod>()
     // username/repo(/tag) -> (filename fragment -> [compatible versions])
@@ -135,7 +135,7 @@ fun handleExtraMods() {
             replacementDescriptions.getOrDefault(fmj.id, fmj.description),
             "https://github.com/${parts[0]}/${parts[1]}",
             versionList,
-            incompatibilities = modIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
+            incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
         )
         // TODO: overrides
         extraMods.add(mod)
@@ -175,7 +175,7 @@ fun handleExtraMods() {
             replacementDescriptions.getOrDefault(fmj.id, fmj.description),
             "https://modrinth.com/mod/${id}",
             versionList,
-            incompatibilities = modIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
+            incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
         )
         // TODO: overrides
         extraMods.add(mod)
@@ -283,6 +283,7 @@ data class AdditionalData(
     @SerialName("not-recommended") val notRecommended: HashMap<String, List<String>>,
     val obsolete: HashMap<String, List<String>>,
     val incompatibilities: List<List<String>>,
+    @SerialName("extra_incompatibilities") val extraIncompatibilities: List<List<String>>,
     @SerialName("extra-traits") val extraTraits: HashMap<String, Set<String>>,
     @SerialName("v2-override") val v2Override: List<String>,
     @SerialName("additional-intermediary") val additionalIntermediary: HashMap<String, List<Intermediary>>,
@@ -310,6 +311,7 @@ fun readAdditionalData() {
     unrecommendedMods = additionalMetadata.notRecommended
     obsoleteMods = additionalMetadata.obsolete
     modIncompatibilities = additionalMetadata.incompatibilities
+    extraModIncompatibilities = additionalMetadata.extraIncompatibilities
     homepages = additionalMetadata.homepages
     v2Override = additionalMetadata.v2Override
     additionalIntermediary = additionalMetadata.additionalIntermediary

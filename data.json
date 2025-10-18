@@ -157,6 +157,12 @@
     [
       "optifine",
       "optifine-light"
+    ]
+  ],
+  "extra_incompatibilities": [
+    [
+      "custom-map-resetter",
+      "atum"
     ],
     [
       "stronghold-trainer",
