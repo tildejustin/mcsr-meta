@@ -137,8 +137,8 @@
       "worldpreview"
     ],
     [
-        "optifine",
-        "starlight"
+      "optifine",
+      "starlight"
     ],
     [
       "optifabric",
@@ -151,6 +151,10 @@
     [
       "optifine",
       "optifine-light"
+    ],
+    [
+      "stronghold-trainer",
+      "speedrunigt"
     ]
   ],
   "extra-traits": {
@@ -180,5 +184,103 @@
     "z-buffer-fog": [
       "net.fabricmc:intermediary"
     ]
-  }
+  },
+  "github_releases": {
+    "faluhub/peepoPractice": {
+      "": [
+        "1.16.1"
+      ]
+    },
+    "logwet/logmod": {
+      "": [
+        "1.16.1"
+      ]
+    },
+    "mjtb49/StrongholdTrainer": {
+      "stronghold-trainer-1.0.jar": [
+        "1.16.1"
+      ]
+    },
+    "AbyssStudios/PogLoot": {
+      "1.14": [
+        "1.14.4"
+      ],
+      "1.15": [
+        "1.15.2"
+      ],
+      "1.16": [
+        "1.16.1"
+      ],
+      "1.17": [
+        "1.17.1"
+      ],
+      "1.18": [
+        "1.18.2"
+      ],
+      "1.8.jar": [
+        "1.8.9"
+      ]
+    },
+    "RedLime/GhostRunner": {
+      "": [
+        "1.16.1"
+      ]
+    },
+    "faluhub/pogworld": {
+      "1.15.2": [
+        "1.15.2"
+      ],
+      "1.16.1": [
+        "1.16.1"
+      ]
+    },
+    "DuncanRuns/InfiniPearl": {
+      "": [
+        "1.16.1"
+      ]
+    },
+    "DuncanRuns/Icarus-Mod": {
+      "1.14.4": [
+        "1.14.4"
+      ],
+      "1.15.2": [
+        "1.15.2"
+      ],
+      "1.16.1": [
+        "1.16.1"
+      ],
+      "1.17.1": [
+        "1.17.1"
+      ],
+      "1.18.1": [
+        "1.18.1"
+      ]
+    },
+    "pixfumy/Legacy-Elytras/v1.0.0": {
+      "1.7.10": [
+        "1.7.10"
+      ],
+      "1.8-": [
+        "1.8"
+      ],
+      "1.8.9": [
+        "1.8.9"
+      ]
+    },
+    "logwet/noverworld": {
+      "BASTION": [
+        "1.16.1"
+      ]
+    }
+  },
+  "modrinth_releases": [
+    "fsg-mod",
+    "half-heart-hardcore",
+    "mcsr-ranked",
+    "custom-map-resetter",
+    "tasmod",
+    "lotas"
+  ],
+  "extra_entries": [
+  ]
 }

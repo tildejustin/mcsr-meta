@@ -26,6 +26,10 @@ lateinit var obsoleteMods: HashMap<String, List<String>>
 lateinit var homepages: HashMap<String, String>
 lateinit var v2Override: List<String>
 lateinit var additionalIntermediary: HashMap<String, List<Intermediary>>
+lateinit var githubReleases: HashMap<String, HashMap<String, List<String>>>
+lateinit var modrinthReleases: List<String>
+lateinit var extraEntries: List<Meta.Mod>
+
 
 // modid -> list of conditions
 lateinit var conditions: HashMap<String, MutableList<String>>
@@ -47,21 +51,21 @@ val comparer: (String, String) -> Int = { o1, o2 ->
     } catch (_: VersionFormatException) {
     }
     if (one != null && two != null) {
-        one.compareTo(two)
+        two.compareTo(one)
     } else if (one != null) {
         -1
     } else if (two != null) {
         1
     } else {
         // april fools snapshots
-        o1.compareTo(o2)
+        o2.compareTo(o1)
     }
 }
 
 val modVersionComparer: (Meta.ModVersion, Meta.ModVersion) -> Int = { s1, s2 ->
     if (s2.targetVersion.first().contains("+")) 1
     else if (s1.targetVersion.first().contains("+")) -1
-    else Version.parse(s2.targetVersion.first().split("-")[0], false).compareTo(Version.parse(s1.targetVersion.first().split("-")[0], false))
+    else comparer(s1.targetVersion.first().split("-")[0], s2.targetVersion.first().split("-")[0])
 }
 
 fun main() {
@@ -77,9 +81,9 @@ fun main() {
     val aprilFoolsGitId = Git.open(aprilFoolsModsPath.toFile()).log().setMaxCount(1).call().first().name
     println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
     mark = TimeSource.Monotonic.markNow()
-    val mods = ArrayList<Meta.Mod>()
+    val mods = mutableListOf<Meta.Mod>()
     Files.list(legalModsPath).forEach { modid ->
-        val modVersions = ArrayList<Meta.ModVersion>()
+        val modVersions = mutableListOf<Meta.ModVersion>()
         Files.list(modid).forEach {
             modVersions.add(generateModVersion(modid.name, Files.list(it).findFirst().get(), it.name, gitId))
         }
@@ -99,7 +103,98 @@ fun main() {
     }
 
     Path.of("mods.json").writeText(json.encodeToString(Meta(7, mods.sortedBy { it.modid })) + "\n")
+
+    handleExtraMods()
     println("time taken: ${mark.elapsedNow().toString(DurationUnit.SECONDS, 1)}")
+}
+
+// TODO: don't give legal mods incompat warnings for non legal mods
+fun handleExtraMods() {
+    val extraMods = arrayListOf<Meta.Mod>()
+    // username/repo(/tag) -> (filename fragment -> [compatible versions])
+    githubReleases.forEach { kv ->
+        val parts = kv.key.split("/")
+        // what's an error handling
+        val rangeUrlPairs = json.decodeFromString<GitHubRelease>(
+            URI.create("https://api.github.com/repos/${parts[0]}/${parts[1]}/releases/" + if (parts.size > 2) "tags/${parts[2]}" else "latest").toURL().readText()
+        ).assets.map { asset ->
+            val rangeKeys = kv.value.keys.filter { it in asset.name }
+            if (rangeKeys.isEmpty()) return@forEach
+            if (rangeKeys.size > 1) throw IllegalStateException("bad release filters")
+            val range = kv.value[rangeKeys[0]]!!.map { createSemverRangeFromFolderName(it) }.flatten().toSortedSet(comparer)
+            Pair(asset.url, range)
+        }
+        // test for modid / desc
+        val testUrl = rangeUrlPairs.first().first
+        val dummy = handleAltExternalDownload("github_release_test", testUrl.substringAfterLast('/'), testUrl).path
+        val fmj = readFabricModJson(dummy)
+        val versionList = mutableListOf<Meta.ModVersion>()
+        val mod = Meta.Mod(
+            fmj.id,
+            fmj.name,
+            fmj.description,
+            "https://github.com/${parts[0]}/${parts[1]}",
+            versionList,
+            incompatibilities = modIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
+        )
+        // TODO: overrides
+        extraMods.add(mod)
+        rangeUrlPairs.forEach {
+            val path = handleAltExternalDownload(fmj.id, it.first.substringAfterLast('/'), it.first).path
+            versionList.add(Meta.ModVersion(it.second, readFabricModJson(path).version, it.first, hashPath(path), intermediary = getIntermediary(fmj.id, path, it.second).toList()))
+        }
+    }
+
+    fun versionOrNull(version: String): Version? {
+        return try {
+            val ver = Version.parse(version, false)
+            if (ver.preRelease != null) null else ver
+        } catch (_: VersionFormatException) {
+            null
+        }
+    }
+
+    modrinthReleases.forEach { id ->
+        val bestPerVersion = HashMap<String, ModrinthVersion>()
+        json.decodeFromString<List<ModrinthVersion>>(URI.create("https://api.modrinth.com/v2/project/${id}/version").toURL().readText())
+            .filter { "forge" !in it.loaders && (it.files[0].filename != "LoTAS1.11.2-2.1.2.jar") }.forEach { version ->
+                version.gameVersions.forEach { bestPerVersion.computeIfAbsent(it) { _ -> version } }
+            }
+        val versionBests = HashMap<ModrinthVersion, MutableSet<String>>()
+        bestPerVersion.forEach { (k, v) -> versionBests.computeIfAbsent(v) { _ -> mutableSetOf() }.add(k) }
+        val dummy = versionBests.keys
+            .filter { mrVersion -> mrVersion.gameVersions.any { versionOrNull(it) != null } }
+            .maxBy { it.gameVersions.mapNotNull(::versionOrNull).max() }
+        val dummyMod = handleAltExternalDownload("github_release_test", dummy.files[0].filename, dummy.files[0].url).path
+        val fmj = readFabricModJson(dummyMod)
+        val versionList = mutableListOf<Meta.ModVersion>()
+        val mod = Meta.Mod(
+            fmj.id,
+            fmj.name,
+            fmj.description,
+            "https://modrinth.com/mod/${id}",
+            versionList,
+            incompatibilities = modIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
+        )
+        // TODO: overrides
+        extraMods.add(mod)
+        versionBests.forEach { (k, v) ->
+            val path = handleAltExternalDownload(fmj.id, k.files[0].filename, k.files[0].url).path
+            versionList.add(
+                Meta.ModVersion(
+                    v.toSortedSet(comparer),
+                    readFabricModJson(path).version,
+                    k.files[0].url,
+                    hashPath(path),
+                    intermediary = getIntermediary(fmj.id, path, v).toList()
+                )
+            )
+        }
+    }
+    // TODO: overrides etc
+    extraMods.addAll(extraEntries)
+    extraMods.forEach { it.versions.sortWith(modVersionComparer) }
+    Path.of("extra.json").writeText(json.encodeToString(Meta(7, extraMods.sortedBy { it.modid })) + "\n")
 }
 
 fun handleOptiFine(mods: MutableList<Meta.Mod>) {
@@ -133,7 +228,7 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
 
     val normalList = mutableListOf<OptiFineEntry>()
     val lightList = mutableListOf<OptiFineEntry>()
-    val optiFineData: OptiFineData = Json.decodeFromString<OptiFineData>(Path.of("optifine.json").readText())
+    val optiFineData: OptiFineData = json.decodeFromString<OptiFineData>(Path.of("optifine.json").readText())
     (optiFineData.versions + optiFineData.lightVersions).forEach { filename ->
         val groups = "OptiFine_(.*?)_(L|HD|HD_U)_(.*?)\\.(?:jar|zip)".toRegex().matchEntire(filename)?.groupValues ?: return@forEach
         // get canonical version representation
@@ -150,7 +245,7 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
                 mutableSetOf(data.target, *optiFineData.additionalCompatibility.getOrDefault(data.filename, emptyList()).toTypedArray()),
                 "${data.edition}_${data.patch}",
                 url,
-                hashPath(handleOptiFineDownload(data.filename, url).path),
+                hashPath(handleAltExternalDownload("optifine", data.filename, url).path),
                 (data.edition != "L" || optifine.versions.none { data.target in it.targetVersion }),
                 false,
                 legacyIntermediary
@@ -186,7 +281,10 @@ data class AdditionalData(
     val incompatibilities: List<List<String>>,
     @SerialName("extra-traits") val extraTraits: HashMap<String, Set<String>>,
     @SerialName("v2-override") val v2Override: List<String>,
-    @SerialName("additional-intermediary") val additionalIntermediary: HashMap<String, List<Intermediary>>
+    @SerialName("additional-intermediary") val additionalIntermediary: HashMap<String, List<Intermediary>>,
+    @SerialName("github_releases") val githubReleases: HashMap<String, HashMap<String, List<String>>>,
+    @SerialName("modrinth_releases") val modrinthReleases: List<String>,
+    @SerialName("extra_entries") val extraEntries: List<Meta.Mod>
 )
 
 fun readAdditionalData() {
@@ -211,6 +309,9 @@ fun readAdditionalData() {
     homepages = additionalMetadata.homepages
     v2Override = additionalMetadata.v2Override
     additionalIntermediary = additionalMetadata.additionalIntermediary
+    githubReleases = additionalMetadata.githubReleases
+    modrinthReleases = additionalMetadata.modrinthReleases
+    extraEntries = additionalMetadata.extraEntries
     additionalMetadata.extraTraits.forEach { (k, v) -> conditions.getOrPut(k) { ArrayList() }.addAll(v) }
 }
 
@@ -334,8 +435,8 @@ private fun tempFileName(folder: Path, modFile: Path): Path =
 
 data class RealizedExternalMod(val path: Path, val url: String)
 
-fun handleOptiFineDownload(filename: String, url: String): RealizedExternalMod {
-    val downloadedJar = tempDir.resolve("optifine").resolve(filename)
+fun handleAltExternalDownload(modid: String, filename: String, url: String): RealizedExternalMod {
+    val downloadedJar = tempDir.resolve(modid).resolve(filename)
     // TODO: remove once tested
     if (!downloadedJar.exists())
         downloadExternalMod(downloadedJar, url, null)
@@ -373,7 +474,7 @@ fun readFabricModJson(mod: Path): FabricModJson {
 }
 
 fun readConditions(): HashMap<String, MutableList<String>> {
-    val fileData = Json.decodeFromString<HashMap<String, List<String>>>(legalModsPath.parent.resolve("conditional-mods.json").readText())
+    val fileData = json.decodeFromString<HashMap<String, List<String>>>(legalModsPath.parent.resolve("conditional-mods.json").readText())
     val map = HashMap<String, MutableList<String>>()
     fileData.forEach { entry ->
         entry.value.forEach {
