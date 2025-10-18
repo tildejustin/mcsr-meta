@@ -6,7 +6,10 @@
     "z-buffer-fog": "Legacy Fabric mod that make terrain fog rendering to planar",
     "biome_threadlocal_fix": "Fix Minecraft Biome ThreadLocal Memory leak issue",
     "antigone": "Fixes a rare server deadlock in Minecraft 1.16.1",
-    "phosphor": "No-compromises lighting engine optimization mod"
+    "phosphor": "No-compromises lighting engine optimization mod",
+    "mcsrranked": "Minecraft Live Speedrunning Match Mod!",
+    "ghostrunner": "Ghost feature for SSG practice.",
+    "pogworld": "Alters structure generation and adds benefits to world generation."
   },
   "homepages": {
     "anchiale": "https://github.com/Minecraft-Java-Edition-Speedrunning/anchiale",
@@ -95,6 +98,9 @@
     "chunkcacher": [
       "1.15.2",
       "1.16.1"
+    ],
+    "optifine": [
+      "1.12"
     ]
   },
   "obsolete": {

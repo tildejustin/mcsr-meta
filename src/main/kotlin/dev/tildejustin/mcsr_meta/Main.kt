@@ -132,7 +132,7 @@ fun handleExtraMods() {
         val mod = Meta.Mod(
             fmj.id,
             fmj.name,
-            fmj.description,
+            replacementDescriptions.getOrDefault(fmj.id, fmj.description),
             "https://github.com/${parts[0]}/${parts[1]}",
             versionList,
             incompatibilities = modIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
@@ -168,11 +168,10 @@ fun handleExtraMods() {
         val dummyMod = handleAltExternalDownload("github_release_test", dummy.files[0].filename, dummy.files[0].url).path
         val fmj = readFabricModJson(dummyMod)
         val versionList = mutableListOf<Meta.ModVersion>()
-        println(fmj.description)
         val mod = Meta.Mod(
             fmj.id,
             fmj.name,
-            fmj.description,
+            replacementDescriptions.getOrDefault(fmj.id, fmj.description),
             "https://modrinth.com/mod/${id}",
             versionList,
             incompatibilities = modIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
@@ -241,13 +240,14 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
     }
     (normalList + lightList).forEach { data ->
         val url = "https://optifine.net/download?f=${data.filename}"
+        val targets = mutableSetOf(data.target, *optiFineData.additionalCompatibility.getOrDefault(data.filename, emptyList()).toTypedArray())
         (if (data.edition == "L") optifineLight else optifine).versions.add(
             Meta.ModVersion(
-                mutableSetOf(data.target, *optiFineData.additionalCompatibility.getOrDefault(data.filename, emptyList()).toTypedArray()),
+                targets,
                 "${data.edition}_${data.patch}",
                 url,
                 hashPath(handleAltExternalDownload("optifine", data.filename, url).path),
-                (data.edition != "L" || optifine.versions.none { data.target in it.targetVersion }),
+                unrecommendedMods["optifine"]?.none { it in targets } ?: true && (data.edition != "L" || optifine.versions.none { data.target in it.targetVersion }),
                 false,
                 legacyIntermediary
             )

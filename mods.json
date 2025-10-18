@@ -2613,6 +2613,7 @@
           "version": "HD_U_G5",
           "url": "https://optifine.net/download?f=OptiFine_1.12_HD_U_G5.jar",
           "hash": "be2ffe7d3b11635004d5440dc05c84e7f0ceb003a86f7a71d92276a0e3cb376dd2f3852603926efd00857f5011f614a555da943f5d15df0c2a8172b3a115403f",
+          "recommended": false,
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",

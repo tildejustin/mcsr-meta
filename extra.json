@@ -212,7 +212,7 @@
     {
       "modid": "ghostrunner",
       "name": "Ghost Runner",
-      "description": "for Minecraft Speedrunners!",
+      "description": "Ghost feature for SSG practice.",
       "homepage": "https://github.com/RedLime/GhostRunner",
       "versions": [
         {
@@ -672,7 +672,7 @@
     {
       "modid": "mcsrranked",
       "name": "MCSR Ranked",
-      "description": "",
+      "description": "Minecraft Live Speedrunning Match Mod!",
       "homepage": "https://modrinth.com/mod/mcsr-ranked",
       "versions": [
         {
@@ -803,7 +803,7 @@
     {
       "modid": "pogworld",
       "name": "PogWorld",
-      "description": "MOD_DESCRIPTION",
+      "description": "Alters structure generation and adds benefits to world generation.",
       "homepage": "https://github.com/faluhub/pogworld",
       "versions": [
         {
