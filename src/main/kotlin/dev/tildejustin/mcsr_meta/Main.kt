@@ -117,9 +117,9 @@ fun handleExtraMods() {
         // what's an error handling
         val rangeUrlPairs = json.decodeFromString<GitHubRelease>(
             URI.create("https://api.github.com/repos/${parts[0]}/${parts[1]}/releases/" + if (parts.size > 2) "tags/${parts[2]}" else "latest").toURL().readText()
-        ).assets.map { asset ->
+        ).assets.mapNotNull { asset ->
             val rangeKeys = kv.value.keys.filter { it in asset.name }
-            if (rangeKeys.isEmpty()) return@forEach
+            if (rangeKeys.isEmpty()) return@mapNotNull null
             if (rangeKeys.size > 1) throw IllegalStateException("bad release filters")
             val range = kv.value[rangeKeys[0]]!!.map { createSemverRangeFromFolderName(it) }.flatten().toSortedSet(comparer)
             Pair(asset.url, range)
@@ -168,6 +168,7 @@ fun handleExtraMods() {
         val dummyMod = handleAltExternalDownload("github_release_test", dummy.files[0].filename, dummy.files[0].url).path
         val fmj = readFabricModJson(dummyMod)
         val versionList = mutableListOf<Meta.ModVersion>()
+        println(fmj.description)
         val mod = Meta.Mod(
             fmj.id,
             fmj.name,

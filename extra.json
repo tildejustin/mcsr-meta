@@ -672,6 +672,7 @@
     {
       "modid": "mcsrranked",
       "name": "MCSR Ranked",
+      "description": "",
       "homepage": "https://modrinth.com/mod/mcsr-ranked",
       "versions": [
         {
@@ -681,6 +682,25 @@
           "version": "5.5.5",
           "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/30OXpHRr/mcsrranked-5.5.5.jar",
           "hash": "800a6931cd604aa953d15c15670e08abbe9e703dde732a39819305ee1c4ac8484a6b7330c52273a77d3e3630661ba72814beb8f6baa03666625a4eff91cd1af4",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
+      "modid": "noverworld",
+      "name": "Noverworld",
+      "description": "Spawn in the nether with a set of items. Made by logwet, designed by k4yfour, idea by Fyroah.",
+      "homepage": "https://github.com/logwet/noverworld",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "2.3.2-BASTION",
+          "url": "https://github.com/logwet/noverworld/releases/download/v2.3.2/noverworld-2.3.2-BASTION.jar",
+          "hash": "c6b2d40d34d2e7ffb595098d473c788d2c238d2e7c72cf9c6ae108de27fccb9e9db5fbb8fbf0b928374b55347b56246556541034e44b55448831f41373cb927e",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -808,6 +828,28 @@
             "net.fabricmc:intermediary"
           ]
         }
+      ]
+    },
+    {
+      "modid": "stronghold-trainer",
+      "name": "Stronghold Trainer",
+      "description": "A mod to aid speedrunners in practicing stronghold exploration",
+      "homepage": "https://github.com/mjtb49/StrongholdTrainer",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "1.0",
+          "url": "https://github.com/mjtb49/StrongholdTrainer/releases/download/v1.0/stronghold-trainer-1.0.jar",
+          "hash": "7e641e92e64ddb13806adcafa2c89f7010ad10a2056d3138f390498e70ec801efd9c1ddc9b7970e33ee9e0f6336fb64470716c7a5f0915325e634ffa5c5d85f6",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ],
+      "incompatibilities": [
+        "speedrunigt"
       ]
     },
     {
