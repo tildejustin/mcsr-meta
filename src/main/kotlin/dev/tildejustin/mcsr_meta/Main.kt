@@ -141,7 +141,8 @@ fun handleExtraMods() {
         extraMods.add(mod)
         rangeUrlPairs.forEach {
             val path = handleAltExternalDownload(fmj.id, it.first.substringAfterLast('/'), it.first).path
-            versionList.add(Meta.ModVersion(it.second, readFabricModJson(path).version, it.first, hashPath(path), intermediary = getIntermediary(fmj.id, path, it.second).toList()))
+            val (sha1, sha512) = hashPath(path)
+            versionList.add(Meta.ModVersion(it.second, readFabricModJson(path).version, it.first, sha1, sha512, intermediary = getIntermediary(fmj.id, path, it.second).toList()))
         }
     }
 
@@ -180,12 +181,13 @@ fun handleExtraMods() {
         extraMods.add(mod)
         versionBests.forEach { (k, v) ->
             val path = handleAltExternalDownload(fmj.id, k.files[0].filename, k.files[0].url).path
+            val (sha1, sha512) = hashPath(path)
             versionList.add(
                 Meta.ModVersion(
                     v.toSortedSet(comparer),
                     readFabricModJson(path).version,
                     k.files[0].url,
-                    hashPath(path),
+                    sha1, sha512,
                     intermediary = getIntermediary(fmj.id, path, v).toList()
                 )
             )
@@ -241,12 +243,13 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
     (normalList + lightList).forEach { data ->
         val url = "https://optifine.net/download?f=${data.filename}"
         val targets = mutableSetOf(data.target, *optiFineData.additionalCompatibility.getOrDefault(data.filename, emptyList()).toTypedArray())
+        val (sha1, sha512) = hashPath(handleAltExternalDownload("optifine", data.filename, url).path)
         (if (data.edition == "L") optifineLight else optifine).versions.add(
             Meta.ModVersion(
                 targets,
                 "${data.edition}_${data.patch}",
                 url,
-                hashPath(handleAltExternalDownload("optifine", data.filename, url).path),
+                sha1, sha512,
                 unrecommendedMods["optifine"]?.none { it in targets } ?: true && (data.edition != "L" || optifine.versions.none { data.target in it.targetVersion }),
                 false,
                 legacyIntermediary
@@ -363,11 +366,12 @@ fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: S
     val info = readFabricModJson(modFile)
     val unrecommendedIntersection = unrecommendedMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
     val obsoleteIntersection = obsoleteMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
+    val (sha1, sha512) = hashPath(modFile)
     return Meta.ModVersion(
         range,
         info.version,
         modUrl,
-        hashPath(modFile),
+        sha1, sha512,
         unrecommendedIntersection?.isEmpty() ?: true,
         obsoleteIntersection?.isNotEmpty() ?: false,
         getIntermediary(modid, modFile, range).sorted()
@@ -459,7 +463,7 @@ fun downloadExternalMod(tempPath: Path, url: String, hash: String?) {
     Files.createFile(tempPath)
     val jarBytes = URI.create(url).toURL().readBytes()
     // check the downloaded file
-    if (hash != null) check(hashBytes(jarBytes) == hash)
+    if (hash != null) check(hashBytesSha512(jarBytes) == hash)
     tempPath.writeBytes(jarBytes)
 }
 
@@ -517,12 +521,14 @@ fun deleteAndRecloneLegalMods() {
 
 fun ByteArray.toHex() = joinToString("") { byte -> "%02x".format(byte) }
 
-val messageDigest: MessageDigest = MessageDigest.getInstance("sha512")
+val sha1Digest: MessageDigest = MessageDigest.getInstance("sha1")
+val sha512Digest: MessageDigest = MessageDigest.getInstance("sha512")
 
-fun hashPath(path: Path): String {
-    return messageDigest.digest(path.readBytes()).toHex()
+fun hashPath(path: Path): Pair<String, String> {
+    val fileBytes = path.readBytes()
+    return Pair(sha1Digest.digest(fileBytes).toHex(), sha512Digest.digest(fileBytes).toHex())
 }
 
-fun hashBytes(bytes: ByteArray): String {
-    return messageDigest.digest(bytes).toHex()
+fun hashBytesSha512(bytes: ByteArray): String {
+    return sha512Digest.digest(bytes).toHex()
 }

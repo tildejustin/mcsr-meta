@@ -23,7 +23,8 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
         @SerialName("target_version") val targetVersion: MutableSet<String>,
         val version: String,
         val url: String,
-        val hash: String,
+        val sha1: String,
+        val sha512: String,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val recommended: Boolean = true,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val obsolete: Boolean = false,
         val intermediary: List<Intermediary>
