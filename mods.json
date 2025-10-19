@@ -764,8 +764,8 @@
         "ssg-only"
       ],
       "incompatibilities": [
-        "worldpreview",
-        "lazystronghold"
+        "lazystronghold",
+        "worldpreview"
       ]
     },
     {
@@ -2619,8 +2619,8 @@
         }
       ],
       "incompatibilities": [
-        "worldpreview",
-        "starlight"
+        "starlight",
+        "worldpreview"
       ]
     },
     {
@@ -2647,8 +2647,8 @@
         }
       ],
       "incompatibilities": [
-        "worldpreview",
-        "starlight"
+        "starlight",
+        "worldpreview"
       ]
     },
     {
@@ -3366,9 +3366,9 @@
         }
       ],
       "traits": [
-        "worldpreview",
+        "optifine-light",
         "starlight",
-        "optifine-light"
+        "worldpreview"
       ]
     },
     {
@@ -5791,10 +5791,10 @@
         }
       ],
       "incompatibilities": [
-        "phosphor",
-        "optifine",
         "optifabric",
-        "optifabric-origins"
+        "optifabric-origins",
+        "optifine",
+        "phosphor"
       ]
     },
     {
@@ -6318,11 +6318,11 @@
         "rsg-only"
       ],
       "incompatibilities": [
-        "setspawnmod",
         "chunkcacher",
         "optifabric",
+        "optifabric-origins",
         "optifine",
-        "optifabric-origins"
+        "setspawnmod"
       ]
     },
     {

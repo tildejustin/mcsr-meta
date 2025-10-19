@@ -135,7 +135,7 @@ fun handleExtraMods() {
             replacementDescriptions.getOrDefault(fmj.id, fmj.description),
             "https://github.com/${parts[0]}/${parts[1]}",
             versionList,
-            incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
+            incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }.sorted()
         )
         // TODO: overrides
         extraMods.add(mod)
@@ -175,7 +175,7 @@ fun handleExtraMods() {
             replacementDescriptions.getOrDefault(fmj.id, fmj.description),
             "https://modrinth.com/mod/${id}",
             versionList,
-            incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }
+            incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }.sorted()
         )
         // TODO: overrides
         extraMods.add(mod)
@@ -206,7 +206,7 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
         "OptiFine is a Minecraft optimization mod. It allows Minecraft to run faster and look better with full support for shaders, HD textures and many configuration options.",
         "https://optifine.net/home",
         mutableListOf(),
-        modIncompatibilities.filter { it.contains("optifine") }.flatten().filter { it != "optifine" },
+        modIncompatibilities.filter { it.contains("optifine") }.flatten().filter { it != "optifine" }.sorted(),
     )
     val optifineLight = Meta.Mod(
         "optifine-light",
@@ -214,7 +214,7 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
         "A version of OptiFine that makes significantly less invasive changes to the game.",
         "https://optifine.net/home",
         mutableListOf(),
-        modIncompatibilities.filter { it.contains("optifine-light") }.flatten().filter { it != "optifine-light" },
+        modIncompatibilities.filter { it.contains("optifine-light") }.flatten().filter { it != "optifine-light" }.sorted(),
     )
     mods.add(optifine)
     mods.add(optifineLight)
@@ -341,7 +341,7 @@ fun generateMod(modFolder: Path, versions: MutableList<Meta.ModVersion>): Meta.M
         homepages[modFolder.name]!!,
         versions,
         conditions.getOrDefault(modFolder.name, emptyList()),
-        modIncompatibilities.filter { it.contains(modFolder.name) }.flatten().filter { it != modFolder.name },
+        modIncompatibilities.filter { it.contains(modFolder.name) }.flatten().filter { it != modFolder.name }.sorted(),
         unrecommendedMods[modFolder.name]?.isNotEmpty() ?: true,
         obsoleteMods[modFolder.name]?.isEmpty() ?: false,
     )
