@@ -206,7 +206,7 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
         "OptiFine is a Minecraft optimization mod. It allows Minecraft to run faster and look better with full support for shaders, HD textures and many configuration options.",
         "https://optifine.net/home",
         mutableListOf(),
-        modIncompatibilities.filter { it.contains("optifine") }.flatten().filter { it != "optifine" }.sorted(),
+        incompatibilities = modIncompatibilities.filter { it.contains("optifine") }.flatten().filter { it != "optifine" }.sorted(),
     )
     val optifineLight = Meta.Mod(
         "optifine-light",
@@ -214,7 +214,7 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
         "A version of OptiFine that makes significantly less invasive changes to the game.",
         "https://optifine.net/home",
         mutableListOf(),
-        modIncompatibilities.filter { it.contains("optifine-light") }.flatten().filter { it != "optifine-light" }.sorted(),
+        incompatibilities = modIncompatibilities.filter { it.contains("optifine-light") }.flatten().filter { it != "optifine-light" }.sorted(),
     )
     mods.add(optifine)
     mods.add(optifineLight)

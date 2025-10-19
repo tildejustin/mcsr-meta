@@ -3365,7 +3365,7 @@
           ]
         }
       ],
-      "traits": [
+      "incompatibilities": [
         "optifine-light",
         "starlight",
         "worldpreview"
@@ -3555,7 +3555,7 @@
           ]
         }
       ],
-      "traits": [
+      "incompatibilities": [
         "optifine"
       ]
     },
