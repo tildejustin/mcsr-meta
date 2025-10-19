@@ -206,6 +206,9 @@
           "url": "https://cdn.modrinth.com/data/XZOGBIpM/versions/TcTlTNlF/fsg-mod-5.1.0%2BMC1.16.1.jar",
           "sha1": "e182ebab6e4b4bc70dbc0e99bc9393383f0838f7",
           "sha512": "ea97ad8d413e855321913bc52242dd476fbe3b9fc87c18586ae2bf29257fe522129f6fe1eaa19df044c54b0e1c181de5004e010e831d083b53e0b80510e5e128",
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -218,6 +221,9 @@
           "url": "https://cdn.modrinth.com/data/XZOGBIpM/versions/qq31e3iR/fsg-mod-2.3.0%2BMC1.15.2.jar",
           "sha1": "f42a1b6362cbc9e59c8056b99006a2abbbf38610",
           "sha512": "57adefb5823f86ddcb16f57446c6c83ac5cb67cb5f2db0586a66fc51d6d1957f843e3089e3588d7147b2ccfd8c07c0a9fe9a060639330269446d897fdeaac55f",
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -238,6 +244,9 @@
           "url": "https://github.com/RedLime/GhostRunner/releases/download/4.0-release/GhostRunner-4.0%2B1.16.1.jar",
           "sha1": "179bb4a40f4dfe67b6593d42516e20252c7d3e47",
           "sha512": "44f7038af5dde67ccd637c2ae95c0f30461441c531115dc967c7ae51304daa8f220133ccaf53e215da7486ce4723e7a2fabbd40677211354e23abfb690349f72",
+          "dependencies": [
+            "speedrunigt"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -489,6 +498,9 @@
           "url": "https://github.com/logwet/logmod/releases/download/v0.1.12/logmod-0.1.12.jar",
           "sha1": "9eb6736c631d2d34db61f209b4434d08b87bff98",
           "sha512": "2008c41585ef87ad0e06b6a8a0dae3e10d047f44deac138778b274650ad03a17ec05ad92978174a4567ffffca481fad095fcce72a4e5b40584d15d18363e576e",
+          "dependencies": [
+            "delorean"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -767,6 +779,9 @@
           "url": "https://github.com/faluhub/peepoPractice/releases/download/v2.2.1/peepopractice-2.2.1.jar",
           "sha1": "b111f3a653e207e8ff9aeccaeb3bddd9105afbfe",
           "sha512": "1e8b885cb4e657e0ddca446879bcd47b17de94384059fd95038d8cbd5451b02c9da50f4e2505b7afeea9f4dea38c4384efdfbec30e1cb6816b58dc58890be2aa",
+          "dependencies": [
+            "speedrunigt"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]

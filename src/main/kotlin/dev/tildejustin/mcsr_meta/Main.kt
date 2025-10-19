@@ -17,17 +17,18 @@ import kotlin.time.*
 val legalModsPath: Path = Path.of("legal-mods/legal-mods")
 val aprilFoolsModsPath: Path = Path.of("mc_af-legal-mods")
 val tempDir: Path = Path.of("temp")
-lateinit var nameReplacements: HashMap<String, String>
+lateinit var nameReplacements: Map<String, String>
 lateinit var replacementDescriptions: HashMap<String, String>
 lateinit var minecraftVersions: SortedSet<String>
 lateinit var modIncompatibilities: List<List<String>>
 lateinit var extraModIncompatibilities: List<List<String>>
-lateinit var unrecommendedMods: HashMap<String, List<String>>
-lateinit var obsoleteMods: HashMap<String, List<String>>
-lateinit var homepages: HashMap<String, String>
+lateinit var extraDependencies: Map<String, Map<String, List<String>>>
+lateinit var unrecommendedMods: Map<String, List<String>>
+lateinit var obsoleteMods: Map<String, List<String>>
+lateinit var homepages: Map<String, String>
 lateinit var v2Override: List<String>
-lateinit var additionalIntermediary: HashMap<String, List<Intermediary>>
-lateinit var githubReleases: HashMap<String, HashMap<String, List<String>>>
+lateinit var additionalIntermediary: Map<String, List<Intermediary>>
+lateinit var githubReleases: Map<String, Map<String, List<String>>>
 lateinit var modrinthReleases: List<String>
 lateinit var extraEntries: List<Meta.Mod>
 
@@ -127,22 +128,33 @@ fun handleExtraMods() {
         // test for modid / desc
         val testUrl = rangeUrlPairs.first().first
         val dummy = handleAltExternalDownload("github_release_test", testUrl.substringAfterLast('/'), testUrl).path
-        val fmj = readFabricModJson(dummy)
+        val templateFmj = readFabricModJson(dummy)
         val versionList = mutableListOf<Meta.ModVersion>()
         val mod = Meta.Mod(
-            fmj.id,
-            fmj.name,
-            replacementDescriptions.getOrDefault(fmj.id, fmj.description),
+            templateFmj.id,
+            templateFmj.name,
+            replacementDescriptions.getOrDefault(templateFmj.id, templateFmj.description),
             "https://github.com/${parts[0]}/${parts[1]}",
             versionList,
-            incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }.sorted()
+            incompatibilities = extraModIncompatibilities.filter { it.contains(templateFmj.id) }.flatten().filter { it != templateFmj.id }.sorted()
         )
         // TODO: overrides
         extraMods.add(mod)
         rangeUrlPairs.forEach {
-            val path = handleAltExternalDownload(fmj.id, it.first.substringAfterLast('/'), it.first).path
+            val path = handleAltExternalDownload(templateFmj.id, it.first.substringAfterLast('/'), it.first).path
             val (sha1, sha512) = hashPath(path)
-            versionList.add(Meta.ModVersion(it.second, readFabricModJson(path).version, it.first, sha1, sha512, intermediary = getIntermediary(fmj.id, path, it.second).toList()))
+            val newFmj = readFabricModJson(path)
+            versionList.add(
+                Meta.ModVersion(
+                    it.second,
+                    newFmj.version,
+                    it.first,
+                    sha1,
+                    sha512,
+                    dependencies = addExtraDeps(newFmj, it.second),
+                    intermediary = getIntermediary(newFmj.id, path, it.second).toList()
+                )
+            )
         }
     }
 
@@ -188,6 +200,7 @@ fun handleExtraMods() {
                     readFabricModJson(path).version,
                     k.files[0].url,
                     sha1, sha512,
+                    dependencies = addExtraDeps(fmj, v),
                     intermediary = getIntermediary(fmj.id, path, v).toList()
                 )
             )
@@ -197,6 +210,22 @@ fun handleExtraMods() {
     extraMods.addAll(extraEntries)
     extraMods.forEach { it.versions.sortWith(modVersionComparer) }
     Path.of("extra.json").writeText(json.encodeToString(Meta(7, extraMods.sortedBy { it.modid })) + "\n")
+}
+
+fun addExtraDeps(fmj: FabricModJson?, versions: Set<String>, modid: String? = null): Set<String> {
+    val deps = sortedSetOf<String>()
+    var id: String
+    if (fmj != null) {
+        id = fmj.id
+        deps.addAll(fmj.depends.keys.filter { it !in listOf("fabricloader", "minecraft", "java", "mm", "fabric") && !it.startsWith("fabric-") })
+    } else {
+        id = modid!!
+    }
+    val unversionedDeps = extraDependencies[id]?.get("")
+    if (unversionedDeps != null) deps.addAll(unversionedDeps)
+    val versionedDeps = extraDependencies[id]?.filter { it.key in versions }?.flatMap { it.value }
+    if (versionedDeps != null) deps.addAll(versionedDeps)
+    return deps
 }
 
 fun handleOptiFine(mods: MutableList<Meta.Mod>) {
@@ -252,6 +281,7 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
                 sha1, sha512,
                 unrecommendedMods["optifine"]?.none { it in targets } ?: true && (data.edition != "L" || optifine.versions.none { data.target in it.targetVersion }),
                 false,
+                dependencies = addExtraDeps(null, targets, if (data.edition == "L") "optifine-light" else "optifine"),
                 legacyIntermediary
             )
         )
@@ -280,14 +310,15 @@ data class AdditionalData(
     val descriptions: HashMap<String, String>,
     val homepages: HashMap<String, String>,
     @SerialName("max-versions") val maxVersions: List<String>,
-    @SerialName("not-recommended") val notRecommended: HashMap<String, List<String>>,
+    @SerialName("not-recommended") val notRecommended: Map<String, List<String>>,
     val obsolete: HashMap<String, List<String>>,
     val incompatibilities: List<List<String>>,
-    @SerialName("extra_incompatibilities") val extraIncompatibilities: List<List<String>>,
-    @SerialName("extra-traits") val extraTraits: HashMap<String, Set<String>>,
+    @SerialName("extras_incompatibilities") val extraIncompatibilities: List<List<String>>,
+    @SerialName("extra_dependencies") val extraDependencies: Map<String, Map<String, List<String>>>,
+    @SerialName("extra_traits") val extraTraits: Map<String, Set<String>>,
     @SerialName("v2-override") val v2Override: List<String>,
-    @SerialName("additional-intermediary") val additionalIntermediary: HashMap<String, List<Intermediary>>,
-    @SerialName("github_releases") val githubReleases: HashMap<String, HashMap<String, List<String>>>,
+    @SerialName("additional_intermediary") val additionalIntermediary: Map<String, List<Intermediary>>,
+    @SerialName("github_releases") val githubReleases: Map<String, Map<String, List<String>>>,
     @SerialName("modrinth_releases") val modrinthReleases: List<String>,
     @SerialName("extra_entries") val extraEntries: List<Meta.Mod>
 )
@@ -312,6 +343,7 @@ fun readAdditionalData() {
     obsoleteMods = additionalMetadata.obsolete
     modIncompatibilities = additionalMetadata.incompatibilities
     extraModIncompatibilities = additionalMetadata.extraIncompatibilities
+    extraDependencies = additionalMetadata.extraDependencies
     homepages = additionalMetadata.homepages
     v2Override = additionalMetadata.v2Override
     additionalIntermediary = additionalMetadata.additionalIntermediary
@@ -376,6 +408,7 @@ fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: S
         sha1, sha512,
         unrecommendedIntersection?.isEmpty() ?: true,
         obsoleteIntersection?.isNotEmpty() ?: false,
+        addExtraDeps(info, range),
         getIntermediary(modid, modFile, range).sorted()
     )
 }

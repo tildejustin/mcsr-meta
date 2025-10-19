@@ -325,6 +325,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/atum/1.16.1/atum-2.7+1.16.1.jar",
           "sha1": "ab7fe6e85ef1c5adfe0bfa49267fed26ebdd2471",
           "sha512": "c9c456c1927be80377d771551cb5aa5f3a3b47451984a63b6f8900b7459b6249cbc86c0361bfe0bf824b9fd494b86e92712fb6c25eb12f9913f6e3848a952c99",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -337,6 +340,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/atum/1.15.2/atum-2.7+1.15.2.jar",
           "sha1": "c1ab07255b03c7d411547996806b79cd65c12361",
           "sha512": "60210c7255ed93b6eb9f82b76376817b2d474b26ae9c7fda9c9cff4373b2343ddd839dcf03722bdab66d12f99cb9e324f75d7465504bee21bca6f9ade0ccff42",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -508,6 +514,9 @@
           "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/1561a504024fc28cc662c1fd8483f0e0316f8859/20w14infinite/atum-2.7+20w14infinite.jar",
           "sha1": "8cf194b47ca7ea4561cfc9b7f231ccb9ba4d3d38",
           "sha512": "30e6e0cab7102e0980b453c94275121e1d7b95b951584d7dd42a3ae48cb64a5cf77d2bfcfc105090b6a11ecf316ac4eafad27d12ecbaefe7cce521ea863dbb60",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -680,6 +689,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/chunkcacher/1.19-1.20.4/chunkcacher-1.3.2+1.19-1.20.4.jar",
           "sha1": "79b6544d689ae497ad4280832947fbc28b2da5a1",
           "sha512": "671e09dbdabfe71fc7ef82c395913eefa3531c2fcdef042a24088f5bdf19ca2c5a0a8575855f594bfebd142dc78556c0c6b1cfcd301941826c098dae03acc581",
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -692,6 +704,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/chunkcacher/1.18.2/chunkcacher-1.18-1.18.2-3.0.0.jar",
           "sha1": "a46e898b196c08585e8ff538cf4e8a0be67a2648",
           "sha512": "c60161a32aad5b63190feab51476cb450bbf1cc2a03a90c3f0e7a62e8de57f15057c461f3773fd576b761bdf46b87c25fe96668639a77b315a9af98bd2120e95",
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -705,6 +720,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/chunkcacher/1.18-1.18.1/chunkcacher-1.3.1+1.18-1.18.1.jar",
           "sha1": "8c574a001431835c39ae002228dbb0da9ba95451",
           "sha512": "2e796a7876fbc9c099466d542191aff26f2b9bb42d076bbd34bc6c4e3a74b605172a63003ff89bd2bc19e61725dcb60d2d3ff5b9d9958f6b0d1d486927d4cb5c",
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -722,6 +740,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/chunkcacher/1.16.2-1.17.1/chunkcacher-1.16-1.17.1-2.0.0.jar",
           "sha1": "dc54e80a0b92b4aea375bbeb9a00c90ba39242bc",
           "sha512": "b2d7930f74c7eb06b4d71439e0a8d30fdb2da0c2fa24c638f6cc5dfe65e5e88de5cbf9ce59020d8408e4355b094176c34f201856fb0a8f51e32f4c1eef6e16ec",
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -735,6 +756,9 @@
           "sha1": "a62e1b340e921a835041d0fb543f73b529f74835",
           "sha512": "1c6d5a42e6f0aaaf0cafab28100d0bdb89bf4eab2aa78ad381486441941024ed93532ae57681457b7d35428e49f39559690dd6cbf6e6a1719c7d3fd02e75e76b",
           "recommended": false,
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -755,6 +779,9 @@
           "sha1": "5612cec5d9985945dfb5fabb1d79269088da860e",
           "sha512": "06331203fad67066dfd9d91d58989da51cdb96f3541c27ae1a5afb67b476f0a0d4d2d34ac29f515e3492695d9712091de066afcad50eeab6c947a50d82f7f9f1",
           "recommended": false,
+          "dependencies": [
+            "atum"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1006,6 +1033,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/extra-options/1.16-1.16.1/extra-options-2.2.1+1.16.1.jar",
           "sha1": "78fcc9050af8cc0cccb32b691c9de03766fdda9c",
           "sha512": "d2a997eb2a19c09fb2d548df4f7de85020079124fe64a1a5b5393419df3a070d76faee11f6df364310145baeccbbc99c9237bf8264bf1419f98482a82c2dc544",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1019,6 +1049,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/extra-options/1.15.2/extra-options-2.2.2+1.15.2.jar",
           "sha1": "5ad5e72a18da82dc082e2f8c928085eb947aab1f",
           "sha512": "87080bdeb8903a96697219b4ebf8d6d0428070e017a866a7e555d409b4c7d8cc05eb341185209c0a88e714ee94f677becd260a086b2f92395edb0e7b25bfcd65",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1497,6 +1530,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/fast_reset/1.16.1/fast-reset-2.4+1.16.x.jar",
           "sha1": "8d06ca705d0c320d2aebdcd54b16e288da77962f",
           "sha512": "b247bb151f59d0914e891b53fa468e7d9e648cc73636d82fb731183377312face9c7332d049400c04d1ff043465805bd74c3f03fd64fd7326173c38355db53ee",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1509,6 +1545,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/fast_reset/1.15.2/fast-reset-2.4+1.15.2.jar",
           "sha1": "f333029e352622719864db160c8bb5c29816769a",
           "sha512": "db91dbe7f5b5bf8d24c7c89aa5c54e716836b61f63cae9539b72e18dbcafcac100ef96a547e8f6a2ffd872aa53786bb6f716b9cb065ce07ee713ee85dba065a6",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1533,6 +1572,9 @@
           "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/1561a504024fc28cc662c1fd8483f0e0316f8859/20w14infinite/fast-reset-2.4+20w14infinite.jar",
           "sha1": "7876c79faa848c2f1b1cec8805ee656bd782363c",
           "sha512": "eb5efc355840447457fc61fd95821e68f6b016a75b2e7eff4f7f0e38e857aba9d5a95318678df53ffb0472724ce52450a1e637a8109a9c67e47ce288173ae0c8",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2123,6 +2165,10 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/legacy-planifolia/1.11.2-1.12.2/legacy-planifolia-1.0.2+1.11.2-1.12.2.jar",
           "sha1": "8d22ed622c14774b0364a9e4aa447c9145558e9c",
           "sha512": "c56440179dd904e9d792eae8210a53463c1d69538580cc71d625070da3fae93a7434047d674a8836267078e31d8d50e57e6393e7ccaeed2ce036c48b92307eb0",
+          "dependencies": [
+            "optifabric",
+            "optifine"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -2135,6 +2181,10 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/legacy-planifolia/1.8.9/legacy-planifolia-1.0.2+1.8.9.jar",
           "sha1": "8cea53c73e92eb870c49191d5cd6779831673d01",
           "sha512": "abc150cc502187e88c0619d17b82c20507910de384e6dfaa716efa65915705ed4e567bbec1e0c280e99fb0b3953ab881b1895098809a16460a81def8fc89d038",
+          "dependencies": [
+            "optifabric",
+            "optifine"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -2147,6 +2197,10 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/legacy-planifolia/1.8/legacy-planifolia-1.0.2+1.8.jar",
           "sha1": "779e7786c5f8c7ffe9a1f808566c3e48a2901831",
           "sha512": "6d0f3f6f538aad4bf0f9d6572ab87a73d959a4c1a986dac42904b2f06f09cc2e5433eaeb6980bd8b7a4f6e415c73f918d7fb103dea47ae1574d80527dda71bb9",
+          "dependencies": [
+            "optifabric",
+            "optifine"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -2159,6 +2213,10 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/legacy-planifolia/1.7.10/legacy-planifolia-1.0.2+1.7.10.jar",
           "sha1": "e68235e712bee5c99caa06c2c676cdefa472b25e",
           "sha512": "86ecb4e2d150e034bf27ba9ad21bd3a66bd4631f9b1281d86d2505f1917a76d900a07be3fa00936828bd1e2247c07b0201da2d7e4e241d155d1e1b218b2070e9",
+          "dependencies": [
+            "optifabric",
+            "optifine"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -2665,6 +2723,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.14.4_HD_U_G5.jar",
           "sha1": "117c01a5431244a8b6a3ac393374dac9624f9be6",
           "sha512": "580ea34d0d67bc7372b3ad3655a237d23c4ff49f6ea3b29103cac96742d19471ece7351a939ee3694cdcc3615dfbfc868372e048d7d33c24961d11cde44fd483",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2680,6 +2741,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.14.3_HD_U_F2.jar",
           "sha1": "887d648f26f7ba17ea34c0c2dcff4096f7a226b1",
           "sha512": "09b3fde37f1d45300f4acbeccfe32dc3c43100ab79e6071be96bfa7fa776d75cf111634cec5720636965549c4abe8bbdf813bc260d1768b164b32a8cc51afc41",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2695,6 +2759,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.14.2_HD_U_F1.jar",
           "sha1": "396ce7f0e22aae3543134baabd61ad547334c0aa",
           "sha512": "9a11e18668c557c105dfb68eeda6bbb4eae3d21ad8fec7f9919022d5c97eb4fb9f1f814e6f8818c72ec9b6b63f652ff3ea97e0e165703f51d03973825279ed89",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2710,6 +2777,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.13.2_HD_U_G5.jar",
           "sha1": "2cf69cec66f2581d9d8443a457c1f54bd50b1464",
           "sha512": "35595306b44beafddddfa359520888a9651f76a4c06e321a1c21813af618cdbf913a2ec178c83cfee419fbf22be5137f38efbae6222f2294596f2ea70e12b15c",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2725,6 +2795,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.13.1_HD_U_E4.jar",
           "sha1": "4cd051a468185d33f324dd0467ad2391e1c58d65",
           "sha512": "e45da986d0ca2abb3c1af6cccf81bd59d62ebe7bfc9e903fe7b22233471a5e6965b20282566e83d4aa94540cf949814adc293f96cda87084f5691598b7ad6248",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2740,6 +2813,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.13_HD_U_E4.jar",
           "sha1": "4f212f335891e7f4e674571d6dc1733d2dd666db",
           "sha512": "691bb5a68760ac91c4c52c93e614e06119ce73022a1bfc043284b80a7fa37a62d88ba9ea246a69729386202ba728297dfb7e93d832f83cd6c1f8d7c7739b5221",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2755,6 +2831,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.12.2_HD_U_G5.jar",
           "sha1": "ca3aea3a09ce215906c346fe190907fe0347b0c4",
           "sha512": "74dc59c52b1d7b7f7b5b813f0037d36d1269237f1acc2e7665c0dc45b1a55ee400c28112edff2489bf753fd1a5d649623493db0c2298ba5d52907dfc1f7aef38",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2770,6 +2849,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.12.1_HD_U_G5.jar",
           "sha1": "3c9cd74810cad75de5091633a1e0c7d3d76ea09c",
           "sha512": "b4b19bba0fd3da9befd877205ed52034c5a225b8c335f15e7497ff1e81b88b1af7abc379d1eb3575fe1a7aa9e7663566e5677ed910154eccb63fb299ae6ceddf",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2786,6 +2868,9 @@
           "sha1": "3b8369d33c3257cb247c22b13a41b7db0924e948",
           "sha512": "be2ffe7d3b11635004d5440dc05c84e7f0ceb003a86f7a71d92276a0e3cb376dd2f3852603926efd00857f5011f614a555da943f5d15df0c2a8172b3a115403f",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2801,6 +2886,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.11.2_HD_U_G5.jar",
           "sha1": "65c425ab628d1748b489dee8619271402428509e",
           "sha512": "b29315859a00eff1995fd2e0e05b698d4da54b7a8e217b8cfe8dfbcd1a56c2c53a56cbfb41fb1b1aa7a328a9ba5063cc814433e4329f4ea0660d01b7ab262a27",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2816,6 +2904,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.11_HD_U_G5.jar",
           "sha1": "71057cb7a3d0971c3b56e1fbbc333304a72e1352",
           "sha512": "eae6378a3eea1bbd91ceb0646e1881dc57630c1de41bdadb6c1a642a6c1a202aafef771300aa46c94e5f44e7db9254f7d78156b34b1e79d70fde46cf9ca75a2f",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2831,6 +2922,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.10.2_HD_U_I5.jar",
           "sha1": "12fd8dd33150f9e4436f23bac08265305f949e20",
           "sha512": "4625d50359f17ea9bd3d9a783cc9808d1e26c7d90359da9f8849dbff96cb4e7b3db8af3b3aeea7294549fe860145395b9d5336670e5c7e1727d7dcf04a104126",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2846,6 +2940,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.10_HD_U_I5.jar",
           "sha1": "a0070afe9c1c0ced4bcfcda85359e07917d569bd",
           "sha512": "0a5c6a3a73cd927e433de98cdf678ece20f40948e7189e6f169553d5d17e41ae4249683e3303ab99f45de6dd01a7926e162a82e47ab0a57021eaf4e3c0da7938",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2861,6 +2958,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.9.4_HD_U_I5.jar",
           "sha1": "68a206db0d425dd85f6eba33e52122b01e844c46",
           "sha512": "daabea38c6015a73695002581cea7e14433c44fcfd6721c760f6a58ec793966f886c0e2f173a7113740302a406d362494c469a1d3ee5886e2c40acac7175ba1c",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2876,6 +2976,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.9.2_HD_U_E3.jar",
           "sha1": "c032b2ae0b6087077efef8ae89b612e0d4ea81b7",
           "sha512": "26d94b755a6a0cea7bb296e0e2a4c084d68ad7be3bcfed13fdab10576aae4fae7970a2a00de2dd4adec76c2e19a2c3fb7b68c31f70feeda58afed23bddc144ba",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2891,6 +2994,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.9.0_HD_U_I5.jar",
           "sha1": "b5faec3b84f42dd396512a3ce7c1b57c0b972b70",
           "sha512": "7e01731cf9d1f62394be76cd39132c0e2a6631062ecda3814332db1c0dd3c81952e9747688a35d43eb2d58f054825bc1c8d703d2068863e7ed45cf7b42c16ea2",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2906,6 +3012,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.8.9_HD_U_M5.jar",
           "sha1": "d362d58a28f5373b141b9e426e8e160638bfafcd",
           "sha512": "459dd48fd88cbf3e91e7b02790e272279465978a5bde8e85409afa28cd1b0c9022195588afcc2f63acdec5688ac3e93adf7e9870da28548c3b1c292a598426de",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2921,6 +3030,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.8.8_HD_U_I7.jar",
           "sha1": "30cbf4d61052cbfb736a78117da333df23c129a3",
           "sha512": "69cb228f78bad0f13455fd59cf0d54aa48beb065aa90832e060b4b7ab545bb99d8d58e089e4a37b47ff391fb488a1d305159a1c8fa028c4af5e007cc44d36dc5",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2936,6 +3048,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.8.7_HD_U_D6.jar",
           "sha1": "82fc5eae26184353a783fe5f4fb04339ca698063",
           "sha512": "5fbed35dd7f6aeeea68d2de9559ba86eea24381fd585f607e0ccf8d745923903dfa1ec1561c1f924884d123553b0d7ad55fc685ee1dbb721335b25ac475d1f76",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2951,6 +3066,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.8.4_HD_U_D6.jar",
           "sha1": "7f79ca9bf4bf36302772396796275dfedc071ba5",
           "sha512": "1c5f709f50c0a607dd278d1226e5bbcfbd677c952a1682938bd2273f1cd0dbd1d4cd51dca1b16475ccdb2ccbfe669ab5c8cc0a10234b87e26f452b05a550765f",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2966,6 +3084,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.8.3_HD_U_D3.jar",
           "sha1": "dc92ca1d7c43d00597ca07f1a2ca3f3cef67ac8f",
           "sha512": "70c4597fd9f8cbf1d4edfa4265f50652e46bf9986b0633442d4c01d0536d7d6fa5dba9c83c728b4f4337bd7b4e2ef3db31631bce35efacd61fff096643b68cdc",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2981,6 +3102,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.8.1_HD_U_C7.jar",
           "sha1": "1745b0615ee87d33003374db1414e77372e5b3ad",
           "sha512": "d0b8805bc0a679e3ff9b74fe8970eec14c745cb019dcdbc07910005bdaf3fd6952b71dc5eaf348698a3cd93dbef0e165a692cada04cf6fbea6cb7fa45ad6aeb4",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -2996,6 +3120,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.8.0_HD_U_I7.jar",
           "sha1": "0d1dcf64b4d104a71e8f65a1362a163ed81a9030",
           "sha512": "9eb6733c8a25f6c7059b05b43e1477ca17f9f98659384c9e72133acec4f7624781e6568319ac2f4acd4bc2abc9e5aca429611da22004c6502f9d89ed9ce75cb2",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3011,6 +3138,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.7.10_HD_U_E7.jar",
           "sha1": "2130d7266224da6a7325051e37444f7e7c19277c",
           "sha512": "faea0ff6c4ec9e2924c91ec4f88483c1a4fc03afc284cb4669310cb238e3c0d1a824e1c46104c09652b00f65e7d1a0bac0836833dfd71aa4d3194f16b9d0cf87",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3026,6 +3156,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.7.9_HD_U_D2.jar",
           "sha1": "b4b2a7baefddc310a72e93cd31bee41bc6528296",
           "sha512": "25e3a11bc94c7259401fc33e2088a1b39776ce8878941cf3537d1e7c880dd05069cbfd79da7fedecc668781e117fc1f8290f5716d6b6568943b916c00df6a226",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3041,6 +3174,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.7.5_HD_U_D1.jar",
           "sha1": "755537496d8d7ee8d3f5645837a332946dc5f151",
           "sha512": "415b7c8ead5b8343c5264b27f1d551344e86602726ef3ea3fbda33524f48306897fd75a227e868482dc9419605ae6a25ccc42c59e3cff4a9667f918b88f352b3",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3056,6 +3192,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.7.4_HD_U_D1.jar",
           "sha1": "b6dd8a5dcf8c52af270550d58324bfa128c1ed2c",
           "sha512": "d72214287417c0f94086a42eb6154f0f4be02d03748e16f38024930e6a4b0cdacd2d9fe92287ce6010950626e8f10012fee7e00364b2511415c168b4186ad24f",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3071,6 +3210,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.7.2_HD_U_E1.jar",
           "sha1": "410ebe86d21a8d824628ac058960089ebd9385c7",
           "sha512": "6b1e08e1fd63987de1ecd5fbd359c0f4e052c005668e5b2ded8561567411b415d120e4bfdfa665edfd4699aaab3bd5423e319a755435ce2bc115f3ae49cc9858",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3086,6 +3228,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.7.2_HD_U_F7.jar",
           "sha1": "fb04b91e47b5eaa172d2b76c843e488dba8f909b",
           "sha512": "f48990e2342afcc5a89a20e29f4239d9189a56d4c70fd79d8f22e20a85c25a7aed145c9424f243ee195db5e818425b05ffd8776de11a9e322bae5dae52123ac4",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3101,6 +3246,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.6.4_HD_U_D1.jar",
           "sha1": "2b187cb6a0c4135f0514330dd20c63e1cafa982f",
           "sha512": "e702fafce0835776ad6b60423d5cdeb1ab7441614b82948a4927a05d08860cc277e277d5287d0f68fd61547b9254cdcbd6b205945632ce0e80089235e701cd1c",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3116,6 +3264,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.6.2_HD_U_C4.jar",
           "sha1": "7914d238df0353605ff641132691d24ef204016e",
           "sha512": "c67f69de61713c3b90b75d75ff48a330aafa0471254ad801cd0068d0737c31007d86e769b0f4ab8a9ceed48e1cc77a1bc16f54e75994238993803aae0bcbbfd0",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3131,6 +3282,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.5.2_HD_U_D5.zip",
           "sha1": "35ede1a266c2fd4d0001b960a822e8473eb10746",
           "sha512": "d94b12d80f0c426aacb19afdec3033da4b589097c1023c5610ed3f9e8e5dc4a93fbc240471e1715c1e14c874a48ac914bc8acd3f1962c6557eb3429a825afebe",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3146,6 +3300,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.5.1_HD_U_D1.zip",
           "sha1": "471c9c908b43ecec948e0f893360fad591a64a29",
           "sha512": "112321c7b43639ee7eb39a89a33ea3bdc7328f8659a078e1ac8f28fdd0dec4d6eef9e798d1ed0cf2c9b86d02799f40a713e5445658faa8ad7c82cc851ed0d7c7",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3161,6 +3318,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.5.0_HD_U_A7.zip",
           "sha1": "ac4dac02e5bc1d6c416f3a64c7c82b60d398c099",
           "sha512": "145e5001a86c9521fa4da72486b1af22318879ce471bd33441e2a8afbb631e87363a3248e0fb117e530f05b00c238e30a59d7ae9e28c296801563cb97f321308",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3177,6 +3337,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.4.6_HD_U_D5.zip",
           "sha1": "73e044a9a238495ace36ef28537d34743eaf1837",
           "sha512": "afc478b8bccb9f09ef8d62093ff7924b428bd5eabe443cb86ad92fe13dade89f7a44652315731fc54b1f30b5020c30adf3a49ab92c783e59b31a44c57b9710d9",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3192,6 +3355,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.4.5_HD_U_D8.zip",
           "sha1": "84029ad9376d8e65fe94ac05b911253050e74557",
           "sha512": "605870c6f9d366f405e91b9af2f4cbbb745200f1dbbad313d332c3772a1623da5dc3fc31a747d3f9ea49dd5ced4d6ae40bed23b4f139022f2a2511f02f41bf63",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3207,6 +3373,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.4.4_HD_U_D2.zip",
           "sha1": "77762993f050a4cbfc21b6ebb291d00047d7fd3d",
           "sha512": "2b9be5d7951a7797527aadf895f781baef64cfc4e79ba98fc9c35355b6769a8e01641f6b62b782b0056a9d614bec2f24c6388060411ab37cb50c93c6d6c9e4e4",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3222,6 +3391,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.4.3_HD_U_C1.zip",
           "sha1": "d03a6c21262586896d7e8fbdc1c12b840b58e9c1",
           "sha512": "a20c7fb5f395b55cc207a0d107b3c55c29363584721fe07dd225fe0b033696f135ef292d290407506f1ff2bbac59893f8c0d74f8ebf06ebedb9fab75cf190bfb",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3237,6 +3409,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.4.2_HD_U_B5.zip",
           "sha1": "94e7de6dd7d95ea91a4670dbcd193306916425d7",
           "sha512": "47c92e2e0a1ebd12e516852a0670a330b8ad764ac0b16ae77d1034fd805e566ce700b29159f11e4d4683d80388e7a1548903775e0096a0f00e7a6756b2c6063c",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3252,6 +3427,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.4.1_HD_U_A5.zip",
           "sha1": "9470b63215997dad1eeb705bac2ae394268dac78",
           "sha512": "c907fad67e32781c61e7335933cdbf47f4bd68bc4f82d12fa177594b56d410be0c5d272f7d4d4c3795192617c616c1ff58ccde29eb0c722291a7536bbeb5ed8b",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3267,6 +3445,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.4.0_HD_U_A3.zip",
           "sha1": "f3eb225e92b87a6280f9f5c5a32d7ef0177294a8",
           "sha512": "f5ca4f42b53747552f7dd18ce598de656d62521267d8f7c506117dd3ed21e9d068435398acfb3b6369debb184ef127b78a8006ffe127f693614115428d9ef1ee",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3282,6 +3463,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.3.2_HD_U_B4.zip",
           "sha1": "93c45f701d766e15116dfc1292d83d676e186b26",
           "sha512": "f65ba887e23e2ec20dfb226b93c2a770110d3a5496153db7bc2d2d4d65473bca4fd797f52f392fc3ee11a9f2f72c0211cac3019d58459fff48bec939a656fac6",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3297,6 +3481,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.3.1_HD_U_B1.zip",
           "sha1": "5d4b9ec77db6c1b5297ce02d26a60bbab37d5161",
           "sha512": "c6703846bac9f04b5812b61fc9c88babf347d7aeb1271bfcfc39834938c7dbb3d3ecd9cea341458e938560556f8ee1158a872ab190deaa03c311e5edb46a9647",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3312,6 +3499,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.2.5_HD_U_C7.zip",
           "sha1": "99016be8802d410b4844137b3c43f06ddba6a4e9",
           "sha512": "9ead1a0aecb11e71ad9949083d19714fce9389295636bfb1e6c1c2a8d2785f4fcaa3a1feef6a168a9097426da96045cf396a74d999388eca5b8128bd00aace28",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3327,6 +3517,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.2.3_HD_B.zip",
           "sha1": "066a5b043611eee3667a9c49d0c5d73d3da6345d",
           "sha512": "cd9ebaa504573636c2f28c7f6679ef20ca27bbe9299d6282ccb84786c7f5f07f5a6cd26554b90a180e63e705bebcdb5f9144dfced6ca73fcebf5d8561b40f911",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3342,6 +3535,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.1_HD_D6.zip",
           "sha1": "e7298fee277cb64617a0b67e1fef7b5277be714d",
           "sha512": "74d8a07ad840590384935efff3df380fe21f58c431a05b779443233eb297d0b4327943062cd95b8cb4780bd2fa6637eff319ffb9bc580b8575a91a3aaebc4594",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3357,6 +3553,9 @@
           "url": "https://optifine.net/download?f=OptiFine_1.0.0_HD_D3.zip",
           "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
           "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3386,6 +3585,9 @@
           "sha1": "6e860c6f6fad0faa7c97dd51ee7fd44581807648",
           "sha512": "320cf7c98b4e71e06cbd4415f87676658ba40dedeaf4ce316cef482268450ac517c2db888de03aa51558f9071d875d3931b530179e95e0dc33986ae46c83cee1",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3402,6 +3604,9 @@
           "sha1": "589dd4290696a52b69b51fb72229708c59e13c2c",
           "sha512": "cf22cdbf651472704b9c36620e5694abc6634d7478e52c0e529db8c742ea3bfaa1a11867494fe8e5912ee8bbd1597531f0e3129c5da52265fb3203a3c95fcb60",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3418,6 +3623,9 @@
           "sha1": "fa31597c2c93b7a64fe920b3eeeb71df08e7275a",
           "sha512": "cfad7d35bebe0c5e3005204dfdc1fd52eace293e671919f7a66c78a0041187af84d74aef3ba7dc85412edde16f040d5435f284b400ce98a2eef349622135f058",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3434,6 +3642,9 @@
           "sha1": "277727b14926f4c09956c9f4915f63e5d47dfc60",
           "sha512": "7aaf360f4d294bab320097794f0d8032939bd762b472115c9fa5bc915df7ff1145fcf6ad1d6214bcd682bf66fe3ac54b6b1a7372968e480e8e218feb0f695c7e",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3450,6 +3661,9 @@
           "sha1": "7c36ff153628239316c528e37ddacb1de5ab4e30",
           "sha512": "1c9011b99ef109b1d3574cf2db84c89ea5fe7e074670aeb496793dc86dc4bfd7cf3722398ff0967c2407982a6a9a7a8416320cefe564d21c220b045a55cba75a",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3466,6 +3680,9 @@
           "sha1": "0f0dd10e321a0b4f76acacd66d9d6f582ceec2e7",
           "sha512": "adb48e83dd7da94123e25fff2720d31251a43b90a6e4eda3662c783f6f4346092418dd790fe4f52ad9f52a50c984fc3e0d97d743cbb23ba063de7cdebc092974",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3483,6 +3700,9 @@
           "sha1": "eccdc547b7e6d8420b917731e08a18fafa7df716",
           "sha512": "c963118d4f11123e2802da66caad74273bc9aa7deeb057140394c42ca09b742f1fe4ce6d692dab9a824e64bddb0aedf37bed93743a9707b1de2e26d1f3af7a05",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3499,6 +3719,9 @@
           "sha1": "ea49cc15ff9c979edef299d2faeca6c35f488ea4",
           "sha512": "867065108961aac2bd7fe02131030ac062763cfd84c120082f3de160495bad5b27294e92c2f01ea23a6444ce77ebe244b3966d47e72bcbaa03484ef1219a8825",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3515,6 +3738,9 @@
           "sha1": "8f4bbe2bd768327ab6cb36bb9b1195498ee1e465",
           "sha512": "a22fa54986769e5f3c5e7273ba3e666b1fa418d7b2f1907097679b2656c4bd74d39d3734a19cea867f9827e3ea8acd8a11cfc99f324782021c52125d3aefe80f",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3531,6 +3757,9 @@
           "sha1": "59b26f03610ef9cf0ad6bd57f15834f890e8df3a",
           "sha512": "02bf93018832d6875f6273b3fe317a995db93e456a259e35cc05ffe6cbdadba921c2fac3fc8294f4501ff1bb4a84146bd98609a536094b5d1e08ed89bb30e2c8",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3547,6 +3776,9 @@
           "sha1": "a7b2a49b50310dab24a74dd4fd96e264e0702609",
           "sha512": "d08c3ef9c34b9c2ec5b04a9a55e492507045c87b38e1fff046d5a681c6afb1c0b11b152e24111793d759891779e1ed5e6d6996df6e059e21d18373315e093d91",
           "recommended": false,
+          "dependencies": [
+            "optifabric"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary",
             "net.legacyfabric.v2:intermediary",
@@ -3668,6 +3900,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/planifolia/1.21.9-1.21.10/planifolia-1.2.1+1.21.9-1.21.10.jar",
           "sha1": "aaa20af0c9a0a99f3917fac9eb37f6d1f03bca0f",
           "sha512": "8683acbea5dee637782c38a293715290e3f318436568c107fd419fb0b5cbd4de589b0da921fee2d313465d9f1f7da8fc2d8e758dd28c082f19c4c25654bd9b7b",
+          "dependencies": [
+            "sodium"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3682,6 +3917,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/planifolia/1.21.6-1.21.8/planifolia-1.2.1+1.21.6.jar",
           "sha1": "039a0fc8c5c20d0a4c0fc4539a00215861a22d06",
           "sha512": "e8bc159d866403d71148cc635a9b0face7b92eba34bfbdc9316a49fe127acb5e002bc889d1d6d7c283cb640fd81f50164277900a55132ad38d6e7f38d9e013db",
+          "dependencies": [
+            "sodium"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3698,6 +3936,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/planifolia/1.21.2-1.21.5/planifolia-1.2.1+1.21.2-1.21.5.jar",
           "sha1": "587d49dfc8c23db70733d076b6597e3dc477bf98",
           "sha512": "bf04394aa462ce179428a1eaa171d02e3c1430474516902e7101945eaac1c7581f787989b3270dd2aab4a74ab73b7126511b68788ca760f5e63ad0526edaac24",
+          "dependencies": [
+            "sodium"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3711,6 +3952,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/planifolia/1.21-1.21.1/planifolia-1.2.1+1.21-1.21.1.jar",
           "sha1": "db7893d250fe83ed661a336b8903eccc9e88b14a",
           "sha512": "a95da36e088d6bdfe87a6c6f6cf26954844e5c53e860f99cd05401977696ec094271c54a5c89063886fbdc426d3a34d339d3e785b48b68fd7501a0150ebb2264",
+          "dependencies": [
+            "sodium"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3736,6 +3980,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/planifolia/1.19-1.20.6/planifolia-1.2.0+1.19-1.20.6.jar",
           "sha1": "8cc1e2563a283c2994d86f37ffc03d2560e85956",
           "sha512": "b8b3d38cd723ae4e95866dc738dfc86bd2b911ac9484849f6a94b3ec3ebeaba243d552344ca403b0c362b7ee11bbeb7b2cae98f680ac619b0354456dd28e6130",
+          "dependencies": [
+            "sodium"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3753,6 +4000,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/planifolia/1.17-1.18.2/planifolia-1.2.0+1.17-1.18.2.jar",
           "sha1": "ca1209133a28ebe1471f9aa72a1037061d02f25b",
           "sha512": "eb446cea1f4669afa82bf3e1c374b9b80e699a8068a9a951035316297881bae7e617a240a974c0382fba3aed17030f5a2d4f5dd5e7809c2b203cc09c349ea731",
+          "dependencies": [
+            "sodium"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3837,6 +4087,10 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/seedqueue/1.16.1/seedqueue-1.5.2+1.16.1.jar",
           "sha1": "c1d9d8b1e61798db0783e6960b8cbfc79b14573f",
           "sha512": "3ff95f8ac9ec5afaf513ab34b8331a6e64b14e19c874d813e6d6428d64ba601134677bc1a6c492f278f94615ad17c097e3e772d5391a71e986df5a8a44b6ae6c",
+          "dependencies": [
+            "atum",
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3849,6 +4103,10 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/seedqueue/1.15.2/seedqueue-1.5.2+1.15.2.jar",
           "sha1": "50e55691d27daa9f55f88a81c76fbd203377aba2",
           "sha512": "e61f113cb1bb68dd016a319243bf2753d24dd1518d323e59b16f4d505fbac167f19184136c7b9f7f1ea5c377654e68e04ffbb59aa7d6c71833b40af78a213187",
+          "dependencies": [
+            "atum",
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3861,6 +4119,10 @@
           "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/1561a504024fc28cc662c1fd8483f0e0316f8859/20w14infinite/seedqueue-1.5.2+20w14infinite.jar",
           "sha1": "0f63cfc2587908ef1049ea3e58e11e3bf14bfa02",
           "sha512": "d7bf1904bff1319d691a600ace4479f4de26935b73c6f3a7a6dc37ba535d13126d8cbaf3a73d9b1a7c5acd68c2fca27dfdeba48e42597893241648fbfe65f3b6",
+          "dependencies": [
+            "atum",
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4138,6 +4400,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/sleepbackground/1.16.1/sleepbackground-4.1+1.16.1.jar",
           "sha1": "ce5d8994d7d25126ba3da754867b2f5f599243f5",
           "sha512": "8ffb1d7eb62b5b7b6afcd0a0ce00a0f614eb9449a122b515980beecf75505d0903ae00f56f2b9b64ccb75ec9c48259c4d5694e748b54ae07ba8f4798bc7ec683",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4151,6 +4416,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/sleepbackground/1.15.2/sleepbackground-4.1+1.15.2.jar",
           "sha1": "4fa17c23ebee0ccbbb36e447cb782f04fb66c705",
           "sha512": "d6df6dca395ff276c5539e998dc09fa776431489aa3710ab008e45d56c0f2c6440650d0bbc7de5171e50293d74b2fefd46df57e09532858119abd9924a81aa52",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4512,6 +4780,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/sodium/1.16.1/sodium-2.5.1+1.16.1.jar",
           "sha1": "c0c9ebc703867e2101c42667b56d19f1856d8c88",
           "sha512": "10e2aa8d8c7d64bfd443323ac9e61a0f4c7feef3eb9ae5d83dbd5f115dfa2d25c83331093a02cedb70585ed27ed2cc68c2d74376ab23ad0493b9d249fe20cb2f",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4524,6 +4795,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/sodium/1.15.2/sodium-1.5.1+1.15.2.jar",
           "sha1": "f2347efd597f87533ceeef93a728a6c9a225cb8e",
           "sha512": "a2e26c280a8db9312b72a8f743ce741223546edd8fc512fa693dac711b04f090b1db91de825bce6a9b7a953b1537ec16e1197bf14c03ef4d97e1bda81b7b72d9",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4536,6 +4810,9 @@
           "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/1561a504024fc28cc662c1fd8483f0e0316f8859/20w14infinite/sodium-1.5.1+20w14infinite.jar",
           "sha1": "2fe97f0cc3091d9b641039e5a1ffb01396b34a01",
           "sha512": "4d18142b79b74a4f9a6fc6378947b64359685c999e41e8122543cae8a39c3ddffde38a7dda87922263014c2560158bbc27cb1daa544b13573c5c8c22976acc21",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4592,6 +4869,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/sodiummac/1.16.1/sodiummac-3.5.1+1.16.1.jar",
           "sha1": "22aec043511deec487ab2082c0c0969fc94a4312",
           "sha512": "3e12f63f71305eff4d529438daf97ee462626b071490f24a65553d7454b80068bdc2dcea93eaad88f727effe5521a47ed283864ab99e6d0ba201630d3c8c1a4a",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -5128,6 +5408,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/speedrunigt/1.6.4/SpeedRunIGT-14.2+1.6.4.jar",
           "sha1": "c183a71b35d8fa3f5818fcb64a8971ddf55ef67d",
           "sha512": "2153eff80a5fbd398bf1cdad83e05bdae6e7e52e8137537559ec0549f377fcd8bc8662e06a956ce3e39c403d2054a0b92e437c6646d18a607839751f7ee47d83",
+          "dependencies": [
+            "stats-per-world"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -5140,6 +5423,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/speedrunigt/1.5.2/SpeedRunIGT-14.2+1.5.2.jar",
           "sha1": "707bc59f2e2003354101dd8ba8d6b40ea2df298f",
           "sha512": "3f2e5b5c7c42742f900fac293eab72d99f0f5ec7784339a54c92a681468455350c8f079a4ed0a71fd4039fc2c95a7bf5c0f0596a4cd74b463732e1b567e06821",
+          "dependencies": [
+            "stats-per-world"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -5152,6 +5438,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/speedrunigt/1.4.7/SpeedRunIGT-14.2+1.4.7.jar",
           "sha1": "92514acd15012b35f37c08f9454d7ec06299eab6",
           "sha512": "b0564205fab44cf33c11e1f7a9d6abe81fe0945d8ef36bd87ef9d9fe1701820b1eb2303423a56b9a8e68885af56a9171c173334556587e1cb0e0d116833cd1bc",
+          "dependencies": [
+            "stats-per-world"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -5164,6 +5453,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/speedrunigt/1.4.2/SpeedRunIGT-14.2+1.4.2.jar",
           "sha1": "8de48f3bc20c8678a93ac0ee61ccdf34b1f67ae2",
           "sha512": "c97d920d778411b3b8ee417dfd0a903c2d4691665ea93cb29c326786cab44cfb991e7f11502b6e5a6b8cba109bc776ed8e72cb06277d98fc4fa49f365965c5b1",
+          "dependencies": [
+            "stats-per-world"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -5177,6 +5469,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/speedrunigt/1.3.1-1.3.2/SpeedRunIGT-14.2+1.3.x.jar",
           "sha1": "501aa8eb88657b42bd009d47b2d57e68c540abe1",
           "sha512": "f22e1134b7458a41496dec34eaef761c9f1fe25687829746f6666495ae80b9374ad5f34c30fb4e7b9f87d56b790ae8ab23782810e0d1991d4a14d37c9379a24a",
+          "dependencies": [
+            "stats-per-world"
+          ],
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
@@ -5382,6 +5677,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/standardsettings/1.16.1/standardsettings-2.3+1.16.1.jar",
           "sha1": "29c001cbdbea5aad583376994c2e6019aa5bf0e2",
           "sha512": "7bd34f2376b949601b27ea39ab8a882e4cb3e23fdfdacba0c9708b95d12194a3680b458043b13cea1a3d15061b4e2eb382558d334e1d199913bb61c0f127c791",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -5394,6 +5692,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/standardsettings/1.15.2/standardsettings-2.3+1.15.2.jar",
           "sha1": "7616d757684aa72d505b16f602d7771a925476b4",
           "sha512": "22e8de031e7de68b06eede61e253711d333b12384b77feb3a8f2f38683a7a49455004e6cedae73b6eae253103917c67225c4718de2ba0e863235fe0d35e08c36",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -5617,6 +5918,9 @@
           "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/1561a504024fc28cc662c1fd8483f0e0316f8859/20w14infinite/standardsettings-2.3+20w14infinite.jar",
           "sha1": "85f25fa615f14d2ba27e48abc6c0627f2f107314",
           "sha512": "b0484b17e6800a4fb440a58bd44c980133f3fd416604aa4886ca7b3abbabf3095141e8c782b344c2fa478ad3e8f3e8eb33f51a9d6cfbbc020eb8f753fd7bbfd7",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -6260,6 +6564,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/worldpreview/1.16.1/worldpreview-6.3.1+1.16.1.jar",
           "sha1": "b805ec409b9b7bcfaf84bbb2305ba02d00ca7b92",
           "sha512": "8b2282b3f2990306fc4fb612ba696f9a13e4b26b6090e311e690a3536cf4e6106f6f5e8be2e6d74b46738b557da239802e19c715abcfd6a3c855c19eca60d6a4",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -6272,6 +6579,9 @@
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/5442c636b351ab8ea2e57aea18ac8605c77a6457/legal-mods/worldpreview/1.15.2/worldpreview-6.3.1+1.15.2.jar",
           "sha1": "2eac3f32e7b553a0cb368624433e9ec97cde739d",
           "sha512": "82f3fe592bb17a6b821d13c22cc1b62e22bf4951963503fd46e550851f60800aac2aeec8bde63b13d663ef070e9d0855b26b581d094b8e6f9085d6f4782d2a29",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -6309,6 +6619,9 @@
           "url": "https://github.com/tildejustin/mc_af-legal-mods/raw/1561a504024fc28cc662c1fd8483f0e0316f8859/20w14infinite/worldpreview-6.3.0+20w14infinite.jar",
           "sha1": "336ce57603d158945c929e9f85db7b27be7fa817",
           "sha512": "e215d3d91c5ce9f6aff1c03d62db5003b9aeceded74cd9059f02fa11022bc4fb8a2ac2e8d5c614e785a4fb669d8f95068c81be682d810fe045b509137154dca2",
+          "dependencies": [
+            "speedrunapi"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]

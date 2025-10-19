@@ -27,6 +27,7 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
         val sha512: String,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val recommended: Boolean = true,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val obsolete: Boolean = false,
+        @EncodeDefault(EncodeDefault.Mode.NEVER) val dependencies: Set<String> = emptySet(),
         val intermediary: List<Intermediary>
     )
 }

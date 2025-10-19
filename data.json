@@ -159,7 +159,7 @@
       "optifine-light"
     ]
   ],
-  "extra_incompatibilities": [
+  "extras_incompatibilities": [
     [
       "custom-map-resetter",
       "atum"
@@ -169,7 +169,30 @@
       "speedrunigt"
     ]
   ],
-  "extra-traits": {
+  "extra_dependencies": {
+    "optifine": {
+      "": [
+        "optifabric"
+      ]
+    },
+    "optifine-light": {
+      "": [
+        "optifabric"
+      ]
+    },
+    "legacy-planifolia": {
+      "": [
+        "optifabric",
+        "optifine"
+      ]
+    },
+    "planifolia": {
+      "": [
+        "sodium"
+      ]
+    }
+  },
+  "extra_traits": {
     "worldpreview": [
       "rsg-only"
     ],
@@ -192,7 +215,7 @@
   "v2-override": [
     "z-buffer-fog"
   ],
-  "additional-intermediary": {
+  "additional_intermediary": {
     "z-buffer-fog": [
       "net.fabricmc:intermediary"
     ]
