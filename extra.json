@@ -202,10 +202,10 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.1.0+MC1.16.1",
-          "url": "https://cdn.modrinth.com/data/XZOGBIpM/versions/TcTlTNlF/fsg-mod-5.1.0%2BMC1.16.1.jar",
-          "sha1": "e182ebab6e4b4bc70dbc0e99bc9393383f0838f7",
-          "sha512": "ea97ad8d413e855321913bc52242dd476fbe3b9fc87c18586ae2bf29257fe522129f6fe1eaa19df044c54b0e1c181de5004e010e831d083b53e0b80510e5e128",
+          "version": "5.2.0+MC1.16.1",
+          "url": "https://cdn.modrinth.com/data/XZOGBIpM/versions/4IW4nMP3/fsg-mod-5.2.0%2BMC1.16.1.jar",
+          "sha1": "3c545d14ccd0cdeac5fedca5d0a7d7541b4ba6bf",
+          "sha512": "cbb664c7b560e707498d426f80f7246cd5eb2224558f9de5f4f041cb5c3ac76fb6caea39d8e9d2b4500bbdbe40ffcd3e92ffcd424c61fbb9cffb1e74562bae83",
           "dependencies": [
             "atum"
           ],

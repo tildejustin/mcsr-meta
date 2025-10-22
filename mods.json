@@ -1243,7 +1243,8 @@
       ],
       "traits": [
         "accessibility"
-      ]
+      ],
+      "recommended": false
     },
     {
       "modid": "fabricproxy-lite",
