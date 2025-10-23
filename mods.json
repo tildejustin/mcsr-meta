@@ -3313,24 +3313,6 @@
         },
         {
           "target_version": [
-            "1.5"
-          ],
-          "version": "HD_U_A7",
-          "url": "https://optifine.net/download?f=OptiFine_1.5.0_HD_U_A7.zip",
-          "sha1": "ac4dac02e5bc1d6c416f3a64c7c82b60d398c099",
-          "sha512": "145e5001a86c9521fa4da72486b1af22318879ce471bd33441e2a8afbb631e87363a3248e0fb117e530f05b00c238e30a59d7ae9e28c296801563cb97f321308",
-          "dependencies": [
-            "optifabric"
-          ],
-          "intermediary": [
-            "net.legacyfabric:intermediary",
-            "net.legacyfabric.v2:intermediary",
-            "net.ornithemc:calamus-intermediary",
-            "net.ornithemc:calamus-intermediary-gen2"
-          ]
-        },
-        {
-          "target_version": [
             "1.4.6",
             "1.4.7"
           ],
@@ -3386,66 +3368,12 @@
         },
         {
           "target_version": [
-            "1.4.3"
-          ],
-          "version": "HD_U_C1",
-          "url": "https://optifine.net/download?f=OptiFine_1.4.3_HD_U_C1.zip",
-          "sha1": "d03a6c21262586896d7e8fbdc1c12b840b58e9c1",
-          "sha512": "a20c7fb5f395b55cc207a0d107b3c55c29363584721fe07dd225fe0b033696f135ef292d290407506f1ff2bbac59893f8c0d74f8ebf06ebedb9fab75cf190bfb",
-          "dependencies": [
-            "optifabric"
-          ],
-          "intermediary": [
-            "net.legacyfabric:intermediary",
-            "net.legacyfabric.v2:intermediary",
-            "net.ornithemc:calamus-intermediary",
-            "net.ornithemc:calamus-intermediary-gen2"
-          ]
-        },
-        {
-          "target_version": [
             "1.4.2"
           ],
           "version": "HD_U_B5",
           "url": "https://optifine.net/download?f=OptiFine_1.4.2_HD_U_B5.zip",
           "sha1": "94e7de6dd7d95ea91a4670dbcd193306916425d7",
           "sha512": "47c92e2e0a1ebd12e516852a0670a330b8ad764ac0b16ae77d1034fd805e566ce700b29159f11e4d4683d80388e7a1548903775e0096a0f00e7a6756b2c6063c",
-          "dependencies": [
-            "optifabric"
-          ],
-          "intermediary": [
-            "net.legacyfabric:intermediary",
-            "net.legacyfabric.v2:intermediary",
-            "net.ornithemc:calamus-intermediary",
-            "net.ornithemc:calamus-intermediary-gen2"
-          ]
-        },
-        {
-          "target_version": [
-            "1.4.1"
-          ],
-          "version": "HD_U_A5",
-          "url": "https://optifine.net/download?f=OptiFine_1.4.1_HD_U_A5.zip",
-          "sha1": "9470b63215997dad1eeb705bac2ae394268dac78",
-          "sha512": "c907fad67e32781c61e7335933cdbf47f4bd68bc4f82d12fa177594b56d410be0c5d272f7d4d4c3795192617c616c1ff58ccde29eb0c722291a7536bbeb5ed8b",
-          "dependencies": [
-            "optifabric"
-          ],
-          "intermediary": [
-            "net.legacyfabric:intermediary",
-            "net.legacyfabric.v2:intermediary",
-            "net.ornithemc:calamus-intermediary",
-            "net.ornithemc:calamus-intermediary-gen2"
-          ]
-        },
-        {
-          "target_version": [
-            "1.4"
-          ],
-          "version": "HD_U_A3",
-          "url": "https://optifine.net/download?f=OptiFine_1.4.0_HD_U_A3.zip",
-          "sha1": "f3eb225e92b87a6280f9f5c5a32d7ef0177294a8",
-          "sha512": "f5ca4f42b53747552f7dd18ce598de656d62521267d8f7c506117dd3ed21e9d068435398acfb3b6369debb184ef127b78a8006ffe127f693614115428d9ef1ee",
           "dependencies": [
             "optifabric"
           ],
