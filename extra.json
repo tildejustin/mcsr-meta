@@ -933,10 +933,10 @@
           "target_version": [
             "1.12.2"
           ],
-          "version": "Beta1.2",
-          "url": "https://cdn.modrinth.com/data/g0TxtOPk/versions/wsjrUfWT/TASmod-1.12.2-Beta1.2.jar",
-          "sha1": "76f4f2cb0164861cba2c18fa38c6a4a031ea74a6",
-          "sha512": "3fa3f5738fb9543a5f5648e451e58982edd4973d6c4a1a3276736e02e18600575affc5a907af3a1716149564baf5f5b94be59d119db0f84f5409f1f4e8020acf",
+          "version": "Beta2",
+          "url": "https://cdn.modrinth.com/data/g0TxtOPk/versions/24LeQZCV/TASmod-1.12.2-Beta2.jar",
+          "sha1": "447080926f28d88790a343746edaa90997fd0e29",
+          "sha512": "8211f1fd6759449efb0294dbd518a390abbecd8143f31ad5e32fe9f91acfae482e9272458f49b4a6e623b72169c669e1643bbfa1667cb5c280defeabba707dfc",
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
