@@ -735,10 +735,10 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.5.5",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/30OXpHRr/mcsrranked-5.5.5.jar",
-          "sha1": "52a9e02b037e9279b91873fd3453c4e658c31cb5",
-          "sha512": "800a6931cd604aa953d15c15670e08abbe9e703dde732a39819305ee1c4ac8484a6b7330c52273a77d3e3630661ba72814beb8f6baa03666625a4eff91cd1af4",
+          "version": "5.5.6",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/O8X9nRmD/mcsrranked-5.5.6.jar",
+          "sha1": "b22af1e15a1445e17f37a954c22cc58b5922a347",
+          "sha512": "c3715d5f28eeb3c316bfb276ce516593bbca831ff5bf5b7d343fccf9f4ca3559ff753961f010204cf8aee24a8f594fe69e5fa51dfdc2b225452d7552f1393354",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
