@@ -142,15 +142,14 @@ fun handleExtraMods() {
         extraMods.add(mod)
         rangeUrlPairs.forEach {
             val path = handleAltExternalDownload(templateFmj.id, it.first.substringAfterLast('/'), it.first).path
-            val (sha1, sha512) = hashPath(path)
+            val (sha1, sha512, size) = hashPath(path)
             val newFmj = readFabricModJson(path)
             versionList.add(
                 Meta.ModVersion(
                     it.second,
                     newFmj.version,
                     it.first,
-                    sha1,
-                    sha512,
+                    sha1, sha512, size,
                     dependencies = addExtraDeps(newFmj, it.second),
                     intermediary = getIntermediary(newFmj.id, path, it.second).toList()
                 )
@@ -193,13 +192,13 @@ fun handleExtraMods() {
         extraMods.add(mod)
         versionBests.forEach { (k, v) ->
             val path = handleAltExternalDownload(fmj.id, k.files[0].filename, k.files[0].url).path
-            val (sha1, sha512) = hashPath(path)
+            val (sha1, sha512, size) = hashPath(path)
             versionList.add(
                 Meta.ModVersion(
                     v.toSortedSet(comparer),
                     readFabricModJson(path).version,
                     k.files[0].url,
-                    sha1, sha512,
+                    sha1, sha512, size,
                     dependencies = addExtraDeps(fmj, v),
                     intermediary = getIntermediary(fmj.id, path, v).toList()
                 )
@@ -272,13 +271,13 @@ fun handleOptiFine(mods: MutableList<Meta.Mod>) {
     (normalList + lightList).forEach { data ->
         val url = "https://optifine.net/download?f=${data.filename}"
         val targets = mutableSetOf(data.target, *optiFineData.additionalCompatibility.getOrDefault(data.filename, emptyList()).toTypedArray())
-        val (sha1, sha512) = hashPath(handleAltExternalDownload("optifine", data.filename, url).path)
+        val (sha1, sha512, size) = hashPath(handleAltExternalDownload("optifine", data.filename, url).path)
         (if (data.edition == "L") optifineLight else optifine).versions.add(
             Meta.ModVersion(
                 targets,
                 "${data.edition}_${data.patch}",
                 url,
-                sha1, sha512,
+                sha1, sha512, size,
                 unrecommendedMods["optifine"]?.none { it in targets } ?: true && (data.edition != "L" || optifine.versions.none { data.target in it.targetVersion }),
                 false,
                 dependencies = addExtraDeps(null, targets, if (data.edition == "L") "optifine-light" else "optifine"),
@@ -400,12 +399,12 @@ fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: S
     val info = readFabricModJson(modFile)
     val unrecommendedIntersection = unrecommendedMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
     val obsoleteIntersection = obsoleteMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
-    val (sha1, sha512) = hashPath(modFile)
+    val (sha1, sha512, size) = hashPath(modFile)
     return Meta.ModVersion(
         range,
         info.version,
         modUrl,
-        sha1, sha512,
+        sha1, sha512, size,
         unrecommendedIntersection?.isEmpty() ?: true,
         obsoleteIntersection?.isNotEmpty() ?: false,
         addExtraDeps(info, range),
@@ -559,9 +558,9 @@ fun ByteArray.toHex() = joinToString("") { byte -> "%02x".format(byte) }
 val sha1Digest: MessageDigest = MessageDigest.getInstance("sha1")
 val sha512Digest: MessageDigest = MessageDigest.getInstance("sha512")
 
-fun hashPath(path: Path): Pair<String, String> {
+fun hashPath(path: Path): Triple<String, String, Int> {
     val fileBytes = path.readBytes()
-    return Pair(sha1Digest.digest(fileBytes).toHex(), sha512Digest.digest(fileBytes).toHex())
+    return Triple(sha1Digest.digest(fileBytes).toHex(), sha512Digest.digest(fileBytes).toHex(), path.fileSize().toInt())
 }
 
 fun hashBytesSha512(bytes: ByteArray): String {

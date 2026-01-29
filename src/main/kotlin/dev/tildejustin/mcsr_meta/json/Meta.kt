@@ -25,6 +25,7 @@ data class Meta(val schemaVersion: Int, val mods: List<Mod>) {
         val url: String,
         val sha1: String,
         val sha512: String,
+        val size: Int,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val recommended: Boolean = true,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val obsolete: Boolean = false,
         @EncodeDefault(EncodeDefault.Mode.NEVER) val dependencies: Set<String> = emptySet(),
