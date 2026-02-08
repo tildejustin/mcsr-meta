@@ -134,7 +134,7 @@ fun handleExtraMods() {
             templateFmj.id,
             templateFmj.name,
             replacementDescriptions.getOrDefault(templateFmj.id, templateFmj.description),
-            "https://github.com/${parts[0]}/${parts[1]}",
+            homepages.getOrElse(templateFmj.id) { "https://github.com/${parts[0]}/${parts[1]}" },
             versionList,
             incompatibilities = extraModIncompatibilities.filter { it.contains(templateFmj.id) }.flatten().filter { it != templateFmj.id }.sorted()
         )

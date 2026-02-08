@@ -1,2 +1,4 @@
 - use minecraft api instead of hardcoding maximums
 - print if mod description that exists is overridden, so it can be changed later
+- filter out sources for github releases
+- option for betas for github releases
