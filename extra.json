@@ -203,6 +203,30 @@
       ]
     },
     {
+      "modid": "draaft",
+      "name": "drAAft",
+      "description": "Mod for Pac's awesome AA Event",
+      "homepage": "https://github.com/memerson12/drAAft",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "2.0.0-beta.7",
+          "url": "https://github.com/memerson12/drAAft/releases/download/v2.0.0-beta.7/draaft-2.0.0-beta.7.jar",
+          "sha1": "8f7021fd0514788b6fa7669cb542e98850cacbdf",
+          "sha512": "afe28868dfc05f5c9e79e6afae630959cee98952dcdc6f319d69e5312b43a97b8affdcaf5cc788b7848b52e380a786423549a72e0dbc1578c03e374477455008",
+          "size": 21412839,
+          "dependencies": [
+            "speedrunapi"
+          ],
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
       "modid": "fsg-mod",
       "name": "FSG Mod",
       "description": "A mod which overrides atum's seed to be generated from any FSG filter.",
@@ -986,11 +1010,11 @@
           "target_version": [
             "1.12.2"
           ],
-          "version": "Beta2",
-          "url": "https://cdn.modrinth.com/data/g0TxtOPk/versions/24LeQZCV/TASmod-1.12.2-Beta2.jar",
-          "sha1": "447080926f28d88790a343746edaa90997fd0e29",
-          "sha512": "8211f1fd6759449efb0294dbd518a390abbecd8143f31ad5e32fe9f91acfae482e9272458f49b4a6e623b72169c669e1643bbfa1667cb5c280defeabba707dfc",
-          "size": 709163,
+          "version": "Beta2.1",
+          "url": "https://cdn.modrinth.com/data/g0TxtOPk/versions/b6RkBpSm/TASmod-1.12.2-Beta2.1.jar",
+          "sha1": "b529adede6a600c937b38d51628585de1fe946a8",
+          "sha512": "c6f2d8a69d45939a1c65fc2507b0e336990eec60e4081b9bd43ea3171c065990ae2707d036f850742d1586ceac59605e3565a42d42a6dfea46318f095dc8a0a4",
+          "size": 707189,
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]

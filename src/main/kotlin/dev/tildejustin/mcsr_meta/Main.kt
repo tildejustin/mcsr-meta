@@ -122,7 +122,7 @@ fun handleExtraMods() {
             val rangeKeys = kv.value.keys.filter { it in asset.name }
             if (rangeKeys.isEmpty()) return@mapNotNull null
             if (rangeKeys.size > 1) throw IllegalStateException("bad release filters")
-            val range = kv.value[rangeKeys[0]]!!.map { createSemverRangeFromFolderName(it) }.flatten().toSortedSet(comparer)
+            val range = kv.value[rangeKeys[0]]!!.flatMap { createSemverRangeFromFolderName(it) }.toSortedSet(comparer)
             Pair(asset.url, range)
         }
         // test for modid / desc

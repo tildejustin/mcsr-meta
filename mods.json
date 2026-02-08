@@ -3782,9 +3782,9 @@
           ],
           "version": "HD_D3",
           "url": "https://optifine.net/download?f=OptiFine_1.0.0_HD_D3.zip",
-          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-          "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e",
-          "size": 0,
+          "sha1": "0f1c968009bb2e836ac135e08833dce5d496b19d",
+          "sha512": "0336ac2f47b3028a2742c8ab119ef9c39c45b64842065880f0fbba9af773075f738786d2d73f523b1677966834d6c4197f43e7ed586030a6132e7753648e107a",
+          "size": 188328,
           "dependencies": [
             "optifabric"
           ],
