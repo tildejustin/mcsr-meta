@@ -27,6 +27,8 @@
     "mcsrfairplay": "https://github.com/ExeRSolver/mcsr-fairplay-public",
     "fast_reset": "https://github.com/KingContaria/FastReset",
     "forceport": "https://github.com/DuncanRuns/Force-Port-Mod",
+    "hermes": "https://github.com/DuncanRuns/Hermes",
+    "hermes-core": "https://github.com/DuncanRuns/HermesCore",
     "krypton": "https://github.com/astei/krypton",
     "lazydfu": "https://github.com/astei/lazydfu",
     "lazystronghold": "https://github.com/Gregor0410/LazyStronghold",
