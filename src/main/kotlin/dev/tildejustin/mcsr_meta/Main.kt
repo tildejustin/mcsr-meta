@@ -71,6 +71,7 @@ val modVersionComparer: (Meta.ModVersion, Meta.ModVersion) -> Int = { s1, s2 ->
 }
 
 fun main() {
+    val current = json.decodeFromString<Meta>(Path.of("mods.json").readText()).mods.flatMap { it.versions }
     var mark = TimeSource.Monotonic.markNow()
     // place to store downloaded mods
     if (!Files.exists(tempDir)) Files.createDirectory(tempDir)
@@ -87,7 +88,7 @@ fun main() {
     Files.list(legalModsPath).forEach { modid ->
         val modVersions = mutableListOf<Meta.ModVersion>()
         Files.list(modid).forEach {
-            modVersions.add(generateModVersion(modid.name, Files.list(it).findFirst().get(), it.name, gitId))
+            modVersions.add(generateModVersion(modid.name, Files.list(it).findFirst().get(), it.name, gitId, current))
         }
         mods.add(generateMod(modid, modVersions.stream().sorted(modVersionComparer).toList().toMutableList()))
     }
@@ -95,7 +96,7 @@ fun main() {
         if (folder.isHidden() || folder.isRegularFile()) return@forEach
         Files.list(folder).forEach { modFile ->
             val fmj = readFabricModJson(modFile)
-            mods.find { it.modid == fmj.id }?.versions?.add(generateModVersion(fmj.id, modFile, folder.name, aprilFoolsGitId, true)) ?: throw NoSuchFileException(fmj.id)
+            mods.find { it.modid == fmj.id }?.versions?.add(generateModVersion(fmj.id, modFile, folder.name, aprilFoolsGitId, current, true)) ?: throw NoSuchFileException(fmj.id)
         }
     }
     handleOptiFine(mods)
@@ -378,9 +379,9 @@ fun generateMod(modFolder: Path, versions: MutableList<Meta.ModVersion>): Meta.M
     )
 }
 
-fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: String, af: Boolean = false): Meta.ModVersion {
+fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: String, current: List<Meta.ModVersion>, af: Boolean = false): Meta.ModVersion {
     @Suppress("NAME_SHADOWING") var modFile = modFile
-    val modUrl: String
+    var modUrl: String
     if (modFile.extension == "json") {
         val (path, url) = handleExternalMod(modFile)
         modFile = path
@@ -400,6 +401,8 @@ fun generateModVersion(modid: String, modFile: Path, rangeName: String, gitId: S
     val unrecommendedIntersection = unrecommendedMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
     val obsoleteIntersection = obsoleteMods[modid]?.flatMap { createSemverRangeFromFolderName(it) }?.intersect(range)
     val (sha1, sha512, size) = hashPath(modFile)
+    val oldVersion = current.find { it.sha512 == sha512 && it.url.substringAfterLast('/') == modUrl.substringAfterLast('/') }
+    if (oldVersion != null) modUrl = oldVersion.url
     return Meta.ModVersion(
         range,
         info.version,
