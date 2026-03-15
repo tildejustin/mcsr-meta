@@ -866,7 +866,8 @@
       "incompatibilities": [
         "lazystronghold",
         "worldpreview"
-      ]
+      ],
+      "recommended": false
     },
     {
       "modid": "chunkumulator",

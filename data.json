@@ -20,7 +20,7 @@
     "chunkcacher": "https://github.com/Minecraft-Java-Edition-Speedrunning/chunkcacher",
     "chunkumulator": "https://github.com/DuncanRuns/Chunkumulator",
     "costar": "https://frontcage.com/t/costar-mod-wiki-page/41",
-    "draaft": "https://disrespec.tech/draaft/",
+    "draaft": "https://draaft.net",
     "dynamicmenufps": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
     "extra-options": "https://github.com/tildejustin/extra-options",
     "fabricproxy-lite": "https://github.com/OKTW-Network/FabricProxy-Lite",
@@ -99,10 +99,7 @@
     "worldpreview": [
       "1.8.9"
     ],
-    "chunkcacher": [
-      "1.15.2",
-      "1.16.1"
-    ],
+    "chunkcacher": [],
     "optifine": [
       "1.12"
     ],
@@ -312,7 +309,12 @@
         "1.16.1"
       ]
     },
-    "memerson12/drAAft/v2.0.0-beta.7": {
+    "memerson12/drAAft": {
+      "": [
+        "1.16.1"
+      ]
+    },
+    "RedLime/Iris-1.16.1": {
       "": [
         "1.16.1"
       ]
@@ -327,5 +329,26 @@
     "lotas"
   ],
   "extra_entries": [
+    {
+      "modid": "replaymod",
+      "name": "Replay Mod",
+      "description": "A Mod which allows you to record, replay and share your Minecraft experience. Allowed for ranked.",
+      "homepage": "https://www.replaymod.com/",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "1.16.1-2.6.13",
+          "url": "https://cdn.modrinth.com/data/Nv2fQJo5/versions/vfpKdLlR/replaymod-1.16.1-2.6.13.jar",
+          "sha1": "07d897f65ff352b125e4b13f448a8f6299c252ba",
+          "sha512": "60296c25e45a015089aa35491d60d0eb3e2f8cc794129aad62d35a3e26647fe8268311f1d0754bc9d5d35a5646cf810d984bf71870aaf2e362b56c98dfe7ec89",
+          "size": 12855074,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    }
   ]
 }

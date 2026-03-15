@@ -206,17 +206,17 @@
       "modid": "draaft",
       "name": "drAAft",
       "description": "Mod for Pac's awesome AA Event",
-      "homepage": "https://disrespec.tech/draaft/",
+      "homepage": "https://draaft.net",
       "versions": [
         {
           "target_version": [
             "1.16.1"
           ],
-          "version": "2.0.0-beta.7",
-          "url": "https://github.com/memerson12/drAAft/releases/download/v2.0.0-beta.7/draaft-2.0.0-beta.7.jar",
-          "sha1": "8f7021fd0514788b6fa7669cb542e98850cacbdf",
-          "sha512": "afe28868dfc05f5c9e79e6afae630959cee98952dcdc6f319d69e5312b43a97b8affdcaf5cc788b7848b52e380a786423549a72e0dbc1578c03e374477455008",
-          "size": 21412839,
+          "version": "2.0.0",
+          "url": "https://github.com/memerson12/drAAft/releases/download/v2.0.0/draaft-2.0.0.jar",
+          "sha1": "7efa52f75a703bf034d3e421363b57e0d38fbf1d",
+          "sha512": "0c1454163ccab4f5f1ccdead06579f5c92e6f7cb821eaa951a23ca2165e0c155a6143cf0e19c6d1c5baa9087097be6b5ca93c14bbb48b73770cb2521ef1c3290",
+          "size": 21412765,
           "dependencies": [
             "speedrunapi"
           ],
@@ -478,6 +478,27 @@
           "sha1": "2822c05a646fa3abee384266c774d0a604728deb",
           "sha512": "0bb8868048c800b8decd11ff3e522169f6c4a88f3b603ea84941942c22fd5c69a463d98ae6dd8c1688beb3def2a91d98a1d41ab9f21b5da091d735b17ce8ed1b",
           "size": 36476,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
+      "modid": "iris",
+      "name": "Iris",
+      "description": "A modern shaders mod for Minecraft intended to be compatible with existing OptiFine shader packs",
+      "homepage": "https://github.com/RedLime/Iris-1.16.1",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "1.4.10",
+          "url": "https://github.com/RedLime/Iris-1.16.1/releases/download/1.16.1-v1.4.10/iris-mc1.16.1-1.4.10.jar",
+          "sha1": "f362bfaf8298dd397bd82a4d80d5b42ccfb15043",
+          "sha512": "f793a5b711b9e9b581ab9973c807fd51875e512e8e740ac8a1e1230b77abcfa0d1e209906e41461c4521eedf2a01110c93abbf0964809ea6bb4af42e6e0749e8",
+          "size": 2563551,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -800,11 +821,14 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.6.13",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/IW8YWwsX/mcsrranked-5.6.13.jar",
-          "sha1": "1dbfb1735e3ca022bcb7f5a364fb6ff97207a5ea",
-          "sha512": "8f85f46c0ca96780a0c77a0d2f6a3b1978b7342cf86408ebc56497e0affbb7e537d31b1a7ea651eccd0722779a3488729a3f95c53e6a995388db081e39e9cf3c",
-          "size": 28025798,
+          "version": "5.7.3",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/asMBwe7w/mcsrranked-5.7.3.jar",
+          "sha1": "e1bc8488c56237e53723bf99b198c45f6db10565",
+          "sha512": "fd39dd2ab09f862d892204d1ba3eb0584fb253aca1f7aee22b3b96e09ccf1e3e1d207a7f7775bc0ed40f126b050ce158d280134361839d5a7a0b091e08340911",
+          "size": 24963217,
+          "dependencies": [
+            "lithium"
+          ],
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -970,6 +994,27 @@
           "sha1": "e5878e192b076eed8261d67fed6468a5530b37dd",
           "sha512": "76a0b0646e64bd1be7e0b658af998e789e1b09cd29d81cce61d969f3e8c9379592d0ce81705dfc4d07e7ff6727fdd8dd94e38a8529a36c34d572fb2feee632ef",
           "size": 54192,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
+      "modid": "replaymod",
+      "name": "Replay Mod",
+      "description": "A Mod which allows you to record, replay and share your Minecraft experience. Allowed for ranked.",
+      "homepage": "https://www.replaymod.com/",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "1.16.1-2.6.13",
+          "url": "https://cdn.modrinth.com/data/Nv2fQJo5/versions/vfpKdLlR/replaymod-1.16.1-2.6.13.jar",
+          "sha1": "07d897f65ff352b125e4b13f448a8f6299c252ba",
+          "sha512": "60296c25e45a015089aa35491d60d0eb3e2f8cc794129aad62d35a3e26647fe8268311f1d0754bc9d5d35a5646cf810d984bf71870aaf2e362b56c98dfe7ec89",
+          "size": 12855074,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]

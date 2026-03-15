@@ -120,6 +120,7 @@ fun handleExtraMods() {
         val rangeUrlPairs = json.decodeFromString<GitHubRelease>(
             URI.create("https://api.github.com/repos/${parts[0]}/${parts[1]}/releases/" + if (parts.size > 2) "tags/${parts[2]}" else "latest").toURL().readText()
         ).assets.mapNotNull { asset ->
+            if ("-sources.jar" in asset.name) return@mapNotNull null
             val rangeKeys = kv.value.keys.filter { it in asset.name }
             if (rangeKeys.isEmpty()) return@mapNotNull null
             if (rangeKeys.size > 1) throw IllegalStateException("bad release filters")
