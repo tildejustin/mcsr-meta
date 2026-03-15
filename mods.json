@@ -1602,6 +1602,139 @@
       ]
     },
     {
+      "modid": "hermes",
+      "name": "Hermes",
+      "description": "Uninterpreted data output for external tools focused on the MCSR community.",
+      "sources": "https://github.com/DuncanRuns/Hermes",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "0.12.4+MC1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d58be57319a60bd9e28be86bf27c56619658bea8/legal-mods/hermes/1.16.1/hermes-0.12.4+MC1.16.1.jar",
+          "hash": "fb2f0cdbcd81d5435b8f3f7884e26fb689c0514c1925132d877bcd77f8d89db04ea175a1d295843d2e18eb1d1e4bdef8a53025ea02a6946aa8a23c3a6dc5918f",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
+            "1.15.2"
+          ],
+          "version": "0.12.4+MC1.15.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d58be57319a60bd9e28be86bf27c56619658bea8/legal-mods/hermes/1.15.2/hermes-0.12.4+MC1.15.2.jar",
+          "hash": "9aa3da80c5bc1e3f25d435375e6ab99177fc2a4c0b7d7c9f84bfb0096eb4fcbd2a476feb463c4c035d88a4ddea9532130807923097e968ba9e94a0a26b8fc7fc",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
+      "modid": "hermes-core",
+      "name": "Hermes Core",
+      "description": "Constants and instance info functionality for Hermes",
+      "sources": "https://github.com/DuncanRuns/HermesCore",
+      "versions": [
+        {
+          "target_version": [
+            "1.0",
+            "1.1",
+            "1.2.1",
+            "1.2.2",
+            "1.2.3",
+            "1.2.4",
+            "1.2.5",
+            "1.3.1",
+            "1.3.2",
+            "1.4.2",
+            "1.4.4",
+            "1.4.5",
+            "1.4.6",
+            "1.4.7",
+            "1.5.1",
+            "1.5.2",
+            "1.6.1",
+            "1.6.2",
+            "1.6.4",
+            "1.7.2",
+            "1.7.4",
+            "1.7.5",
+            "1.7.6",
+            "1.7.7",
+            "1.7.8",
+            "1.7.9",
+            "1.7.10",
+            "1.8",
+            "1.8.1",
+            "1.8.2",
+            "1.8.3",
+            "1.8.4",
+            "1.8.5",
+            "1.8.6",
+            "1.8.7",
+            "1.8.8",
+            "1.8.9",
+            "1.9.4",
+            "1.10.2",
+            "1.11.2",
+            "1.12.2",
+            "1.13.2",
+            "1.14",
+            "1.14.1",
+            "1.14.2",
+            "1.14.3",
+            "1.14.4",
+            "1.15",
+            "1.15.1",
+            "1.15.2",
+            "1.16",
+            "1.16.1",
+            "1.16.2",
+            "1.16.3",
+            "1.16.4",
+            "1.16.5",
+            "1.17",
+            "1.17.1",
+            "1.18",
+            "1.18.1",
+            "1.18.2",
+            "1.19",
+            "1.19.1",
+            "1.19.2",
+            "1.19.3",
+            "1.19.4",
+            "1.20",
+            "1.20.1",
+            "1.20.2",
+            "1.20.3",
+            "1.20.4",
+            "1.20.5",
+            "1.20.6",
+            "1.21",
+            "1.21.1",
+            "1.21.2",
+            "1.21.3",
+            "1.21.4",
+            "1.21.5",
+            "1.21.6",
+            "1.21.7",
+            "1.21.8",
+            "1.21.9",
+            "1.21.10",
+            "1.21.11"
+          ],
+          "version": "0.3.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d58be57319a60bd9e28be86bf27c56619658bea8/legal-mods/hermes-core/1.0+/hermes-core-0.3.2.jar",
+          "hash": "2e5dad08535032266015519ef27acc6743d1e002bbfefd5481625c57c5cbc259c59006772e7d4e6fc76605b1876edc5f4d051ebcfa2d86b154f50f4a59c1e75e",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
       "modid": "krypton",
       "name": "Krypton",
       "description": "A Fabric mod that optimizes the Minecraft networking stack and entity tracker.",
