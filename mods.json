@@ -6411,7 +6411,6 @@
           "sha1": "8789ad77f4429dbe8c90b641e7c69a2b8c63c7ed",
           "sha512": "40d499f4dbfa418528474c2a0da9a11e5083399833b30297b471ed5b12686693d481e31bff680b71f9ad2161773dea5575369e977fbf673e7bd99ff28c1b7247",
           "size": 64916,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6428,7 +6427,6 @@
           "sha1": "f2c1b7a34a50a829ed0033c573882e763cab9f1a",
           "sha512": "517c52b61cba402f478524e1526468742e33109812dcf047be1a62546a9ba69e30c7057c5190eef25fb7b9561501fc8174c67b465cc6fc90c031497cababbab5",
           "size": 64931,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6475,7 +6473,6 @@
           "sha1": "0e39f89a4c284f13ca643c330e94f4bd647c74e6",
           "sha512": "d3fd0539c26ef365e0e9150128c68c6bf4ff34eb63640c1f72225b7b6d2172f47880a26368db7e69087315f28982bea2b040554cfb027e44e7460f955c03441b",
           "size": 76450,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6493,7 +6490,6 @@
           "sha1": "44fc8780430577373225d3cd0b9374552b3205da",
           "sha512": "d0f7db396f7fd78370f600b7daf6eb90b28cfa44acb073d3bd6939a05421553f80998879d7cf323017b601d6a196edf7dfa204fd2df015bea634dc06aded6544",
           "size": 76568,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6511,7 +6507,6 @@
           "sha1": "b2f80f2a05eab2478b4ec65a369edd8686d985a4",
           "sha512": "f3dad67e7f593911227f6718ed724464fc890526daba5ddb9c8b727f6acd1255a4ccfb6fafc7c845c142dcea34b02db308cd1afa3197f4f1dfe87dda8402040b",
           "size": 74317,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6529,7 +6524,6 @@
           "sha1": "ce7895c0b7d641cb1bb4fd69b6a75785f9e64d91",
           "sha512": "d994260e15964ac7d2296b58370da10fd2d4a41d5db0ec36cab0aec8c1c4da6f6ad7bb0165b478af5fa301aa503a3335fa2cf6273954e7158d83a8be2741b0b4",
           "size": 69245,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6565,7 +6559,6 @@
           "sha1": "85b98bdc576e2f313c3381bbfcccbd1b52ef97ab",
           "sha512": "1c99e84a5ef2c94d3aa5afecd0ec851f5e3738d9fbfa85bcdb8db71aca8365bc6523e2ec2bcaaf1778fcead7c320f1eca8a30a60a1005621d1d5a6d68e8d4131",
           "size": 68481,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6582,7 +6575,6 @@
           "sha1": "d0735237efd7e0b5cad01848883d05aa73afda4b",
           "sha512": "381fb1fbdcc6bba16d4e286b5dafedc43db4c8af73f461808667c002584a3e8ae18ab5698ca944221c30c0212ffc7d00a33e32021e139e1024b6ec40cd9c1335",
           "size": 64554,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],
@@ -6599,7 +6591,6 @@
           "sha1": "c2b6ef14aabb0a2f8ff7d7722c08336d5f2454d4",
           "sha512": "4237f10d14a361213d8f8012f1bad5363a211fd98047e2ef95f7ad1edefdd4aba505d6b9dc0aa8cd988a51306ffbde4c2c621c4781ad802f5ec2afd7215b0a5e",
           "size": 63320,
-          "recommended": false,
           "dependencies": [
             "speedrunapi"
           ],

@@ -821,11 +821,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.7.4",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/ad5HAb6a/mcsrranked-5.7.4.jar",
-          "sha1": "1551e34d7c7958ecfcfbee0310b8a0c6adb46bd6",
-          "sha512": "b3523aa721bf76e9aebee8a62662a39292305ae7d35312293ea986ecb89d7a96d211ffc8b4ae7c3136a5f3616c1e44bb028082fb00598229cc1239b969cd5283",
-          "size": 24860053,
+          "version": "5.7.6",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/gAwAb5gb/mcsrranked-5.7.6.jar",
+          "sha1": "de6eaa028b8a4d4c9eaa3187dc2be10ab14f3f5c",
+          "sha512": "84c496d39e3514267a7fdf82740ad4510c727883be31b343887fe350bf86aa4f0309076bbca082270c840ac94a532e2049a325f1d0d092d935636fce798dd652",
+          "size": 24890535,
           "dependencies": [
             "lithium"
           ],
