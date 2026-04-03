@@ -1746,6 +1746,7 @@
       "versions": [
         {
           "target_version": [
+            "26.1.1",
             "26.1"
           ],
           "version": "1.3.0+MC26.1",
@@ -1935,6 +1936,7 @@
       "versions": [
         {
           "target_version": [
+            "26.1.1",
             "26.1",
             "1.21.11",
             "1.21.10",
@@ -2577,6 +2579,19 @@
       "versions": [
         {
           "target_version": [
+            "26.1.1"
+          ],
+          "version": "0.23.0+mc26.1.1",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/kHXOBNih/lithium-fabric-0.23.0%2Bmc26.1.1.jar",
+          "sha1": "4904811469a2f62d7de3e250b6c98acfa3b58d9f",
+          "sha512": "9d7e92ea2af7d024cfe09bfc7eacf236e551da024f4ddeb3a20d88b01bc3620ee1c5a3355299c9dbfcc76406fb0b8e121a989651e6a73c8c2632290f84db8448",
+          "size": 880954,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
             "26.1"
           ],
           "version": "0.22.1+mc26.1",
@@ -2995,11 +3010,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "1.2.0+1.16.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/7ccb2760f2978bb87d5f02935d754478dda81be8/legal-mods/mcsrfairplay/1.16.1/mcsrfairplay-1.2.0+1.16.1.jar",
-          "sha1": "fd27290bef3afe167e9c5f9c1570b0dbc97b6e0d",
-          "sha512": "87bd75010c883e2e965f66056fe3285f69a35c90ad3d4286cf39f04cbc1fc21fea6648b187cc700681b9e6a215992c5010acdeba22518705329fabae37f899e4",
-          "size": 6964469,
+          "version": "1.2.1+1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/mcsrfairplay/1.16.1/mcsrfairplay-1.2.1+1.16.1.jar",
+          "sha1": "2f9017768c128527d9ded84f55926785f547c8b8",
+          "sha512": "e6a0b5dfdb9d1dab4b60ab237fdafa90403bddf940ebcf88e777e2051e077a3bc5f5265ab3c0a9a60538fa179531267b3918dd9490e3266874da6db62798925b",
+          "size": 6964100,
           "dependencies": [
             "speedrunapi"
           ],
@@ -4310,6 +4325,7 @@
       "versions": [
         {
           "target_version": [
+            "26.1.1",
             "26.1"
           ],
           "version": "1.2.3+26.1",
@@ -5017,13 +5033,14 @@
       "versions": [
         {
           "target_version": [
+            "26.1.1",
             "26.1"
           ],
-          "version": "0.8.7+mc26.1",
-          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/Amr4VcZo/sodium-fabric-0.8.7%2Bmc26.1.jar",
-          "sha1": "ef8e9c3571e601427716de38b8b1ec11f09dfa06",
-          "sha512": "28aea2021f9526412c5d5299736dabc6d6d1cae004398f6de8d7c5c00506f4e15c9020b4515de55be27f7d92ccb93188273c1027ab56fe889ac4941d30458945",
-          "size": 1659314,
+          "version": "0.8.9+mc26.1.1",
+          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/uGvVQBnw/sodium-fabric-0.8.9%2Bmc26.1.1.jar",
+          "sha1": "48b949ec71365788dfd4e89d489f7abd504aa709",
+          "sha512": "74f9dc8963b5258226837cc361ba6b525da734ab4fa5f05d1862bc6e9175f4fa81ca3d49443e2fb85be144d06042f0d65cbcceefc391043af857b38aa2614ae8",
+          "size": 1810286,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -5643,6 +5660,20 @@
       "description": "Displays the timer with RTA, IGT in Minecraft",
       "homepage": "https://github.com/RedLime/SpeedRunIGT",
       "versions": [
+        {
+          "target_version": [
+            "26.1.1",
+            "26.1"
+          ],
+          "version": "14.2+26.1.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/speedrunigt/26.1-26.1.99/SpeedRunIGT-14.2+26.1.x.jar",
+          "sha1": "8eb966c7c3f02a0bbb34486b1edd8633c236cfb6",
+          "sha512": "39712b76f060883104e54c1bf9f811447ffc1f0e9193a94a38fdde2f4f2aab6a23bbc04a5980e4bdaf607b3ed828e184e8fc913871aaf247119c49d2e8aa4140",
+          "size": 1088207,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
         {
           "target_version": [
             "26.1"

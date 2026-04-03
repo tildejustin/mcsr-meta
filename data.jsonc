@@ -86,7 +86,8 @@
     "1.20.6",
     "1.21.11",
     // hardcoding 26.1+ versions
-    "26.1"
+    "26.1",
+    "26.1.1"
   ],
   "not-recommended": {
     "standardsettings": [
