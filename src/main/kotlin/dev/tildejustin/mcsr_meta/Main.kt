@@ -128,15 +128,15 @@ data class AdditionalData(
 )
 
 fun readAdditionalData() {
-    val additionalMetadata = json.decodeFromString<AdditionalData>(Path.of("data.json").readText())
+    val additionalMetadata = json.decodeFromString<AdditionalData>(Path.of("data.jsonc").readText())
     val versions = additionalMetadata.maxVersions.map { maxVersion ->
-        if (maxVersion.count { it == '.' } == 1) return@map listOf(maxVersion)
-        val minor = maxVersion.substring(0, maxVersion.lastIndexOf("."))
+        val version = Version.parse(maxVersion, false)
+        // hardcoding 26.1+ versions until I finally someone else's meta for it b/c patches are unpredictable
         // legacy fabric only has 1.19.4, 1.10.2, 1.11.2, 1.12.2, and 1.13.2 for production intermediaries rn
-        if (minor.split(".")[1].toInt() in 9..13) return@map listOf(maxVersion)
-        val maxPatch = maxVersion.split(".").last().toInt()
-        val intermediateVersions = (1..maxPatch).map { "$minor.$it" } as ArrayList
-        intermediateVersions.addFirst(minor)
+        if (version.major > 1 || version.patch == 0 || version.minor in 9..13) return@map listOf(maxVersion)
+        val noPatch = "1.${version.minor}"
+        val intermediateVersions = (1..version.patch).map { "$noPatch.$it" } as ArrayList
+        intermediateVersions.addFirst(noPatch)
         intermediateVersions.removeAll(secretPreReleases)
         return@map intermediateVersions
     }.flatten()
@@ -291,7 +291,7 @@ fun handleExternalMod(jsonPath: Path): RealizedExternalMod {
 }
 
 @OptIn(ExperimentalSerializationApi::class)
-private val json = Json { ignoreUnknownKeys = true; prettyPrint = true; prettyPrintIndent = "  " }
+private val json = Json { ignoreUnknownKeys = true; prettyPrint = true; prettyPrintIndent = "  "; allowComments = true }
 
 fun readFabricModJson(mod: Path): FabricModJson {
     FileSystems.newFileSystem(mod, null as ClassLoader?).use { fs ->
@@ -323,8 +323,8 @@ fun createSemverRangeFromFolderName(folder: String): MutableSet<String> {
         }.toSortedSet(comparer)
     }
     if (parts.count() == 1) {
-        // return sortedSetOf<String>(comparer, parts[0]) fails on type at runtime
-        return listOf(parts[0]).toSortedSet(comparer)
+        return sortedSetOf<String>(comparer, parts[0])
+        // return listOf(parts[0]).toSortedSet(comparer) // above used to fail on type at runtime
     }
     val minVersion = Version.parse(parts[0], false)
     val maxVersion = Version.parse(parts[1], false)

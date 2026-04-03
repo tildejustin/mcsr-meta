@@ -1475,6 +1475,18 @@
       "versions": [
         {
           "target_version": [
+            "26.1",
+            "26.1.1"
+          ],
+          "version": "1.3.0+MC26.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/forceport/26.1+/forceport-1.3.0+MC26.1.jar",
+          "hash": "50a393cdf4e32ca5bd8aab1b9619da609e88e4dd67e53eda42d991968ac82f2909834f13335ff14ef536bb163035bd1db9ecb9c1e8690a04d98d913b35960720",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
             "1.21.9",
             "1.21.10",
             "1.21.11"
@@ -1723,7 +1735,9 @@
             "1.21.8",
             "1.21.9",
             "1.21.10",
-            "1.21.11"
+            "1.21.11",
+            "26.1",
+            "26.1.1"
           ],
           "version": "0.3.2",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d58be57319a60bd9e28be86bf27c56619658bea8/legal-mods/hermes-core/1.0+/hermes-core-0.3.2.jar",
@@ -1743,7 +1757,8 @@
         {
           "target_version": [
             "1.21.9",
-            "1.21.10"
+            "1.21.10",
+            "1.21.11"
           ],
           "version": "0.2.10",
           "url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/O9LmWYR7/krypton-0.2.10.jar",
@@ -2201,11 +2216,33 @@
       "versions": [
         {
           "target_version": [
+            "26.1.1"
+          ],
+          "version": "0.23.0+mc26.1.1",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/kHXOBNih/lithium-fabric-0.23.0%2Bmc26.1.1.jar",
+          "hash": "9d7e92ea2af7d024cfe09bfc7eacf236e551da024f4ddeb3a20d88b01bc3620ee1c5a3355299c9dbfcc76406fb0b8e121a989651e6a73c8c2632290f84db8448",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
+            "26.1"
+          ],
+          "version": "0.22.1+mc26.1",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/W0ZXKJy9/lithium-fabric-0.22.1%2Bmc26.1.jar",
+          "hash": "8af26b9892bbd098ba41627844f8d7e2a592a2273cd8d7638ba7946b5b9f246590dec2c9294f0bbe0d0dd826e7190d313846181a990d2bba9afa6ec03eedd250",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
             "1.21.11"
           ],
-          "version": "0.21.2+mc1.21.11",
-          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/gl30uZvp/lithium-fabric-0.21.2%2Bmc1.21.11.jar",
-          "hash": "94625510013e0daaf1c2e2b6d8a463c932ff6220f91ba5b0cd5f868658215f046d94d07b3465660f576c4dc27a5aa183dfbdc1c9303f11894b5b25a1dc6c3bb6",
+          "version": "0.21.4+mc1.21.11",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/Ow7wA0kG/lithium-fabric-0.21.4%2Bmc1.21.11.jar",
+          "hash": "f14a5c3d2fad786347ca25083f902139694f618b7c103947f2fd067a7c5ee88a63e1ef8926f7d693ea79ed7d00f57317bae77ef9c2d630bf5ed01ac97a752b94",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2303,9 +2340,9 @@
           "target_version": [
             "1.21.1"
           ],
-          "version": "0.15.1+mc1.21.1",
-          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/E5eJVp4O/lithium-fabric-0.15.1%2Bmc1.21.1.jar",
-          "hash": "bb0d13b429c3f790b3f8d42312a104eb7f33dadc0b1eb3b037255af2d1b17a3c51db7d9a4cf8552f9410922f03ab030e124cb5c0661d2442e63bef8a1d133136",
+          "version": "0.15.3+mc1.21.1",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/XQJtuOTA/lithium-fabric-0.15.3%2Bmc1.21.1.jar",
+          "hash": "8c576d519121b0c2521101d2209eccd85d560b097fcb847aa54c51cd0d3f3947676f01c8d99913f514487c8e0972a1cf5f3da0c9ef0ec9bacdf2baeb4eb7d1a7",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2314,9 +2351,9 @@
           "target_version": [
             "1.21"
           ],
-          "version": "0.13.1",
-          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/M7RXiitG/lithium-fabric-mc1.21-0.13.1.jar",
-          "hash": "c42a3813398fc9cb99b9b8fdfc9af89fbce3245c1c5d54cd08edc05e519d3c1ee149c00f745a3a0eb216f3d1836ea35b4910f58e6312ea065e17e57422853217",
+          "version": "0.15.2+mc1.21.1",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/Yu6L8EnD/lithium-fabric-0.15.2%2Bmc1.21.1.jar",
+          "hash": "0422a6694c997aa91ce01fa038bd5d46d7d8d64f0a5abae7420e5a2a10fdcd1e6cf9033f1d95b402a9ba0f07c8c7cf5cfcd3e50ae7c4fe2ac82f39a58583012e",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2546,9 +2583,9 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "1.1.6+1.16.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/mcsrfairplay/1.16.1/mcsrfairplay-1.1.6+1.16.1.jar",
-          "hash": "d3f8141f472ced9fa7cbd07282368e849b558a33747f9c82c54414088b5ce662318e035c4e2a54da94180006af1a2f159c8ea41dc0c4b46505bd63d50505bc2c",
+          "version": "1.2.1+1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/mcsrfairplay/1.16.1/mcsrfairplay-1.2.1+1.16.1.jar",
+          "hash": "e6a0b5dfdb9d1dab4b60ab237fdafa90403bddf940ebcf88e777e2051e077a3bc5f5265ab3c0a9a60538fa179531267b3918dd9490e3266874da6db62798925b",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2772,11 +2809,23 @@
       "versions": [
         {
           "target_version": [
+            "26.1",
+            "26.1.1"
+          ],
+          "version": "1.2.3+26.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/planifolia/26.1-26.1.1/planifolia-1.2.3+26.1.jar",
+          "hash": "dc9f50cad27fd6b362dca632ae90edc7adecd85efd13f671f6a8a02df8aae19544256e467425639325c6ebe034ed30a1044443e44fc9cb057847f79947f29247",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
             "1.21.11"
           ],
-          "version": "1.2.1+1.21.11",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/planifolia/1.21.11/planifolia-1.2.1+1.21.11.jar",
-          "hash": "c662f51654af5b7a806bf15310291efacf991eab4ea69a11686ebcb2b854879f1d7a55b9e8bfd1fe83c0aa5d872ed521294b1e7f64ec4b4f2f99d0a1b3d99017",
+          "version": "1.2.3+1.21.11",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/planifolia/1.21.11/planifolia-1.2.3+1.21.11.jar",
+          "hash": "d53f78246380fe02f32064607ae6357e7506233a6a3b583833a2e92f4d53a020f7df54c239a8db852ad61e288f1a2c7d6d8be8472f0cce78d881d87328519fd8",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2786,9 +2835,9 @@
             "1.21.9",
             "1.21.10"
           ],
-          "version": "1.2.1+1.21.9-1.21.10",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/planifolia/1.21.9-1.21.10/planifolia-1.2.1+1.21.9-1.21.10.jar",
-          "hash": "8683acbea5dee637782c38a293715290e3f318436568c107fd419fb0b5cbd4de589b0da921fee2d313465d9f1f7da8fc2d8e758dd28c082f19c4c25654bd9b7b",
+          "version": "1.2.3+1.21.9-1.21.10",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/planifolia/1.21.9-1.21.10/planifolia-1.2.3+1.21.9-1.21.10.jar",
+          "hash": "981c4f02497a2adbbf0fb6fbc951fbe56baeda6a4f7a9843fd833c34411d80fe1ba62682b610b3bf847e3b0375ad8a4520b4dfb3cae94e20a8ed60ad07152a6d",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2799,9 +2848,9 @@
             "1.21.7",
             "1.21.8"
           ],
-          "version": "1.2.1+1.21.6",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/planifolia/1.21.6-1.21.8/planifolia-1.2.1+1.21.6.jar",
-          "hash": "e8bc159d866403d71148cc635a9b0face7b92eba34bfbdc9316a49fe127acb5e002bc889d1d6d7c283cb640fd81f50164277900a55132ad38d6e7f38d9e013db",
+          "version": "1.2.3+1.21.6-1.21.8",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/planifolia/1.21.6-1.21.8/planifolia-1.2.3+1.21.6-1.21.8.jar",
+          "hash": "53e1c721adb5416ab31f7fd83febccc846b6742dc73c66f32a182a57e96fde85236402f6ab32cbe74cdd6287fd426c35e835b6a2dbb3a8b3a1a4ca78da166452",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2814,9 +2863,9 @@
             "1.21.5",
             "25w14craftmine"
           ],
-          "version": "1.2.1+1.21.2-1.21.5",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/planifolia/1.21.2-1.21.5/planifolia-1.2.1+1.21.2-1.21.5.jar",
-          "hash": "bf04394aa462ce179428a1eaa171d02e3c1430474516902e7101945eaac1c7581f787989b3270dd2aab4a74ab73b7126511b68788ca760f5e63ad0526edaac24",
+          "version": "1.2.3+1.21.2-1.21.5",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/planifolia/1.21.2-1.21.5/planifolia-1.2.3+1.21.2-1.21.5.jar",
+          "hash": "077565a897d5664c27829c3607aaf529d8483f6686117ec67cbff1b870b772cbb4273ce9ddf8ea38a0200f2fd9542130089c3501072e5a866300d3084efc523b",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2826,9 +2875,9 @@
             "1.21",
             "1.21.1"
           ],
-          "version": "1.2.1+1.21-1.21.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/planifolia/1.21-1.21.1/planifolia-1.2.1+1.21-1.21.1.jar",
-          "hash": "a95da36e088d6bdfe87a6c6f6cf26954844e5c53e860f99cd05401977696ec094271c54a5c89063886fbdc426d3a34d339d3e785b48b68fd7501a0150ebb2264",
+          "version": "1.2.3+1.21-1.21.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/planifolia/1.21-1.21.1/planifolia-1.2.3+1.21-1.21.1.jar",
+          "hash": "0729baccdad18bedfaccd75de2d1a00d74b9163c5949b2942cd584799a1d071b4a3c7be391cfcf9d493e3429ef4795f449a2ef10d51e9d989358694983eec4ea",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2850,9 +2899,9 @@
             "23w13a_or_b",
             "24w14potato"
           ],
-          "version": "1.2.0+1.19-1.20.6",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/planifolia/1.19-1.20.6/planifolia-1.2.0+1.19-1.20.6.jar",
-          "hash": "b8b3d38cd723ae4e95866dc738dfc86bd2b911ac9484849f6a94b3ec3ebeaba243d552344ca403b0c362b7ee11bbeb7b2cae98f680ac619b0354456dd28e6130",
+          "version": "1.2.3+1.19-1.20.6",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/planifolia/1.19-1.20.6/planifolia-1.2.3+1.19-1.20.6.jar",
+          "hash": "842760b171614886103d0d4f3b05f54944c48b273ba9a6eab5684d56f00aa81a8b4bc3f138e0ed5a8a0000e42a541d890e824225b78a43b09985ffe8fb9a19a0",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3362,11 +3411,23 @@
       "versions": [
         {
           "target_version": [
+            "26.1",
+            "26.1.1"
+          ],
+          "version": "0.8.9+mc26.1.1",
+          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/uGvVQBnw/sodium-fabric-0.8.9%2Bmc26.1.1.jar",
+          "hash": "74f9dc8963b5258226837cc361ba6b525da734ab4fa5f05d1862bc6e9175f4fa81ca3d49443e2fb85be144d06042f0d65cbcceefc391043af857b38aa2614ae8",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
             "1.21.11"
           ],
-          "version": "0.8.2+mc1.21.11",
-          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/59wygFUQ/sodium-fabric-0.8.2%2Bmc1.21.11.jar",
-          "hash": "0ab706031f954e4acfc0897536dcd182aaced35b912ee05f00a4c79609064c22d4249d7c1399b3359af974b258520664bbeb079d46f2e167f9f4d12ed86aeb37",
+          "version": "0.8.7+mc1.21.11",
+          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/UddlN6L4/sodium-fabric-0.8.7%2Bmc1.21.11.jar",
+          "hash": "d7f035d6112eaac92cf0f11e4426db631fca5a7115dd355c2126efee4255b648a0102552bbf7b22a7eae9203d08f8740435842bfddcd94e2434f51b57ee9c641",
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3879,6 +3940,29 @@
       "description": "Displays the timer with RTA, IGT in Minecraft",
       "sources": "https://github.com/RedLime/SpeedRunIGT",
       "versions": [
+        {
+          "target_version": [
+            "26.1",
+            "26.1.1"
+          ],
+          "version": "14.2+26.1.x",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/speedrunigt/26.1-26.1.99/SpeedRunIGT-14.2+26.1.x.jar",
+          "hash": "39712b76f060883104e54c1bf9f811447ffc1f0e9193a94a38fdde2f4f2aab6a23bbc04a5980e4bdaf607b3ed828e184e8fc913871aaf247119c49d2e8aa4140",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
+            "26.1"
+          ],
+          "version": "14.2+26.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/1eb45d090cec6997a3b1875efe3c1030a7377bb9/legal-mods/speedrunigt/26.1/SpeedRunIGT-14.2+26.1.jar",
+          "hash": "a8c8a861174a21db11862ce0cb75984584cfa5df29ed743e79649c0969ddcf8687b3cb1db11a78a15a07aae63f430d5af6999b5c0e51f5c661f1c54076c59328",
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
         {
           "target_version": [
             "1.21.11"
@@ -4509,7 +4593,6 @@
           "version": "2.3+1.20-1.20.1",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.20-1.20.1/standardsettings-2.3+1.20-1.20.1.jar",
           "hash": "40d499f4dbfa418528474c2a0da9a11e5083399833b30297b471ed5b12686693d481e31bff680b71f9ad2161773dea5575369e977fbf673e7bd99ff28c1b7247",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4521,7 +4604,6 @@
           "version": "2.3+1.19.4",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.19.4/standardsettings-2.3+1.19.4.jar",
           "hash": "517c52b61cba402f478524e1526468742e33109812dcf047be1a62546a9ba69e30c7057c5190eef25fb7b9561501fc8174c67b465cc6fc90c031497cababbab5",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4559,7 +4641,6 @@
           "version": "2.3.1+1.18.2",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.18.2/standardsettings-2.3.1+1.18.2.jar",
           "hash": "d3fd0539c26ef365e0e9150128c68c6bf4ff34eb63640c1f72225b7b6d2172f47880a26368db7e69087315f28982bea2b040554cfb027e44e7460f955c03441b",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4572,7 +4653,6 @@
           "version": "2.3.1+1.18-1.18.1",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.18-1.18.1/standardsettings-2.3.1+1.18-1.18.1.jar",
           "hash": "d0f7db396f7fd78370f600b7daf6eb90b28cfa44acb073d3bd6939a05421553f80998879d7cf323017b601d6a196edf7dfa204fd2df015bea634dc06aded6544",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4585,7 +4665,6 @@
           "version": "2.3.1+1.17.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.17-1.17.1/standardsettings-2.3.1+1.17.x.jar",
           "hash": "f3dad67e7f593911227f6718ed724464fc890526daba5ddb9c8b727f6acd1255a4ccfb6fafc7c845c142dcea34b02db308cd1afa3197f4f1dfe87dda8402040b",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4598,7 +4677,6 @@
           "version": "2.3+1.16.4-1.16.5",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.16.4-1.16.5/standardsettings-2.3+1.16.4-1.16.5.jar",
           "hash": "d994260e15964ac7d2296b58370da10fd2d4a41d5db0ec36cab0aec8c1c4da6f6ad7bb0165b478af5fa301aa503a3335fa2cf6273954e7158d83a8be2741b0b4",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4624,7 +4702,6 @@
           "version": "2.3+1.15.x",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.15-1.15.2/standardsettings-2.3+1.15.x.jar",
           "hash": "1c99e84a5ef2c94d3aa5afecd0ec851f5e3738d9fbfa85bcdb8db71aca8365bc6523e2ec2bcaaf1778fcead7c320f1eca8a30a60a1005621d1d5a6d68e8d4131",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4636,7 +4713,6 @@
           "version": "2.3+1.14.4",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.14.4/standardsettings-2.3+1.14.4.jar",
           "hash": "381fb1fbdcc6bba16d4e286b5dafedc43db4c8af73f461808667c002584a3e8ae18ab5698ca944221c30c0212ffc7d00a33e32021e139e1024b6ec40cd9c1335",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -4648,7 +4724,6 @@
           "version": "2.3+1.14",
           "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3a36c37a3fe9e39efe1f9e6554a638dfffcd38b3/legal-mods/standardsettings/1.14/standardsettings-2.3+1.14.jar",
           "hash": "4237f10d14a361213d8f8012f1bad5363a211fd98047e2ef95f7ad1edefdd4aba505d6b9dc0aa8cd988a51306ffbde4c2c621c4781ad802f5ec2afd7215b0a5e",
-          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
