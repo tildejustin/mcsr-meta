@@ -230,7 +230,7 @@
       "modid": "draftout",
       "name": "Draftout",
       "description": "Draftout - local 1v1 lockout bingo with over 250 goals",
-      "homepage": "https://modrinth.com/mod/draftout",
+      "homepage": "https://draftoutmc.com",
       "versions": [
         {
           "target_version": [
@@ -836,7 +836,7 @@
       "modid": "mcsrranked",
       "name": "MCSR Ranked",
       "description": "Minecraft Live Speedrunning Match Mod!",
-      "homepage": "https://modrinth.com/mod/mcsr-ranked",
+      "homepage": "https://mcsrranked.com",
       "versions": [
         {
           "target_version": [

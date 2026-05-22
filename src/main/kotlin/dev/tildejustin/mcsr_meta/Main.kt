@@ -186,7 +186,7 @@ fun handleExtraMods() {
             fmj.id,
             fmj.name,
             replacementDescriptions.getOrDefault(fmj.id, fmj.description),
-            "https://modrinth.com/mod/${id}",
+            homepages.getOrElse(fmj.id) { "https://modrinth.com/mod/${id}" },
             versionList,
             incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }.sorted()
         )
