@@ -87,7 +87,8 @@
     "1.21.11",
     // hardcoding 26.1+ versions
     "26.1",
-    "26.1.1"
+    "26.1.1",
+    "26.1.2"
   ],
   "not-recommended": {
     "standardsettings": [
@@ -107,7 +108,10 @@
     "optifine": [
       "1.12"
     ],
-    "extra-options": []
+    "extra-options": [],
+    "krypton": [
+      "26.1.1" // draftout
+    ]
   },
   "obsolete": {
     "phosphor": [],
@@ -330,7 +334,8 @@
     "mcsr-ranked",
     "custom-map-resetter",
     "tasmod",
-    "lotas"
+    "lotas",
+    "draftout"
   ],
   "extra_entries": [
     {

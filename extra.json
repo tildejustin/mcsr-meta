@@ -212,14 +212,35 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "2.0.0",
-          "url": "https://github.com/memerson12/drAAft/releases/download/v2.0.0/draaft-2.0.0.jar",
-          "sha1": "7efa52f75a703bf034d3e421363b57e0d38fbf1d",
-          "sha512": "0c1454163ccab4f5f1ccdead06579f5c92e6f7cb821eaa951a23ca2165e0c155a6143cf0e19c6d1c5baa9087097be6b5ca93c14bbb48b73770cb2521ef1c3290",
-          "size": 21412765,
+          "version": "2.0.1",
+          "url": "https://github.com/memerson12/drAAft/releases/download/v2.0.1/draaft-2.0.1.jar",
+          "sha1": "1e7aed16a26eefed029bdcf2dd5ab75b25e7634f",
+          "sha512": "907d495ca943d9b1f5126074da8d7f4013bcb1aaf2d674c48511fb8ade027d0b7fdabe9a38c940939ee872787987ddb519b95ac56bee11eb01613382744ed843",
+          "size": 21412897,
           "dependencies": [
             "speedrunapi"
           ],
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
+      "modid": "draftout",
+      "name": "Draftout",
+      "description": "Draftout - local 1v1 lockout bingo with over 250 goals",
+      "homepage": "https://modrinth.com/mod/draftout",
+      "versions": [
+        {
+          "target_version": [
+            "26.1.1"
+          ],
+          "version": "1.8.3",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/gFPajkbp/draftout-1.8.3.jar",
+          "sha1": "f990d77c8d38602a92d33574b0d78774b6f3e4a6",
+          "sha512": "109cbdac9344c98f9e1824092556e49ed88b90aed9440502bcbd7740358ded18370fae4cb933740fae206ce2b61efe72896ea77230c0d13ad7b48be376baf621",
+          "size": 5211097,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -821,11 +842,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.7.6",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/gAwAb5gb/mcsrranked-5.7.6.jar",
-          "sha1": "de6eaa028b8a4d4c9eaa3187dc2be10ab14f3f5c",
-          "sha512": "84c496d39e3514267a7fdf82740ad4510c727883be31b343887fe350bf86aa4f0309076bbca082270c840ac94a532e2049a325f1d0d092d935636fce798dd652",
-          "size": 24890535,
+          "version": "5.7.13",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/Ia1Ji9JS/mcsrranked-5.7.13.jar",
+          "sha1": "18ec5b76b773d6892434a5ea68e906724822b614",
+          "sha512": "ee8a71951cf58290dae7873d9570fd5a4e838f2231b8d63e186ef415405e9200d9af11e8caca2ae28865dfa2a101bb9ae16b1a0b8c7adc4278eae847e308ea36",
+          "size": 25403429,
           "dependencies": [
             "lithium"
           ],
