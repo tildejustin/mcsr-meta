@@ -83,7 +83,8 @@
     "1.21.11",
     // hardcoding 26.1+ versions
     "26.1",
-    "26.1.1"
+    "26.1.1",
+    "26.1.2"
   ],
   "not-recommended": {
     "standardsettings": [
@@ -99,9 +100,10 @@
     "worldpreview": [
       "1.8.9"
     ],
-    "chunkcacher": [
-      "1.15.2",
-      "1.16.1"
+    "chunkcacher": [],
+    "extra-options": [],
+    "krypton": [
+      "26.1.1" // draftout
     ]
   },
   "obsolete": {
