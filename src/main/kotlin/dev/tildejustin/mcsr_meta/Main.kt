@@ -138,6 +138,7 @@ fun handleExtraMods() {
             replacementDescriptions.getOrDefault(templateFmj.id, templateFmj.description),
             homepages.getOrElse(templateFmj.id) { "https://github.com/${parts[0]}/${parts[1]}" },
             versionList,
+            traits = conditions.getOrDefault(templateFmj.id, emptyList()),
             incompatibilities = extraModIncompatibilities.filter { it.contains(templateFmj.id) }.flatten().filter { it != templateFmj.id }.sorted()
         )
         // TODO: overrides
@@ -188,6 +189,7 @@ fun handleExtraMods() {
             replacementDescriptions.getOrDefault(fmj.id, fmj.description),
             homepages.getOrElse(fmj.id) { "https://modrinth.com/mod/${id}" },
             versionList,
+            traits = conditions.getOrDefault(fmj.id, emptyList()),
             incompatibilities = extraModIncompatibilities.filter { it.contains(fmj.id) }.flatten().filter { it != fmj.id }.sorted()
         )
         // TODO: overrides

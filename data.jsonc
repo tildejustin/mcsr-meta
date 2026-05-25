@@ -9,7 +9,8 @@
     "phosphor": "No-compromises lighting engine optimization mod",
     "mcsrranked": "Minecraft Live Speedrunning Match Mod!",
     "ghostrunner": "Ghost feature for SSG practice.",
-    "pogworld": "Alters structure generation and adds benefits to world generation."
+    "pogworld": "Alters structure generation and adds benefits to world generation.",
+    "commandqmod": "Allows you to press command to drop a full stack of items"
   },
   "homepages": {
     "anchiale": "https://github.com/Minecraft-Java-Edition-Speedrunning/anchiale",
@@ -222,6 +223,9 @@
     ],
     "boundlesswindow": [
       "mac-only"
+    ],
+    "commandqmod": [
+      "mac-only"
     ]
   },
   "v2-override": [
@@ -327,6 +331,11 @@
     "RedLime/Iris-1.16.1": {
       "": [
         "1.16.1"
+      ]
+    },
+    "Slackow/CommandQMod": {
+      "": [
+        "26.1.1"
       ]
     }
   },

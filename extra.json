@@ -2,6 +2,30 @@
   "schemaVersion": 7,
   "mods": [
     {
+      "modid": "commandqmod",
+      "name": "CommandQMod",
+      "description": "Allows you to press command to drop a full stack of items",
+      "homepage": "https://github.com/Slackow/CommandQMod",
+      "versions": [
+        {
+          "target_version": [
+            "26.1.1"
+          ],
+          "version": "1.1",
+          "url": "https://github.com/Slackow/CommandQMod/releases/download/v1.1/commandqmod-1.1.jar",
+          "sha1": "ba178636b70d65837cc29cd77ef1738b32b2deb3",
+          "sha512": "04a715de81aa94c5b7709ca0aa102f3c52f6454fcff91057af283710a6e5f5b4098a8f55ab2bb58d886a98eb34a7a1277b98b2904b982085e5321ec61ea20fe8",
+          "size": 3595,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ],
+      "traits": [
+        "mac-only"
+      ]
+    },
+    {
       "modid": "custom-map-resetter",
       "name": "Custom Map Resetter",
       "description": "Resets custom maps by making copies of a main world and tracking attempts. Based on atum.",
@@ -236,11 +260,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "1.8.3",
-          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/gFPajkbp/draftout-1.8.3.jar",
-          "sha1": "f990d77c8d38602a92d33574b0d78774b6f3e4a6",
-          "sha512": "109cbdac9344c98f9e1824092556e49ed88b90aed9440502bcbd7740358ded18370fae4cb933740fae206ce2b61efe72896ea77230c0d13ad7b48be376baf621",
-          "size": 5211097,
+          "version": "1.9.1",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/1DYd4DEM/draftout-1.9.1.jar",
+          "sha1": "277492f2538e3b73c7d55f5e21a4a385aa01e8e9",
+          "sha512": "95668faae35d9e5f8256adc3a261bb3881411201d3446aaa31eba7121390a4c8ae2787ba944122b0a7f2e2a8c19d33441170b1b90f0bf3c40d732bd63c49cf23",
+          "size": 5211078,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
