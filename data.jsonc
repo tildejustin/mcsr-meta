@@ -111,10 +111,7 @@
     "optifine": [
       "1.12"
     ],
-    "extra-options": [],
-    "krypton": [
-      "26.1.1" // draftout
-    ]
+    "extra-options": []
   },
   "obsolete": {
     "phosphor": [],
