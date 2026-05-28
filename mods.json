@@ -2618,6 +2618,7 @@
           "sha1": "35b12719d0ec9e6aa4f0bdd2e836f22bb9bf2bb6",
           "sha512": "2e5dad08535032266015519ef27acc6743d1e002bbfefd5481625c57c5cbc259c59006772e7d4e6fc76605b1876edc5f4d051ebcfa2d86b154f50f4a59c1e75e",
           "size": 268637,
+          "recommended": false,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]

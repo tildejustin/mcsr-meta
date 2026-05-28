@@ -111,7 +111,10 @@
     "optifine": [
       "1.12"
     ],
-    "extra-options": []
+    "extra-options": [],
+    "hermes-core": [
+      "1.14+"
+    ]
   },
   "obsolete": {
     "phosphor": [],
