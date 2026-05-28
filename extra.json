@@ -260,11 +260,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "1.9.1",
-          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/1DYd4DEM/draftout-1.9.1.jar",
-          "sha1": "277492f2538e3b73c7d55f5e21a4a385aa01e8e9",
-          "sha512": "95668faae35d9e5f8256adc3a261bb3881411201d3446aaa31eba7121390a4c8ae2787ba944122b0a7f2e2a8c19d33441170b1b90f0bf3c40d732bd63c49cf23",
-          "size": 5211078,
+          "version": "1.9.3",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/2b1a4yW5/draftout-1.9.3.jar",
+          "sha1": "f7308686c9f06f3c312e29c6988130adcad82a2e",
+          "sha512": "0882538b52287e8527ffd4f766ab2eeb67fe956f74c58d83e19d278c0ef6593544b77c7afd5f5e0bdf233afabec34cb02b9cfcc4b120d9012df86c195adda76f",
+          "size": 5299059,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
