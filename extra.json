@@ -260,11 +260,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "1.9.3",
-          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/2b1a4yW5/draftout-1.9.3.jar",
-          "sha1": "f7308686c9f06f3c312e29c6988130adcad82a2e",
-          "sha512": "0882538b52287e8527ffd4f766ab2eeb67fe956f74c58d83e19d278c0ef6593544b77c7afd5f5e0bdf233afabec34cb02b9cfcc4b120d9012df86c195adda76f",
-          "size": 5299059,
+          "version": "1.10.3",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/o3vkF5j0/draftout-1.10.3.jar",
+          "sha1": "84d8c221b523d3af27bf5907fb48851d7558df78",
+          "sha512": "0defcbf8617e331ab68883af6e6615b83ec42b02fd99ca7ad8816f7d7f2b72c277b8771025fa58ad933748d81c6b7702a4108c5fadd6c3411b2beae5d7f57534",
+          "size": 5374601,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -866,11 +866,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.7.13",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/Ia1Ji9JS/mcsrranked-5.7.13.jar",
-          "sha1": "18ec5b76b773d6892434a5ea68e906724822b614",
-          "sha512": "ee8a71951cf58290dae7873d9570fd5a4e838f2231b8d63e186ef415405e9200d9af11e8caca2ae28865dfa2a101bb9ae16b1a0b8c7adc4278eae847e308ea36",
-          "size": 25403429,
+          "version": "5.8.1",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/k83cbnOa/mcsrranked-5.8.1.jar",
+          "sha1": "f18866bfed8a8fc83a5fb35d18405745ba2504a5",
+          "sha512": "1463cc847f4d2d46bebf8d7dfdcb1b544732a1330a9baf79e321b7ad04c2e3de84382e69f1d133a97d357af52ff63079cd51320a5fba9c3344d92b0b5fed71f4",
+          "size": 25414385,
           "dependencies": [
             "lithium"
           ],
