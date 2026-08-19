@@ -260,11 +260,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "1.12.1",
-          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/5Z4MPZC2/draftout-1.12.1.jar",
-          "sha1": "dff7123e39357589f64d67e155a1fc6ab975c00f",
-          "sha512": "bb12044fd7cfa748106064dcf42385449161ce92240b9b2c683bb1727a58f83e5e2ed22275e5c7baa314b9568805ed3056626fbe74b3d4d2f6879b494dc4522a",
-          "size": 5656722,
+          "version": "1.15.1",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/OUHPEOss/draftout-1.15.1.jar",
+          "sha1": "18167f5c9eb97e46879507f6053e8bd566765c8e",
+          "sha512": "5893e87b1785a6af57b944bf49f6b60d7f5313a501ae8b7bfa7857c4fb16b09aaf21173ecf1cd2363085d4b089c4b92210812be41c3feda2b0ef43df264353fc",
+          "size": 6669126,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -866,11 +866,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.8.6",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/Rzmgq3Un/mcsrranked-5.8.6.jar",
-          "sha1": "9216f5254e90a428756129feb68fb9e4e0874a8c",
-          "sha512": "6680c164a2c51a59689a343cc6ed1032a27ca2ebf2599d45a4866a872992c53c2722f84b14a7523de919f21d23f777b43c9aef93e6ebf8c5aa8b629b37384f55",
-          "size": 25522094,
+          "version": "5.8.15",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/7tckWGJR/mcsrranked-5.8.15.jar",
+          "sha1": "d0074c969aeb4d1f55be9ebc13f934b076b64a23",
+          "sha512": "3aaa24a5093c66b82feba0acaef720ea90a4262f93152e7c84e67a608fcca20de82f546c6ed1e55d3c763679353dd9ec650f6dcb292243bd7dba086e7a9b2d02",
+          "size": 29248323,
           "dependencies": [
             "lithium"
           ],
@@ -1056,7 +1056,7 @@
             "1.16.1"
           ],
           "version": "1.16.1-2.6.13",
-          "url": "https://cdn.modrinth.com/data/Nv2fQJo5/versions/vfpKdLlR/replaymod-1.16.1-2.6.13.jar",
+          "url": "https://cdn.modrinth.com/data/Nv2fQJo5/versions/E9EK68vH/replaymod-1.16.1-2.6.13.jar",
           "sha1": "07d897f65ff352b125e4b13f448a8f6299c252ba",
           "sha512": "60296c25e45a015089aa35491d60d0eb3e2f8cc794129aad62d35a3e26647fe8268311f1d0754bc9d5d35a5646cf810d984bf71870aaf2e362b56c98dfe7ec89",
           "size": 12855074,
