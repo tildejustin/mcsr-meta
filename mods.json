@@ -693,6 +693,7 @@
       "versions": [
         {
           "target_version": [
+            "26.3",
             "26.2",
             "26.1.2",
             "26.1.1",
@@ -1762,6 +1763,7 @@
       "versions": [
         {
           "target_version": [
+            "26.3",
             "26.2",
             "26.1.2",
             "26.1.1",
@@ -1913,6 +1915,28 @@
       ]
     },
     {
+      "modid": "glacier",
+      "name": "Glacier",
+      "description": "Optimization mod with a main focus on improving world generation performance, plus other miscellaneous stuff.",
+      "homepage": "https://github.com/contariaa/glacier",
+      "versions": [
+        {
+          "target_version": [
+            "1.16.1"
+          ],
+          "version": "1.0.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/glacier/1.16.1/glacier-1.0.1.jar",
+          "sha1": "5cc0325e0f7cd019b1f31033108b7a56ee31a73c",
+          "sha512": "ee0784d1d6995b9609f2cbfdbe29836a30b562b95f10dee2b3f37b4633b9a6cbbcaa3b93d00ff6d20ab19c8f432fbc0eb78bf16ef32e7fe392a57bb788e87055",
+          "size": 240722,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
       "modid": "hermes",
       "name": "Hermes",
       "description": "Uninterpreted data output for external tools focused on the MCSR community.",
@@ -1920,13 +1944,26 @@
       "versions": [
         {
           "target_version": [
+            "26.3"
+          ],
+          "version": "0.15.1+MC26.3",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/26.3-26.3.99/hermes-0.15.1+MC26.3.jar",
+          "sha1": "36b4d6e04815e04eb07983a20c2fd155ccc7857e",
+          "sha512": "41b6725de0389ca04d3c6af46e72dd87b2d328ec0f18d8bb6fcd49120aad0a7491e6fdd96cd248f6fa9f1226485c3f3bb7e38497806ccd22afa58a888f8509cf",
+          "size": 367281,
+          "intermediary": [
+            "net.legacyfabric:intermediary"
+          ]
+        },
+        {
+          "target_version": [
             "26.2"
           ],
-          "version": "0.14.1+MC26.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/26.2-26.2.99/hermes-0.14.1+MC26.2.jar",
-          "sha1": "4294a8d416d8c40c9c7d06af144d5dd9a2205498",
-          "sha512": "613781a49030ee3a3767c2bacb6ad191c97a9e9afd5d92da5be0d5f4dc0e0462ee50c45d953db805bf3bc7af9b029d6b29544a5af42200d706372d717a228757",
-          "size": 366784,
+          "version": "0.15.1+MC26.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/26.2/hermes-0.15.1+MC26.2.jar",
+          "sha1": "1534fbebbf3dfc3528783eb22a19f4be668b548e",
+          "sha512": "f222ffdd9812b2548ea489c6e56dd17f2cdde956d111382024c855888981533d8e2c2f7955cc231e3c6ecf45c91cf95e635eaee80f316d9f731ba99ba364cd56",
+          "size": 367328,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1935,11 +1972,11 @@
           "target_version": [
             "26.1.2"
           ],
-          "version": "0.14.1+MC26.1.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/26.1.2/hermes-0.14.1+MC26.1.2.jar",
-          "sha1": "7b60529f91b2145570bd3d34d6a71ba2ef3e364c",
-          "sha512": "6210d5775f6ba333b082d244cf8acde8c4aa51c10f4ac0fc7d933fd1ea64e12b059092caf321486550bdf4cf7ddcf52095ee15ce09dc7d744470f88e648b6330",
-          "size": 365922,
+          "version": "0.15.1+MC26.1.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/26.1.2/hermes-0.15.1+MC26.1.2.jar",
+          "sha1": "3187dfa224270ab93c67170333dcea273c45c918",
+          "sha512": "f3f80b2268331e2919b857275eef676d3b66b189ae4c3f0f6a6a3b584b71cef17c6331984e6b82d747d2bf648b9e72b215fb3dbd7e3a4c1ca0a7809a1d9e6670",
+          "size": 366468,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1948,11 +1985,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "0.14.1+MC26.1.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/26.1.1/hermes-0.14.1+MC26.1.1.jar",
-          "sha1": "d6f65820dfdcc4be50d66202293565dd6530939d",
-          "sha512": "97e8cb235ec417fb0cf7baa8f903b4305e684e78889d950839bb9b3ebb5d4732df95ae0814c8d49d1d498fdef1c770c8e8885e76f48cd233982432ca8a7d2f23",
-          "size": 365921,
+          "version": "0.15.1+MC26.1.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/26.1.1/hermes-0.15.1+MC26.1.1.jar",
+          "sha1": "d0020339edd2e74f09de3770bf1e777995e2c2db",
+          "sha512": "3f932773f2f0666668d9ffe6449546d8115a00ec5feb040a9e5618cabfc2a48ee686fa556ccae761b428951a56753c2c3fbd5bf4f70cc75288add996b254a638",
+          "size": 366467,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1961,11 +1998,11 @@
           "target_version": [
             "26.1"
           ],
-          "version": "0.14.1+MC26.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/26.1/hermes-0.14.1+MC26.1.jar",
-          "sha1": "26efa28784c0e52781081bb64b844d3adbce4320",
-          "sha512": "faa3b8c05d6f67baa6b7755abbc3c0b66a56929860b308f885b70425e0e51a47e3034444576fc58ea7978ad2b79b693ae8011da24901eac8d026685dc27dd7a2",
-          "size": 365919,
+          "version": "0.15.1+MC26.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/26.1/hermes-0.15.1+MC26.1.jar",
+          "sha1": "60b10ad9acbdc475db79445d551636f9533e4089",
+          "sha512": "4d42ab39857270d2b97558ebd1618dbd5daaa9328056f296920134cf8ef8770343d2cd5eade770e7622744826edc376bc6f3043fe54be079ac850c6a572c1cf2",
+          "size": 366465,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1974,11 +2011,11 @@
           "target_version": [
             "1.21.11"
           ],
-          "version": "0.14.1+MC1.21.11",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.11/hermes-0.14.1+MC1.21.11.jar",
-          "sha1": "8a8fd3a29f3e5d456581789331c702596af99421",
-          "sha512": "af328a369f8ecfd44b9781af517d6fa9c0eb5954c59f3a859eecaa4fa2444287a6cc0157aa84447c5725c8431af066b20696a09c26908c0bd587dcb45a1e5cb2",
-          "size": 536008,
+          "version": "0.15.1+MC1.21.11",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.11/hermes-0.15.1+MC1.21.11.jar",
+          "sha1": "51874dd0f9e5291321dd6e5036626e125c43e7bf",
+          "sha512": "852b0ef1dad8d83c4891ec5fe8a42f313b61c546072aab9b4163518d581564aa91780388a66cb6e9b0c6de1ca862a41868f6f35f8bd5ff2e1bde65c44eb9fe13",
+          "size": 536515,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -1987,11 +2024,11 @@
           "target_version": [
             "1.21.10"
           ],
-          "version": "0.14.1+MC1.21.10",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.10/hermes-0.14.1+MC1.21.10.jar",
-          "sha1": "52700b0c70af941c02435f3f93ccc74b7f36644a",
-          "sha512": "27e657a6f3b05105c4484cf42d97052b8bf9491a25c1544bf4ed6ddf7b0a19fe81cae224ad3a589e0918a22b37e39284f1fbd3cde121a9c596ed7bb9b3023378",
-          "size": 535777,
+          "version": "0.15.1+MC1.21.10",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.10/hermes-0.15.1+MC1.21.10.jar",
+          "sha1": "3a7add7ec5372c3e89f5f82b82fd85e8b89e0712",
+          "sha512": "d332809760b31e3758622a15e34da9666e0d8b73e5cdf1304beb2829f7e03b2b5884d2bcbf187d7aaf99bacdccbd6073df4ec5c5c5ccc546d7e42595181fe538",
+          "size": 536280,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2000,11 +2037,11 @@
           "target_version": [
             "1.21.9"
           ],
-          "version": "0.14.1+MC1.21.9",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.9/hermes-0.14.1+MC1.21.9.jar",
-          "sha1": "0aa82bb6e52a24fb36b54701791fd82016050db5",
-          "sha512": "e57e7f23be838deacbeb4321aeedf01a91d9918b787ddf8624b38913a90210be802cbe12c3a6d01085ddcdc6d74ffb6ee1e6c6b1cc1091937bd4f663e905c1b4",
-          "size": 535778,
+          "version": "0.15.1+MC1.21.9",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.9/hermes-0.15.1+MC1.21.9.jar",
+          "sha1": "70ab7d3c984f75e5b935583936af8df2ac4dfc0f",
+          "sha512": "a15875465dea80fdda2aa1d75c1948eb6513b05ba14213eccc91bd34ebaa752b89f7ff3bc643d6a7ad078e04ffb91d8f9171f4dbad4f30b66b455216e8715eb2",
+          "size": 536282,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2013,11 +2050,11 @@
           "target_version": [
             "1.21.8"
           ],
-          "version": "0.14.1+MC1.21.8",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.8/hermes-0.14.1+MC1.21.8.jar",
-          "sha1": "9ffc712dc56db3368d9d040f646a0ba064a2edb2",
-          "sha512": "8f47c1edd2effaf094ac9270566b7d26cd717ead416e05757e5e8646de9ebc4fa29d2ae553e33633700b014c43fec8d0291b07c070ec3bc1840e827b7a4ec768",
-          "size": 535857,
+          "version": "0.15.1+MC1.21.8",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.8/hermes-0.15.1+MC1.21.8.jar",
+          "sha1": "7b3600e25205e231ca2c83f673d5fb42e8162042",
+          "sha512": "25fd2a37521719e4f838552fcd98c4614c96627a3686fd7690bd9144aea83328018978c429f71e8b402ad191e51499f80c52725cc6a90f0bb8e19c1b944fe2ee",
+          "size": 536360,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2026,11 +2063,11 @@
           "target_version": [
             "1.21.7"
           ],
-          "version": "0.14.1+MC1.21.7",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.7/hermes-0.14.1+MC1.21.7.jar",
-          "sha1": "d63e01514b6cadcf71e29f7e258258de75026105",
-          "sha512": "bd5cac9b8f18609af53160744251e41dccf9310ea0679ef450af20aeee1fd41e903a4dd6b987708ca61be9103944f157b83d0be76307cad79127ae2ac6b7fed2",
-          "size": 535857,
+          "version": "0.15.1+MC1.21.7",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.7/hermes-0.15.1+MC1.21.7.jar",
+          "sha1": "56577c251c337798469c09d76899711aac2a6ad6",
+          "sha512": "7982935931549ab12bcf5dadb1b04890708979a6a26f44ad6de1dfd44b93740812c8ec47b7131e24d48e5eb6f0732c63e6b1062343d33c066e9cb5b8f90158ca",
+          "size": 536360,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2039,11 +2076,11 @@
           "target_version": [
             "1.21.6"
           ],
-          "version": "0.14.1+MC1.21.6",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.6/hermes-0.14.1+MC1.21.6.jar",
-          "sha1": "a0475df89d1036782189b8f5e187ff0979ad2f84",
-          "sha512": "505b30d935586ca28c77c5db8f71a4c247e820e20781a6e69a704b4408ac59e0d67588a8b0b13ef082d459fd69c1ebba16a4cc71eb15de18e03c48d5ff8164ca",
-          "size": 535857,
+          "version": "0.15.1+MC1.21.6",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.6/hermes-0.15.1+MC1.21.6.jar",
+          "sha1": "3ec4148af563dc7fc63903bcf8ae85f8fcc497b8",
+          "sha512": "e765cc35cfd28a08d269e0cb5c1f1509e55c0794f8f6702a543e45ac4e2bb9a122499ef2fa0a08367680adbad6e4433bfbae0a3039bec011ec1fd552002a472b",
+          "size": 536360,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2052,11 +2089,11 @@
           "target_version": [
             "1.21.5"
           ],
-          "version": "0.14.1+MC1.21.5",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.5/hermes-0.14.1+MC1.21.5.jar",
-          "sha1": "bc942cb92a1f34f34e89710302e9014635a80977",
-          "sha512": "0738505aca78c0eb67d1d6bebcdd1a84672f283ad60d9a3fd307b0aa5119a6e05dfc8a7b549acb4908ff1baf9bf3a97bb2f69ce6d9eb891677ef17678f3ab87b",
-          "size": 535865,
+          "version": "0.15.1+MC1.21.5",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.5/hermes-0.15.1+MC1.21.5.jar",
+          "sha1": "b1c970d252e93d09b826a8d9863baf94526c033e",
+          "sha512": "49ed5eff65004c651d76fcc0c696f2cd50326c043a5844a4babb97a23a3e4b369f1e16ce10dc203272a1d302870c33204812610fb181aaf2e097dea50401e63f",
+          "size": 536369,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2065,11 +2102,11 @@
           "target_version": [
             "1.21.4"
           ],
-          "version": "0.14.1+MC1.21.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.4/hermes-0.14.1+MC1.21.4.jar",
-          "sha1": "8ae7adb079a41bb14b6cac3a6cc9e10d67996c6c",
-          "sha512": "460d9c0597876fa9a26836bb8be06822a8c77f8bf213110c1d4092f698d3418fe13b5d83a7d6e3277ba3ab56a0477d8103247a7f7d75b5cc5f70bd3f9003edf1",
-          "size": 535628,
+          "version": "0.15.1+MC1.21.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.4/hermes-0.15.1+MC1.21.4.jar",
+          "sha1": "28a89ca859abb2d948bc8002e74137b4d9263d53",
+          "sha512": "15732f95903fec58d04e8eb5e918b8833bf31fa32c416c351acc540103c31948777df20a194a3ff23e288c49cf8033b86ca9492ef477ade81697353e804f1879",
+          "size": 536132,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2078,11 +2115,11 @@
           "target_version": [
             "1.21.3"
           ],
-          "version": "0.14.1+MC1.21.3",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.3/hermes-0.14.1+MC1.21.3.jar",
-          "sha1": "0565562b50dfeb7dc7e2ae08615d013b4a650c6c",
-          "sha512": "9594cd6586742a960a899eb6b9bc9221b993eaf6b4c37ebb312e3a229bb23deb566a98225b00084080765b07043a96ddaf0dab712a2e69215e22ba9c50d36985",
-          "size": 535628,
+          "version": "0.15.1+MC1.21.3",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.3/hermes-0.15.1+MC1.21.3.jar",
+          "sha1": "9ebb8f9f8b4c56be7ff515d76dcae3a09b1929ca",
+          "sha512": "9bd83b50f40af3d2fba15ee527a90fba835c65f2e71a69fb1f0ff6e0fc3b5583ed1a6abe7a28c3029722e01afaf4954bd21759aae6781efae471a5ce1756e2b2",
+          "size": 536132,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2091,11 +2128,11 @@
           "target_version": [
             "1.21.2"
           ],
-          "version": "0.14.1+MC1.21.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.2/hermes-0.14.1+MC1.21.2.jar",
-          "sha1": "77afb7635d3e741e1d4730453bcdf453daa2d304",
-          "sha512": "a9d96a3cf433d841098893261d3ed68d9077a92fe04b4d3b1a60e1cace01dd4485b9bfe8818377109623a7e9fdb219e9d30662cb60f81bac8baf41de3091d8f5",
-          "size": 535629,
+          "version": "0.15.1+MC1.21.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.2/hermes-0.15.1+MC1.21.2.jar",
+          "sha1": "7e23346ed0065d5c9c3647fe5d314c35eeb45f03",
+          "sha512": "5b196da6b1b8deee6a55b5ad579df381c859eead10bcb4092d71a4ae609827eaca75d1e43a67445b7b7fd56f5f560a6434254ed299b8aed1efc8a704a029f18c",
+          "size": 536133,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2104,11 +2141,11 @@
           "target_version": [
             "1.21.1"
           ],
-          "version": "0.14.1+MC1.21.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21.1/hermes-0.14.1+MC1.21.1.jar",
-          "sha1": "8b9d140e8ef0a0e83b7a78809a49c949dbe64882",
-          "sha512": "ae1d731ba66c9caa751ba0b96d5e7da5599730d7200f653745fa46f849f851454c592a2fd717576936a2c4eec1cc34098989080a19089ce4ceeb443d9cf1a898",
-          "size": 535449,
+          "version": "0.15.1+MC1.21.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21.1/hermes-0.15.1+MC1.21.1.jar",
+          "sha1": "5ce7deb0454bfa1f251178c410408c5813d0b70d",
+          "sha512": "da78941b36e6634ea7726cb0031925859a1f15f16304b67b725fcb4c5fd606c7e90533caa5acea6c6f5526f4899d7dc59966983f255c22c55d7d7a29a06babff",
+          "size": 535955,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2117,11 +2154,11 @@
           "target_version": [
             "1.21"
           ],
-          "version": "0.14.1+MC1.21",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.21/hermes-0.14.1+MC1.21.jar",
-          "sha1": "0af40da6f62a3fe0895d6d05ff9c35b8f30f8c4b",
-          "sha512": "50e77b6da1f6b557af395d7b0ce2d805639feb10507eb5fc16d7eef1fc8b82b5cc284481d52e0396109211d8fe201bc413ec6a304b46362b656396ac68cba6ef",
-          "size": 535447,
+          "version": "0.15.1+MC1.21",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.21/hermes-0.15.1+MC1.21.jar",
+          "sha1": "785a5e2c6931ba2c427fc7d329c7c3f707c46d0a",
+          "sha512": "38aa58342e980b8da3950c323978f9062dfbfe25fdc227e787b2734deb28eec477da8c0196748011e43cd1dbb122860898f556b1ed6dca274d42fa1b980d2b1e",
+          "size": 535952,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2130,11 +2167,11 @@
           "target_version": [
             "1.20.6"
           ],
-          "version": "0.14.1+MC1.20.6",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.20.6/hermes-0.14.1+MC1.20.6.jar",
-          "sha1": "a947ef6c468ca938604c1a75fc24e88c97b571d8",
-          "sha512": "e83a4bf35640d90dc3cf68f2fcc0d19b90f68e233ac9f49fad2f508649a5b9470f55a4e40b2b47f2d344294ea969174950472f9607d331d3f75d6d983383ed52",
-          "size": 535451,
+          "version": "0.15.1+MC1.20.6",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.20.6/hermes-0.15.1+MC1.20.6.jar",
+          "sha1": "d7b585a0d2a664aa586d47ea32cd08daac502861",
+          "sha512": "9ce6b2797063e1f70ca071a05a3cca9e5fc166c00e536aa55fb537a8c4bea120c1ec457329d42c5daa0e737d09d0f0d1e6d5755deead0d92d0b263c49de97f77",
+          "size": 535956,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2143,11 +2180,11 @@
           "target_version": [
             "1.20.5"
           ],
-          "version": "0.14.1+MC1.20.5",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.20.5/hermes-0.14.1+MC1.20.5.jar",
-          "sha1": "fa85d03da234051e4841fe599784afad3a4263bc",
-          "sha512": "b3bf90dd5bd8e157da72294c3a582e7eeb915b6ffb816f57b296feab09fba2b4a19784f2d7478154efeeaeb2cd0467eec537c7a995d131ecbc2f9067e106c9bc",
-          "size": 535459,
+          "version": "0.15.1+MC1.20.5",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.20.5/hermes-0.15.1+MC1.20.5.jar",
+          "sha1": "27728c131db79d5f457bbec250b5fc7f70e8f6cd",
+          "sha512": "b99916f90aed13063e35a27ba9988ae863307f33dac443f0938596721fa9aaed1036bf21f3820365a8aad4abda5d86a55ab8816cff44ac6f1b6a79f3bc948793",
+          "size": 535960,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2156,11 +2193,11 @@
           "target_version": [
             "1.20.4"
           ],
-          "version": "0.14.1+MC1.20.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.20.4/hermes-0.14.1+MC1.20.4.jar",
-          "sha1": "10ecaadc3dcf1db4ff163469cef8a355dc1c6442",
-          "sha512": "d7dab0ef8175bc64dfe14eaece02c52fcd63f83206409ea677fa8df27ead2ce1ef4282e719e39c38dd76d57971dc26bff9d99183d48f7cd4baa31948aaa7b028",
-          "size": 535259,
+          "version": "0.15.1+MC1.20.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.20.4/hermes-0.15.1+MC1.20.4.jar",
+          "sha1": "eb7276b0125eab6315ba518c9e82d76599c9c346",
+          "sha512": "c112dadc2fa683e3e64533eaaecf7138b79f3ebab98856aa723d252b94392c872b97ce69a04c316f31a1271166b178158caa48dd2a42e4d837ae35f22ac1bfda",
+          "size": 535666,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2169,11 +2206,11 @@
           "target_version": [
             "1.20.3"
           ],
-          "version": "0.14.1+MC1.20.3",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.20.3/hermes-0.14.1+MC1.20.3.jar",
-          "sha1": "012effc6bd3881b6113773969d514369cb33f9e1",
-          "sha512": "c836856ff2d714a201c1730881df34fdf4f4ee25f957266258bb59abd5b4d57797eb401a382bdeb1eaa0334824d4874b2eafdd9de842b8cc18b9452cce9162dd",
-          "size": 535257,
+          "version": "0.15.1+MC1.20.3",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.20.3/hermes-0.15.1+MC1.20.3.jar",
+          "sha1": "1cddec03ba04b18d5309dced5fcedb036febef29",
+          "sha512": "d82199a720398607bb9846c9e08aeeb5d9c5db3400e1fe13ef6d803d8ff8c96a91ad40545f37297ffa8d84ab3c34e925f624959817877a12dcb725ae8c5d33d6",
+          "size": 535664,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2182,11 +2219,11 @@
           "target_version": [
             "1.20.2"
           ],
-          "version": "0.14.1+MC1.20.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.20.2/hermes-0.14.1+MC1.20.2.jar",
-          "sha1": "28f6f58ebc2e3c8d819e0088105a5ac7fd288928",
-          "sha512": "27803d39053afd4d605ccb085902646b4445d7867fa3619988ee404ef1f626feae3c4dce57b5be59fb89f5d16a50283b5be2efb8d0c9a18b20722a2de8cc0c15",
-          "size": 535304,
+          "version": "0.15.1+MC1.20.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.20.2/hermes-0.15.1+MC1.20.2.jar",
+          "sha1": "48456107d4ba7021616d8babfdfea702d55f1fd7",
+          "sha512": "af68626bc83e35f7ac601acd4919d1f76f4a4eb794c6876f5f38beecd83a5f109a1dc67ce09015cf515bf9b8cfa10a8689ab08ae2201694512a0b09897498fe0",
+          "size": 535712,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2195,11 +2232,11 @@
           "target_version": [
             "1.20.1"
           ],
-          "version": "0.14.1+MC1.20.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.20.1/hermes-0.14.1+MC1.20.1.jar",
-          "sha1": "43ae6beb9da047c009a02817f22935890021e5f7",
-          "sha512": "91d52c863344b6b724f47392b9b6017a967da478fd51bd305b739e2a3b54cd343fd23ea7f264e208649c451d63801f31ba21e4fc4af728e8287ef6329870ab70",
-          "size": 535298,
+          "version": "0.15.1+MC1.20.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.20.1/hermes-0.15.1+MC1.20.1.jar",
+          "sha1": "908cbd050c4fa80104c1ffac6515745686c76a5e",
+          "sha512": "cf1146be80bf18be679f29a1c00f8796a08fed6fe5d22117d7cf065f79832393287664171e1de4499c950027570e6619256d64fdd6d040fc5ac1e6eeb2a54342",
+          "size": 535706,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2208,11 +2245,11 @@
           "target_version": [
             "1.20"
           ],
-          "version": "0.14.1+MC1.20",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.20/hermes-0.14.1+MC1.20.jar",
-          "sha1": "01367ffdd969fb5f4f7171793aecb7a4f2d9b520",
-          "sha512": "1e51654315d8ffc96d4f14cb73419f8659e1fa803aa4d87cace41e3cf69497d9ef505737fcd871046d8b8848fc61a9478413e6e005b229db3ca0e73f7f4e7521",
-          "size": 535296,
+          "version": "0.15.1+MC1.20",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.20/hermes-0.15.1+MC1.20.jar",
+          "sha1": "85e69aa8ba5c6b9f3cd41464e5ada0a9523153e6",
+          "sha512": "58e3f48ad8510a393e44d78653afda835c5d22b731a190294a34239096449e1d3083d15347e4b13f2abd6f8940376f7db6260987e16bf4c4eb0c0518cfdbc6b4",
+          "size": 535704,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2221,11 +2258,11 @@
           "target_version": [
             "1.19.4"
           ],
-          "version": "0.14.1+MC1.19.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.19.4/hermes-0.14.1+MC1.19.4.jar",
-          "sha1": "1cf7a085992177b226596eea3642fd0dc32ee5bd",
-          "sha512": "f64446871689f6ce605c7fa20ecf6362320b7c9ab90764f3864ab4bd6bef73d7bb0d1c7ef0d53c553066f0fdf7ab2703a24cd47f199b302fbdfbe1c121dc3b9f",
-          "size": 535299,
+          "version": "0.15.1+MC1.19.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.19.4/hermes-0.15.1+MC1.19.4.jar",
+          "sha1": "b62855dfa9cbea16bdb2e974a35135927c364dee",
+          "sha512": "7764ed009fea6b4c3f0c9b9cd0ce474c12d91ec2af88542a1ff1950a67f817e64d43c4a054d652015534d5e9ccb719c8e0a2787396e07963c24567eacf4b5cd8",
+          "size": 535708,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2234,11 +2271,11 @@
           "target_version": [
             "1.19.3"
           ],
-          "version": "0.14.1+MC1.19.3",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.19.3/hermes-0.14.1+MC1.19.3.jar",
-          "sha1": "9a674e23cfffdd9307a4b2f7545917f6ed3f3e1a",
-          "sha512": "51485fec422196ca977be3dc3dfe69631e8bf2fb24c3d1e8b1512e3470a0980a9c75f06a72d832b399b8f4ce027f127d0a9535acfc38e8ca717616f4612edeb1",
-          "size": 536028,
+          "version": "0.15.1+MC1.19.3",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.19.3/hermes-0.15.1+MC1.19.3.jar",
+          "sha1": "c5111fbdd0103a6a6e9de90eee8f6e4e140fe52c",
+          "sha512": "72c1f5e1581e2b3eafcbbbb4b8378f511ba7307d5cea904b2de89121b7b83046347110fd0e80cb42e916130fd9f2e600f2748656c46364c7cde80c954804c2ab",
+          "size": 536434,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2247,11 +2284,11 @@
           "target_version": [
             "1.19.2"
           ],
-          "version": "0.14.1+MC1.19.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.19.2/hermes-0.14.1+MC1.19.2.jar",
-          "sha1": "9ace4af2e9822b3c5afbe4f5e221bb6799e02527",
-          "sha512": "f357257b888aee3c7132f885aef6d9581d8ba344a0989c91fad77c4ff00a5885de53e423d93a6f7c4b9889ab980415097f50b12e8db20ac10964e19c95ed33a9",
-          "size": 535981,
+          "version": "0.15.1+MC1.19.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.19.2/hermes-0.15.1+MC1.19.2.jar",
+          "sha1": "072812c2ecf7448e56b44c40b96849c154aac651",
+          "sha512": "ca70daca7b299086db62d6d25f168402a218970dbf562ea1af7559c06abfe2867d424d7caff976a8230d4c1510decc9ea0acf7ec2d8f00266854d4d49b1f4ceb",
+          "size": 536387,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2260,11 +2297,11 @@
           "target_version": [
             "1.19.1"
           ],
-          "version": "0.14.1+MC1.19.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.19.1/hermes-0.14.1+MC1.19.1.jar",
-          "sha1": "89ae389d2f41831d38db0afb53f81723b4d47bf2",
-          "sha512": "dc9431b3dbc4a62a51a886d4a7c4261df8582e9b0c591b0dfc0b6022a6d3d2b6ee0fced5d16984a9acb68a7d02bc013afe76f3205734ea15b09108f7f15e0963",
-          "size": 535981,
+          "version": "0.15.1+MC1.19.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.19.1/hermes-0.15.1+MC1.19.1.jar",
+          "sha1": "85cf98b416f64c1c8992e2b6ef1795071c222f57",
+          "sha512": "a22ba7f395f32241407a313731cfa0915069dd047da387f1b466069d1149fa5fb4daf0bc574f5b14a20dd066c518cc75f2f96acada6e618d2a1a5ba47dad6ab1",
+          "size": 536386,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2273,11 +2310,11 @@
           "target_version": [
             "1.19"
           ],
-          "version": "0.14.1+MC1.19",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.19/hermes-0.14.1+MC1.19.jar",
-          "sha1": "ab02a7c0c1ffabd06255eb9a4f2e55e0a01335c0",
-          "sha512": "c2f7c09e22bf7fbfae4393e7bfcf9294fa31f41c55e889450122353ffa8ecc83711dad8d827d57020d05ffcb34ff661bd19f6df1abe2cf2281fd5536e6cd7893",
-          "size": 535844,
+          "version": "0.15.1+MC1.19",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.19/hermes-0.15.1+MC1.19.jar",
+          "sha1": "1d10527c51cd1d5d05e2caaefb1d59b50d5a4fc0",
+          "sha512": "a1921f080013cab09ddb1d509f56328427bd02f478e31d28234f85530c0c1c6d80c4262045e819ac18030ce6f2d3179cf12b9de25b657eac584bf35f2edd84da",
+          "size": 536250,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2286,11 +2323,11 @@
           "target_version": [
             "1.18.2"
           ],
-          "version": "0.14.1+MC1.18.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.18.2/hermes-0.14.1+MC1.18.2.jar",
-          "sha1": "eda515d1172553165590cc1ee9289c91c9e4b984",
-          "sha512": "5d03c545e4995278d28a2ee8b1906b01fe5550209cb79a77f507b2532aea6592e44b6623c76e3003beb2647b3ff3828c4847ae2f4d135f600b1100064b6633fa",
-          "size": 535585,
+          "version": "0.15.1+MC1.18.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.18.2/hermes-0.15.1+MC1.18.2.jar",
+          "sha1": "639d1b9f48c17870b3a6aec1b54de0ab72a124c2",
+          "sha512": "a6e451dae92f856cebf4c07151f89cfc8000fbc64c4579c07f5f7345a2bab21c99b512811d3614b2d00ee4ebd2c9d1b3b59e28cae993293b8d8a93261a05a611",
+          "size": 535990,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2299,11 +2336,11 @@
           "target_version": [
             "1.18.1"
           ],
-          "version": "0.14.2+MC1.18.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.18.1/hermes-0.14.2+MC1.18.1.jar",
-          "sha1": "ab067f067e9b67e43701d6e5cca0fd526dabb212",
-          "sha512": "746d5c7041c60c0a083f9f84569c64c44c0bef78e35242173a5b3fcfa17525bed00b3e15287041cf06be467905270d04a30c4770c19b06766cdde1fa81897311",
-          "size": 535455,
+          "version": "0.15.1+MC1.18.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.18.1/hermes-0.15.1+MC1.18.1.jar",
+          "sha1": "8375ea172ee57759a62e1b467b934c6a250459fd",
+          "sha512": "fe50650911fb0f2903022278d9da9bc26043db6a5372b9ed4756f8e17b4391977752eef6ff22acabb55639997a8ceffa6ab476e1e0ff6ab994e0cd8a0addd53c",
+          "size": 535858,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2312,11 +2349,11 @@
           "target_version": [
             "1.18"
           ],
-          "version": "0.14.2+MC1.18",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.18/hermes-0.14.2+MC1.18.jar",
-          "sha1": "e64acf747588b16bc9a0c817fa3b4871ec07f41d",
-          "sha512": "01c47273c31483e2b2615f4a1c4a42cbcf919e1e8c2f125a625ce785e1ed4df14bc724420302bd54542bd7399d91fdb947014d5caaf5b5aa6e92b21a3a17f0ad",
-          "size": 535450,
+          "version": "0.15.1+MC1.18",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.18/hermes-0.15.1+MC1.18.jar",
+          "sha1": "e8be97dd61286d853ba593beb72a20ea9d655747",
+          "sha512": "f0469aa8b4e8003ece5c811448d0fa75db8cc5fd8812cc1368b409bccfa3846638a99e6e510852f4893fa9b46c2aba6924bcc1336fbc0b93cf954f8c912f193b",
+          "size": 535854,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2325,11 +2362,11 @@
           "target_version": [
             "1.17.1"
           ],
-          "version": "0.14.2+MC1.17.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.17.1/hermes-0.14.2+MC1.17.1.jar",
-          "sha1": "7eb1f31482ff491e25d5799a76a0b47777635013",
-          "sha512": "96539472f438ad40a5f8746e01e5675a9a1faca4f5d8476ede917af7616f702fd3dfeb4be5c175dc7004cce50e0193a3989ac5b677aaeaf798003649d8b456b3",
-          "size": 535469,
+          "version": "0.15.1+MC1.17.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.17.1/hermes-0.15.1+MC1.17.1.jar",
+          "sha1": "b032191bd6d54ec9546ddc86c5b651ee5a98aabd",
+          "sha512": "bfb8ce2fa713c470149e06df5c7727a794a317f7891192b161871d7c4850ff401b64099bd6740ca84c3df09c0b11faf3bdc0693b10c5fa7f062989c096d8cd41",
+          "size": 535868,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2338,11 +2375,11 @@
           "target_version": [
             "1.17"
           ],
-          "version": "0.14.2+MC1.17",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.17/hermes-0.14.2+MC1.17.jar",
-          "sha1": "e558c1d624eaac7aaec9988045756141e239a0e9",
-          "sha512": "bec9e5a84e2ebf5d01ca136f2645ebb034eb05fe1c16ef85b2e5fade35c1a21d093a7291fc5f884c64125831769e6030bc1bf3bc5aee8f27f1c0cb1ddaa54f2b",
-          "size": 535476,
+          "version": "0.15.1+MC1.17",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.17/hermes-0.15.1+MC1.17.jar",
+          "sha1": "a27f900116f073bf96274ef098d37ea6222ce9d2",
+          "sha512": "306d55c6248e84cf7b8cfbd929697d18b1cf6f64ad82d524bf357000f278eba16bae9696b7111d8656d9d0648a8499d1e20c37d621205ab6a3820f6ab69f1ac8",
+          "size": 535875,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2351,11 +2388,11 @@
           "target_version": [
             "1.16.5"
           ],
-          "version": "0.14.2+MC1.16.5",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.16.5/hermes-0.14.2+MC1.16.5.jar",
-          "sha1": "a2580bb8a169f1242ed02eb0f8dceadf4ce8d548",
-          "sha512": "b7ac35f09b3257fe40072e8cda3e98fb1a07bf19e478ee959b8194780aad7869954ea16f2c0b017a55d122b44dd8a09299c52a0fab2b053318f139517c629ce3",
-          "size": 535421,
+          "version": "0.15.1+MC1.16.5",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.16.5/hermes-0.15.1+MC1.16.5.jar",
+          "sha1": "a7d00e7f34f9d72e0b656baa9e9b78582895d100",
+          "sha512": "febf7e152bf26866530b61650920108628c9856355308448fcb67d5045c6bb1a3af0d86ac244e99e9af42ad7f135b7888c9af78bdb760411cfe9856a7eb4984b",
+          "size": 535805,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2364,11 +2401,11 @@
           "target_version": [
             "1.16.4"
           ],
-          "version": "0.14.2+MC1.16.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.16.4/hermes-0.14.2+MC1.16.4.jar",
-          "sha1": "80755c8f1744dfa19c0f4fee610f1ec44e851db2",
-          "sha512": "1e70027e117ae0a57506a12482874d4cc228ed38b741047ac824ad94cf37ded70760a0ea3eabdebc8729b33b7f5453087da612870b6562ba93aab2cd6fcfe1d0",
-          "size": 535422,
+          "version": "0.15.1+MC1.16.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.16.4/hermes-0.15.1+MC1.16.4.jar",
+          "sha1": "68412f7d4c0cd91e12ef69d5091097d326b5a504",
+          "sha512": "3dc28361d698cd1e11342619d5d003c576d1671e82291fcb108cfe4c4a884271b4a6f9ad051f95eba12d66d7a8953f1be88a372c12071d925c64a4fe6610e5f5",
+          "size": 535806,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2377,11 +2414,11 @@
           "target_version": [
             "1.16.3"
           ],
-          "version": "0.14.2+MC1.16.3",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.16.3/hermes-0.14.2+MC1.16.3.jar",
-          "sha1": "7d893be3df1541a83a572ae077d1747864df187e",
-          "sha512": "f6df65f8a336680d1e1fc7db4fa29075bad55605c581d2b4ed096fb6d0e824234c096524b31241abd207805a8e9595e39767b84964afd32e85381c31babbc2b0",
-          "size": 535422,
+          "version": "0.15.1+MC1.16.3",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.16.3/hermes-0.15.1+MC1.16.3.jar",
+          "sha1": "84662ec5f6ac16b437903a3192a746d8073e6f87",
+          "sha512": "6e8c2168cfab55a26177e7e09cdd5ee08ded04d34dda5406e4de0689a052f0f316227436c768190b875add253c9ebaa0c7c6de1c8171780c9094a37ca5cab50e",
+          "size": 535806,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2390,11 +2427,11 @@
           "target_version": [
             "1.16.2"
           ],
-          "version": "0.14.2+MC1.16.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2be6c2bb6866f34cf8b675f6c57bd642fdb6b8d8/legal-mods/hermes/1.16.2/hermes-0.14.2+MC1.16.2.jar",
-          "sha1": "9da1935e6aec3d7b91766e4475c3cb2268a43564",
-          "sha512": "5391f6705d38284204d2e59b2266296b724fb9156a7f1146a270e212bf5aa1b9d202037b34f3b2dfda63803bdeddd05911065512748263f057b5c8865b8a4c4c",
-          "size": 535422,
+          "version": "0.15.1+MC1.16.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.16.2/hermes-0.15.1+MC1.16.2.jar",
+          "sha1": "e351144faf67885583f37ff918c925818e6db93b",
+          "sha512": "192b8ef25a954f186a9f0861e2f9c15646a97f1d9ca10eaa7d52fa76af03ae4948ea98480f7648234820da3df55231b91ebcadde45bbf498e70bbab9a3b79ce3",
+          "size": 535808,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2403,11 +2440,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "0.14.1+MC1.16.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.16.1/hermes-0.14.1+MC1.16.1.jar",
-          "sha1": "3b39f53aa1b6feb9ad79f18972a715f5fc6c34fd",
-          "sha512": "03308e9899f6e909746965fb8f770575861980182587c63196210533eee9a1efeeb34ed857822bf6509026f8eb6b258092a8c95110665487ab6e3ecd23aa7167",
-          "size": 535157,
+          "version": "0.15.1+MC1.16.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.16.1/hermes-0.15.1+MC1.16.1.jar",
+          "sha1": "64b66e3624c88df36f94e34001f22390ee1420e6",
+          "sha512": "2924a72bfc55b4b911a6b5920ff88e2c1a3bc2747da806b4be019eb56a3612233e83f948a43f1f6d8d2fecd57124c8a4573e051659525a312f84536b0c26a94c",
+          "size": 535551,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2416,11 +2453,11 @@
           "target_version": [
             "1.16"
           ],
-          "version": "0.14.1+MC1.16",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.16/hermes-0.14.1+MC1.16.jar",
-          "sha1": "1755ad5b7226afe3f442968ac5c9860d7e64c8f7",
-          "sha512": "0812448d915a21cca97020e508055df5f0814058c53948aee83f4e180add116841a97d9132727363df7883ce27458218177d70ae54fe1105c242416f39f1b83b",
-          "size": 535155,
+          "version": "0.15.1+MC1.16",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.16/hermes-0.15.1+MC1.16.jar",
+          "sha1": "b4f9fabfa28d401525227e0ef5c710e5be305b68",
+          "sha512": "f8292942970348c73ac8f6c8e2299cc2d6e7937b7b619184b41ef8523d045512174feff87a0849e4d8b5c501997eebc68589078a4d490faa4c7fd12ecee5bac8",
+          "size": 535549,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2429,11 +2466,11 @@
           "target_version": [
             "1.15.2"
           ],
-          "version": "0.14.1+MC1.15.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.15.2/hermes-0.14.1+MC1.15.2.jar",
-          "sha1": "b065e8e37289530cb570dbaa85cc56ca52743f76",
-          "sha512": "358577b3e071688a81d6f4f2a0ac20062db3739c6e84983e9ae2c83d1f6836c48a8086b0191dbe4d9e200e97bc319723d929f75ca1a7552d789c12cee2cb780d",
-          "size": 537264,
+          "version": "0.15.1+MC1.15.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.15.2/hermes-0.15.1+MC1.15.2.jar",
+          "sha1": "b90b5383078b2e57c46329be2b104a6ab2dd723d",
+          "sha512": "f030803e6fda322cf33cd7f11fc23db782fe636599a9361736530a277e8ad6b96133d85c49b2925e53e2876deee001e4f0510d9876057c2ec0243e8754e6f871",
+          "size": 537652,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2442,11 +2479,11 @@
           "target_version": [
             "1.15.1"
           ],
-          "version": "0.14.1+MC1.15.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.15.1/hermes-0.14.1+MC1.15.1.jar",
-          "sha1": "e6cb08052edce6f31c3cd794789dd2da8e448af0",
-          "sha512": "dd3e12af1c0b0a0ac0e865c65475fd6e3123070f452c006bcb7f161c04bb9c6cece1c3c7ae9020783b943da2d890fb5313ad545c73395a9f4b33067b05626bef",
-          "size": 537263,
+          "version": "0.15.1+MC1.15.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.15.1/hermes-0.15.1+MC1.15.1.jar",
+          "sha1": "78f94f5a69aa0f3852087f779f731ac3a0571154",
+          "sha512": "6d71ee0e370d2e21d4d83ca860387d107f28491c7c12141f9b35e90e477eab59f4eca33d22fbfd7bbacc0d18e963fc10c78fba3d1acd646d7c04d74fe0774906",
+          "size": 537650,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2455,11 +2492,11 @@
           "target_version": [
             "1.15"
           ],
-          "version": "0.14.1+MC1.15",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.15/hermes-0.14.1+MC1.15.jar",
-          "sha1": "fc0df938599e426af4523c595c5ca66bb66ba83d",
-          "sha512": "39867862d5e25404248428477b88ab0cc216546c42451b7158c79ab0c33bd1eca027ba3afc83893e9d745dd1974a997aa266f1df4f576fe31a09fc6c4dfface6",
-          "size": 537260,
+          "version": "0.15.1+MC1.15",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.15/hermes-0.15.1+MC1.15.jar",
+          "sha1": "0216a66a5560e8685b181bbf407e79c9ef966519",
+          "sha512": "9fe2d13fb1c9c688c7e2cf853818122966ad4b296136d65fe5d71316bb467b55d4c67467a330d097695e962e1cc920253b37b96f76cc0c453a6dd073e10e8b58",
+          "size": 537650,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2468,11 +2505,11 @@
           "target_version": [
             "1.14.4"
           ],
-          "version": "0.14.1+MC1.14.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.14.4/hermes-0.14.1+MC1.14.4.jar",
-          "sha1": "a2ce880061e59c9ccb63c59b42f927275152a3c5",
-          "sha512": "e157e2f09eef704273c08e4fe0052522c6e2746509400a75e5c3a4d4cd5d0b3a0dc1156a4b1009f8066a88e939ed6d95a5101f2e5fe6d5d8ac16d2b0e3a94999",
-          "size": 537257,
+          "version": "0.15.1+MC1.14.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.14.4/hermes-0.15.1+MC1.14.4.jar",
+          "sha1": "fa706099cfa0aab533931c4af9eb1084dd08747b",
+          "sha512": "dff0f3e52189fe3b4b2112fa52123fe224be19cf6459eb79c1c3d6a0a4f7afc68ec97c785acf6327e57434ff7ccd727580bf6792acc14f522af27d08bc00bf1e",
+          "size": 537652,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2481,11 +2518,11 @@
           "target_version": [
             "1.14.3"
           ],
-          "version": "0.14.1+MC1.14.3",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.14.3/hermes-0.14.1+MC1.14.3.jar",
-          "sha1": "5f084acd4dbe1240ddc875901033208d08bf324e",
-          "sha512": "39837a5633c1e93bdb463df1898e58dbd831a8db37873c23c79a3ea065cf9c88a2410168bce3e9c3b2b9a2fa83f535523c01923678f9fe55476873bb32889ca3",
-          "size": 537186,
+          "version": "0.15.1+MC1.14.3",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.14.3/hermes-0.15.1+MC1.14.3.jar",
+          "sha1": "fc42c87f086e147800123c6c576ab476708e5d3e",
+          "sha512": "97238f239c104154a03cd63a3d72e8496d885b6a9df1a910164b35775804fc79975404867c7fe7e5304cdf832dd1ac8f53071e6c617dcd4c5b6195c6cb79ac9c",
+          "size": 537583,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2494,11 +2531,11 @@
           "target_version": [
             "1.14.2"
           ],
-          "version": "0.14.1+MC1.14.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.14.2/hermes-0.14.1+MC1.14.2.jar",
-          "sha1": "d7684d8947f999aa37a1d32583690a91d6f99faf",
-          "sha512": "9a3a2a55604d54cf2958e9b9ebf3587d1fc6ddf6d8e31fd3b06c96868de7ee31245bedbdc0d741876f30d654b4ceb30cba62d079c33f0129ff2bdace3c2c214b",
-          "size": 537189,
+          "version": "0.15.1+MC1.14.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.14.2/hermes-0.15.1+MC1.14.2.jar",
+          "sha1": "daa1cb028bb5ff72e5ee53ef159b4dff105ea6ed",
+          "sha512": "a5814ab1af9ea553265c9c048b2c26fcbabf4a546288285ca116143963176105d3d1716b6a19be9d48371b4b347a0e5774a9c57ec12a54bb06829b6582c6a7dc",
+          "size": 537585,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2507,11 +2544,11 @@
           "target_version": [
             "1.14.1"
           ],
-          "version": "0.14.1+MC1.14.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.14.1/hermes-0.14.1+MC1.14.1.jar",
-          "sha1": "bb33f9d25e9334601d62de95d1151a0fcb9f67fe",
-          "sha512": "c7e981e6f37164e0a0a5e07ff24b2fdcb51256cdcb4d7734ab5d44979e6d23cb0a36301d4224304003c2acca6f10ad5a2400feededb21ce5789cb509760c6412",
-          "size": 537186,
+          "version": "0.15.1+MC1.14.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.14.1/hermes-0.15.1+MC1.14.1.jar",
+          "sha1": "15920fb6fa66653774e4eb6db38c59b92307ae7f",
+          "sha512": "a3d941405c419a1198000ef8482f2b40e1767a2e05dc664eeb14eeaabfc68a72d3ae77c0474ea5da7f049197615950f1c45e1016970623745a018bff6d6e0520",
+          "size": 537583,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2520,11 +2557,11 @@
           "target_version": [
             "1.14"
           ],
-          "version": "0.14.1+MC1.14",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/hermes/1.14/hermes-0.14.1+MC1.14.jar",
-          "sha1": "ddac8112f954b97c318d263ab250caaba3cd0f70",
-          "sha512": "c474ee16cbf0e33a1a31898ed6c1cc4ab16b3c19043ce2742479f28587cd56c97ef106d54779811da09139fd490ba74ebd3a1cffd84a6cc664fbc58dcbb815ea",
-          "size": 537159,
+          "version": "0.15.1+MC1.14",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/hermes/1.14/hermes-0.15.1+MC1.14.jar",
+          "sha1": "e89a5b85e15c39d810a9d59085d67c019cced034",
+          "sha512": "350f383d4fb6a616d79bf292452fd832db6ee6ba4f50d0f9723ba8ee6c668432983f00e3437b5a25476704f895dbdf9f196b6c58c5dfe71df567d7d2353a9a04",
+          "size": 537554,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -2539,6 +2576,7 @@
       "versions": [
         {
           "target_version": [
+            "26.3",
             "26.2",
             "26.1.2",
             "26.1.1",
@@ -2647,6 +2685,19 @@
       "description": "A Fabric mod that optimizes the Minecraft networking stack and entity tracker.",
       "homepage": "https://github.com/astei/krypton",
       "versions": [
+        {
+          "target_version": [
+            "26.2"
+          ],
+          "version": "0.3.1",
+          "url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/5WeL0Nkz/krypton-0.3.1.jar",
+          "sha1": "c83ed92c0f9f8523d7e6096151e74222fea91e96",
+          "sha512": "b8d9af34cd0050493afb8a6232cb8f785daa9d8887b7045f6e6a53c6bb9b5ffc4318fd9b0347a940eacfeba4773f10cb80ae0be1e79ce4c1888f96eda21e564e",
+          "size": 268842,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
         {
           "target_version": [
             "26.1.2",
@@ -3202,11 +3253,11 @@
           "target_version": [
             "26.2"
           ],
-          "version": "0.25.2+mc26.2",
-          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/UPNexAfy/lithium-fabric-0.25.2%2Bmc26.2.jar",
-          "sha1": "3bcc94183d7068395de08915fd5fce8d199aaa50",
-          "sha512": "db676376c05b7e912cdae5aad9e51f125adc1554ae2b204599ccb598751921aedbac98e97b9cba0333b6b52488c6b75c915a7dbd50436f97800387fe1aad1c50",
-          "size": 911988,
+          "version": "0.25.3+mc26.2",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/f7vZ0VWU/lithium-fabric-0.25.3%2Bmc26.2.jar",
+          "sha1": "435ad0289209bb72195e7a423756a03f5dfa5a9a",
+          "sha512": "148b638f3c6229fbaf487120a2344a0af5e411a5aa6533d5db9d75da0a8c0d8304f63eb4cca13f4d03b2c9b4c23d559dd74c1d832422ef8a3087bd005e62a8bd",
+          "size": 912850,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -3217,11 +3268,11 @@
             "26.1.1",
             "26.1"
           ],
-          "version": "0.24.6+mc26.1.2",
-          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/fQBdPR1m/lithium-fabric-0.24.6%2Bmc26.1.2.jar",
-          "sha1": "7631a4e81fcca6290bc32374a4338148bd2ba1ae",
-          "sha512": "fac351f5b6150889b9355a01889c35b5798147d4bedb291594a590a2d41909eb8dc494ef0051317bf55886f2fc7fe134abbe2e755098df38473edb2bf43357e9",
-          "size": 911415,
+          "version": "0.24.7+mc26.1.2",
+          "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/Oqq8TOAV/lithium-fabric-0.24.7%2Bmc26.1.2.jar",
+          "sha1": "7959f418969ee8bfe50c0f21f352ed08b382f133",
+          "sha512": "37240bdbf93c19fdc6aa632d89223639f0ef9d923ee1793b33d624946b0482cc972834049ed07d71db3494e16c9de68e755937aac7c4ac5d7291bd38c1425899",
+          "size": 912821,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -5143,6 +5194,7 @@
       "versions": [
         {
           "target_version": [
+            "26.3",
             "26.2",
             "26.1.2",
             "26.1.1",
@@ -5746,11 +5798,11 @@
           "target_version": [
             "1.21.11"
           ],
-          "version": "0.8.13+mc1.21.11",
-          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/Ny3XyYle/sodium-fabric-0.8.13%2Bmc1.21.11.jar",
-          "sha1": "e757883c4959582bed8b057c1f830cb84f325567",
-          "sha512": "6e96ed8e547ea7a8c32273a1152cf02cb26246b3a605c4ed782dc84a52cfbc16d07313c2ea7e1e5e5377784e3e9cbc599b0f2dd139d9fe4c9cbe3381f0dc30f0",
-          "size": 1907864,
+          "version": "0.8.14+mc1.21.11",
+          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/rkdTcxoT/sodium-fabric-0.8.14%2Bmc1.21.11.jar",
+          "sha1": "4a8733fe544168068d12fa94b2ab03e6c0c7bf91",
+          "sha512": "04c43f9e8534b87a52c42ffd51b0e344d4ef92dc9cc52da33d13af6a18bf74b05380d2027f1e0db982698d0aff274c42741c1e21b313b0cd75ed3af005fc98d9",
+          "size": 1909150,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -5828,11 +5880,11 @@
           "target_version": [
             "1.21.1"
           ],
-          "version": "0.8.12+mc1.21.1",
-          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/KIRFiWG4/sodium-fabric-0.8.12%2Bmc1.21.1.jar",
-          "sha1": "70381d969eb63c0aa09dc581ef4b9a79782c0123",
-          "sha512": "8afe411eec65a9f677611ed6390ce656e5a3572f9be473e5dca51ae882a9426a547cd2e8c793278577bb14c17e48158030b11753108926ef33698614bd94ed7f",
-          "size": 1573180,
+          "version": "0.8.13+mc1.21.1",
+          "url": "https://cdn.modrinth.com/data/AANobbMI/versions/SMxNOGZ6/sodium-fabric-0.8.13%2Bmc1.21.1.jar",
+          "sha1": "003c114c85ca88ef3362e018deb6aca0c682d6a1",
+          "sha512": "8614a374593698069a80ac74de8cd9c28f3928d16819a0e0d6320b538e823f7e54e8be06d5ea5a9c268beb0e02073209d1f831a02dede851588b972367680853",
+          "size": 1574609,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -7106,11 +7158,11 @@
             "26.1.1",
             "26.1"
           ],
-          "version": "2.3+26.1-26.1.2",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/3300ca91a0f9e22980295b2eb9694e3e8e15e804/legal-mods/standardsettings/26.1-26.1.2/standardsettings-2.3+26.1-26.1.2.jar",
-          "sha1": "2f01acd13f8eeb0ed3c1432b7a63856364b466ab",
-          "sha512": "f8eb105906adc120b9bfcb8de19a3acadc83bc9928b70a5e6e8d70092de69952c6e22e9f0043f8728f58368cc7f719924b091a506b3d0ef0f9869d10bd5f6a88",
-          "size": 70424,
+          "version": "2.3.1+26.1-26.1.2",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/standardsettings/26.1-26.1.2/standardsettings-2.3.1+26.1-26.1.2.jar",
+          "sha1": "c688355c53b233de5818734ec12c36e76c1a419f",
+          "sha512": "04cf4605c765d2412fe9e24a65d3c209b8334a7e0cac9a2a45d60f7f232e99bd1bd2f172cb0a38941a544c03cda37b50865c09942e751cefa29a2c96df24114f",
+          "size": 71898,
           "dependencies": [
             "speedrunapi"
           ],
@@ -7193,11 +7245,11 @@
             "1.20",
             "24w14potato"
           ],
-          "version": "2.3+1.20-1.20.1",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2ba63fc475270404e4a1c1f910f22bdc9bc14186/legal-mods/standardsettings/1.20-1.20.1/standardsettings-2.3+1.20-1.20.1.jar",
-          "sha1": "8789ad77f4429dbe8c90b641e7c69a2b8c63c7ed",
-          "sha512": "40d499f4dbfa418528474c2a0da9a11e5083399833b30297b471ed5b12686693d481e31bff680b71f9ad2161773dea5575369e977fbf673e7bd99ff28c1b7247",
-          "size": 64916,
+          "version": "2.3.1+1.20-1.20.1",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/standardsettings/1.20-1.20.1/standardsettings-2.3.1+1.20-1.20.1.jar",
+          "sha1": "2baf7c540019861d29ba2c0c9d5e2df21445b625",
+          "sha512": "ae315f09c736d6f27786917f3ee743df72d8d94395d3f334d95b4f1543e7a2d3127e5ca031c7b10953993d3c0675a03412276fce723e4e89c06c9458744acd4e",
+          "size": 64851,
           "dependencies": [
             "speedrunapi"
           ],
@@ -7209,11 +7261,11 @@
           "target_version": [
             "1.19.4"
           ],
-          "version": "2.3+1.19.4",
-          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/2ba63fc475270404e4a1c1f910f22bdc9bc14186/legal-mods/standardsettings/1.19.4/standardsettings-2.3+1.19.4.jar",
-          "sha1": "f2c1b7a34a50a829ed0033c573882e763cab9f1a",
-          "sha512": "517c52b61cba402f478524e1526468742e33109812dcf047be1a62546a9ba69e30c7057c5190eef25fb7b9561501fc8174c67b465cc6fc90c031497cababbab5",
-          "size": 64931,
+          "version": "2.3.1+1.19.4",
+          "url": "https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods/raw/d6ed9613e0cf3a2291b8e756ed10a0b127ce632f/legal-mods/standardsettings/1.19.4/standardsettings-2.3.1+1.19.4.jar",
+          "sha1": "e89a33d4a52f8d07047e9ebaf406b85305048915",
+          "sha512": "800eea94395dc3b9d60c74e353eb474cf5900368598c095cc73983fbd319fb5d558eec1fdeeed5c48a9c8f7c063682c6c422f2f8d4fdb603ef32b14762849340",
+          "size": 64866,
           "dependencies": [
             "speedrunapi"
           ],

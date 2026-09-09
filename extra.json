@@ -866,11 +866,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.8.15",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/7tckWGJR/mcsrranked-5.8.15.jar",
-          "sha1": "d0074c969aeb4d1f55be9ebc13f934b076b64a23",
-          "sha512": "3aaa24a5093c66b82feba0acaef720ea90a4262f93152e7c84e67a608fcca20de82f546c6ed1e55d3c763679353dd9ec650f6dcb292243bd7dba086e7a9b2d02",
-          "size": 29248323,
+          "version": "5.8.21",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/exWE7zve/mcsrranked-5.8.21.jar",
+          "sha1": "c8abb63816d077c7359dba993c9a769cf361dcda",
+          "sha512": "12c28e3ec20f06c4053937f8a1ade9cfa4cb93d1559a267aa824c97b1bd7048cf691fd74a5c342177eab8ec318b561fb5cbe12c200f313bf89aeaea10bd1ea26",
+          "size": 27715649,
           "dependencies": [
             "lithium"
           ],
