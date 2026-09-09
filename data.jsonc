@@ -20,9 +20,9 @@
     "dynamicmenufps": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps",
     "extra-options": "https://github.com/tildejustin/extra-options",
     "fabricproxy-lite": "https://github.com/OKTW-Network/FabricProxy-Lite",
-    "mcsrfairplay": "https://github.com/ExeRSolver/mcsr-fairplay-public",
     "fast_reset": "https://github.com/KingContaria/FastReset",
     "forceport": "https://github.com/DuncanRuns/Force-Port-Mod",
+    "glacier": "https://github.com/contariaa/glacier",
     "hermes": "https://github.com/DuncanRuns/Hermes",
     "hermes-core": "https://github.com/DuncanRuns/HermesCore",
     "krypton": "https://github.com/astei/krypton",
@@ -31,6 +31,7 @@
     "legacy-crash-fix": "https://github.com/tildejustin/legacy-crash-fix",
     "legacy-planifolia": "https://github.com/tildejustin/legacy-planifolia",
     "lithium": "https://github.com/KingContaria/lithium-mcsr",
+    "mcsrfairplay": "https://github.com/ExeRSolver/mcsr-fairplay-public",
     "no-paus": "https://github.com/tildejustin/no-paus",
     "optifabric": "https://github.com/tildejustin/optifabric",
     "optifabric-origins": "https://github.com/Sjouwer/OptiFabric-Origins",
@@ -85,7 +86,8 @@
     "26.1",
     "26.1.1",
     "26.1.2",
-    "26.2"
+    "26.2",
+    "26.3"
   ],
   "not-recommended": {
     "standardsettings": [
