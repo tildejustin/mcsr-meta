@@ -1,0 +1,21 @@
+name: sync
+on:
+  push:
+    branches:
+      - "r2-staging"
+      - "schema-7"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+      - name: sync
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          aws s3 cp mods.json s3://${{ secrets.R2_BUCKET }}/ --endpoint https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
+          aws s3 cp extra.json s3://${{ secrets.R2_BUCKET }}/ --endpoint https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
