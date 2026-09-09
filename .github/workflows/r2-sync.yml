@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - "r2-staging"
+      - "schema-7"
   workflow_dispatch:
 
 jobs:
