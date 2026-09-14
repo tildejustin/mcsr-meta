@@ -10,6 +10,7 @@ import java.net.URI
 import java.nio.file.*
 import java.security.MessageDigest
 import java.util.*
+import java.util.zip.ZipException
 import kotlin.io.path.*
 import kotlin.time.*
 
@@ -29,7 +30,7 @@ lateinit var homepages: Map<String, String>
 lateinit var v2Override: List<String>
 lateinit var additionalIntermediary: Map<String, List<Intermediary>>
 lateinit var githubReleases: Map<String, Map<String, List<String>>>
-lateinit var modrinthReleases: List<String>
+lateinit var modrinthReleases: Map<String, List<String>>
 lateinit var extraEntries: List<Meta.Mod>
 
 
@@ -169,11 +170,13 @@ fun handleExtraMods() {
         }
     }
 
-    modrinthReleases.forEach { id ->
+    modrinthReleases.forEach { entry ->
+        val id = entry.key
         val bestPerVersion = HashMap<String, ModrinthVersion>()
         json.decodeFromString<List<ModrinthVersion>>(URI.create("https://api.modrinth.com/v2/project/${id}/version").toURL().readText())
-            .filter { "forge" !in it.loaders && (it.files[0].filename != "LoTAS1.11.2-2.1.2.jar") }.forEach { version ->
-                version.gameVersions.forEach { bestPerVersion.computeIfAbsent(it) { _ -> version } }
+            // todo: fix
+            .filter { "forge" !in it.loaders && (it.files[0].filename != "LoTAS1.11.2-2.1.2.jar") || id in listOf("no-telemetry", "no-chat-restrictions") }.forEach { version ->
+                version.gameVersions.filter { it in entry.value || entry.value.isEmpty() }.forEach { bestPerVersion.computeIfAbsent(it) { _ -> version } }
             }
         val versionBests = HashMap<ModrinthVersion, MutableSet<String>>()
         bestPerVersion.forEach { (k, v) -> versionBests.computeIfAbsent(v) { _ -> mutableSetOf() }.add(k) }
@@ -322,7 +325,7 @@ data class AdditionalData(
     @SerialName("v2-override") val v2Override: List<String>,
     @SerialName("additional_intermediary") val additionalIntermediary: Map<String, List<Intermediary>>,
     @SerialName("github_releases") val githubReleases: Map<String, Map<String, List<String>>>,
-    @SerialName("modrinth_releases") val modrinthReleases: List<String>,
+    @SerialName("modrinth_releases") val modrinthReleases: Map<String, List<String>>,
     @SerialName("extra_entries") val extraEntries: List<Meta.Mod>
 )
 
@@ -511,10 +514,15 @@ fun downloadExternalMod(tempPath: Path, url: String, hash: String?) {
 private val json = Json { ignoreUnknownKeys = true; prettyPrint = true; prettyPrintIndent = "  "; allowComments = true }
 
 fun readFabricModJson(mod: Path): FabricModJson {
-    FileSystems.newFileSystem(mod, null as ClassLoader?).use { fs ->
-        val jsonFilePath = fs.getPath("fabric.mod.json")
-        val jsonData = Files.readAllBytes(jsonFilePath)
-        return json.decodeFromString<FabricModJson>(String(jsonData))
+    try {
+        FileSystems.newFileSystem(mod, null as ClassLoader?).use { fs ->
+            val jsonFilePath = fs.getPath("fabric.mod.json")
+            val jsonData = Files.readAllBytes(jsonFilePath)
+            return json.decodeFromString<FabricModJson>(String(jsonData))
+        }
+    } catch (e: ZipException) {
+        println(mod)
+        throw RuntimeException()
     }
 }
 

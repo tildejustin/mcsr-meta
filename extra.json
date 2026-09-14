@@ -260,11 +260,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "1.15.1",
-          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/OUHPEOss/draftout-1.15.1.jar",
-          "sha1": "18167f5c9eb97e46879507f6053e8bd566765c8e",
-          "sha512": "5893e87b1785a6af57b944bf49f6b60d7f5313a501ae8b7bfa7857c4fb16b09aaf21173ecf1cd2363085d4b089c4b92210812be41c3feda2b0ef43df264353fc",
-          "size": 6669126,
+          "version": "1.16.0",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/7dQG329C/draftout-1.16.0.jar",
+          "sha1": "3b88d5d9cab5a8c32f5e06d99c1b36f14759dacd",
+          "sha512": "e0df7682edb67a0f4b7d0184f10ca7130e23e158650077e759f585a14dc47c2055c4c2fdae33e0c3f503eafefbb66bae923ea3e7059d79c70c2cb423d0a9e70b",
+          "size": 6856532,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -866,14 +866,56 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.8.21",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/exWE7zve/mcsrranked-5.8.21.jar",
-          "sha1": "c8abb63816d077c7359dba993c9a769cf361dcda",
-          "sha512": "12c28e3ec20f06c4053937f8a1ade9cfa4cb93d1559a267aa824c97b1bd7048cf691fd74a5c342177eab8ec318b561fb5cbe12c200f313bf89aeaea10bd1ea26",
-          "size": 27715649,
+          "version": "5.8.22",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/1eBHzFLw/mcsrranked-5.8.22.jar",
+          "sha1": "c0136fc172d54b2e26ee6639d21e34f23f45b3c4",
+          "sha512": "dd1465c305577581ee2b2cdf36ee63f8a876aba63218cbc29db1154218cabd9326a358e2dc9235f3795f3ac62db4aa7e6e578eeabfb238fc00b9b546fe431812",
+          "size": 27725532,
           "dependencies": [
             "lithium"
           ],
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
+      "modid": "no-telemetry",
+      "name": "No Telemetry",
+      "description": "Disable the telemetry introduced in 21w38a",
+      "homepage": "https://modrinth.com/mod/no-telemetry",
+      "versions": [
+        {
+          "target_version": [
+            "26.1.1"
+          ],
+          "version": "1.10.0",
+          "url": "https://cdn.modrinth.com/data/hg77g4Pw/versions/cBEkQM9c/no-telemetry-1.10.0.jar",
+          "sha1": "3d52342f5825d01dda6661ef7116cdbacbe49746",
+          "sha512": "a123e59ee7cb9de88669de06d56f5313cc60ee5ec80b0cc407ca0cff3b54b81255fba65e615fa7a33142b8030868e0c2a4cf9bdeadda7b3c593d707eff45576d",
+          "size": 96316,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        }
+      ]
+    },
+    {
+      "modid": "nochatrestrictions",
+      "name": "No Chat Restrictions",
+      "description": "A mod dedicated to removing restrictions around the use of multiplayer features, including in-game chat.",
+      "homepage": "https://modrinth.com/mod/no-chat-restrictions",
+      "versions": [
+        {
+          "target_version": [
+            "26.1.1"
+          ],
+          "version": "Fabric-MC26.1-v1.1.2",
+          "url": "https://cdn.modrinth.com/data/z440MEwJ/versions/D7UqBfFc/NoChatRestrictions-Fabric-MC26.1-v1.1.2.jar",
+          "sha1": "a8e692ab689872635b078aba81035dccb7eb3f92",
+          "sha512": "e4f99f2b0d9abe60ac3202ca4297757540b0c5222a7e20723db17693bb2e78737f41eccb93f70222ef7317466cbad0e6c5b12cf79342d457b7e76270bf59e9ff",
+          "size": 11630,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]

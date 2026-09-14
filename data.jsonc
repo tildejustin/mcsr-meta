@@ -343,15 +343,17 @@
       ]
     }
   },
-  "modrinth_releases": [
-    "fsg-mod",
-    "half-heart-hardcore",
-    "mcsr-ranked",
-    "custom-map-resetter",
-    "tasmod",
-    "lotas",
-    "draftout"
-  ],
+  "modrinth_releases": {
+    "fsg-mod": [],
+    "half-heart-hardcore": [],
+    "mcsr-ranked": [],
+    "custom-map-resetter": [],
+    "tasmod": [],
+    "lotas": [],
+    "draftout": [],
+    "no-telemetry": [ "26.1.1" ],
+    "no-chat-restrictions": [ "26.1.1" ]
+  },
   "extra_entries": [
     {
       "modid": "replaymod",
