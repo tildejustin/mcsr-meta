@@ -510,7 +510,6 @@ fun downloadExternalMod(tempPath: Path, url: String, hash: String?) {
     tempPath.writeBytes(jarBytes)
 }
 
-@OptIn(ExperimentalSerializationApi::class)
 private val json = Json { ignoreUnknownKeys = true; prettyPrint = true; prettyPrintIndent = "  "; allowComments = true }
 
 fun readFabricModJson(mod: Path): FabricModJson {
@@ -560,9 +559,10 @@ fun createSemverRangeFromFolderName(folder: String): MutableSet<String> {
 }
 
 // clear old repo and re-clone it
+@OptIn(ExperimentalPathApi::class)
 fun deleteAndRecloneLegalMods() {
-    Path.of("legal-mods").toFile().deleteRecursively()
-    Path.of("mc_af-legal-mods").toFile().deleteRecursively()
+    Path.of("legal-mods").deleteRecursively()
+    Path.of("mc_af-legal-mods").deleteRecursively()
     Git.cloneRepository().setURI("https://github.com/Minecraft-Java-Edition-Speedrunning/legal-mods").setDepth(1).setProgressMonitor(TextProgressMonitor()).call()
     Git.cloneRepository().setURI("https://github.com/tildejustin/mc_af-legal-mods").setDepth(1).setProgressMonitor(TextProgressMonitor()).call()
 }
