@@ -339,7 +339,7 @@
     },
     "Slackow/CommandQMod": {
       "": [
-        "26.1.1"
+        "26.3"
       ]
     }
   },
@@ -351,8 +351,8 @@
     "tasmod": [],
     "lotas": [],
     "draftout": [],
-    "no-telemetry": [ "26.1.1" ],
-    "no-chat-restrictions": [ "26.1.1" ]
+    "no-telemetry": [ "26.3" ],
+    "no-chat-restrictions": [ "26.3" ]
   },
   "extra_entries": [
     {
