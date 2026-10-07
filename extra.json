@@ -11,11 +11,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "1.1",
-          "url": "https://github.com/Slackow/CommandQMod/releases/download/v1.1/commandqmod-1.1.jar",
-          "sha1": "ba178636b70d65837cc29cd77ef1738b32b2deb3",
-          "sha512": "04a715de81aa94c5b7709ca0aa102f3c52f6454fcff91057af283710a6e5f5b4098a8f55ab2bb58d886a98eb34a7a1277b98b2904b982085e5321ec61ea20fe8",
-          "size": 3595,
+          "version": "1.2",
+          "url": "https://github.com/Slackow/CommandQMod/releases/download/v1.2/commandqmod-1.2%2B26.3.jar",
+          "sha1": "ee85f81e8b194f9bb544f5695206c6cdd43d852d",
+          "sha512": "1d9fe357fba592d66405cb34d6dd9673c38e0cd6fa7651624b2ab3097b8c6c81b605af5bf5f219b8db95bb5e5e83b413a0b0d1f97d308c576344c9b51dbeccdf",
+          "size": 3435,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -258,13 +258,26 @@
       "versions": [
         {
           "target_version": [
+            "26.3"
+          ],
+          "version": "1.17.2",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/keCFw7dS/draftout-1.17.2.jar",
+          "sha1": "98f58a55a63595a8a745ba8de622d0538095bb5a",
+          "sha512": "dbbfeaca3bf2e0acea94305e4534266632b08e354fe707853b84cbe2f393993891d89a0e54363c3944746cccefdcbfaef7b7f2ffe1ceffa8e334546216e369f8",
+          "size": 7017588,
+          "intermediary": [
+            "net.fabricmc:intermediary"
+          ]
+        },
+        {
+          "target_version": [
             "26.1.1"
           ],
-          "version": "1.16.0",
-          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/7dQG329C/draftout-1.16.0.jar",
-          "sha1": "3b88d5d9cab5a8c32f5e06d99c1b36f14759dacd",
-          "sha512": "e0df7682edb67a0f4b7d0184f10ca7130e23e158650077e759f585a14dc47c2055c4c2fdae33e0c3f503eafefbb66bae923ea3e7059d79c70c2cb423d0a9e70b",
-          "size": 6856532,
+          "version": "1.16.1",
+          "url": "https://cdn.modrinth.com/data/wNlielYC/versions/elEFtZSP/draftout-1.16.1.jar",
+          "sha1": "46413c0c9adaddc3e5503eb0635b66d77af8b73a",
+          "sha512": "489bde0e4826c8e2426793085761a00b337850963a716a6b7708a928416c888e22835994b835d6729433820f2408dcee6ae2a20c2afd666dcca37724761755d6",
+          "size": 6856893,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]
@@ -866,11 +879,11 @@
           "target_version": [
             "1.16.1"
           ],
-          "version": "5.8.22",
-          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/1eBHzFLw/mcsrranked-5.8.22.jar",
-          "sha1": "c0136fc172d54b2e26ee6639d21e34f23f45b3c4",
-          "sha512": "dd1465c305577581ee2b2cdf36ee63f8a876aba63218cbc29db1154218cabd9326a358e2dc9235f3795f3ac62db4aa7e6e578eeabfb238fc00b9b546fe431812",
-          "size": 27725532,
+          "version": "5.8.26",
+          "url": "https://cdn.modrinth.com/data/I9W1u5Ac/versions/nt5s6inb/mcsrranked-5.8.26.jar",
+          "sha1": "709007c9beedc70ae0e5e9b1119b0c86409c6f6f",
+          "sha512": "491447889a75d2caa315b50955a519c7ced36b3ac5530369ffbd7c21b25d305969f97442ff4e49fad84cd0e24ef1a355d54e81fb4e14237ca905e07610b825f8",
+          "size": 27738025,
           "dependencies": [
             "lithium"
           ],
@@ -911,11 +924,11 @@
           "target_version": [
             "26.1.1"
           ],
-          "version": "Fabric-MC26.1-v1.1.2",
-          "url": "https://cdn.modrinth.com/data/z440MEwJ/versions/D7UqBfFc/NoChatRestrictions-Fabric-MC26.1-v1.1.2.jar",
-          "sha1": "a8e692ab689872635b078aba81035dccb7eb3f92",
-          "sha512": "e4f99f2b0d9abe60ac3202ca4297757540b0c5222a7e20723db17693bb2e78737f41eccb93f70222ef7317466cbad0e6c5b12cf79342d457b7e76270bf59e9ff",
-          "size": 11630,
+          "version": "Fabric-MC26.1-v1.1.3",
+          "url": "https://cdn.modrinth.com/data/z440MEwJ/versions/30qcM1PR/NoChatRestrictions-Fabric-MC26.1-v1.1.3.jar",
+          "sha1": "dc871ec2ddcb9a1eb5ed23c93b0e669d304b3fe9",
+          "sha512": "2161092973261e5f4b4952fab295b441a4ab85db7eafa72d16b82ac22d1424847dd62c635cc53bb93990caee9767e90ba20f018ef4358ecbcc95a5f6d7458992",
+          "size": 10453,
           "intermediary": [
             "net.fabricmc:intermediary"
           ]

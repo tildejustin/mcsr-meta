@@ -457,7 +457,7 @@ fun getIntermediary(modid: String, modFile: Path, range: Set<String>): Set<Inter
     val topVersion = range.last()
     try {
         val version = Version.parse(topVersion, false)
-        intermediaryTypes.add(if (version.minor in 3..13) Intermediary.LEGACY_FABRIC else Intermediary.FABRIC)
+        intermediaryTypes.add(if (version.major == 1 && version.minor in 3..13) Intermediary.LEGACY_FABRIC else Intermediary.FABRIC)
     } catch (_: VersionFormatException) {
         intermediaryTypes.add(
             when (topVersion) {
