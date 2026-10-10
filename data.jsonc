@@ -97,17 +97,12 @@
       "1.12"
     ],
     "fabricproxy-lite": [],
-    "sleepbackground": [
-      "1.7-1.12.2"
-    ],
     "worldpreview": [
       "1.8.9"
     ],
     "chunkcacher": [],
     "extra-options": [],
-    "krypton": [
-      "26.1.1" // draftout
-    ]
+    "dynamicmenufps": []
   },
   "obsolete": {
     "phosphor": [],
