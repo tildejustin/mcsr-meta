@@ -1131,7 +1131,8 @@
       ],
       "incompatibilities": [
         "sleepbackground"
-      ]
+      ],
+      "recommended": false
     },
     {
       "modid": "extra-options",
@@ -5794,7 +5795,6 @@
           "sha1": "f23654a5b3367600a1bc8329d034d6b3895e45aa",
           "sha512": "8b052710f0e1b76229b7def15d8d9bd291b318853e83a9206f18f1f440ca231a712d0489e1ce3cc74d08bbc063b3004a234e75144602508170eb01de1ac902d6",
           "size": 847738,
-          "recommended": false,
           "intermediary": [
             "net.legacyfabric:intermediary"
           ]
